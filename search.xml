@@ -1,6 +1,103 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Documentation</title>
+    <url>/2018/02/10/doc/</url>
+    <content><![CDATA[<h3 id="Elegant-and-Powerful-Theme-for-Hexo"><a href="#Elegant-and-Powerful-Theme-for-Hexo" class="headerlink" title="Elegant and Powerful Theme for Hexo"></a>Elegant and Powerful Theme for Hexo</h3><p>Theme NexT has the following features:</p>
+<ul>
+<li>Vanilla JavaScript.</li>
+<li>Support <a href="https://caniuse.com/prefers-color-scheme">native dark mode</a>.</li>
+<li>Support <a href="https://github.com/MoOx/pjax">Pjax</a> to deliver a fast browsing experience.</li>
+<li>Integrated <a href="https://www.mathjax.org/">MathJax</a> and <a href="https://katex.org/">KaTeX</a> mathematical formula rendering.</li>
+<li>Integrated <a href="https://mozilla.github.io/pdf.js/">PDF.js</a> and <a href="https://mermaid-js.github.io/mermaid/">mermaid diagram</a>.</li>
+<li>Support <a href="https://disqus.com/">Disqus</a>, <a href="https://changyan.kuaizhan.com/">Changyan</a>, <a href="https://livere.com/">LiveRe</a>, <a href="https://gitalk.github.io/">Gitalk</a>, <a href="https://utteranc.es/">Utterances</a> and <a href="https://isso-comments.de/">Isso</a> comment systems.</li>
+<li>Support a large number of third-party statistics services.</li>
+<li>Easy to switch CDN provider.</li>
+<li>Easy to customize content or modify style.</li>
+</ul>
+<h3 id="Four-Schemes-in-One"><a href="#Four-Schemes-in-One" class="headerlink" title="Four Schemes in One"></a>Four Schemes in One</h3><p>By using different Schemes in NexT, you can simply change the style of your blog, and nearly all options can be used in all schemes.</p>
+<h3 id="Multilingual-Support"><a href="#Multilingual-Support" class="headerlink" title="Multilingual Support"></a>Multilingual Support</h3><p>Thanks to the contribution of our users and developers, <a href="/docs/theme-settings/internationalization.html#Choosing-Language">NexT now supports over 20 languages</a>.</p>
+<div class="group-picture"><div class="group-picture-row"><div class="group-picture-column"><img src="/images/en.png" alt="English translation"></div></div><div class="group-picture-row"><div class="group-picture-column"><img src="/images/cn.png" alt="Chinese translation"></div><div class="group-picture-column"><img src="/images/ru.png" alt="Russian translation"></div></div></div>
+
+<h3 id="Code-Highlighting-Themes"><a href="#Code-Highlighting-Themes" class="headerlink" title="Code Highlighting Themes"></a>Code Highlighting Themes</h3><p>NexT uses code highlighting themes from the <a href="https://highlightjs.org/">Highlight.js</a> and <a href="https://prismjs.com/">Prism</a> package, and makes <a href="/docs/theme-settings/miscellaneous.html#Codeblock-Style">more than 300 themes</a> available to you.</p>
+<!-- Inspired by https://github.com/sindresorhus/css-in-readme-like-wat -->
+<table>
+<thead>
+<tr>
+<th align="center">Tomorrow</th>
+<th align="center">Tomorrow Night</th>
+<th align="center">Tomorrow Night Eighties</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center"><img src="/images/tomorrow.svg" alt="Tomorrow"></td>
+<td align="center"><img src="/images/tomorrow-night.svg" alt="Tomorrow Night"></td>
+<td align="center"><img src="/images/tomorrow-night-eighties.svg" alt="Tomorrow Night Eighties"></td>
+</tr>
+</tbody></table>
+<table>
+<thead>
+<tr>
+<th align="center">Tomorrow Night Blue</th>
+<th align="center">Tomorrow Night Bright</th>
+<th align="center">Default</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center"><img src="/images/tomorrow-night-blue.svg" alt="Tomorrow Night Blue"></td>
+<td align="center"><img src="/images/tomorrow-night-bright.svg" alt="Tomorrow Night Bright"></td>
+<td align="center"><img src="/images/default.svg" alt="Default"></td>
+</tr>
+</tbody></table>
+<h3 id="Supported-Browsers"><a href="#Supported-Browsers" class="headerlink" title="Supported Browsers"></a>Supported Browsers</h3><p>We design NexT to support the latest web browsers. We support the current versions of Chrome, Firefox, Safari, and Microsoft Edge. Many CSS3 and ES6 features are used in theme NexT, including CSS Variables, Destructuring assignment, Arrow functions and Spread operator.</p>
+<table>
+<thead>
+<tr>
+<th>Browser</th>
+<th>Supported versions</th>
+<th>Release date</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><i class="fab fa-internet-explorer fa-2x"></i> IE</td>
+<td>N&#x2F;A</td>
+<td>Oct 17, 2013</td>
+</tr>
+<tr>
+<td><i class="fab fa-chrome fa-2x"></i> Chrome</td>
+<td>60+</td>
+<td>Jul 25, 2017</td>
+</tr>
+<tr>
+<td><i class="fab fa-firefox-browser fa-2x"></i> Firefox</td>
+<td>55+</td>
+<td>Aug 8, 2017</td>
+</tr>
+<tr>
+<td><i class="fab fa-opera fa-2x"></i> Opera</td>
+<td>47+</td>
+<td>Aug 9, 2017</td>
+</tr>
+<tr>
+<td><i class="fab fa-safari fa-2x"></i> Safari</td>
+<td>11+</td>
+<td>Sep 19, 2017</td>
+</tr>
+<tr>
+<td><i class="fab fa-edge fa-2x"></i> Edge</td>
+<td>80+</td>
+<td>Feb 7, 2020</td>
+</tr>
+</tbody></table>
+<p>Some other new Web APIs, such as <a href="https://caniuse.com/intersectionobserver">IntersectionObserver</a> and <a href="https://caniuse.com/fetch">Fetch API</a>, are used by NexT plugins. They are not core functions of NexT, so we have no plans to make them compatible with legacy browsers.</p>
+<p>In addition, <a href="https://caniuse.com/css-sticky">CSS position: sticky</a> is used for sidebar positioning. On browsers that do not support this property, its fallback style <code>position: static</code> will be used.</p>
+<h3 id="Customize-Your-NexT"><a href="#Customize-Your-NexT" class="headerlink" title="Customize Your NexT"></a>Customize Your NexT</h3><p>NexT have flexible but simple options, and you can make your own blog with built-in third-party support. Now let’s <a href="/docs/getting-started/">get started</a>.</p>
+]]></content>
+      <categories>
+        <category>Python</category>
+      </categories>
+  </entry>
+  <entry>
     <title>Hello World</title>
     <url>/2023/06/09/hello-world/</url>
     <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
@@ -17,5 +114,100 @@
 
 <p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
 ]]></content>
+      <categories>
+        <category>Hexo</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>Hello World1</title>
+    <url>/2023/06/09/hello-world1/</url>
+    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+]]></content>
+      <categories>
+        <category>Hexo</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>get startted</title>
+    <url>/2023/06/09/index/</url>
+    <content><![CDATA[<h3 id="Hexo-Installation"><a href="#Hexo-Installation" class="headerlink" title="Hexo Installation"></a>Hexo Installation</h3><p>If this is your first time using Hexo, you can take some time to review the Hexo Docs to see <a href="https://hexo.io/docs/">how to install Hexo</a> and <a href="https://hexo.io/docs/setup">initialize a site</a>. After the installation is successful, you should be able to execute <code>hexo</code> (or <code>npx hexo</code>) on the command line, and there must be <code>package.json</code>, <code>source</code>, <code>themes</code> and other directories in your <mark class="label info">site root directory</mark>:</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> hexo-site</span><br><span class="line">$ <span class="built_in">ls</span></span><br><span class="line">_config.yml  node_modules  package-lock.json  package.json  scaffolds  <span class="built_in">source</span>  themes</span><br></pre></td></tr></table></figure>
+
+<div class="note info"><p>If you are new to Node.js or Hexo, you can also modify the source code of an existing Hexo website instead of creating a new one, to help you understand how Hexo works. In fact, the document you are reading is generated by Hexo with NexT, and you can install it with the following command:</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git <span class="built_in">clone</span> https://github.com/next-theme/theme-next-docs</span><br><span class="line">$ <span class="built_in">cd</span> theme-next-docs</span><br><span class="line">$ npm install</span><br></pre></td></tr></table></figure>
+</div>
+
+<p>Make sure that you have installed Hexo and created a site with it successfully, because the following documents require you to operate in the <mark class="label info">site root directory</mark>.</p>
+<h3 id="NexT-Installation"><a href="#NexT-Installation" class="headerlink" title="NexT Installation"></a>NexT Installation</h3><p>The detailed steps to install or upgrade the theme are as follows.</p>
+<h4 id="Downloading-NexT"><a href="#Downloading-NexT" class="headerlink" title="Downloading NexT"></a>Downloading NexT</h4><p>It’s easy to install Hexo theme: you can choose to install the theme through npm, or download the source code of the theme in the <code>themes</code> directory under <mark class="label info">site root directory</mark>.</p>
+<div class="tabs" id="downloading-next"><ul class="nav-tabs"><li class="tab active"><a href="#downloading-next-1">Using <code>npm</code></a></li><li class="tab"><a href="#downloading-next-2">Using <code>git</code></a></li></ul><div class="tab-content"><div class="tab-pane active" id="downloading-next-1"><p>If you’re using Hexo 5.0 or later, the simplest way to install is through npm.</p>
+<p>Open your Terminal, change to Hexo <mark class="label info">site root directory</mark> and install NexT theme:</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> hexo-site</span><br><span class="line">$ npm install hexo-theme-next</span><br></pre></td></tr></table></figure></div><div class="tab-pane" id="downloading-next-2"><p>If you know about <a href="https://git-scm.com/">Git</a>, you can clone the whole repository and update it in any time with <code>git pull</code> command instead of downloading archive manually.</p>
+<p>Open your terminal, change to Hexo <mark class="label info">site root directory</mark> and clone the latest master branch of NexT theme:</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> hexo-site</span><br><span class="line">$ git <span class="built_in">clone</span> https://github.com/next-theme/hexo-theme-next themes/next</span><br></pre></td></tr></table></figure></div></div></div>
+
+<div class="note primary"><p>You can also read <a href="/docs/getting-started/installation.html">detailed installation instructions</a> if you want any other installation variant.</p>
+</div>
+
+<h4 id="Upgrading-NexT"><a href="#Upgrading-NexT" class="headerlink" title="Upgrading NexT"></a>Upgrading NexT</h4><p>A new version of NexT will be released every month. Please read the <a href="https://github.com/next-theme/hexo-theme-next/releases">release notes</a> before updating the theme. You can update NexT by the following command.</p>
+<div class="tabs" id="upgrading-next"><ul class="nav-tabs"><li class="tab active"><a href="#upgrading-next-1">Using <code>npm</code></a></li><li class="tab"><a href="#upgrading-next-2">Using <code>git</code></a></li></ul><div class="tab-content"><div class="tab-pane active" id="upgrading-next-1"><p>Install the latest version through npm:</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> hexo-site</span><br><span class="line">$ npm install hexo-theme-next@latest</span><br></pre></td></tr></table></figure></div><div class="tab-pane" id="upgrading-next-2"><p>Or update to the latest master branch:</p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> hexo-site</span><br><span class="line">$ <span class="built_in">cd</span> themes/next</span><br><span class="line">$ git pull origin master</span><br></pre></td></tr></table></figure>
+
+<p>When running <code>git pull</code>, you can bypass merge conflicts (error message like <strong>«Commit your changes or stash them before you can merge»</strong>) by using the <code>Commit</code>, <code>Stash</code> or <code>Reset</code> commands for local changes. See <a href="https://stackoverflow.com/a/15745424/5861495">here</a> how to do it.</p></div></div></div>
+
+<div class="note warning"><p>If you are still using NexT version 5 or 7, you can read <a href="/docs/getting-started/upgrade.html">instructions for upgrading from legacy version</a>.</p>
+</div>
+
+<h3 id="Configuration-Files"><a href="#Configuration-Files" class="headerlink" title="Configuration Files"></a>Configuration Files</h3><p>After the installation of Hexo and NexT, you may found that there are two configuration files using by Hexo and both called <code>_config.yml</code>:</p>
+<ol>
+<li>The first one is under <mark class="label info">site root directory</mark>, which contains Hexo’s config.</li>
+<li>The second one is under <mark class="label primary">theme root directory</mark> (e.g. <code>themes/next/_config.yml</code> or <code>node_modules/hexo-theme-next/_config.yml</code>), which is provided by NexT and contains theme’s config.</li>
+</ol>
+<p>Let’s call the first one – <mark class="label info">Hexo config file</mark>, and the second one – <mark class="label primary">NexT config file</mark>.</p>
+<div class="note warning"><p>However, we do not recommend directly modifying the <mark class="label primary">NexT config file</mark>. It is quite often running into conflict status when updating NexT theme via <code>git pull</code>, or need to merge configurations manually when upgrading to new releases. For the theme installed through npm, it is also difficult to modify the <mark class="label primary">NexT config file</mark> in <code>node_modules</code>.</p>
+<p>In order to resolve this issue, we recommend using the <a href="/docs/getting-started/configuration.html">Alternate Theme Config</a> feature to configure theme NexT.</p>
+</div>
+
+<h3 id="Hexo-Configuration"><a href="#Hexo-Configuration" class="headerlink" title="Hexo Configuration"></a>Hexo Configuration</h3><p>The following settings in <mark class="label info">Hexo config file</mark> are very helpful for optimizing your website.</p>
+<h4 id="Configuring-Author"><a href="#Configuring-Author" class="headerlink" title="Configuring Author"></a>Configuring Author</h4><p>Edit <mark class="label info">Hexo config file</mark> and set the value of <code>author</code> to your nickname.</p>
+<figure class="highlight yml"><figcaption><span>Hexo config file</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="comment"># Site</span></span><br><span class="line"><span class="attr">author:</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="Configuring-Description"><a href="#Configuring-Description" class="headerlink" title="Configuring Description"></a>Configuring Description</h4><p>Edit <mark class="label info">Hexo config file</mark> and set the value of <code>description</code> to your description, which can be a sentence you like.</p>
+<figure class="highlight yml"><figcaption><span>Hexo config file</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="comment"># Site</span></span><br><span class="line"><span class="attr">description:</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="Enabling-NexT"><a href="#Enabling-NexT" class="headerlink" title="Enabling NexT"></a>Enabling NexT</h4><p>Like all Hexo themes, after you download it, open <mark class="label info">Hexo config file</mark>, find <code>theme</code> option, and change its value to <code>next</code> (or another theme directory name).</p>
+<figure class="highlight yml"><figcaption><span>Hexo config file</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="attr">theme:</span> <span class="string">next</span></span><br></pre></td></tr></table></figure>
+
+<p>Now you have installed NexT theme and enabled it. The following steps will help you verify whether NexT is enabled correctly.</p>
+<h3 id="Checking-NexT"><a href="#Checking-NexT" class="headerlink" title="Checking NexT"></a>Checking NexT</h3><p>It’s recommended to use <code>hexo clean</code> to clean Hexo’s cache first.<br>Then start Hexo local server with debug parameter (by adding <code>--debug</code>), the whole command is <code>hexo s --debug</code>. You can see the output while running, and if you find problem, you can use the output to help others locate error better. When it prints:</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">INFO  Hexo is running at http://localhost:4000/. Press Ctrl+C to stop.</span><br></pre></td></tr></table></figure>
+
+<p>Now you can open <code>http://localhost:4000</code> in your browser, and check whether the site works correctly.</p>
+<div class="note success"><p>If you find your site looks like this picture, you have installed it correctly. That’s default NexT scheme – Muse.<br><img src="/images/next-default-scheme.png" alt="Default Scheme – Muse"></p>
+</div>
+
+<p>After that we can <a href="/docs/getting-started/deployment.html">configure deployment</a>.</p>
+<p>If everything is OK, in next steps we will change some settings including <a href="/docs/theme-settings/">personalization</a> and <a href="/docs/third-party-services/">third-party services integration</a>.</p>
+]]></content>
+      <categories>
+        <category>Hexo</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+        <tag>博客</tag>
+      </tags>
   </entry>
 </search>
