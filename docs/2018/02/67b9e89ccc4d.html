@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222"><meta name="generator" content="Hexo 6.3.0">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha256-HtsXJanqjKTc8vVQjO4YMhiqFoXkfBsjBWcX91T1jr8=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"cjyzwg.github.io","root":"/","images":"/images","scheme":"Gemini","darkmode":false,"version":"8.17.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
+
+    <meta name="description" content="NexT User Docs">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Documentation">
+<meta property="og:url" content="https://cjyzwg.github.io/2018/02/67b9e89ccc4d.html">
+<meta property="og:site_name" content="NockyGo">
+<meta property="og:description" content="NexT User Docs">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://cjyzwg.github.io/images/en.png">
+<meta property="og:image" content="https://cjyzwg.github.io/images/cn.png">
+<meta property="og:image" content="https://cjyzwg.github.io/images/ru.png">
+<meta property="og:image" content="https://cjyzwg.github.io/images/tomorrow.svg">
+<meta property="og:image" content="https://cjyzwg.github.io/images/tomorrow-night.svg">
+<meta property="og:image" content="https://cjyzwg.github.io/images/tomorrow-night-eighties.svg">
+<meta property="og:image" content="https://cjyzwg.github.io/images/tomorrow-night-blue.svg">
+<meta property="og:image" content="https://cjyzwg.github.io/images/tomorrow-night-bright.svg">
+<meta property="og:image" content="https://cjyzwg.github.io/images/default.svg">
+<meta property="article:published_time" content="2018-02-09T16:00:00.000Z">
+<meta property="article:modified_time" content="2023-06-08T22:21:47.787Z">
+<meta property="article:author" content="Nocky">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://cjyzwg.github.io/images/en.png">
+
+
+<link rel="canonical" href="https://cjyzwg.github.io/2018/02/67b9e89ccc4d.html">
+
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://cjyzwg.github.io/2018/02/67b9e89ccc4d.html","path":"2018/02/67b9e89ccc4d.html","title":"Documentation"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>Documentation | NockyGo</title>
+  
+
+
+
+
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <div class="column">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">NockyGo</p>
+      <i class="logo-line"></i>
+    </a>
+      <p class="site-subtitle" itemprop="description">爱代码，爱生活</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger" aria-label="搜索" role="button">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a></li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup"><div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off" maxlength="80"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close" role="button">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div class="search-result-container no-result">
+  <div class="search-result-icon">
+    <i class="fa fa-spinner fa-pulse fa-5x"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</header>
+        
+  
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#Elegant-and-Powerful-Theme-for-Hexo"><span class="nav-number">1.</span> <span class="nav-text">Elegant and Powerful Theme for Hexo</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Four-Schemes-in-One"><span class="nav-number">2.</span> <span class="nav-text">Four Schemes in One</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Multilingual-Support"><span class="nav-number">3.</span> <span class="nav-text">Multilingual Support</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Code-Highlighting-Themes"><span class="nav-number">4.</span> <span class="nav-text">Code Highlighting Themes</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Supported-Browsers"><span class="nav-number">5.</span> <span class="nav-text">Supported Browsers</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Customize-Your-NexT"><span class="nav-number">6.</span> <span class="nav-text">Customize Your NexT</span></a></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="Nocky"
+      src="/images/avatar.jpg">
+  <p class="site-author-name" itemprop="name">Nocky</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">45</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+          <a href="/categories/">
+        <span class="site-state-item-count">16</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+          <a href="/tags/">
+        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author animated">
+      <span class="links-of-author-item">
+        <a href="https://github.com/cjyzwg" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;cjyzwg" rel="noopener me" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="/3" title="Wechat → 3" rel="noopener me"><i class="fab fa-weixin fa-fw"></i>Wechat</a>
+      </span>
+  </div>
+
+        </div>
+      </div>
+    </div>
+
+    
+  </aside>
+
+
+    </div>
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://cjyzwg.github.io/2018/02/67b9e89ccc4d.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="name" content="Nocky">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="NockyGo">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="Documentation | NockyGo">
+      <meta itemprop="description" content="NexT User Docs">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          Documentation
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2018-02-10 00:00:00" itemprop="dateCreated datePublished" datetime="2018-02-10T00:00:00+08:00">2018-02-10</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">更新于</span>
+      <time title="修改时间：2023-06-09 06:21:47" itemprop="dateModified" datetime="2023-06-09T06:21:47+08:00">2023-06-09</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/Python/" itemprop="url" rel="index"><span itemprop="name">Python</span></a>
+        </span>
+    </span>
+
+  
+    <span class="post-meta-break"></span>
+    <span class="post-meta-item" title="本文字数">
+      <span class="post-meta-item-icon">
+        <i class="far fa-file-word"></i>
+      </span>
+      <span class="post-meta-item-text">本文字数：</span>
+      <span>1.7k</span>
+    </span>
+    <span class="post-meta-item" title="阅读时长">
+      <span class="post-meta-item-icon">
+        <i class="far fa-clock"></i>
+      </span>
+      <span class="post-meta-item-text">阅读时长 &asymp;</span>
+      <span>3 分钟</span>
+    </span>
+</div>
+
+            <div class="post-description">NexT User Docs</div>
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody"><h3 id="Elegant-and-Powerful-Theme-for-Hexo"><a href="#Elegant-and-Powerful-Theme-for-Hexo" class="headerlink" title="Elegant and Powerful Theme for Hexo"></a>Elegant and Powerful Theme for Hexo</h3><p>Theme NexT has the following features:</p>
+<ul>
+<li>Vanilla JavaScript.</li>
+<li>Support <a target="_blank" rel="noopener" href="https://caniuse.com/prefers-color-scheme">native dark mode</a>.</li>
+<li>Support <a target="_blank" rel="noopener" href="https://github.com/MoOx/pjax">Pjax</a> to deliver a fast browsing experience.</li>
+<li>Integrated <a target="_blank" rel="noopener" href="https://www.mathjax.org/">MathJax</a> and <a target="_blank" rel="noopener" href="https://katex.org/">KaTeX</a> mathematical formula rendering.</li>
+<li>Integrated <a target="_blank" rel="noopener" href="https://mozilla.github.io/pdf.js/">PDF.js</a> and <a target="_blank" rel="noopener" href="https://mermaid-js.github.io/mermaid/">mermaid diagram</a>.</li>
+<li>Support <a target="_blank" rel="noopener" href="https://disqus.com/">Disqus</a>, <a target="_blank" rel="noopener" href="https://changyan.kuaizhan.com/">Changyan</a>, <a target="_blank" rel="noopener" href="https://livere.com/">LiveRe</a>, <a target="_blank" rel="noopener" href="https://gitalk.github.io/">Gitalk</a>, <a target="_blank" rel="noopener" href="https://utteranc.es/">Utterances</a> and <a target="_blank" rel="noopener" href="https://isso-comments.de/">Isso</a> comment systems.</li>
+<li>Support a large number of third-party statistics services.</li>
+<li>Easy to switch CDN provider.</li>
+<li>Easy to customize content or modify style.</li>
+</ul>
+<h3 id="Four-Schemes-in-One"><a href="#Four-Schemes-in-One" class="headerlink" title="Four Schemes in One"></a>Four Schemes in One</h3><p>By using different Schemes in NexT, you can simply change the style of your blog, and nearly all options can be used in all schemes.</p>
+<h3 id="Multilingual-Support"><a href="#Multilingual-Support" class="headerlink" title="Multilingual Support"></a>Multilingual Support</h3><p>Thanks to the contribution of our users and developers, <a href="/docs/theme-settings/internationalization.html#Choosing-Language">NexT now supports over 20 languages</a>.</p>
+<div class="group-picture"><div class="group-picture-row"><div class="group-picture-column"><img src="/images/en.png" alt="English translation"></div></div><div class="group-picture-row"><div class="group-picture-column"><img src="/images/cn.png" alt="Chinese translation"></div><div class="group-picture-column"><img src="/images/ru.png" alt="Russian translation"></div></div></div>
+
+<h3 id="Code-Highlighting-Themes"><a href="#Code-Highlighting-Themes" class="headerlink" title="Code Highlighting Themes"></a>Code Highlighting Themes</h3><p>NexT uses code highlighting themes from the <a target="_blank" rel="noopener" href="https://highlightjs.org/">Highlight.js</a> and <a target="_blank" rel="noopener" href="https://prismjs.com/">Prism</a> package, and makes <a href="/docs/theme-settings/miscellaneous.html#Codeblock-Style">more than 300 themes</a> available to you.</p>
+<!-- Inspired by https://github.com/sindresorhus/css-in-readme-like-wat -->
+<table>
+<thead>
+<tr>
+<th align="center">Tomorrow</th>
+<th align="center">Tomorrow Night</th>
+<th align="center">Tomorrow Night Eighties</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center"><img src="/images/tomorrow.svg" alt="Tomorrow"></td>
+<td align="center"><img src="/images/tomorrow-night.svg" alt="Tomorrow Night"></td>
+<td align="center"><img src="/images/tomorrow-night-eighties.svg" alt="Tomorrow Night Eighties"></td>
+</tr>
+</tbody></table>
+<table>
+<thead>
+<tr>
+<th align="center">Tomorrow Night Blue</th>
+<th align="center">Tomorrow Night Bright</th>
+<th align="center">Default</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center"><img src="/images/tomorrow-night-blue.svg" alt="Tomorrow Night Blue"></td>
+<td align="center"><img src="/images/tomorrow-night-bright.svg" alt="Tomorrow Night Bright"></td>
+<td align="center"><img src="/images/default.svg" alt="Default"></td>
+</tr>
+</tbody></table>
+<h3 id="Supported-Browsers"><a href="#Supported-Browsers" class="headerlink" title="Supported Browsers"></a>Supported Browsers</h3><p>We design NexT to support the latest web browsers. We support the current versions of Chrome, Firefox, Safari, and Microsoft Edge. Many CSS3 and ES6 features are used in theme NexT, including CSS Variables, Destructuring assignment, Arrow functions and Spread operator.</p>
+<table>
+<thead>
+<tr>
+<th>Browser</th>
+<th>Supported versions</th>
+<th>Release date</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><i class="fab fa-internet-explorer fa-2x"></i> IE</td>
+<td>N&#x2F;A</td>
+<td>Oct 17, 2013</td>
+</tr>
+<tr>
+<td><i class="fab fa-chrome fa-2x"></i> Chrome</td>
+<td>60+</td>
+<td>Jul 25, 2017</td>
+</tr>
+<tr>
+<td><i class="fab fa-firefox-browser fa-2x"></i> Firefox</td>
+<td>55+</td>
+<td>Aug 8, 2017</td>
+</tr>
+<tr>
+<td><i class="fab fa-opera fa-2x"></i> Opera</td>
+<td>47+</td>
+<td>Aug 9, 2017</td>
+</tr>
+<tr>
+<td><i class="fab fa-safari fa-2x"></i> Safari</td>
+<td>11+</td>
+<td>Sep 19, 2017</td>
+</tr>
+<tr>
+<td><i class="fab fa-edge fa-2x"></i> Edge</td>
+<td>80+</td>
+<td>Feb 7, 2020</td>
+</tr>
+</tbody></table>
+<p>Some other new Web APIs, such as <a target="_blank" rel="noopener" href="https://caniuse.com/intersectionobserver">IntersectionObserver</a> and <a target="_blank" rel="noopener" href="https://caniuse.com/fetch">Fetch API</a>, are used by NexT plugins. They are not core functions of NexT, so we have no plans to make them compatible with legacy browsers.</p>
+<p>In addition, <a target="_blank" rel="noopener" href="https://caniuse.com/css-sticky">CSS position: sticky</a> is used for sidebar positioning. On browsers that do not support this property, its fallback style <code>position: static</code> will be used.</p>
+<h3 id="Customize-Your-NexT"><a href="#Customize-Your-NexT" class="headerlink" title="Customize Your NexT"></a>Customize Your NexT</h3><p>NexT have flexible but simple options, and you can make your own blog with built-in third-party support. Now let’s <a href="/docs/getting-started/">get started</a>.</p>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+            </div>
+            <div class="post-nav-item">
+                <a href="/2023/06/66c5ec627403.html" rel="next" title="Hello World">
+                  Hello World <i class="fa fa-chevron-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+
+<div class="copyright">
+  &copy; 
+  <span itemprop="copyrightYear">2023</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Nocky</span>
+</div>
+<div class="wordcount">
+  <span class="post-meta-item">
+    <span class="post-meta-item-icon">
+      <i class="fa fa-chart-line"></i>
+    </span>
+    <span title="站点总字数">108k</span>
+  </span>
+  <span class="post-meta-item">
+    <span class="post-meta-item-icon">
+      <i class="fa fa-coffee"></i>
+    </span>
+    <span title="站点阅读时长">3:17</span>
+  </span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/" rel="noopener" target="_blank">NexT.Gemini</a> 强力驱动
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <div class="back-to-top" role="button" aria-label="返回顶部">
+    <i class="fa fa-arrow-up fa-lg"></i>
+    <span>0%</span>
+  </div>
+
+  <a href="https://github.com/cjyzwg" class="github-corner" title="在 GitHub 上关注我" aria-label="在 GitHub 上关注我" rel="noopener" target="_blank"><svg width="80" height="80" viewBox="0 0 250 250" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/next-boot.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-generator-searchdb/1.4.1/search.js" integrity="sha256-1kfA5uHPf65M5cphT2dvymhkuyHPQp5A53EGZOnOLmc=" crossorigin="anonymous"></script>
+<script src="/js/third-party/search/local-search.js"></script>
+
+
+
+
+
+
+
+  
+
+
+
+
+
+</body>
+</html>
