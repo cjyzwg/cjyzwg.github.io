@@ -17,4 +17,4 @@ node_modules
 public/
 .vscode
 .idea
-
+.deploy_git
