@@ -199,7 +199,7 @@ https://edith.xiaohongshu.com/api/sns/v2/note/feed
 //小红书插件配置
 保存文档目录:/home/cj/obsidian/小红书同步
 过滤条件:edith.xiaohongshu.com/api/sns/v2/note/feed
-修改过滤条件
+修改过滤条件测试测试
 
 ```
 
