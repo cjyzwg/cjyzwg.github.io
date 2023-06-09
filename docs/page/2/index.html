@@ -160,7 +160,7 @@
       </div>
       <div class="site-state-item site-state-tags">
           <a href="/tags/">
-        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-count">4</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
@@ -422,104 +422,6 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://cjyzwg.github.io/2023/06/3247a9f9d1c1.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.jpg">
-      <meta itemprop="name" content="Nocky">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="NockyGo">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | NockyGo">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2023/06/3247a9f9d1c1.html" class="post-title-link" itemprop="url">未命名</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">发表于</span>
-      
-
-      <time title="创建时间：2023-06-09 07:03:56 / 修改时间：07:12:13" itemprop="dateCreated datePublished" datetime="2023-06-09T07:03:56+08:00">2023-06-09</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">分类于</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/SSH/" itemprop="url" rel="index"><span itemprop="name">SSH</span></a>
-        </span>
-    </span>
-
-  
-    <span class="post-meta-break"></span>
-    <span class="post-meta-item" title="本文字数">
-      <span class="post-meta-item-icon">
-        <i class="far fa-file-word"></i>
-      </span>
-      <span class="post-meta-item-text">本文字数：</span>
-      <span>567</span>
-    </span>
-    <span class="post-meta-item" title="阅读时长">
-      <span class="post-meta-item-icon">
-        <i class="far fa-clock"></i>
-      </span>
-      <span class="post-meta-item-text">阅读时长 &asymp;</span>
-      <span>1 分钟</span>
-    </span>
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <h3 id="阿里云服务器添加秘钥"><a href="#阿里云服务器添加秘钥" class="headerlink" title="阿里云服务器添加秘钥"></a>阿里云服务器添加秘钥</h3><p>1.登录控制台，创建秘钥对，并下载为a.pem<br>2.ssh-keygen -y -f a.pem会返回ssh-rsa<br>如果该命令失败，请运行chmod 400 my-key-pair.pem命令更改权限<br>3.登录到服务器a.com中，echo &gt;&gt; ~&#x2F;.ssh&#x2F;authorized_keys<br>4.nano &#x2F;etc&#x2F;ssh&#x2F;sshd_config<br>PermitRootLogin yes<br>当你完成全部设置，并以密钥方式登录成功后，再禁用密码登录：<br>PasswordAuthentication no<br>5.service sshd restart</p>
-<h4 id="访问："><a href="#访问：" class="headerlink" title="访问："></a>访问：</h4><p>ssh -i a.pem <a href="mailto:&#114;&#111;&#111;&#116;&#64;&#97;&#46;&#x63;&#111;&#x6d;">&#114;&#111;&#111;&#116;&#64;&#97;&#46;&#x63;&#111;&#x6d;</a> 访问<br>如果想省事的话，ssh-add -k a.pem，重启之后需要重新添加<br>直接ssh <a href="mailto:&#114;&#x6f;&#x6f;&#116;&#x40;&#97;&#x2e;&#99;&#x6f;&#109;">&#114;&#x6f;&#x6f;&#116;&#x40;&#97;&#x2e;&#99;&#x6f;&#109;</a> 即可访问</p>
-<h4 id="出现-Could-not-open-a-connection-to-your-authentication-agent解决办法或者Permission-denied-publickey-："><a href="#出现-Could-not-open-a-connection-to-your-authentication-agent解决办法或者Permission-denied-publickey-：" class="headerlink" title="出现 Could not open a connection to your authentication agent解决办法或者Permission denied (publickey).："></a>出现 Could not open a connection to your authentication agent解决办法或者Permission denied (publickey).：</h4><blockquote>
-<p>eval <code>ssh-agent -s</code>  </p>
-</blockquote>
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
     <link itemprop="mainEntityOfPage" href="https://cjyzwg.github.io/2023/06/95fb3d4261e3.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -590,6 +492,104 @@
           <h3 id="利用acme-生成https协议"><a href="#利用acme-生成https协议" class="headerlink" title="利用acme 生成https协议"></a>利用acme 生成https协议</h3><h5 id="手动https"><a href="#手动https" class="headerlink" title="手动https"></a>手动https</h5><p>1.curl  <a target="_blank" rel="noopener" href="https://get.acme.sh/">https://get.acme.sh</a> | sh<br>2.cd <del>&#x2F;.acme.sh&#x2F;<br>3.alias acme.sh&#x3D;</del>&#x2F;.acme.sh&#x2F;acme.sh<br>4.acme.sh –issue –force  -d a.test.com –webroot &#x2F;var&#x2F;www&#x2F;html&#x2F;a&#x2F;<br>5.mkdir -p &#x2F;etc&#x2F;nginx&#x2F;ssl_cert&#x2F;a.test.com<br>6.acme.sh –install-cert -d a.test.com –key-file &#x2F;etc&#x2F;nginx&#x2F;ssl_cert&#x2F;a.test.com&#x2F;key.pem –fullchain-file &#x2F;etc&#x2F;nginx&#x2F;ssl_cert&#x2F;a.test.com&#x2F;cert.pem –reloadcmd     “service nginx force-reload”</p>
 <h5 id="手动dns"><a href="#手动dns" class="headerlink" title="手动dns"></a>手动dns</h5><p>1.acme.sh –issue -d a.test.com –dns –yes-I-know-dns-manual-mode-enough-go-ahead-please<br>2.nslookup -q&#x3D;TXT _acme-challenge.a.test.com<br>3.acme.sh –renew -d a.test.com –yes-I-know-dns-manual-mode-enough-go-ahead-please<br>4.mkdir -p &#x2F;etc&#x2F;nginx&#x2F;ssl_cert&#x2F;a.test.com<br>5.acme.sh –install-cert -d a.test.com –key-file &#x2F;etc&#x2F;nginx&#x2F;ssl_cert&#x2F;a.test.com&#x2F;key.pem –fullchain-file &#x2F;etc&#x2F;nginx&#x2F;ssl_cert&#x2F;a.test.com&#x2F;cert.pem –reloadcmd     “service nginx force-reload”  </p>
 <h6 id="Nginx-配置："><a href="#Nginx-配置：" class="headerlink" title="Nginx 配置："></a>Nginx 配置：</h6><p>6.listen 443;<br>  ssl_certificate &#x2F;etc&#x2F;nginx&#x2F;ssl_cert&#x2F;a.test.com&#x2F;cert.pem;<br>  ssl_certificate_key &#x2F;etc&#x2F;nginx&#x2F;ssl_cert&#x2F;a.test.com&#x2F;key.pem;<br>  ssl_protocols TLSv1 TLSv1.1 TLSv1.2;<br>  ssl_prefer_server_ciphers on;  </p>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://cjyzwg.github.io/2023/06/3247a9f9d1c1.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="name" content="Nocky">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="NockyGo">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="undefined | NockyGo">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2023/06/3247a9f9d1c1.html" class="post-title-link" itemprop="url">未命名</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+      
+
+      <time title="创建时间：2023-06-09 07:03:56 / 修改时间：07:12:13" itemprop="dateCreated datePublished" datetime="2023-06-09T07:03:56+08:00">2023-06-09</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/SSH/" itemprop="url" rel="index"><span itemprop="name">SSH</span></a>
+        </span>
+    </span>
+
+  
+    <span class="post-meta-break"></span>
+    <span class="post-meta-item" title="本文字数">
+      <span class="post-meta-item-icon">
+        <i class="far fa-file-word"></i>
+      </span>
+      <span class="post-meta-item-text">本文字数：</span>
+      <span>567</span>
+    </span>
+    <span class="post-meta-item" title="阅读时长">
+      <span class="post-meta-item-icon">
+        <i class="far fa-clock"></i>
+      </span>
+      <span class="post-meta-item-text">阅读时长 &asymp;</span>
+      <span>1 分钟</span>
+    </span>
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h3 id="阿里云服务器添加秘钥"><a href="#阿里云服务器添加秘钥" class="headerlink" title="阿里云服务器添加秘钥"></a>阿里云服务器添加秘钥</h3><p>1.登录控制台，创建秘钥对，并下载为a.pem<br>2.ssh-keygen -y -f a.pem会返回ssh-rsa<br>如果该命令失败，请运行chmod 400 my-key-pair.pem命令更改权限<br>3.登录到服务器a.com中，echo &gt;&gt; ~&#x2F;.ssh&#x2F;authorized_keys<br>4.nano &#x2F;etc&#x2F;ssh&#x2F;sshd_config<br>PermitRootLogin yes<br>当你完成全部设置，并以密钥方式登录成功后，再禁用密码登录：<br>PasswordAuthentication no<br>5.service sshd restart</p>
+<h4 id="访问："><a href="#访问：" class="headerlink" title="访问："></a>访问：</h4><p>ssh -i a.pem <a href="mailto:&#114;&#x6f;&#111;&#x74;&#x40;&#97;&#46;&#99;&#x6f;&#x6d;">&#114;&#x6f;&#111;&#x74;&#x40;&#97;&#46;&#99;&#x6f;&#x6d;</a> 访问<br>如果想省事的话，ssh-add -k a.pem，重启之后需要重新添加<br>直接ssh <a href="mailto:&#114;&#111;&#111;&#x74;&#x40;&#x61;&#46;&#99;&#111;&#109;">&#114;&#111;&#111;&#x74;&#x40;&#x61;&#46;&#99;&#111;&#109;</a> 即可访问</p>
+<h4 id="出现-Could-not-open-a-connection-to-your-authentication-agent解决办法或者Permission-denied-publickey-："><a href="#出现-Could-not-open-a-connection-to-your-authentication-agent解决办法或者Permission-denied-publickey-：" class="headerlink" title="出现 Could not open a connection to your authentication agent解决办法或者Permission denied (publickey).："></a>出现 Could not open a connection to your authentication agent解决办法或者Permission denied (publickey).：</h4><blockquote>
+<p>eval <code>ssh-agent -s</code>  </p>
+</blockquote>
 
       
     </div>
@@ -687,7 +687,7 @@
 <h3 id="原因"><a href="#原因" class="headerlink" title="原因"></a>原因</h3><p>初步判断是阿里云在git pull github的代码时，一直不执行，可能是外网的问题。</p>
 <h3 id="解决思路"><a href="#解决思路" class="headerlink" title="解决思路"></a>解决思路</h3><p>想到之前国内的gitee也存在代码，考虑同步github,再通过webhook 更新</p>
 <p><img src="https://gitee.com/cjyzwg/img/raw/master/202203131218367.png"></p>
-<h3 id="步骤"><a href="#步骤" class="headerlink" title="步骤"></a>步骤</h3><h4 id="实时同步github到gitee"><a href="#实时同步github到gitee" class="headerlink" title="实时同步github到gitee"></a><strong>实时同步github到gitee</strong></h4><p>1.ssh-keygen -t rsa -C “<a href="mailto:&#x79;&#111;&#x75;&#114;&#101;&#109;&#x61;&#105;&#108;&#x40;&#101;&#x78;&#97;&#x6d;&#112;&#108;&#x65;&#x2e;&#x63;&#111;&#x6d;">&#x79;&#111;&#x75;&#114;&#101;&#109;&#x61;&#105;&#108;&#x40;&#101;&#x78;&#97;&#x6d;&#112;&#108;&#x65;&#x2e;&#x63;&#111;&#x6d;</a>“<br>生成的 id_rsa 是私钥，id_rsa.pub 是公钥。(注意此处不要设置密码，生成的公私钥用于下面 GitHub &#x2F; Gitee 的配置，以保证公私钥成对，否则从 GitHub -%3E Gitee 的同步将会失败。)</p>
+<h3 id="步骤"><a href="#步骤" class="headerlink" title="步骤"></a>步骤</h3><h4 id="实时同步github到gitee"><a href="#实时同步github到gitee" class="headerlink" title="实时同步github到gitee"></a><strong>实时同步github到gitee</strong></h4><p>1.ssh-keygen -t rsa -C “<a href="mailto:&#121;&#111;&#x75;&#114;&#x65;&#109;&#x61;&#x69;&#x6c;&#64;&#101;&#120;&#97;&#109;&#x70;&#108;&#101;&#46;&#x63;&#x6f;&#109;">&#121;&#111;&#x75;&#114;&#x65;&#109;&#x61;&#x69;&#x6c;&#64;&#101;&#120;&#97;&#109;&#x70;&#108;&#101;&#46;&#x63;&#x6f;&#109;</a>“<br>生成的 id_rsa 是私钥，id_rsa.pub 是公钥。(注意此处不要设置密码，生成的公私钥用于下面 GitHub &#x2F; Gitee 的配置，以保证公私钥成对，否则从 GitHub -%3E Gitee 的同步将会失败。)</p>
 <p><img src="https://gitee.com/cjyzwg/img/raw/master/202203131223319.png"></p>
 <p>2.在 GitHub 项目的「<strong>Settings</strong>  -&gt;  <strong>Secrets</strong>  →  <strong>New repository secret</strong>」路径下配置好命名为 <strong>GITEE_RSA_PRIVATE_KEY</strong>，value值填写 <strong>id_rsa 私钥</strong>的内容。</p>
 <p>3.在 GitHub 的个人设置页面「<strong>Settings</strong> -&gt;  <strong>SSH and GPG keys</strong>」配置 SSH Keys 公钥（即：<strong>id_rsa.pub</strong>），命名随意。</p>
@@ -781,7 +781,7 @@
         <i class="far fa-file-word"></i>
       </span>
       <span class="post-meta-item-text">本文字数：</span>
-      <span>368</span>
+      <span>371</span>
     </span>
     <span class="post-meta-item" title="阅读时长">
       <span class="post-meta-item-icon">
@@ -802,7 +802,7 @@
           <h4 id="访问内网局域网网站"><a href="#访问内网局域网网站" class="headerlink" title="访问内网局域网网站"></a>访问内网局域网网站</h4><p>目的是想用在家的mac访问到公司的电话机所在的网址，首先自行搭建vpn，这个网上教程还蛮多。<br>本人用的是mac，公司的电脑大多数是win10<br>win10 连接vpn方法如下图：<br><img src="https://blog.hexiefamily.xin/assets/ssh3.png" alt="avatar">  </p>
 <h4 id="ssh-连接win10："><a href="#ssh-连接win10：" class="headerlink" title="ssh 连接win10："></a>ssh 连接win10：</h4><ol>
 <li>win10 开启openssh 服务端：<a target="_blank" rel="noopener" href="http://jingyan.baidu.com/article/455a995057a191a1662778a3.html">http://jingyan.baidu.com/article/455a995057a191a1662778a3.html</a> 百度教程你值得拥有  </li>
-<li>ssh -D 4567 -N <a href="mailto:&#x72;&#x6f;&#x6f;&#x74;&#x40;&#x31;&#57;&#50;&#x2e;&#49;&#54;&#56;&#x2e;&#x31;&#x32;&#x2e;&#49;">&#x72;&#x6f;&#x6f;&#x74;&#x40;&#x31;&#57;&#50;&#x2e;&#49;&#54;&#56;&#x2e;&#x31;&#x32;&#x2e;&#49;</a> 输入密码，即可停留   </li>
+<li>ssh -D 4567 -N <a href="mailto:&#x72;&#111;&#x6f;&#116;&#x40;&#x31;&#x39;&#x32;&#x2e;&#x31;&#x36;&#x38;&#46;&#49;&#50;&#x2e;&#x31;">&#x72;&#111;&#x6f;&#116;&#x40;&#x31;&#x39;&#x32;&#x2e;&#x31;&#x36;&#x38;&#46;&#49;&#50;&#x2e;&#x31;</a> 输入密码，即可停留   </li>
 <li>打开chrome神奇插件SwitchyOmega,配置一个这样的代理<br><img src="https://blog.hexiefamily.xin/assets/ssh1.png" alt="avatar"></li>
 <li>即可打开win10 所在的局域网的网站，如下图所示<br><img src="https://blog.hexiefamily.xin/assets/ssh2.png" alt="avatar"></li>
 </ol>
