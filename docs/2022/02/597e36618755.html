@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222"><meta name="generator" content="Hexo 6.3.0">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha256-HtsXJanqjKTc8vVQjO4YMhiqFoXkfBsjBWcX91T1jr8=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"cjyzwg.github.io","root":"/","images":"/images","scheme":"Gemini","darkmode":false,"version":"8.17.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":true,"style":null},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
+
+    <meta name="description" content="LXC 容器搭建nsq集群 原文链接  使用场景有两个服务中心，apiserver处理用户的请求，dataserver处理数据，dataserver 有很多个，并且遵循raft高可用协议，写在配置文件中，当用户发起一个请求到apiserver,apiserver会向dataserver中的任意一个请求，这样做的好处是当dataserver中任意一个挂掉，apiserver只需获取当前配置文件中可用">
+<meta property="og:type" content="article">
+<meta property="og:title" content="LXC容器搭建NSQ集群三">
+<meta property="og:url" content="https://cjyzwg.github.io/2022/02/597e36618755.html">
+<meta property="og:site_name" content="NockyGo">
+<meta property="og:description" content="LXC 容器搭建nsq集群 原文链接  使用场景有两个服务中心，apiserver处理用户的请求，dataserver处理数据，dataserver 有很多个，并且遵循raft高可用协议，写在配置文件中，当用户发起一个请求到apiserver,apiserver会向dataserver中的任意一个请求，这样做的好处是当dataserver中任意一个挂掉，apiserver只需获取当前配置文件中可用">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2022-02-15T05:22:10.000Z">
+<meta property="article:modified_time" content="2023-06-09T04:02:34.543Z">
+<meta property="article:author" content="Nocky">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="canonical" href="https://cjyzwg.github.io/2022/02/597e36618755.html">
+
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://cjyzwg.github.io/2022/02/597e36618755.html","path":"2022/02/597e36618755.html","title":"LXC容器搭建NSQ集群三"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>LXC容器搭建NSQ集群三 | NockyGo</title>
+  
+
+
+
+
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <div class="column">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">NockyGo</p>
+      <i class="logo-line"></i>
+    </a>
+      <p class="site-subtitle" itemprop="description">爱代码，爱生活</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger" aria-label="搜索" role="button">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a></li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup"><div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off" maxlength="80"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close" role="button">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div class="search-result-container no-result">
+  <div class="search-result-icon">
+    <i class="fa fa-spinner fa-pulse fa-5x"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</header>
+        
+  
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#LXC-%E5%AE%B9%E5%99%A8%E6%90%AD%E5%BB%BAnsq%E9%9B%86%E7%BE%A4"><span class="nav-number">1.</span> <span class="nav-text">LXC 容器搭建nsq集群</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E4%BD%BF%E7%94%A8%E5%9C%BA%E6%99%AF"><span class="nav-number">1.1.</span> <span class="nav-text">使用场景</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#NSQ%E5%BD%93%E4%B8%AD%E7%9A%84%E7%94%A8%E5%A4%84%EF%BC%9A"><span class="nav-number">1.2.</span> <span class="nav-text">NSQ当中的用处：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E4%BB%A3%E7%A0%81"><span class="nav-number">1.3.</span> <span class="nav-text">代码</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#dataserver-go"><span class="nav-number">1.3.1.</span> <span class="nav-text">dataserver.go</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#apiserver-go"><span class="nav-number">1.3.2.</span> <span class="nav-text">apiserver.go</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#config-go"><span class="nav-number">1.3.3.</span> <span class="nav-text">config.go</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#config-yaml"><span class="nav-number">1.3.4.</span> <span class="nav-text">config.yaml</span></a></li></ol></li></ol></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="Nocky"
+      src="/images/avatar.jpg">
+  <p class="site-author-name" itemprop="name">Nocky</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">41</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+          <a href="/categories/">
+        <span class="site-state-item-count">14</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author animated">
+      <span class="links-of-author-item">
+        <a href="https://github.com/cjyzwg" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;cjyzwg" rel="noopener me" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="/3" title="Wechat → 3" rel="noopener me"><i class="fab fa-weixin fa-fw"></i>Wechat</a>
+      </span>
+  </div>
+
+        </div>
+      </div>
+    </div>
+
+    
+  </aside>
+
+
+    </div>
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://cjyzwg.github.io/2022/02/597e36618755.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="name" content="Nocky">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="NockyGo">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="LXC容器搭建NSQ集群三 | NockyGo">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          LXC容器搭建NSQ集群三
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2022-02-15 13:22:10" itemprop="dateCreated datePublished" datetime="2022-02-15T13:22:10+08:00">2022-02-15</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">更新于</span>
+      <time title="修改时间：2023-06-09 12:02:34" itemprop="dateModified" datetime="2023-06-09T12:02:34+08:00">2023-06-09</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/GOLANG/" itemprop="url" rel="index"><span itemprop="name">GOLANG</span></a>
+        </span>
+    </span>
+
+  
+    <span class="post-meta-break"></span>
+    <span class="post-meta-item" title="本文字数">
+      <span class="post-meta-item-icon">
+        <i class="far fa-file-word"></i>
+      </span>
+      <span class="post-meta-item-text">本文字数：</span>
+      <span>6.6k</span>
+    </span>
+    <span class="post-meta-item" title="阅读时长">
+      <span class="post-meta-item-icon">
+        <i class="far fa-clock"></i>
+      </span>
+      <span class="post-meta-item-text">阅读时长 &asymp;</span>
+      <span>12 分钟</span>
+    </span>
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody"><h3 id="LXC-容器搭建nsq集群"><a href="#LXC-容器搭建nsq集群" class="headerlink" title="LXC 容器搭建nsq集群"></a>LXC 容器搭建nsq集群</h3><ul>
+<li><a target="_blank" rel="noopener" href="http://ddrv.cn/a/291527">原文链接</a></li>
+</ul>
+<h4 id="使用场景"><a href="#使用场景" class="headerlink" title="使用场景"></a>使用场景</h4><p>有两个服务中心，apiserver处理用户的请求，dataserver处理数据，dataserver 有很多个，并且遵循raft高可用协议，写在配置文件中，当用户发起一个请求到apiserver,apiserver会向dataserver中的任意一个请求，这样做的好处是当dataserver中任意一个挂掉，apiserver只需获取当前配置文件中可用的地址即可，存活的dataserver会返回地址。  </p>
+<h4 id="NSQ当中的用处："><a href="#NSQ当中的用处：" class="headerlink" title="NSQ当中的用处："></a>NSQ当中的用处：</h4><ul>
+<li>每一个dataserver 以生产者的角色，连接nsqd，同时每隔几秒发送topic消息心跳检测，（可以有多个channel，nsq 保证消息投递一次以上，随机挑选channel发送消息，无序性）保证nsqlookupd 知道有哪些nsqd对应的生产者存活。  </li>
+<li>apiserver充当消费者的角色，连接nsqlookupd 4161 http端口，监听topic消息以及channel1，当有消息publish，即通知apiserver,本文即所有存活的dataserver的地址，apiserver 可随机挑选任意一个dataserver进行调用。</li>
+</ul>
+<h4 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h4><h5 id="dataserver-go"><a href="#dataserver-go" class="headerlink" title="dataserver.go"></a>dataserver.go</h5><figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> main</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> (</span><br><span class="line">	<span class="string">&quot;fmt&quot;</span></span><br><span class="line">	<span class="string">&quot;math/rand&quot;</span></span><br><span class="line">	<span class="string">&quot;net/http&quot;</span></span><br><span class="line">	<span class="string">&quot;nsq_client/config&quot;</span></span><br><span class="line">	<span class="string">&quot;time&quot;</span></span><br><span class="line"></span><br><span class="line">	<span class="string">&quot;github.com/nsqio/go-nsq&quot;</span></span><br><span class="line">)</span><br><span class="line"></span><br><span class="line"><span class="comment">// Conf *</span></span><br><span class="line"><span class="keyword">var</span> Conf *config.Cfgparams</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">main</span><span class="params">()</span></span> &#123;</span><br><span class="line"></span><br><span class="line">	Conf = config.GetConfig()</span><br><span class="line">	<span class="comment">// randomAddr := RadomGetNsqd(Conf.NSQ_TCP_ADDRS)</span></span><br><span class="line">	fmt.Println(Conf)</span><br><span class="line">	<span class="comment">// name := viper.GetString(&quot;name&quot;)</span></span><br><span class="line">	<span class="comment">// x := viper.Get(&quot;common.nsqd&quot;)</span></span><br><span class="line">	<span class="comment">// fmt.Println(x, reflect.TypeOf(x))</span></span><br><span class="line"></span><br><span class="line">	server := http.Server&#123;</span><br><span class="line">		Addr: Conf.SERVER_ADDR,</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">go</span> HeartBeat() <span class="comment">//这里开goroutine来发送心跳包</span></span><br><span class="line">	<span class="keyword">if</span> err := server.ListenAndServe(); err != <span class="literal">nil</span> &#123;</span><br><span class="line">		<span class="built_in">panic</span>(err)</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	<span class="comment">// fmt.Println(&quot;Viper get name:&quot;, name)</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// RadomGetNsqd</span></span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">RadomGetNsqd</span><span class="params">(nsqTCPAddrs []<span class="type">string</span>)</span></span> <span class="type">string</span> &#123;</span><br><span class="line">	rand.Seed(time.Now().UnixNano())</span><br><span class="line">	<span class="keyword">return</span> nsqTCPAddrs[rand.Intn(<span class="built_in">len</span>(nsqTCPAddrs))]</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// HeartBeat</span></span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">HeartBeat</span><span class="params">()</span></span> &#123;</span><br><span class="line">	<span class="keyword">var</span> (</span><br><span class="line">		producer *nsq.Producer</span><br><span class="line">		err      <span class="type">error</span></span><br><span class="line">		ticker   *time.Ticker</span><br><span class="line">	)</span><br><span class="line">	ticker = time.NewTicker(time.Duration(Conf.HEART_BEAT_TIME) * time.Second) <span class="comment">//创建一个定时器，这里的时间我都写到配置文件里了，然后用conf包拿出来。我这里是设置的5秒</span></span><br><span class="line">	<span class="keyword">for</span> &#123;</span><br><span class="line">		<span class="keyword">select</span> &#123;</span><br><span class="line">		<span class="keyword">case</span> &lt;-ticker.C:</span><br><span class="line">			<span class="comment">//创建一个生产者，这里的RanDomGetServer()是自定义的一个工具，用来随机获取一个nsqd地址</span></span><br><span class="line">			<span class="keyword">if</span> producer, err = nsq.NewProducer(RadomGetNsqd(Conf.NSQ_TCP_ADDRS), nsq.NewConfig()); err != <span class="literal">nil</span> &#123;</span><br><span class="line">				<span class="built_in">panic</span>(err)</span><br><span class="line">			&#125;</span><br><span class="line">			<span class="comment">//pulish()接的第一个参数是topic，这个也是自己定义(值为data_server_addr），第二个参数是要发送的消息，这里是本机服务器地址</span></span><br><span class="line">			err = producer.Publish(Conf.DATA_SERVER_TOPIC, []<span class="type">byte</span>(Conf.SERVER_ADDR))</span><br><span class="line">			<span class="keyword">if</span> err != <span class="literal">nil</span> &#123;</span><br><span class="line">				<span class="built_in">panic</span>(err)</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h5 id="apiserver-go"><a href="#apiserver-go" class="headerlink" title="apiserver.go"></a>apiserver.go</h5><figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> main</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> (</span><br><span class="line">	<span class="string">&quot;fmt&quot;</span></span><br><span class="line">	<span class="string">&quot;net/http&quot;</span></span><br><span class="line">	<span class="string">&quot;nsq_client/config&quot;</span></span><br><span class="line">	<span class="string">&quot;sync&quot;</span></span><br><span class="line">	<span class="string">&quot;time&quot;</span></span><br><span class="line"></span><br><span class="line">	<span class="string">&quot;github.com/nsqio/go-nsq&quot;</span></span><br><span class="line">)</span><br><span class="line"></span><br><span class="line"><span class="comment">//创建一个nsq.handler接口实例</span></span><br><span class="line"><span class="keyword">var</span> ServerConsumerHandler = &amp;ServerConsumer&#123;DataServerAddrs: <span class="built_in">make</span>(<span class="keyword">map</span>[<span class="type">string</span>]time.Time)&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//ServerConsumer实现了nsq.handler接口</span></span><br><span class="line"><span class="keyword">type</span> ServerConsumer <span class="keyword">struct</span> &#123;</span><br><span class="line">	DataServerAddrs <span class="keyword">map</span>[<span class="type">string</span>]time.Time <span class="comment">//保存dataServer进程发过来的服务器地址和接收时间</span></span><br><span class="line">	rwLocker        sync.RWMutex         <span class="comment">//防止多线程同时读写</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//这里第一个参数是需要绑定topic(data_server_addr),</span></span><br><span class="line"><span class="comment">//第二个参数传入一个string，这就是创建的ch，topic消息队列中的消息会分发到每个ch中.</span></span><br><span class="line"><span class="comment">//每个消费者可以创建不通的ch，也可以共用一个ch，共用一个ch, ch的消息会随机发送给其中一个消费者</span></span><br><span class="line"><span class="comment">//第三个参数是处理message的nsq.handler接口，需要实现一个HanddleMessage(*nsq.Message)error()方法。</span></span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">NewConsumer</span><span class="params">(topic <span class="type">string</span>, chanName <span class="type">string</span>, h nsq.Handler)</span></span> (consumer *nsq.Consumer, err <span class="type">error</span>) &#123;</span><br><span class="line">	<span class="keyword">if</span> consumer, err = nsq.NewConsumer(topic, chanName, nsq.NewConfig()); err != <span class="literal">nil</span> &#123;</span><br><span class="line">		<span class="keyword">return</span> <span class="literal">nil</span>, err</span><br><span class="line">	&#125;</span><br><span class="line">	consumer.ChangeMaxInFlight(<span class="number">3</span>) <span class="comment">//可以根据nsqds数量来配置</span></span><br><span class="line">	consumer.AddHandler(h)</span><br><span class="line">	err = consumer.ConnectToNSQLookupd(Conf.NSQ_LOOKUPD_ADDR) <span class="comment">//todo:读取配置地址</span></span><br><span class="line">	<span class="keyword">if</span> err != <span class="literal">nil</span> &#123;</span><br><span class="line">		<span class="keyword">return</span> <span class="literal">nil</span>, err</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> consumer, <span class="literal">nil</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//HandleMessage是nsq,handler接口定义方法，必须实现，主要是用来处理传递过来的消息</span></span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="params">(h *ServerConsumer)</span></span> HandleMessage(message *nsq.Message) <span class="type">error</span> &#123;</span><br><span class="line">	<span class="keyword">if</span> dataServer := <span class="type">string</span>(message.Body); dataServer != <span class="string">&quot;&quot;</span> &#123;</span><br><span class="line">		h.rwLocker.Lock()</span><br><span class="line">		h.DataServerAddrs[dataServer] = time.Now()</span><br><span class="line">		h.rwLocker.Unlock()</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> <span class="literal">nil</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//监听服务data_server_addr这个消息队列</span></span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">MonitorDataServerAddrs</span><span class="params">()</span></span> &#123;</span><br><span class="line">	consumer, err := NewConsumer(<span class="string">&quot;data_server_addr&quot;</span>, <span class="string">&quot;ch1&quot;</span>, ServerConsumerHandler)</span><br><span class="line">	<span class="keyword">if</span> err != <span class="literal">nil</span> &#123;</span><br><span class="line">		<span class="built_in">panic</span>(err)</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="comment">//连接到NSQLookupd，它底层会创建连接到每个nsqd.这样就可以监听每个nsqd中的消息</span></span><br><span class="line">	err = consumer.ConnectToNSQLookupd(Conf.NSQ_LOOKUPD_ADDR) <span class="comment">//方法本身会开一个goroutine来检查消息队列</span></span><br><span class="line">	<span class="keyword">if</span> err != <span class="literal">nil</span> &#123;</span><br><span class="line">		<span class="built_in">panic</span>(err)</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//删除过期的服务器地址</span></span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="params">(h *ServerConsumer)</span></span> removeExpireDatasServers() &#123;</span><br><span class="line">	<span class="keyword">for</span> &#123;</span><br><span class="line">		h.rwLocker.Lock()</span><br><span class="line">		<span class="keyword">for</span> dataServer, t := <span class="keyword">range</span> h.DataServerAddrs &#123;</span><br><span class="line">			<span class="comment">//只保存10秒之内发送过来的服务器地址</span></span><br><span class="line">			<span class="keyword">if</span> t.Add(<span class="number">10</span> * time.Second).Before(time.Now()) &#123;</span><br><span class="line">				<span class="built_in">delete</span>(h.DataServerAddrs, dataServer)</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">		h.rwLocker.Unlock()</span><br><span class="line">		time.Sleep(<span class="number">2</span> * time.Second)</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> Conf *config.Cfgparams</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">main</span><span class="params">()</span></span> &#123;</span><br><span class="line"></span><br><span class="line">	Conf = config.GetConfig()</span><br><span class="line">	fmt.Println(Conf)</span><br><span class="line"></span><br><span class="line">	server := http.Server&#123;</span><br><span class="line">		Addr: <span class="string">&quot;127.0.0.1:9000&quot;</span>,</span><br><span class="line">	&#125;</span><br><span class="line">	MonitorDataServerAddrs() <span class="comment">//不用单独开goroutine</span></span><br><span class="line">	<span class="keyword">if</span> err := server.ListenAndServe(); err != <span class="literal">nil</span> &#123;</span><br><span class="line">		<span class="built_in">panic</span>(err)</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h5 id="config-go"><a href="#config-go" class="headerlink" title="config.go"></a>config.go</h5><figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> config</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> (</span><br><span class="line">	<span class="string">&quot;fmt&quot;</span></span><br><span class="line"></span><br><span class="line">	<span class="string">&quot;github.com/fsnotify/fsnotify&quot;</span></span><br><span class="line">	<span class="string">&quot;github.com/spf13/viper&quot;</span></span><br><span class="line">)</span><br><span class="line"></span><br><span class="line"><span class="keyword">type</span> Cfgparams <span class="keyword">struct</span> &#123;</span><br><span class="line">	HEART_BEAT_TIME   <span class="type">int</span></span><br><span class="line">	SERVER_ADDR       <span class="type">string</span></span><br><span class="line">	NSQ_LOOKUPD_ADDR  <span class="type">string</span></span><br><span class="line">	NSQ_TCP_ADDRS     []<span class="type">string</span></span><br><span class="line">	DATA_SERVER_TOPIC <span class="type">string</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">type</span> Config <span class="keyword">struct</span> &#123;</span><br><span class="line">	Name <span class="type">string</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">Init</span><span class="params">(cfg <span class="type">string</span>)</span></span> <span class="type">error</span> &#123;</span><br><span class="line">	c := Config&#123;</span><br><span class="line">		Name: cfg,</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="comment">// 初始化配置文件</span></span><br><span class="line">	<span class="keyword">if</span> err := c.initConfig(); err != <span class="literal">nil</span> &#123;</span><br><span class="line">		<span class="keyword">return</span> err</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	c.watchConfig()</span><br><span class="line"></span><br><span class="line">	<span class="keyword">return</span> <span class="literal">nil</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="params">(c *Config)</span></span> initConfig() <span class="type">error</span> &#123;</span><br><span class="line">	<span class="keyword">if</span> c.Name != <span class="string">&quot;&quot;</span> &#123;</span><br><span class="line">		<span class="comment">// 如果指定了配置文件，则解析指定的配置文件</span></span><br><span class="line">		viper.SetConfigFile(c.Name)</span><br><span class="line">	&#125; <span class="keyword">else</span> &#123;</span><br><span class="line">		<span class="comment">// 如果没有指定配置文件，则解析默认的配置文件</span></span><br><span class="line">		viper.AddConfigPath(<span class="string">&quot;conf&quot;</span>)</span><br><span class="line">		viper.SetConfigName(<span class="string">&quot;config&quot;</span>)</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="comment">// 设置配置文件格式为YAML</span></span><br><span class="line">	viper.SetConfigType(<span class="string">&quot;yaml&quot;</span>)</span><br><span class="line">	<span class="comment">// viper解析配置文件</span></span><br><span class="line">	<span class="keyword">if</span> err := viper.ReadInConfig(); err != <span class="literal">nil</span> &#123;</span><br><span class="line">		<span class="keyword">return</span> err</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	<span class="keyword">return</span> <span class="literal">nil</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 监听配置文件是否改变,用于热更新</span></span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="params">(c *Config)</span></span> watchConfig() &#123;</span><br><span class="line">	viper.WatchConfig()</span><br><span class="line">	viper.OnConfigChange(<span class="function"><span class="keyword">func</span><span class="params">(e fsnotify.Event)</span></span> &#123;</span><br><span class="line">		fmt.Printf(<span class="string">&quot;Config file changed: %s\n&quot;</span>, e.Name)</span><br><span class="line">	&#125;)</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 获取到配置文件</span></span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">GetConfig</span><span class="params">()</span></span> *Cfgparams &#123;</span><br><span class="line">	<span class="keyword">if</span> err := Init(<span class="string">&quot;./conf/config.yaml&quot;</span>); err != <span class="literal">nil</span> &#123;</span><br><span class="line">		<span class="built_in">panic</span>(err)</span><br><span class="line">	&#125;</span><br><span class="line">	c := &amp;Cfgparams&#123;&#125;</span><br><span class="line">	<span class="comment">// name := viper.GetString(&quot;name&quot;)</span></span><br><span class="line">	c.HEART_BEAT_TIME = viper.GetInt(<span class="string">&quot;common.heart_beat_time&quot;</span>)</span><br><span class="line">	c.SERVER_ADDR = viper.GetString(<span class="string">&quot;common.server_addr&quot;</span>)</span><br><span class="line">	c.DATA_SERVER_TOPIC = viper.GetString(<span class="string">&quot;common.server_topic&quot;</span>)</span><br><span class="line">	addr := viper.GetString(<span class="string">&quot;common.nsqlookupd.addr&quot;</span>)</span><br><span class="line">	port := viper.GetString(<span class="string">&quot;common.nsqlookupd.http_port&quot;</span>)</span><br><span class="line">	c.NSQ_LOOKUPD_ADDR = addr + <span class="string">&quot;:&quot;</span> + port</span><br><span class="line">	x := viper.Get(<span class="string">&quot;common.nsqd&quot;</span>)</span><br><span class="line">	<span class="comment">// c.NSQ_TCP_ADDRS = viper.Get(&quot;common.nsqd&quot;).([]string)</span></span><br><span class="line">	<span class="keyword">var</span> y []<span class="type">string</span></span><br><span class="line">	<span class="keyword">for</span> _, v := <span class="keyword">range</span> x.([]<span class="keyword">interface</span>&#123;&#125;) &#123;</span><br><span class="line">		y = <span class="built_in">append</span>(y, v.(<span class="type">string</span>))</span><br><span class="line">	&#125;</span><br><span class="line">	c.NSQ_TCP_ADDRS = y</span><br><span class="line">	<span class="comment">// fmt.Println(c)</span></span><br><span class="line">	<span class="keyword">return</span> c</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h5 id="config-yaml"><a href="#config-yaml" class="headerlink" title="config.yaml"></a>config.yaml</h5><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">name:</span>   <span class="string">nsq</span></span><br><span class="line"><span class="attr">common:</span></span><br><span class="line">    <span class="attr">heart_beat_time:</span> <span class="number">5</span></span><br><span class="line">    <span class="attr">nsqlookupd:</span></span><br><span class="line">        <span class="attr">name:</span>   <span class="string">s1</span></span><br><span class="line">        <span class="attr">addr:</span>   <span class="number">10.8</span><span class="number">.0</span><span class="number">.4</span></span><br><span class="line">        <span class="attr">tcp_port:</span>   <span class="number">4160</span></span><br><span class="line">        <span class="attr">http_port:</span>  <span class="number">4161</span></span><br><span class="line">    <span class="attr">nsqadmin:</span></span><br><span class="line">        <span class="attr">name:</span>   <span class="string">s1</span></span><br><span class="line">        <span class="attr">addr:</span>   <span class="number">10.8</span><span class="number">.0</span><span class="number">.4</span></span><br><span class="line">        <span class="attr">port:</span>   <span class="number">4171</span></span><br><span class="line">    <span class="attr">nsqd:</span></span><br><span class="line">    <span class="bullet">-</span> <span class="number">10.8</span><span class="number">.0</span><span class="number">.4</span><span class="string">:4150</span></span><br><span class="line">    <span class="bullet">-</span> <span class="number">10.8</span><span class="number">.0</span><span class="number">.5</span><span class="string">:4150</span></span><br><span class="line">    <span class="bullet">-</span> <span class="number">10.8</span><span class="number">.0</span><span class="number">.6</span><span class="string">:4150</span></span><br><span class="line">    <span class="bullet">-</span> <span class="number">10.8</span><span class="number">.0</span><span class="number">.7</span><span class="string">:4150</span></span><br><span class="line">    <span class="attr">server_topic:</span>   <span class="string">&quot;data_server_addr&quot;</span></span><br><span class="line">    <span class="attr">server_addr:</span>   <span class="string">&quot;127.0.0.1:10001&quot;</span></span><br></pre></td></tr></table></figure>
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2022/02/46b71828af83.html" rel="prev" title="LXC容器搭建NSQ集群二">
+                  <i class="fa fa-chevron-left"></i> LXC容器搭建NSQ集群二
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/2022/03/e3d32e396ba3.html" rel="next" title="grpc_php客户端">
+                  grpc_php客户端 <i class="fa fa-chevron-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+
+<div class="copyright">
+  &copy; 
+  <span itemprop="copyrightYear">2023</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Nocky</span>
+</div>
+<div class="wordcount">
+  <span class="post-meta-item">
+    <span class="post-meta-item-icon">
+      <i class="fa fa-chart-line"></i>
+    </span>
+    <span title="站点总字数">101k</span>
+  </span>
+  <span class="post-meta-item">
+    <span class="post-meta-item-icon">
+      <i class="fa fa-coffee"></i>
+    </span>
+    <span title="站点阅读时长">3:04</span>
+  </span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/" rel="noopener" target="_blank">NexT.Gemini</a> 强力驱动
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <div class="back-to-top" role="button" aria-label="返回顶部">
+    <i class="fa fa-arrow-up fa-lg"></i>
+    <span>0%</span>
+  </div>
+
+  <a href="https://github.com/cjyzwg" class="github-corner" title="在 GitHub 上关注我" aria-label="在 GitHub 上关注我" rel="noopener" target="_blank"><svg width="80" height="80" viewBox="0 0 250 250" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/next-boot.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-generator-searchdb/1.4.1/search.js" integrity="sha256-1kfA5uHPf65M5cphT2dvymhkuyHPQp5A53EGZOnOLmc=" crossorigin="anonymous"></script>
+<script src="/js/third-party/search/local-search.js"></script>
+
+
+
+
+
+
+
+  
+
+
+
+
+
+</body>
+</html>

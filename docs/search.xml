@@ -2,7 +2,7 @@
 <search>
   <entry>
     <title>adb devices 为空</title>
-    <url>/2023/06/4c4cf47da89d.html</url>
+    <url>/2020/07/378aac3928c9.html</url>
     <content><![CDATA[<h3 id="Adb-devices-显示为空？"><a href="#Adb-devices-显示为空？" class="headerlink" title="Adb devices 显示为空？"></a>Adb devices 显示为空？</h3><h4 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h4><p><strong><a href="https://www.cnblogs.com/wx170119/p/13092595.html">https://www.cnblogs.com/wx170119/p/13092595.html</a></strong><br><strong><a href="https://androiddevtools.cn/">https://androiddevtools.cn/</a></strong></p>
 <h5 id="启动命令："><a href="#启动命令：" class="headerlink" title="启动命令："></a>启动命令：</h5><blockquote>
 <p>按照上面步骤即可完成</p>
@@ -13,8 +13,21 @@
       </categories>
   </entry>
   <entry>
+    <title>flutter doctor一直等待无响应</title>
+    <url>/2022/11/e1643c842b8e.html</url>
+    <content><![CDATA[<h4 id="flutter-doctor-一直等待无响应的解决办法"><a href="#flutter-doctor-一直等待无响应的解决办法" class="headerlink" title="flutter doctor 一直等待无响应的解决办法"></a>flutter doctor 一直等待无响应的解决办法</h4><ul>
+<li>打开flutter的安装目录&#x2F;bin&#x2F;cache&#x2F;</li>
+<li>删除lockfile文件</li>
+<li>重启vscode</li>
+</ul>
+]]></content>
+      <categories>
+        <category>FLUTTER</category>
+      </categories>
+  </entry>
+  <entry>
     <title>dnsmasq配置局域网域名</title>
-    <url>/2023/06/b2cea806b64c.html</url>
+    <url>/2022/09/fa3a57c1d930.html</url>
     <content><![CDATA[<h3 id="安装dnsmasq"><a href="#安装dnsmasq" class="headerlink" title="安装dnsmasq"></a>安装dnsmasq</h3><ul>
 <li>apt-get install -y dnsmasq</li>
 </ul>
@@ -27,51 +40,8 @@
       </categories>
   </entry>
   <entry>
-    <title>flutter doctor一直等待无响应</title>
-    <url>/2023/06/0b8c3aafa761.html</url>
-    <content><![CDATA[<h4 id="flutter-doctor-一直等待无响应的解决办法"><a href="#flutter-doctor-一直等待无响应的解决办法" class="headerlink" title="flutter doctor 一直等待无响应的解决办法"></a>flutter doctor 一直等待无响应的解决办法</h4><ul>
-<li>打开flutter的安装目录&#x2F;bin&#x2F;cache&#x2F;</li>
-<li>删除lockfile文件</li>
-<li>重启vscode</li>
-</ul>
-]]></content>
-      <categories>
-        <category>FLUTTER</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>flutter mac下安装</title>
-    <url>/2023/06/d14aebe8f363.html</url>
-    <content><![CDATA[<h4 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h4><p><strong><a href="https://ninghao.net/video/6364">https://ninghao.net/video/6364</a></strong><br><strong><a href="https://flutterchina.club/setup-macos/">https://flutterchina.club/setup-macos/</a></strong></p>
-<h5 id="启动命令："><a href="#启动命令：" class="headerlink" title="启动命令："></a>启动命令：</h5><blockquote>
-<p>$ flutter create cjios<br>$ flutter emulator –launch apple_ios_simulator<br>如果出现no device 首先要装android studio  </p>
-</blockquote>
-<h5 id="如果出现UIApplication-LaunchOptionsKey问题"><a href="#如果出现UIApplication-LaunchOptionsKey问题" class="headerlink" title="如果出现UIApplication.LaunchOptionsKey问题"></a>如果出现UIApplication.LaunchOptionsKey问题</h5><p>解决办法：</p>
-<p>nano  cjios&#x2F;ios&#x2F;Runner&#x2F;AppDelegate.swift<br>[UIApplication.LaunchOptionsKey: Any]<br>改成<br>[UIApplicationLaunchOptionsKey: Any]</p>
-<h5 id="运行命令"><a href="#运行命令" class="headerlink" title="运行命令"></a>运行命令</h5><blockquote>
-<p>$ flutter run   </p>
-</blockquote>
-<h5 id="安装命令"><a href="#安装命令" class="headerlink" title="安装命令"></a>安装命令</h5><blockquote>
-<p>$ flutter devices<br>iPhone • xxxxxx • ios • iOS 13.2<br>$ flutter run -d   xxxxxx<br>即可安装到手机上了</p>
-</blockquote>
-<h4 id="工具栏："><a href="#工具栏：" class="headerlink" title="工具栏："></a>工具栏：</h4><p>1、<a href="https://pub.dev/packages/zefyr">https://pub.dev/packages/zefyr</a><br>2、<a href="https://javiercbk.github.io/json_to_dart/">https://javiercbk.github.io/json_to_dart/</a><br>3、获取列表数据：<a href="https://blog.csdn.net/weixin_30867015/article/details/98277080">https://blog.csdn.net/weixin_30867015/article/details/98277080</a><br>4、展示markdown文件：<a href="https://github.com/flutter/flutter_markdown/blob/master/example/lib/main.dart">https://github.com/flutter/flutter_markdown/blob/master/example/lib/main.dart</a></p>
-]]></content>
-      <categories>
-        <category>FLUTTER</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>页面传递参数</title>
-    <url>/2023/06/dace703c1912.html</url>
-    <content><![CDATA[<h3 id="第一个页面："><a href="#第一个页面：" class="headerlink" title="第一个页面："></a>第一个页面：</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">class Page extends StatelessWidget &#123;</span><br><span class="line">  final String title;</span><br><span class="line"></span><br><span class="line">  Page(&#123;this.title&#125;);</span><br><span class="line"></span><br><span class="line">  @override</span><br><span class="line">  Widget build(BuildContext context) &#123;</span><br><span class="line">    return Scaffold(</span><br><span class="line">      appBar: AppBar(</span><br><span class="line">        title: Text(title),</span><br><span class="line">        elevation: 0.0,</span><br><span class="line">      ),</span><br><span class="line">      body: BlogSheet(title: title),</span><br><span class="line">    );</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h3 id="第二个页面"><a href="#第二个页面" class="headerlink" title="第二个页面"></a>第二个页面</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">class BlogSheet extends StatefulWidget &#123;</span><br><span class="line">  BlogSheet(&#123;Key key, this.title&#125;) : super(key: key);</span><br><span class="line">  final String title;</span><br><span class="line"></span><br><span class="line">  @override</span><br><span class="line">  _BlogSheetState createState() =&gt; _BlogSheetState();</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">class _BlogSheetState extends State&lt;BlogSheet&gt; &#123;</span><br><span class="line">  List bloglists;</span><br><span class="line"></span><br><span class="line">  @override</span><br><span class="line">  void initState() &#123;</span><br><span class="line">    super.initState();</span><br><span class="line"></span><br><span class="line">    getData(type: &#x27;api&#x27;, category: widget.title);</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  Future getData(&#123;String type = &#x27;api&#x27;, String category = &#x27;PHP&#x27;&#125;) async &#123;</span><br><span class="line">    final String url = &quot;http://localhost:8081/$type?category=$category&quot;;</span><br><span class="line">    final response = await http.get(url);</span><br><span class="line"></span><br><span class="line">    if (response.statusCode == 200) &#123;</span><br><span class="line">      List top = json.decode(response.body);</span><br><span class="line">      setState(() &#123;</span><br><span class="line">        bloglists = top.map((json) =&gt; Blog.fromJson(json)).toList();</span><br><span class="line">      &#125;);</span><br><span class="line">    &#125; else &#123;</span><br><span class="line">      print(&quot;err code $response.statusCode&quot;);</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  @override</span><br><span class="line">  Widget build(BuildContext context) &#123;</span><br><span class="line">    return Container(</span><br><span class="line">      child: bloglists == null</span><br><span class="line">          ? Center(child: CircularProgressIndicator())</span><br><span class="line">          : Padding(</span><br><span class="line">              padding: EdgeInsets.symmetric(horizontal: 6.0, vertical: 10.0),</span><br><span class="line">              child: ListView.builder(</span><br><span class="line">                itemCount: bloglists.length,</span><br><span class="line">                itemBuilder: (BuildContext context, int index) &#123;</span><br><span class="line">                  return BlogCard(bloglists[index]);</span><br><span class="line">                &#125;,</span><br><span class="line">              ),</span><br><span class="line">            ),</span><br><span class="line">    );</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
-      <categories>
-        <category>FLUTTER</category>
-      </categories>
-  </entry>
-  <entry>
     <title>LXC容器搭建NSQ集群一</title>
-    <url>/2023/06/505220760d2c.html</url>
+    <url>/2022/02/cc9e7c08c7d9.html</url>
     <content><![CDATA[<h3 id="LXC-容器搭建nsq集群"><a href="#LXC-容器搭建nsq集群" class="headerlink" title="LXC 容器搭建nsq集群"></a>LXC 容器搭建nsq集群</h3><ul>
 <li>阿里云服务器cpu飙到100，登不上去，好不容易登上去之后打开lxc容器内发现连不上网<br>注意lxc的几个目录：&#x2F;etc&#x2F;default&#x2F;lxc<br>时间有限，暂时先贴这些</li>
 </ul>
@@ -86,7 +56,7 @@
   </entry>
   <entry>
     <title>LXC容器搭建NSQ集群三</title>
-    <url>/2023/06/e1174f4a2d6e.html</url>
+    <url>/2022/02/597e36618755.html</url>
     <content><![CDATA[<h3 id="LXC-容器搭建nsq集群"><a href="#LXC-容器搭建nsq集群" class="headerlink" title="LXC 容器搭建nsq集群"></a>LXC 容器搭建nsq集群</h3><ul>
 <li><a href="http://ddrv.cn/a/291527">原文链接</a></li>
 </ul>
@@ -105,7 +75,7 @@
   </entry>
   <entry>
     <title>LXC容器搭建NSQ集群二</title>
-    <url>/2023/06/b011536dab5d.html</url>
+    <url>/2022/02/46b71828af83.html</url>
     <content><![CDATA[<h3 id="LXC-容器搭建nsq集群"><a href="#LXC-容器搭建nsq集群" class="headerlink" title="LXC 容器搭建nsq集群"></a>LXC 容器搭建nsq集群</h3><h4 id="go-nsq"><a href="#go-nsq" class="headerlink" title="go-nsq"></a>go-nsq</h4><ul>
 <li>生产者角色和消费者角色</li>
 </ul>
@@ -118,8 +88,55 @@
       </categories>
   </entry>
   <entry>
+    <title>go_mod 翻墙问题</title>
+    <url>/2022/05/72cbb157bbc6.html</url>
+    <content><![CDATA[<h5 id="只需要在go-mod-后面假如replace即可解决，加完记得go-mod-tidy"><a href="#只需要在go-mod-后面假如replace即可解决，加完记得go-mod-tidy" class="headerlink" title="只需要在go.mod 后面假如replace即可解决，加完记得go mod tidy"></a>只需要在go.mod 后面假如replace即可解决，加完记得go mod tidy</h5><figure class="highlight go"><table><tr><td class="code"><pre><span class="line">replace (</span><br><span class="line">	cloud.google.com/<span class="keyword">go</span> =&gt; github.com/googleapis/google-cloud-<span class="keyword">go</span> v0<span class="number">.34</span><span class="number">.0</span></span><br><span class="line">	github.com/<span class="keyword">go</span>-tomb/tomb =&gt; gopkg.in/tomb.v1 v1<span class="number">.0</span><span class="number">.0</span><span class="number">-20141024135613</span>-dd632973f1e7</span><br><span class="line">	<span class="keyword">go</span>.opencensus.io =&gt; github.com/census-instrumentation/opencensus-<span class="keyword">go</span> v0<span class="number">.19</span><span class="number">.0</span></span><br><span class="line">	<span class="keyword">go</span>.uber.org/atomic =&gt; github.com/uber-<span class="keyword">go</span>/atomic v1<span class="number">.3</span><span class="number">.2</span></span><br><span class="line">	<span class="keyword">go</span>.uber.org/multierr =&gt; github.com/uber-<span class="keyword">go</span>/multierr v1<span class="number">.1</span><span class="number">.0</span></span><br><span class="line">	<span class="keyword">go</span>.uber.org/zap =&gt; github.com/uber-<span class="keyword">go</span>/zap v1<span class="number">.9</span><span class="number">.1</span></span><br><span class="line"></span><br><span class="line">	golang.org/x/crypto =&gt; github.com/golang/crypto v0<span class="number">.0</span><span class="number">.0</span><span class="number">-20181001203147</span>-e3636079e1a4</span><br><span class="line">	golang.org/x/lint =&gt; github.com/golang/lint v0<span class="number">.0</span><span class="number">.0</span><span class="number">-20181026193005</span>-c67002cb31c3</span><br><span class="line">	golang.org/x/net =&gt; github.com/golang/net v0<span class="number">.0</span><span class="number">.0</span><span class="number">-20180826012351</span><span class="number">-8</span>a410e7b638d</span><br><span class="line">	golang.org/x/oauth2 =&gt; github.com/golang/oauth2 v0<span class="number">.0</span><span class="number">.0</span><span class="number">-20180821212333</span>-d2e6202438be</span><br><span class="line">	golang.org/x/sync =&gt; github.com/golang/sync v0<span class="number">.0</span><span class="number">.0</span><span class="number">-20181108010431</span><span class="number">-42</span>b317875d0f</span><br><span class="line">	golang.org/x/sys =&gt; github.com/golang/sys v0<span class="number">.0</span><span class="number">.0</span><span class="number">-20181116152217</span><span class="number">-5</span>ac8a444bdc5</span><br><span class="line">	golang.org/x/text =&gt; github.com/golang/text v0<span class="number">.3</span><span class="number">.0</span></span><br><span class="line">	golang.org/x/time =&gt; github.com/golang/time v0<span class="number">.0</span><span class="number">.0</span><span class="number">-20180412165947</span>-fbb02b2291d2</span><br><span class="line">	golang.org/x/tools =&gt; github.com/golang/tools v0<span class="number">.0</span><span class="number">.0</span><span class="number">-20181219222714</span><span class="number">-6e267</span>b5cc78e</span><br><span class="line">	google.golang.org/api =&gt; github.com/googleapis/google-api-<span class="keyword">go</span>-client v0<span class="number">.0</span><span class="number">.0</span><span class="number">-20181220000619</span><span class="number">-583</span>d854617af</span><br><span class="line">	google.golang.org/appengine =&gt; github.com/golang/appengine v1<span class="number">.3</span><span class="number">.0</span></span><br><span class="line">	google.golang.org/genproto =&gt; github.com/google/<span class="keyword">go</span>-genproto v0<span class="number">.0</span><span class="number">.0</span><span class="number">-20181219182458</span><span class="number">-5</span>a97ab628bfb</span><br><span class="line">	google.golang.org/grpc =&gt; github.com/grpc/grpc-<span class="keyword">go</span> v1<span class="number">.17</span><span class="number">.0</span></span><br><span class="line">	gopkg.in/alecthomas/kingpin.v2 =&gt; github.com/alecthomas/kingpin v2<span class="number">.2</span><span class="number">.6</span>+incompatible</span><br><span class="line">	gopkg.in/mgo.v2 =&gt; github.com/<span class="keyword">go</span>-mgo/mgo v0<span class="number">.0</span><span class="number">.0</span><span class="number">-20180705113604</span><span class="number">-9856</span>a29383ce</span><br><span class="line">	gopkg.in/vmihailenco/msgpack.v2 =&gt; github.com/vmihailenco/msgpack v2<span class="number">.9</span><span class="number">.1</span>+incompatible</span><br><span class="line">	gopkg.in/yaml.v2 =&gt; github.com/<span class="keyword">go</span>-yaml/yaml v0<span class="number">.0</span><span class="number">.0</span><span class="number">-20181115110504</span><span class="number">-51</span>d6538a90f8</span><br><span class="line">	labix.org/v2/mgo =&gt; github.com/<span class="keyword">go</span>-mgo/mgo v0<span class="number">.0</span><span class="number">.0</span><span class="number">-20160801194620</span>-b6121c6199b7</span><br><span class="line">	launchpad.net/gocheck =&gt; github.com/<span class="keyword">go</span>-check/check v0<span class="number">.0</span><span class="number">.0</span><span class="number">-20180628173108</span><span class="number">-788</span>fd7840127</span><br><span class="line">)</span><br></pre></td></tr></table></figure>
+<h3 id="一键解决这个问题"><a href="#一键解决这个问题" class="headerlink" title="一键解决这个问题"></a>一键解决这个问题</h3><p>export GOPROXY&#x3D;<a href="https://goproxy.io/">https://goproxy.io</a> 或者国内 <a href="https://goproxy.cn/">https://goproxy.cn</a><br>export GO111MODULE&#x3D;on </p>
+]]></content>
+      <categories>
+        <category>GOLANG</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>go协程池</title>
+    <url>/2022/04/6d2c021f74a3.html</url>
+    <content><![CDATA[<h4 id="目的学习go协程池"><a href="#目的学习go协程池" class="headerlink" title="目的学习go协程池"></a>目的学习go协程池</h4><ul>
+<li>网上go协程池大同小异，理解原理就可以了，我是根据bilibili上一个视频操作的，讲的还挺好的，自行搜索下，不过因为这个视频中任务队列是没有长度限制的，所以在那个基础上进行改编。</li>
+</ul>
+<h4 id="看下协程池的原理"><a href="#看下协程池的原理" class="headerlink" title="看下协程池的原理"></a>看下协程池的原理</h4><p><img src="https://blog.hexiefamily.xin/assets/workerpool.jpg" alt="avatar">  </p>
+<h4 id="协程池结构体-并且建立有缓存的channel"><a href="#协程池结构体-并且建立有缓存的channel" class="headerlink" title="协程池结构体,并且建立有缓存的channel"></a>协程池结构体,并且建立有缓存的channel</h4><figure class="highlight go"><table><tr><td class="code"><pre><span class="line"><span class="keyword">type</span> Workpool <span class="keyword">struct</span> &#123;</span><br><span class="line">	Jobchannel <span class="keyword">chan</span> *Task</span><br><span class="line">	Workernum <span class="type">int</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// maxsize 工人多少个，maxlen 多长的管道</span></span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">NewWorkpool</span><span class="params">(maxsize <span class="type">int</span>,maxlen <span class="type">int</span>)</span></span> *Workpool &#123;</span><br><span class="line">	w := Workpool&#123;</span><br><span class="line">		Jobchannel:      <span class="built_in">make</span>(<span class="keyword">chan</span> *Task,maxlen),</span><br><span class="line">		Workernum:       maxsize,</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> &amp;w</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h4 id="Task-任务，这里我是派发了十个任务，然后休息两秒，然后再派发"><a href="#Task-任务，这里我是派发了十个任务，然后休息两秒，然后再派发" class="headerlink" title="Task 任务，这里我是派发了十个任务，然后休息两秒，然后再派发"></a>Task 任务，这里我是派发了十个任务，然后休息两秒，然后再派发</h4><figure class="highlight go"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">func</span> <span class="params">(t *Task)</span></span> Execute()&#123;</span><br><span class="line">	fmt.Println(<span class="string">&quot;任务id为：&quot;</span>,t.Id,<span class="string">&quot;,当前时间为：&quot;</span>,time.Now())</span><br><span class="line">	t.f()</span><br><span class="line">	time.Sleep(<span class="number">2</span> * time.Second)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="完整代码如下"><a href="#完整代码如下" class="headerlink" title="完整代码如下"></a>完整代码如下</h4><figure class="highlight go"><table><tr><td class="code"><pre><span class="line"><span class="keyword">package</span> cache</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> (</span><br><span class="line">	<span class="string">&quot;fmt&quot;</span></span><br><span class="line">	<span class="string">&quot;sync&quot;</span></span><br><span class="line">	<span class="string">&quot;time&quot;</span></span><br><span class="line">)</span><br><span class="line"></span><br><span class="line"><span class="keyword">type</span> Task <span class="keyword">struct</span> &#123;</span><br><span class="line">	f <span class="function"><span class="keyword">func</span><span class="params">()</span></span> <span class="type">error</span></span><br><span class="line">	Id <span class="type">int</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">Newtask</span><span class="params">(arg_f <span class="keyword">func</span>()</span></span> <span class="type">error</span>,id <span class="type">int</span>) *Task&#123;</span><br><span class="line">	t :=Task&#123;</span><br><span class="line">		f:	arg_f,</span><br><span class="line">		Id:	id,</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> &amp;t</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="params">(t *Task)</span></span> Execute()&#123;</span><br><span class="line">	fmt.Println(<span class="string">&quot;任务id为：&quot;</span>,t.Id,<span class="string">&quot;,当前时间为：&quot;</span>,time.Now())</span><br><span class="line">	t.f()</span><br><span class="line">	time.Sleep(<span class="number">2</span> * time.Second)</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">type</span> Workpool <span class="keyword">struct</span> &#123;</span><br><span class="line">	Jobchannel <span class="keyword">chan</span> *Task</span><br><span class="line">	Workernum <span class="type">int</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// maxsize 工人多少个，maxlen 多长的管道</span></span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">NewWorkpool</span><span class="params">(maxsize <span class="type">int</span>,maxlen <span class="type">int</span>)</span></span> *Workpool &#123;</span><br><span class="line">	w := Workpool&#123;</span><br><span class="line">		Jobchannel:      <span class="built_in">make</span>(<span class="keyword">chan</span> *Task,maxlen),</span><br><span class="line">		Workernum:       maxsize,</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> &amp;w</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="params">(p *Workpool)</span></span> AllocateJobTask(maxnumjobs <span class="type">int</span>) &#123;</span><br><span class="line">	<span class="keyword">for</span> i:=<span class="number">0</span>;i&lt;maxnumjobs;i++&#123;</span><br><span class="line">		t := Newtask(<span class="function"><span class="keyword">func</span><span class="params">()</span></span> <span class="type">error</span> &#123;</span><br><span class="line">			<span class="comment">//任务是打印当前时间</span></span><br><span class="line">			<span class="comment">//fmt.Println(&quot;任务id为：&quot;,i,&quot;,当前时间为：&quot;,time.Now())</span></span><br><span class="line">			<span class="keyword">return</span> <span class="literal">nil</span></span><br><span class="line">		&#125;,i)</span><br><span class="line">		p.Jobchannel &lt;- t</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="built_in">close</span>(p.Jobchannel)</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="params">(p *Workpool)</span></span> CreateWorkPool()&#123;</span><br><span class="line">	<span class="keyword">var</span> wg sync.WaitGroup</span><br><span class="line">	<span class="keyword">for</span> i:=<span class="number">0</span>; i&lt;p.Workernum;i++  &#123;</span><br><span class="line">		<span class="keyword">go</span> p.Work(&amp;wg,i)</span><br><span class="line">		wg.Add(<span class="number">1</span>)</span><br><span class="line">	&#125;</span><br><span class="line">	wg.Wait()</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="params">(p *Workpool)</span></span> Work(wg *sync.WaitGroup,id <span class="type">int</span>)&#123;</span><br><span class="line">	<span class="keyword">for</span> job :=<span class="keyword">range</span> p.Jobchannel&#123;</span><br><span class="line">		job.Execute()</span><br><span class="line">		fmt.Println(<span class="string">&quot;我是工人:&quot;</span>,id,<span class="string">&quot;正在工作job:&quot;</span>,job.Id)</span><br><span class="line">	&#125;</span><br><span class="line">	wg.Done()</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">GetCacheChannel</span><span class="params">()</span></span>&#123;</span><br><span class="line">	startTime :=time.Now()</span><br><span class="line">	w :=NewWorkpool(<span class="number">10</span>,<span class="number">10</span>)</span><br><span class="line">	maxnumjobs :=<span class="number">100</span></span><br><span class="line">	<span class="comment">//先初始化线程池</span></span><br><span class="line">	<span class="keyword">go</span> w.AllocateJobTask(maxnumjobs)</span><br><span class="line">	w.CreateWorkPool()</span><br><span class="line"></span><br><span class="line">	endTime := time.Now()</span><br><span class="line">	diff := endTime.Sub(startTime)</span><br><span class="line">	fmt.Println(<span class="string">&quot;total time taken &quot;</span>, diff.Seconds(), <span class="string">&quot;seconds&quot;</span>)</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>写完这段代码，网上还有其他协程池的原理，大同小异</p>
+<ul>
+<li><a href="https://segmentfault.com/a/1190000018193161"><font color=#0099ff>其他高效协程池做法</font></a></li>
+</ul>
+]]></content>
+      <categories>
+        <category>GOLANG</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>go协程池2</title>
+    <url>/2022/04/efd8c2ddc7bd.html</url>
+    <content><![CDATA[<h4 id="go协程池改编"><a href="#go协程池改编" class="headerlink" title="go协程池改编"></a>go协程池改编</h4><p>-基于<a href="http://blog.hexiefamily.xin/article?path=/GOLANG/go%E5%8D%8F%E7%A8%8B%E6%B1%A0.md"><font color=#0099ff>go协程池</font></a>  </p>
+<h4 id="看下协程池的原理"><a href="#看下协程池的原理" class="headerlink" title="看下协程池的原理"></a>看下协程池的原理</h4><p><img src="https://blog.hexiefamily.xin/assets/workerpool2.png" alt="avatar">  </p>
+<h4 id="协程池结构体-并且建立有缓存的任务channel"><a href="#协程池结构体-并且建立有缓存的任务channel" class="headerlink" title="协程池结构体,并且建立有缓存的任务channel"></a>协程池结构体,并且建立有缓存的任务channel</h4><figure class="highlight go"><table><tr><td class="code"><pre><span class="line"><span class="keyword">type</span> Taskpool <span class="keyword">struct</span> &#123;</span><br><span class="line">	Tasknum     <span class="type">int</span></span><br><span class="line">	Taskchannel <span class="keyword">chan</span> *Task</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">NewTaskPool</span><span class="params">(tasknum <span class="type">int</span>, taskmaxlen <span class="type">int</span>)</span></span> *Taskpool &#123;</span><br><span class="line">	tp := &amp;Taskpool&#123;</span><br><span class="line">		Tasknum:     tasknum,</span><br><span class="line">		Taskchannel: <span class="built_in">make</span>(<span class="keyword">chan</span> *Task, taskmaxlen),</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> tp</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="params">(tp *Taskpool)</span></span> AllocateTask() &#123;</span><br><span class="line">	<span class="keyword">defer</span> <span class="built_in">close</span>(tp.Taskchannel)</span><br><span class="line">	<span class="keyword">for</span> i := <span class="number">0</span>; i &lt; tp.Tasknum; i++ &#123;</span><br><span class="line">		t := NewTask(<span class="function"><span class="keyword">func</span><span class="params">()</span></span> <span class="type">error</span> &#123;</span><br><span class="line">			fmt.Println(<span class="string">&quot;task &quot;</span>, i, <span class="string">&quot; is allocate&quot;</span>)</span><br><span class="line">			<span class="keyword">return</span> <span class="literal">nil</span></span><br><span class="line">		&#125;, i)</span><br><span class="line">		tp.Taskchannel &lt;- t</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h4 id="图中goroutine2"><a href="#图中goroutine2" class="headerlink" title="图中goroutine2"></a>图中goroutine2</h4><figure class="highlight go"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">func</span> <span class="params">(tp *Taskpool)</span></span> ReceiveTask(jobchannel <span class="keyword">chan</span> *Task) &#123;</span><br><span class="line">	<span class="keyword">defer</span> <span class="built_in">close</span>(jobchannel)</span><br><span class="line">	<span class="keyword">for</span> task := <span class="keyword">range</span> tp.Taskchannel &#123;</span><br><span class="line">		fmt.Println(<span class="string">&quot;job channel get this task channel&quot;</span>, task.Id)</span><br><span class="line">		jobchannel &lt;- task</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="图中goroutine3"><a href="#图中goroutine3" class="headerlink" title="图中goroutine3"></a>图中goroutine3</h4><figure class="highlight go"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">func</span> <span class="params">(wp *Workerpool)</span></span> ReceiveWork(jobchannel <span class="keyword">chan</span> *Task) &#123;</span><br><span class="line">	<span class="keyword">defer</span> <span class="built_in">close</span>(wp.Workchannel)</span><br><span class="line">	<span class="keyword">for</span> work := <span class="keyword">range</span> jobchannel &#123;</span><br><span class="line">		fmt.Println(<span class="string">&quot;work channel get this work from job channel&quot;</span>, work.Id)</span><br><span class="line">		wp.Workchannel &lt;- work</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="完整代码如下"><a href="#完整代码如下" class="headerlink" title="完整代码如下"></a>完整代码如下</h4><figure class="highlight go"><table><tr><td class="code"><pre><span class="line"><span class="keyword">package</span> main</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> (</span><br><span class="line">	<span class="string">&quot;fmt&quot;</span></span><br><span class="line">	<span class="string">&quot;sync&quot;</span></span><br><span class="line">	<span class="string">&quot;time&quot;</span></span><br><span class="line">)</span><br><span class="line"></span><br><span class="line"><span class="keyword">type</span> Task <span class="keyword">struct</span> &#123;</span><br><span class="line">	F  <span class="function"><span class="keyword">func</span><span class="params">()</span></span> <span class="type">error</span></span><br><span class="line">	Id <span class="type">int</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">NewTask</span><span class="params">(argc <span class="keyword">func</span>()</span></span> <span class="type">error</span>, id <span class="type">int</span>) *Task &#123;</span><br><span class="line">	t := &amp;Task&#123;</span><br><span class="line">		F:  argc,</span><br><span class="line">		Id: id,</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> t</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="params">(t *Task)</span></span> Execute() &#123;</span><br><span class="line">	fmt.Println(<span class="string">&quot;task &quot;</span>, t.Id, <span class="string">&quot; is running &quot;</span>)</span><br><span class="line">	t.F()</span><br><span class="line">	time.Sleep(<span class="number">2</span> * time.Second)</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//Taskpool 可以不包含channel不然只剩tasknum</span></span><br><span class="line"><span class="keyword">type</span> Taskpool <span class="keyword">struct</span> &#123;</span><br><span class="line">	Tasknum     <span class="type">int</span></span><br><span class="line">	Taskchannel <span class="keyword">chan</span> *Task</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">NewTaskPool</span><span class="params">(tasknum <span class="type">int</span>, taskmaxlen <span class="type">int</span>)</span></span> *Taskpool &#123;</span><br><span class="line">	tp := &amp;Taskpool&#123;</span><br><span class="line">		Tasknum:     tasknum,</span><br><span class="line">		Taskchannel: <span class="built_in">make</span>(<span class="keyword">chan</span> *Task, taskmaxlen),</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> tp</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="params">(tp *Taskpool)</span></span> AllocateTask() &#123;</span><br><span class="line">	<span class="keyword">defer</span> <span class="built_in">close</span>(tp.Taskchannel)</span><br><span class="line">	<span class="keyword">for</span> i := <span class="number">0</span>; i &lt; tp.Tasknum; i++ &#123;</span><br><span class="line">		t := NewTask(<span class="function"><span class="keyword">func</span><span class="params">()</span></span> <span class="type">error</span> &#123;</span><br><span class="line">			fmt.Println(<span class="string">&quot;task &quot;</span>, i, <span class="string">&quot; is allocate&quot;</span>)</span><br><span class="line">			<span class="keyword">return</span> <span class="literal">nil</span></span><br><span class="line">		&#125;, i)</span><br><span class="line">		tp.Taskchannel &lt;- t</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="params">(tp *Taskpool)</span></span> ReceiveTask(jobchannel <span class="keyword">chan</span> *Task) &#123;</span><br><span class="line">	<span class="keyword">defer</span> <span class="built_in">close</span>(jobchannel)</span><br><span class="line">	<span class="keyword">for</span> task := <span class="keyword">range</span> tp.Taskchannel &#123;</span><br><span class="line">		fmt.Println(<span class="string">&quot;job channel get this task channel&quot;</span>, task.Id)</span><br><span class="line">		jobchannel &lt;- task</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">type</span> Workerpool <span class="keyword">struct</span> &#123;</span><br><span class="line">	Workernum   <span class="type">int</span></span><br><span class="line">	Workchannel <span class="keyword">chan</span> *Task</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="params">(wp *Workerpool)</span></span> ReceiveWork(jobchannel <span class="keyword">chan</span> *Task) &#123;</span><br><span class="line">	<span class="keyword">defer</span> <span class="built_in">close</span>(wp.Workchannel)</span><br><span class="line">	<span class="keyword">for</span> work := <span class="keyword">range</span> jobchannel &#123;</span><br><span class="line">		fmt.Println(<span class="string">&quot;work channel get this work from job channel&quot;</span>, work.Id)</span><br><span class="line">		wp.Workchannel &lt;- work</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">NewWorkerPool</span><span class="params">(workernum <span class="type">int</span>, workmaxlen <span class="type">int</span>)</span></span> *Workerpool &#123;</span><br><span class="line">	w := &amp;Workerpool&#123;</span><br><span class="line">		Workernum:   workernum,</span><br><span class="line">		Workchannel: <span class="built_in">make</span>(<span class="keyword">chan</span> *Task, workmaxlen),</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> w</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="params">(w *Workerpool)</span></span> CreateWork() &#123;</span><br><span class="line">	<span class="keyword">var</span> wg sync.WaitGroup</span><br><span class="line">	fmt.Println(<span class="string">&quot;work num is:&quot;</span>, w.Workernum)</span><br><span class="line">	<span class="keyword">for</span> i := <span class="number">0</span>; i &lt; w.Workernum; i++ &#123;</span><br><span class="line">		wg.Add(<span class="number">1</span>)</span><br><span class="line">		<span class="comment">//waitgroup 需要加goroutine</span></span><br><span class="line">		<span class="keyword">go</span> w.GetWork(&amp;wg, i)</span><br><span class="line">	&#125;</span><br><span class="line">	wg.Wait()</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="params">(w *Workerpool)</span></span> GetWork(wg *sync.WaitGroup, id <span class="type">int</span>) &#123;</span><br><span class="line">	<span class="keyword">for</span> job := <span class="keyword">range</span> w.Workchannel &#123;</span><br><span class="line">		job.Execute()</span><br><span class="line">		fmt.Println(<span class="string">&quot;worker &quot;</span>, id, <span class="string">&quot; works with task &quot;</span>, job.Id)</span><br><span class="line">	&#125;</span><br><span class="line">	wg.Done()</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">main</span><span class="params">()</span></span> &#123;</span><br><span class="line">	startTime := time.Now()</span><br><span class="line">	channelLen := <span class="number">10</span></span><br><span class="line">	workerNum := <span class="number">20</span></span><br><span class="line">	taskNum := <span class="number">100</span></span><br><span class="line">	jobChannel := <span class="built_in">make</span>(<span class="keyword">chan</span> *Task, channelLen)</span><br><span class="line">	worker := NewWorkerPool(workerNum, channelLen)</span><br><span class="line">	task := NewTaskPool(taskNum, channelLen)</span><br><span class="line">	<span class="keyword">go</span> task.AllocateTask()</span><br><span class="line">	<span class="keyword">go</span> task.ReceiveTask(jobChannel)</span><br><span class="line">	<span class="keyword">go</span> worker.ReceiveWork(jobChannel)</span><br><span class="line">	worker.CreateWork()</span><br><span class="line">	endTime := time.Now()</span><br><span class="line">	diff := endTime.Sub(startTime)</span><br><span class="line">	fmt.Println(<span class="string">&quot;total time is :&quot;</span>, diff.Seconds(), <span class="string">&quot; seconds&quot;</span>)</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>GOLANG</category>
+      </categories>
+  </entry>
+  <entry>
     <title>beego自动化部署</title>
-    <url>/2023/06/f53a45840398.html</url>
+    <url>/2022/06/409d0ef7461b.html</url>
     <content><![CDATA[<h3 id="mac下安装sshpass"><a href="#mac下安装sshpass" class="headerlink" title="mac下安装sshpass"></a>mac下安装sshpass</h3><blockquote>
 <p>$ brew install <a href="https://raw.githubusercontent.com/kadwanev/bigboybrew/master/Library/Formula/sshpass.rb">https://raw.githubusercontent.com/kadwanev/bigboybrew/master/Library/Formula/sshpass.rb</a>    </p>
 </blockquote>
@@ -150,55 +167,8 @@
       </categories>
   </entry>
   <entry>
-    <title>go_mod 翻墙问题</title>
-    <url>/2023/06/f27a4ec6dc25.html</url>
-    <content><![CDATA[<h5 id="只需要在go-mod-后面假如replace即可解决，加完记得go-mod-tidy"><a href="#只需要在go-mod-后面假如replace即可解决，加完记得go-mod-tidy" class="headerlink" title="只需要在go.mod 后面假如replace即可解决，加完记得go mod tidy"></a>只需要在go.mod 后面假如replace即可解决，加完记得go mod tidy</h5><figure class="highlight go"><table><tr><td class="code"><pre><span class="line">replace (</span><br><span class="line">	cloud.google.com/<span class="keyword">go</span> =&gt; github.com/googleapis/google-cloud-<span class="keyword">go</span> v0<span class="number">.34</span><span class="number">.0</span></span><br><span class="line">	github.com/<span class="keyword">go</span>-tomb/tomb =&gt; gopkg.in/tomb.v1 v1<span class="number">.0</span><span class="number">.0</span><span class="number">-20141024135613</span>-dd632973f1e7</span><br><span class="line">	<span class="keyword">go</span>.opencensus.io =&gt; github.com/census-instrumentation/opencensus-<span class="keyword">go</span> v0<span class="number">.19</span><span class="number">.0</span></span><br><span class="line">	<span class="keyword">go</span>.uber.org/atomic =&gt; github.com/uber-<span class="keyword">go</span>/atomic v1<span class="number">.3</span><span class="number">.2</span></span><br><span class="line">	<span class="keyword">go</span>.uber.org/multierr =&gt; github.com/uber-<span class="keyword">go</span>/multierr v1<span class="number">.1</span><span class="number">.0</span></span><br><span class="line">	<span class="keyword">go</span>.uber.org/zap =&gt; github.com/uber-<span class="keyword">go</span>/zap v1<span class="number">.9</span><span class="number">.1</span></span><br><span class="line"></span><br><span class="line">	golang.org/x/crypto =&gt; github.com/golang/crypto v0<span class="number">.0</span><span class="number">.0</span><span class="number">-20181001203147</span>-e3636079e1a4</span><br><span class="line">	golang.org/x/lint =&gt; github.com/golang/lint v0<span class="number">.0</span><span class="number">.0</span><span class="number">-20181026193005</span>-c67002cb31c3</span><br><span class="line">	golang.org/x/net =&gt; github.com/golang/net v0<span class="number">.0</span><span class="number">.0</span><span class="number">-20180826012351</span><span class="number">-8</span>a410e7b638d</span><br><span class="line">	golang.org/x/oauth2 =&gt; github.com/golang/oauth2 v0<span class="number">.0</span><span class="number">.0</span><span class="number">-20180821212333</span>-d2e6202438be</span><br><span class="line">	golang.org/x/sync =&gt; github.com/golang/sync v0<span class="number">.0</span><span class="number">.0</span><span class="number">-20181108010431</span><span class="number">-42</span>b317875d0f</span><br><span class="line">	golang.org/x/sys =&gt; github.com/golang/sys v0<span class="number">.0</span><span class="number">.0</span><span class="number">-20181116152217</span><span class="number">-5</span>ac8a444bdc5</span><br><span class="line">	golang.org/x/text =&gt; github.com/golang/text v0<span class="number">.3</span><span class="number">.0</span></span><br><span class="line">	golang.org/x/time =&gt; github.com/golang/time v0<span class="number">.0</span><span class="number">.0</span><span class="number">-20180412165947</span>-fbb02b2291d2</span><br><span class="line">	golang.org/x/tools =&gt; github.com/golang/tools v0<span class="number">.0</span><span class="number">.0</span><span class="number">-20181219222714</span><span class="number">-6e267</span>b5cc78e</span><br><span class="line">	google.golang.org/api =&gt; github.com/googleapis/google-api-<span class="keyword">go</span>-client v0<span class="number">.0</span><span class="number">.0</span><span class="number">-20181220000619</span><span class="number">-583</span>d854617af</span><br><span class="line">	google.golang.org/appengine =&gt; github.com/golang/appengine v1<span class="number">.3</span><span class="number">.0</span></span><br><span class="line">	google.golang.org/genproto =&gt; github.com/google/<span class="keyword">go</span>-genproto v0<span class="number">.0</span><span class="number">.0</span><span class="number">-20181219182458</span><span class="number">-5</span>a97ab628bfb</span><br><span class="line">	google.golang.org/grpc =&gt; github.com/grpc/grpc-<span class="keyword">go</span> v1<span class="number">.17</span><span class="number">.0</span></span><br><span class="line">	gopkg.in/alecthomas/kingpin.v2 =&gt; github.com/alecthomas/kingpin v2<span class="number">.2</span><span class="number">.6</span>+incompatible</span><br><span class="line">	gopkg.in/mgo.v2 =&gt; github.com/<span class="keyword">go</span>-mgo/mgo v0<span class="number">.0</span><span class="number">.0</span><span class="number">-20180705113604</span><span class="number">-9856</span>a29383ce</span><br><span class="line">	gopkg.in/vmihailenco/msgpack.v2 =&gt; github.com/vmihailenco/msgpack v2<span class="number">.9</span><span class="number">.1</span>+incompatible</span><br><span class="line">	gopkg.in/yaml.v2 =&gt; github.com/<span class="keyword">go</span>-yaml/yaml v0<span class="number">.0</span><span class="number">.0</span><span class="number">-20181115110504</span><span class="number">-51</span>d6538a90f8</span><br><span class="line">	labix.org/v2/mgo =&gt; github.com/<span class="keyword">go</span>-mgo/mgo v0<span class="number">.0</span><span class="number">.0</span><span class="number">-20160801194620</span>-b6121c6199b7</span><br><span class="line">	launchpad.net/gocheck =&gt; github.com/<span class="keyword">go</span>-check/check v0<span class="number">.0</span><span class="number">.0</span><span class="number">-20180628173108</span><span class="number">-788</span>fd7840127</span><br><span class="line">)</span><br></pre></td></tr></table></figure>
-<h3 id="一键解决这个问题"><a href="#一键解决这个问题" class="headerlink" title="一键解决这个问题"></a>一键解决这个问题</h3><p>export GOPROXY&#x3D;<a href="https://goproxy.io/">https://goproxy.io</a> 或者国内 <a href="https://goproxy.cn/">https://goproxy.cn</a><br>export GO111MODULE&#x3D;on </p>
-]]></content>
-      <categories>
-        <category>GOLANG</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>go协程池</title>
-    <url>/2023/06/dbc075b99008.html</url>
-    <content><![CDATA[<h4 id="目的学习go协程池"><a href="#目的学习go协程池" class="headerlink" title="目的学习go协程池"></a>目的学习go协程池</h4><ul>
-<li>网上go协程池大同小异，理解原理就可以了，我是根据bilibili上一个视频操作的，讲的还挺好的，自行搜索下，不过因为这个视频中任务队列是没有长度限制的，所以在那个基础上进行改编。</li>
-</ul>
-<h4 id="看下协程池的原理"><a href="#看下协程池的原理" class="headerlink" title="看下协程池的原理"></a>看下协程池的原理</h4><p><img src="https://blog.hexiefamily.xin/assets/workerpool.jpg" alt="avatar">  </p>
-<h4 id="协程池结构体-并且建立有缓存的channel"><a href="#协程池结构体-并且建立有缓存的channel" class="headerlink" title="协程池结构体,并且建立有缓存的channel"></a>协程池结构体,并且建立有缓存的channel</h4><figure class="highlight go"><table><tr><td class="code"><pre><span class="line"><span class="keyword">type</span> Workpool <span class="keyword">struct</span> &#123;</span><br><span class="line">	Jobchannel <span class="keyword">chan</span> *Task</span><br><span class="line">	Workernum <span class="type">int</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// maxsize 工人多少个，maxlen 多长的管道</span></span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">NewWorkpool</span><span class="params">(maxsize <span class="type">int</span>,maxlen <span class="type">int</span>)</span></span> *Workpool &#123;</span><br><span class="line">	w := Workpool&#123;</span><br><span class="line">		Jobchannel:      <span class="built_in">make</span>(<span class="keyword">chan</span> *Task,maxlen),</span><br><span class="line">		Workernum:       maxsize,</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> &amp;w</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h4 id="Task-任务，这里我是派发了十个任务，然后休息两秒，然后再派发"><a href="#Task-任务，这里我是派发了十个任务，然后休息两秒，然后再派发" class="headerlink" title="Task 任务，这里我是派发了十个任务，然后休息两秒，然后再派发"></a>Task 任务，这里我是派发了十个任务，然后休息两秒，然后再派发</h4><figure class="highlight go"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">func</span> <span class="params">(t *Task)</span></span> Execute()&#123;</span><br><span class="line">	fmt.Println(<span class="string">&quot;任务id为：&quot;</span>,t.Id,<span class="string">&quot;,当前时间为：&quot;</span>,time.Now())</span><br><span class="line">	t.f()</span><br><span class="line">	time.Sleep(<span class="number">2</span> * time.Second)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h4 id="完整代码如下"><a href="#完整代码如下" class="headerlink" title="完整代码如下"></a>完整代码如下</h4><figure class="highlight go"><table><tr><td class="code"><pre><span class="line"><span class="keyword">package</span> cache</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> (</span><br><span class="line">	<span class="string">&quot;fmt&quot;</span></span><br><span class="line">	<span class="string">&quot;sync&quot;</span></span><br><span class="line">	<span class="string">&quot;time&quot;</span></span><br><span class="line">)</span><br><span class="line"></span><br><span class="line"><span class="keyword">type</span> Task <span class="keyword">struct</span> &#123;</span><br><span class="line">	f <span class="function"><span class="keyword">func</span><span class="params">()</span></span> <span class="type">error</span></span><br><span class="line">	Id <span class="type">int</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">Newtask</span><span class="params">(arg_f <span class="keyword">func</span>()</span></span> <span class="type">error</span>,id <span class="type">int</span>) *Task&#123;</span><br><span class="line">	t :=Task&#123;</span><br><span class="line">		f:	arg_f,</span><br><span class="line">		Id:	id,</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> &amp;t</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="params">(t *Task)</span></span> Execute()&#123;</span><br><span class="line">	fmt.Println(<span class="string">&quot;任务id为：&quot;</span>,t.Id,<span class="string">&quot;,当前时间为：&quot;</span>,time.Now())</span><br><span class="line">	t.f()</span><br><span class="line">	time.Sleep(<span class="number">2</span> * time.Second)</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">type</span> Workpool <span class="keyword">struct</span> &#123;</span><br><span class="line">	Jobchannel <span class="keyword">chan</span> *Task</span><br><span class="line">	Workernum <span class="type">int</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// maxsize 工人多少个，maxlen 多长的管道</span></span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">NewWorkpool</span><span class="params">(maxsize <span class="type">int</span>,maxlen <span class="type">int</span>)</span></span> *Workpool &#123;</span><br><span class="line">	w := Workpool&#123;</span><br><span class="line">		Jobchannel:      <span class="built_in">make</span>(<span class="keyword">chan</span> *Task,maxlen),</span><br><span class="line">		Workernum:       maxsize,</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> &amp;w</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="params">(p *Workpool)</span></span> AllocateJobTask(maxnumjobs <span class="type">int</span>) &#123;</span><br><span class="line">	<span class="keyword">for</span> i:=<span class="number">0</span>;i&lt;maxnumjobs;i++&#123;</span><br><span class="line">		t := Newtask(<span class="function"><span class="keyword">func</span><span class="params">()</span></span> <span class="type">error</span> &#123;</span><br><span class="line">			<span class="comment">//任务是打印当前时间</span></span><br><span class="line">			<span class="comment">//fmt.Println(&quot;任务id为：&quot;,i,&quot;,当前时间为：&quot;,time.Now())</span></span><br><span class="line">			<span class="keyword">return</span> <span class="literal">nil</span></span><br><span class="line">		&#125;,i)</span><br><span class="line">		p.Jobchannel &lt;- t</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="built_in">close</span>(p.Jobchannel)</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="params">(p *Workpool)</span></span> CreateWorkPool()&#123;</span><br><span class="line">	<span class="keyword">var</span> wg sync.WaitGroup</span><br><span class="line">	<span class="keyword">for</span> i:=<span class="number">0</span>; i&lt;p.Workernum;i++  &#123;</span><br><span class="line">		<span class="keyword">go</span> p.Work(&amp;wg,i)</span><br><span class="line">		wg.Add(<span class="number">1</span>)</span><br><span class="line">	&#125;</span><br><span class="line">	wg.Wait()</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="params">(p *Workpool)</span></span> Work(wg *sync.WaitGroup,id <span class="type">int</span>)&#123;</span><br><span class="line">	<span class="keyword">for</span> job :=<span class="keyword">range</span> p.Jobchannel&#123;</span><br><span class="line">		job.Execute()</span><br><span class="line">		fmt.Println(<span class="string">&quot;我是工人:&quot;</span>,id,<span class="string">&quot;正在工作job:&quot;</span>,job.Id)</span><br><span class="line">	&#125;</span><br><span class="line">	wg.Done()</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">GetCacheChannel</span><span class="params">()</span></span>&#123;</span><br><span class="line">	startTime :=time.Now()</span><br><span class="line">	w :=NewWorkpool(<span class="number">10</span>,<span class="number">10</span>)</span><br><span class="line">	maxnumjobs :=<span class="number">100</span></span><br><span class="line">	<span class="comment">//先初始化线程池</span></span><br><span class="line">	<span class="keyword">go</span> w.AllocateJobTask(maxnumjobs)</span><br><span class="line">	w.CreateWorkPool()</span><br><span class="line"></span><br><span class="line">	endTime := time.Now()</span><br><span class="line">	diff := endTime.Sub(startTime)</span><br><span class="line">	fmt.Println(<span class="string">&quot;total time taken &quot;</span>, diff.Seconds(), <span class="string">&quot;seconds&quot;</span>)</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<p>写完这段代码，网上还有其他协程池的原理，大同小异</p>
-<ul>
-<li><a href="https://segmentfault.com/a/1190000018193161"><font color=#0099ff>其他高效协程池做法</font></a></li>
-</ul>
-]]></content>
-      <categories>
-        <category>GOLANG</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>go协程池2</title>
-    <url>/2023/06/5d3c6307dcd9.html</url>
-    <content><![CDATA[<h4 id="go协程池改编"><a href="#go协程池改编" class="headerlink" title="go协程池改编"></a>go协程池改编</h4><p>-基于<a href="http://blog.hexiefamily.xin/article?path=/GOLANG/go%E5%8D%8F%E7%A8%8B%E6%B1%A0.md"><font color=#0099ff>go协程池</font></a>  </p>
-<h4 id="看下协程池的原理"><a href="#看下协程池的原理" class="headerlink" title="看下协程池的原理"></a>看下协程池的原理</h4><p><img src="https://blog.hexiefamily.xin/assets/workerpool2.png" alt="avatar">  </p>
-<h4 id="协程池结构体-并且建立有缓存的任务channel"><a href="#协程池结构体-并且建立有缓存的任务channel" class="headerlink" title="协程池结构体,并且建立有缓存的任务channel"></a>协程池结构体,并且建立有缓存的任务channel</h4><figure class="highlight go"><table><tr><td class="code"><pre><span class="line"><span class="keyword">type</span> Taskpool <span class="keyword">struct</span> &#123;</span><br><span class="line">	Tasknum     <span class="type">int</span></span><br><span class="line">	Taskchannel <span class="keyword">chan</span> *Task</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">NewTaskPool</span><span class="params">(tasknum <span class="type">int</span>, taskmaxlen <span class="type">int</span>)</span></span> *Taskpool &#123;</span><br><span class="line">	tp := &amp;Taskpool&#123;</span><br><span class="line">		Tasknum:     tasknum,</span><br><span class="line">		Taskchannel: <span class="built_in">make</span>(<span class="keyword">chan</span> *Task, taskmaxlen),</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> tp</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="params">(tp *Taskpool)</span></span> AllocateTask() &#123;</span><br><span class="line">	<span class="keyword">defer</span> <span class="built_in">close</span>(tp.Taskchannel)</span><br><span class="line">	<span class="keyword">for</span> i := <span class="number">0</span>; i &lt; tp.Tasknum; i++ &#123;</span><br><span class="line">		t := NewTask(<span class="function"><span class="keyword">func</span><span class="params">()</span></span> <span class="type">error</span> &#123;</span><br><span class="line">			fmt.Println(<span class="string">&quot;task &quot;</span>, i, <span class="string">&quot; is allocate&quot;</span>)</span><br><span class="line">			<span class="keyword">return</span> <span class="literal">nil</span></span><br><span class="line">		&#125;, i)</span><br><span class="line">		tp.Taskchannel &lt;- t</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h4 id="图中goroutine2"><a href="#图中goroutine2" class="headerlink" title="图中goroutine2"></a>图中goroutine2</h4><figure class="highlight go"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">func</span> <span class="params">(tp *Taskpool)</span></span> ReceiveTask(jobchannel <span class="keyword">chan</span> *Task) &#123;</span><br><span class="line">	<span class="keyword">defer</span> <span class="built_in">close</span>(jobchannel)</span><br><span class="line">	<span class="keyword">for</span> task := <span class="keyword">range</span> tp.Taskchannel &#123;</span><br><span class="line">		fmt.Println(<span class="string">&quot;job channel get this task channel&quot;</span>, task.Id)</span><br><span class="line">		jobchannel &lt;- task</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h4 id="图中goroutine3"><a href="#图中goroutine3" class="headerlink" title="图中goroutine3"></a>图中goroutine3</h4><figure class="highlight go"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">func</span> <span class="params">(wp *Workerpool)</span></span> ReceiveWork(jobchannel <span class="keyword">chan</span> *Task) &#123;</span><br><span class="line">	<span class="keyword">defer</span> <span class="built_in">close</span>(wp.Workchannel)</span><br><span class="line">	<span class="keyword">for</span> work := <span class="keyword">range</span> jobchannel &#123;</span><br><span class="line">		fmt.Println(<span class="string">&quot;work channel get this work from job channel&quot;</span>, work.Id)</span><br><span class="line">		wp.Workchannel &lt;- work</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h4 id="完整代码如下"><a href="#完整代码如下" class="headerlink" title="完整代码如下"></a>完整代码如下</h4><figure class="highlight go"><table><tr><td class="code"><pre><span class="line"><span class="keyword">package</span> main</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> (</span><br><span class="line">	<span class="string">&quot;fmt&quot;</span></span><br><span class="line">	<span class="string">&quot;sync&quot;</span></span><br><span class="line">	<span class="string">&quot;time&quot;</span></span><br><span class="line">)</span><br><span class="line"></span><br><span class="line"><span class="keyword">type</span> Task <span class="keyword">struct</span> &#123;</span><br><span class="line">	F  <span class="function"><span class="keyword">func</span><span class="params">()</span></span> <span class="type">error</span></span><br><span class="line">	Id <span class="type">int</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">NewTask</span><span class="params">(argc <span class="keyword">func</span>()</span></span> <span class="type">error</span>, id <span class="type">int</span>) *Task &#123;</span><br><span class="line">	t := &amp;Task&#123;</span><br><span class="line">		F:  argc,</span><br><span class="line">		Id: id,</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> t</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="params">(t *Task)</span></span> Execute() &#123;</span><br><span class="line">	fmt.Println(<span class="string">&quot;task &quot;</span>, t.Id, <span class="string">&quot; is running &quot;</span>)</span><br><span class="line">	t.F()</span><br><span class="line">	time.Sleep(<span class="number">2</span> * time.Second)</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//Taskpool 可以不包含channel不然只剩tasknum</span></span><br><span class="line"><span class="keyword">type</span> Taskpool <span class="keyword">struct</span> &#123;</span><br><span class="line">	Tasknum     <span class="type">int</span></span><br><span class="line">	Taskchannel <span class="keyword">chan</span> *Task</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">NewTaskPool</span><span class="params">(tasknum <span class="type">int</span>, taskmaxlen <span class="type">int</span>)</span></span> *Taskpool &#123;</span><br><span class="line">	tp := &amp;Taskpool&#123;</span><br><span class="line">		Tasknum:     tasknum,</span><br><span class="line">		Taskchannel: <span class="built_in">make</span>(<span class="keyword">chan</span> *Task, taskmaxlen),</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> tp</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="params">(tp *Taskpool)</span></span> AllocateTask() &#123;</span><br><span class="line">	<span class="keyword">defer</span> <span class="built_in">close</span>(tp.Taskchannel)</span><br><span class="line">	<span class="keyword">for</span> i := <span class="number">0</span>; i &lt; tp.Tasknum; i++ &#123;</span><br><span class="line">		t := NewTask(<span class="function"><span class="keyword">func</span><span class="params">()</span></span> <span class="type">error</span> &#123;</span><br><span class="line">			fmt.Println(<span class="string">&quot;task &quot;</span>, i, <span class="string">&quot; is allocate&quot;</span>)</span><br><span class="line">			<span class="keyword">return</span> <span class="literal">nil</span></span><br><span class="line">		&#125;, i)</span><br><span class="line">		tp.Taskchannel &lt;- t</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="params">(tp *Taskpool)</span></span> ReceiveTask(jobchannel <span class="keyword">chan</span> *Task) &#123;</span><br><span class="line">	<span class="keyword">defer</span> <span class="built_in">close</span>(jobchannel)</span><br><span class="line">	<span class="keyword">for</span> task := <span class="keyword">range</span> tp.Taskchannel &#123;</span><br><span class="line">		fmt.Println(<span class="string">&quot;job channel get this task channel&quot;</span>, task.Id)</span><br><span class="line">		jobchannel &lt;- task</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">type</span> Workerpool <span class="keyword">struct</span> &#123;</span><br><span class="line">	Workernum   <span class="type">int</span></span><br><span class="line">	Workchannel <span class="keyword">chan</span> *Task</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="params">(wp *Workerpool)</span></span> ReceiveWork(jobchannel <span class="keyword">chan</span> *Task) &#123;</span><br><span class="line">	<span class="keyword">defer</span> <span class="built_in">close</span>(wp.Workchannel)</span><br><span class="line">	<span class="keyword">for</span> work := <span class="keyword">range</span> jobchannel &#123;</span><br><span class="line">		fmt.Println(<span class="string">&quot;work channel get this work from job channel&quot;</span>, work.Id)</span><br><span class="line">		wp.Workchannel &lt;- work</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">NewWorkerPool</span><span class="params">(workernum <span class="type">int</span>, workmaxlen <span class="type">int</span>)</span></span> *Workerpool &#123;</span><br><span class="line">	w := &amp;Workerpool&#123;</span><br><span class="line">		Workernum:   workernum,</span><br><span class="line">		Workchannel: <span class="built_in">make</span>(<span class="keyword">chan</span> *Task, workmaxlen),</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> w</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="params">(w *Workerpool)</span></span> CreateWork() &#123;</span><br><span class="line">	<span class="keyword">var</span> wg sync.WaitGroup</span><br><span class="line">	fmt.Println(<span class="string">&quot;work num is:&quot;</span>, w.Workernum)</span><br><span class="line">	<span class="keyword">for</span> i := <span class="number">0</span>; i &lt; w.Workernum; i++ &#123;</span><br><span class="line">		wg.Add(<span class="number">1</span>)</span><br><span class="line">		<span class="comment">//waitgroup 需要加goroutine</span></span><br><span class="line">		<span class="keyword">go</span> w.GetWork(&amp;wg, i)</span><br><span class="line">	&#125;</span><br><span class="line">	wg.Wait()</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="params">(w *Workerpool)</span></span> GetWork(wg *sync.WaitGroup, id <span class="type">int</span>) &#123;</span><br><span class="line">	<span class="keyword">for</span> job := <span class="keyword">range</span> w.Workchannel &#123;</span><br><span class="line">		job.Execute()</span><br><span class="line">		fmt.Println(<span class="string">&quot;worker &quot;</span>, id, <span class="string">&quot; works with task &quot;</span>, job.Id)</span><br><span class="line">	&#125;</span><br><span class="line">	wg.Done()</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">main</span><span class="params">()</span></span> &#123;</span><br><span class="line">	startTime := time.Now()</span><br><span class="line">	channelLen := <span class="number">10</span></span><br><span class="line">	workerNum := <span class="number">20</span></span><br><span class="line">	taskNum := <span class="number">100</span></span><br><span class="line">	jobChannel := <span class="built_in">make</span>(<span class="keyword">chan</span> *Task, channelLen)</span><br><span class="line">	worker := NewWorkerPool(workerNum, channelLen)</span><br><span class="line">	task := NewTaskPool(taskNum, channelLen)</span><br><span class="line">	<span class="keyword">go</span> task.AllocateTask()</span><br><span class="line">	<span class="keyword">go</span> task.ReceiveTask(jobChannel)</span><br><span class="line">	<span class="keyword">go</span> worker.ReceiveWork(jobChannel)</span><br><span class="line">	worker.CreateWork()</span><br><span class="line">	endTime := time.Now()</span><br><span class="line">	diff := endTime.Sub(startTime)</span><br><span class="line">	fmt.Println(<span class="string">&quot;total time is :&quot;</span>, diff.Seconds(), <span class="string">&quot; seconds&quot;</span>)</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>GOLANG</category>
-      </categories>
-  </entry>
-  <entry>
     <title>go解析excel</title>
-    <url>/2023/06/ed420f1ef390.html</url>
+    <url>/2022/05/be891ff91c3d.html</url>
     <content><![CDATA[<h4 id="时间格式转化"><a href="#时间格式转化" class="headerlink" title="时间格式转化"></a>时间格式转化</h4><ol>
 <li>import (“github.com&#x2F;360EntSecGroup-Skylar&#x2F;excelize&#x2F;v2”)</li>
 <li>go.mod require (<br>   github.com&#x2F;360EntSecGroup-Skylar&#x2F;excelize&#x2F;v2 v2.0.2)</li>
@@ -212,49 +182,8 @@
       </categories>
   </entry>
   <entry>
-    <title>grpc_php客户端</title>
-    <url>/2023/06/3abbb741dab4.html</url>
-    <content><![CDATA[<h1 id="grpc-php-client"><a href="#grpc-php-client" class="headerlink" title="grpc php client"></a>grpc php client</h1><p><strong>服务端取的是<a href="https://www.jianshu.com/p/7fe7a8507745">https://www.jianshu.com/p/7fe7a8507745</a> 案例</strong>  </p>
-<h4 id="需要执行"><a href="#需要执行" class="headerlink" title="需要执行"></a>需要执行</h4><blockquote>
-<p>export GO111MODULE&#x3D;on<br>go mod tidy</p>
-</blockquote>
-<h4 id="安装依赖"><a href="#安装依赖" class="headerlink" title="安装依赖"></a>安装依赖</h4><blockquote>
-<p>pecl install grpc<br>pecl install protobuf<br>同时并.so 文件放进ini中，如果是在docker中使用docker-php-ext-enable grpc,docker-php-ext-enable protobuf<br>wget <a href="https://github.com/google/protobuf/releases/download/v3.5.1/protobuf-all-3.5.1.zip">https://github.com/google/protobuf/releases/download/v3.5.1/protobuf-all-3.5.1.zip</a><br>unzip protobuf-all-3.5.1.zip<br>cd protobuf-3.5.1&#x2F;<br>.&#x2F;configure<br>make<br>make install<br>protoc –version<br>出现make 错误，安装apt-get install automake<br>ldconfig  </p>
-</blockquote>
-<p>1、protoc –proto_path&#x3D;..&#x2F;..&#x2F; –php_out&#x3D;. helloServer.proto<br>2、在client&#x2F;phpclient&#x2F;Rpc_proto 文件夹新建HelloClient.php  </p>
-<pre><code>&lt;?php
-    namespace Rpc_proto;
-    class HelloClient extends \Grpc\BaseStub&#123;
-        public function __construct($hostname, $opts, $channel = null) &#123;
-            parent::__construct($hostname, $opts, $channel);
-        &#125;
-        public function SayHello(\Rpc_proto\HelloRequest $argument,$metadata=[],$options=[])&#123;
-            return $this-&gt;_simpleRequest(&#39;/rpc_proto.HelloServer/SayHello&#39;,
-                $argument,
-                [&#39;\Rpc_proto\HelloReply&#39;, &#39;decode&#39;],
-                $metadata, $options);
-        &#125;
-        public function GetHelloMsg(\Rpc_proto\HelloRequest $argument,$metadata=[],$options=[])&#123;
-            return $this-&gt;_simpleRequest(&#39;/rpc_proto.HelloServer/GetHelloMsg&#39;,
-                $argument,
-                [&#39;\Rpc_proto\HelloMessage&#39;, &#39;decode&#39;],
-                $metadata, $options);
-        &#125;
-    &#125;
-?&gt;
-</code></pre>
-<p>3、cd client&#x2F;phpclient &amp;&amp; composer install<br>4、cd server &amp;&amp; go run server.go<br>5、新建hello.php,并执行php hello.php<br>结果：</p>
-<blockquote>
-<p>helloGreenHat<br>this is from server HAHA!</p>
-</blockquote>
-]]></content>
-      <categories>
-        <category>GOLANG</category>
-      </categories>
-  </entry>
-  <entry>
     <title>学习channel</title>
-    <url>/2023/06/9ed2f2758c62.html</url>
+    <url>/2022/08/acbb637eec8e.html</url>
     <content><![CDATA[<figure class="highlight go"><table><tr><td class="code"><pre><span class="line"><span class="keyword">package</span> main</span><br><span class="line"><span class="keyword">import</span>(</span><br><span class="line">	<span class="string">&quot;fmt&quot;</span></span><br><span class="line">	<span class="string">&quot;time&quot;</span></span><br><span class="line">)</span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">producer</span><span class="params">(nums ...<span class="type">int</span>)</span></span> &lt;-<span class="keyword">chan</span> <span class="type">int</span>&#123;<span class="comment">// 括号里输入参数，括号外返回的参数类型</span></span><br><span class="line">	out :=<span class="built_in">make</span>(<span class="keyword">chan</span> <span class="type">int</span>)</span><br><span class="line">	<span class="keyword">go</span> <span class="function"><span class="keyword">func</span><span class="params">()</span></span> &#123;</span><br><span class="line">		<span class="keyword">defer</span> <span class="built_in">close</span>(out)</span><br><span class="line">		<span class="keyword">for</span> _,n :=<span class="keyword">range</span> nums&#123;</span><br><span class="line">			out&lt;-n</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;()</span><br><span class="line">	<span class="keyword">return</span> out</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">cal</span><span class="params">(inch &lt;-<span class="keyword">chan</span> <span class="type">int</span>)</span></span> &lt;-<span class="keyword">chan</span> <span class="type">int</span>&#123;<span class="comment">//括号里从chan读取数据，括号外返回的参数类型</span></span><br><span class="line">	out :=<span class="built_in">make</span>(<span class="keyword">chan</span> <span class="type">int</span>)</span><br><span class="line">	<span class="keyword">go</span> <span class="function"><span class="keyword">func</span><span class="params">()</span></span> &#123;</span><br><span class="line">		<span class="keyword">defer</span> <span class="built_in">close</span>(out)</span><br><span class="line">		<span class="keyword">for</span> n :=<span class="keyword">range</span> inch&#123;</span><br><span class="line">			out&lt;-n*n</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;()</span><br><span class="line">	<span class="keyword">return</span> out</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">	t := time.Now()</span><br><span class="line">	in :=producer(<span class="number">1000000</span>)</span><br><span class="line">	ch :=cal(in)</span><br><span class="line">	<span class="comment">//consumer</span></span><br><span class="line">	<span class="keyword">for</span> ret :=<span class="keyword">range</span> ch&#123;</span><br><span class="line">		fmt.Printf(<span class="string">&quot;%3d&quot;</span>, ret)</span><br><span class="line">	&#125;</span><br><span class="line">	fmt.Println()</span><br><span class="line">	elapsed := time.Since(t)</span><br><span class="line">    fmt.Println(<span class="string">&quot;app elapsed:&quot;</span>, elapsed)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <h5 id="这个是首尾各一管道，读取数据用协程读取管道，写入数据用协程写入管道"><a href="#这个是首尾各一管道，读取数据用协程读取管道，写入数据用协程写入管道" class="headerlink" title="这个是首尾各一管道，读取数据用协程读取管道，写入数据用协程写入管道"></a>这个是首尾各一管道，读取数据用协程读取管道，写入数据用协程写入管道</h5><p>1.无缓冲的  就是一个送信人去你家门口送信 ，你不在家 他不走，你一定要接下信，他才会走。<br>2.无缓冲保证信能到你手上<br>3.有缓冲的 就是一个送信人去你家仍到你家的信箱 转身就走 ，除非你的信箱满了 他必须等信箱空下来。<br>4.有缓冲的 保证 信能进你家的邮箱<br>5.如果这里没有缓冲的话，就会出现阻塞，因为无缓冲，他需要等你接到信，main 方法执行完了，你还没接，阻塞了，针对协程，要加个有缓冲，这样直接到邮箱里，到时候自己去取，这里的缓冲池，在retch中。</p>
@@ -272,7 +201,7 @@
   </entry>
   <entry>
     <title>直播搭建</title>
-    <url>/2023/06/fd4be80236ff.html</url>
+    <url>/2022/07/371d5b2b3ce0.html</url>
     <content><![CDATA[<h3 id="linux-搭建直播服务器"><a href="#linux-搭建直播服务器" class="headerlink" title="linux 搭建直播服务器"></a>linux 搭建直播服务器</h3><h4 id="同时也在学习livego中"><a href="#同时也在学习livego中" class="headerlink" title="同时也在学习livego中"></a>同时也在学习livego中</h4><ol>
 <li><blockquote>
 <p>$ apt-get install ffmpeg</p>
@@ -312,7 +241,7 @@ server &#123;
   </entry>
   <entry>
     <title>mysqldump数据结构,并且主键重置为1</title>
-    <url>/2023/06/09f43ce6bcab.html</url>
+    <url>/2020/05/91c083fc36b5.html</url>
     <content><![CDATA[<ul>
 <li>mysqldump<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">mysqldump -u root -pxxx123456 -d testa  </span><br></pre></td></tr></table></figure></li>
 <li>这个是导出数据结构</li>
@@ -341,8 +270,49 @@ server &#123;
       </categories>
   </entry>
   <entry>
+    <title>grpc_php客户端</title>
+    <url>/2022/03/e3d32e396ba3.html</url>
+    <content><![CDATA[<h1 id="grpc-php-client"><a href="#grpc-php-client" class="headerlink" title="grpc php client"></a>grpc php client</h1><p><strong>服务端取的是<a href="https://www.jianshu.com/p/7fe7a8507745">https://www.jianshu.com/p/7fe7a8507745</a> 案例</strong>  </p>
+<h4 id="需要执行"><a href="#需要执行" class="headerlink" title="需要执行"></a>需要执行</h4><blockquote>
+<p>export GO111MODULE&#x3D;on<br>go mod tidy</p>
+</blockquote>
+<h4 id="安装依赖"><a href="#安装依赖" class="headerlink" title="安装依赖"></a>安装依赖</h4><blockquote>
+<p>pecl install grpc<br>pecl install protobuf<br>同时并.so 文件放进ini中，如果是在docker中使用docker-php-ext-enable grpc,docker-php-ext-enable protobuf<br>wget <a href="https://github.com/google/protobuf/releases/download/v3.5.1/protobuf-all-3.5.1.zip">https://github.com/google/protobuf/releases/download/v3.5.1/protobuf-all-3.5.1.zip</a><br>unzip protobuf-all-3.5.1.zip<br>cd protobuf-3.5.1&#x2F;<br>.&#x2F;configure<br>make<br>make install<br>protoc –version<br>出现make 错误，安装apt-get install automake<br>ldconfig  </p>
+</blockquote>
+<p>1、protoc –proto_path&#x3D;..&#x2F;..&#x2F; –php_out&#x3D;. helloServer.proto<br>2、在client&#x2F;phpclient&#x2F;Rpc_proto 文件夹新建HelloClient.php  </p>
+<pre><code>&lt;?php
+    namespace Rpc_proto;
+    class HelloClient extends \Grpc\BaseStub&#123;
+        public function __construct($hostname, $opts, $channel = null) &#123;
+            parent::__construct($hostname, $opts, $channel);
+        &#125;
+        public function SayHello(\Rpc_proto\HelloRequest $argument,$metadata=[],$options=[])&#123;
+            return $this-&gt;_simpleRequest(&#39;/rpc_proto.HelloServer/SayHello&#39;,
+                $argument,
+                [&#39;\Rpc_proto\HelloReply&#39;, &#39;decode&#39;],
+                $metadata, $options);
+        &#125;
+        public function GetHelloMsg(\Rpc_proto\HelloRequest $argument,$metadata=[],$options=[])&#123;
+            return $this-&gt;_simpleRequest(&#39;/rpc_proto.HelloServer/GetHelloMsg&#39;,
+                $argument,
+                [&#39;\Rpc_proto\HelloMessage&#39;, &#39;decode&#39;],
+                $metadata, $options);
+        &#125;
+    &#125;
+?&gt;
+</code></pre>
+<p>3、cd client&#x2F;phpclient &amp;&amp; composer install<br>4、cd server &amp;&amp; go run server.go<br>5、新建hello.php,并执行php hello.php<br>结果：</p>
+<blockquote>
+<p>helloGreenHat<br>this is from server HAHA!</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>GOLANG</category>
+      </categories>
+  </entry>
+  <entry>
     <title>mysql计算周报表</title>
-    <url>/2023/06/de01e7de7918.html</url>
+    <url>/2019/12/00e99df6fdf9.html</url>
     <content><![CDATA[<h4 id="到年底了，都需要统计下报表，mysql统计的时候有点问题，尤其是到12-31-到01-01-有问题"><a href="#到年底了，都需要统计下报表，mysql统计的时候有点问题，尤其是到12-31-到01-01-有问题" class="headerlink" title="到年底了，都需要统计下报表，mysql统计的时候有点问题，尤其是到12-31 到01-01 有问题"></a>到年底了，都需要统计下报表，mysql统计的时候有点问题，尤其是到12-31 到01-01 有问题</h4><figure class="highlight php"><table><tr><td class="code"><pre><span class="line">select location <span class="keyword">as</span> locationid</span><br><span class="line">,<span class="keyword">if</span>(<span class="title function_ invoke__">DATE_FORMAT</span>(date,<span class="string">&#x27;%v&#x27;</span>)=<span class="string">&#x27;01&#x27;</span> <span class="keyword">and</span> <span class="title function_ invoke__">date_format</span>(<span class="title function_ invoke__">date_add</span>(<span class="string">&#x27;1900-01-01&#x27;</span>,interval <span class="title function_ invoke__">floor</span>(<span class="title function_ invoke__">datediff</span>(date,<span class="string">&#x27;1900-01-01&#x27;</span>)/<span class="number">7</span>)*<span class="number">7</span> day),<span class="string">&#x27;%Y&#x27;</span>)!=<span class="title function_ invoke__">date_format</span>(<span class="title function_ invoke__">date_add</span>(<span class="string">&#x27;1900-01-01&#x27;</span>,interval <span class="title function_ invoke__">floor</span>(<span class="title function_ invoke__">datediff</span>(date,<span class="string">&#x27;1900-01-01&#x27;</span>)/<span class="number">7</span>)*<span class="number">7</span>+<span class="number">6</span> day),<span class="string">&#x27;%Y&#x27;</span>),<span class="title function_ invoke__">concat</span>(<span class="title function_ invoke__">date_format</span>(<span class="title function_ invoke__">date_add</span>(<span class="string">&#x27;1900-01-01&#x27;</span>,interval <span class="title function_ invoke__">floor</span>(<span class="title function_ invoke__">datediff</span>(date,<span class="string">&#x27;1900-01-01&#x27;</span>)/<span class="number">7</span>)*<span class="number">7</span>+<span class="number">6</span> day),<span class="string">&#x27;%Y&#x27;</span>),<span class="string">&#x27;-&#x27;</span>,<span class="title function_ invoke__">DATE_FORMAT</span>(date,<span class="string">&#x27;%v&#x27;</span>)),<span class="title function_ invoke__">DATE_FORMAT</span>(date,<span class="string">&#x27;%X-%v&#x27;</span>)) weeks</span><br><span class="line"></span><br><span class="line">,<span class="title function_ invoke__">DATE_FORMAT</span>(date,<span class="string">&#x27;%v&#x27;</span>) weeknum</span><br><span class="line"></span><br><span class="line">,<span class="title function_ invoke__">date_add</span>(<span class="string">&#x27;1900-01-01&#x27;</span>,interval <span class="title function_ invoke__">floor</span>(<span class="title function_ invoke__">datediff</span>(date,<span class="string">&#x27;1900-01-01&#x27;</span>)/<span class="number">7</span>)*<span class="number">7</span> day) <span class="keyword">as</span> week_start</span><br><span class="line"></span><br><span class="line">, <span class="title function_ invoke__">date_add</span>(<span class="string">&#x27;1900-01-01&#x27;</span>,interval <span class="title function_ invoke__">floor</span>(<span class="title function_ invoke__">datediff</span>(date,<span class="string">&#x27;1900-01-01&#x27;</span>)/<span class="number">7</span>)*<span class="number">7</span>+<span class="number">6</span> day) <span class="keyword">as</span> week_end</span><br><span class="line"></span><br><span class="line">,<span class="title function_ invoke__">count</span>(*) <span class="keyword">as</span> count </span><br><span class="line"></span><br><span class="line"><span class="keyword">from</span> resdata  where date &gt;<span class="string">&#x27;2014-11-14 00:00:00&#x27;</span> <span class="keyword">and</span> date&lt;<span class="string">&#x27;2019-12-14 23:59:59&#x27;</span>  <span class="keyword">and</span> location  = <span class="number">5</span></span><br><span class="line">  group by <span class="title function_ invoke__">floor</span>(<span class="title function_ invoke__">datediff</span>(date,<span class="string">&#x27;1900-01-01&#x27;</span>)/<span class="number">7</span>),location</span><br></pre></td></tr></table></figure>
 
 <p>如下图<br><img src="https://blog.hexiefamily.xin/assets/mysql1.jpg" alt="avatar">  </p>
@@ -355,7 +325,7 @@ server &#123;
   </entry>
   <entry>
     <title>laravel面试</title>
-    <url>/2023/06/5ebec5d905ff.html</url>
+    <url>/2020/12/7b90785a8bdc.html</url>
     <content><![CDATA[<h3 id="一、背景"><a href="#一、背景" class="headerlink" title="一、背景"></a>一、背景</h3><p>最近去面试，去了一家游戏公司面试，由于公司不用框架，并且没有深入理解laravel，导致面试吃亏：</p>
 <ul>
 <li>1.解释下laravel的服务容器，控制反转IOC？</li>
@@ -384,8 +354,16 @@ server &#123;
       </categories>
   </entry>
   <entry>
+    <title>二维数组分组</title>
+    <url>/2020/07/100f4bb2ade2.html</url>
+    <content><![CDATA[<h4 id="二维数组分组"><a href="#二维数组分组" class="headerlink" title="二维数组分组"></a>二维数组分组</h4><figure class="highlight php"><table><tr><td class="code"><pre><span class="line"><span class="variable">$defaultrules</span> = <span class="keyword">array</span>(</span><br><span class="line"><span class="string">&#x27;id&#x27;</span>=&gt;<span class="number">1</span>,<span class="string">&#x27;studioid&#x27;</span>=&gt;<span class="number">5</span>,</span><br><span class="line"><span class="string">&#x27;id&#x27;</span>=&gt;<span class="number">2</span>,<span class="string">&#x27;studioid&#x27;</span>=&gt;<span class="number">5</span>,</span><br><span class="line"><span class="string">&#x27;id&#x27;</span>=&gt;<span class="number">3</span>,<span class="string">&#x27;studioid&#x27;</span>=&gt;<span class="number">2</span>,</span><br><span class="line"><span class="string">&#x27;id&#x27;</span>=&gt;<span class="number">4</span>,<span class="string">&#x27;studioid&#x27;</span>=&gt;<span class="number">3</span></span><br><span class="line">);</span><br><span class="line"></span><br><span class="line"><span class="variable">$rule</span> = [];<span class="comment">//rule 拆分数组</span></span><br><span class="line"><span class="keyword">foreach</span>(<span class="variable">$defaultrules</span> <span class="keyword">as</span> <span class="variable">$de</span>)&#123;</span><br><span class="line">    <span class="keyword">if</span>(<span class="keyword">isset</span>(<span class="variable">$rule</span>[<span class="variable">$de</span>[<span class="string">&#x27;studioid&#x27;</span>]]))&#123;</span><br><span class="line">        <span class="title function_ invoke__">array_push</span>(<span class="variable">$rule</span>[<span class="variable">$de</span>[<span class="string">&#x27;studioid&#x27;</span>]],<span class="variable">$de</span>[<span class="string">&#x27;id&#x27;</span>]);</span><br><span class="line">    &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">        <span class="variable">$rule</span>[<span class="variable">$de</span>[<span class="string">&#x27;studioid&#x27;</span>]] = <span class="keyword">array</span>(<span class="variable">$de</span>[<span class="string">&#x27;id&#x27;</span>]);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="variable">$rule</span> = <span class="keyword">array</span>(</span><br><span class="line"><span class="number">5</span>=&gt;<span class="keyword">array</span>(<span class="number">1</span>,<span class="number">2</span>),</span><br><span class="line"><span class="number">2</span>=&gt;<span class="keyword">array</span>(<span class="number">3</span>),</span><br><span class="line"><span class="number">3</span>=&gt;<span class="keyword">array</span>(<span class="number">4</span>)</span><br><span class="line">);</span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>PHP</category>
+      </categories>
+  </entry>
+  <entry>
     <title>php-fpm理解以及处理502问题</title>
-    <url>/2023/06/3d4d4474576c.html</url>
+    <url>/2021/03/bc0e053aee5a.html</url>
     <content><![CDATA[<h3 id="网站出现502"><a href="#网站出现502" class="headerlink" title="网站出现502"></a>网站出现502</h3><ul>
 <li>杀死进程<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta prompt_">#</span><span class="language-bash">!/bin/sh</span></span><br><span class="line">pids=$(ps -e -o &#x27;pid,comm,args,pcpu,rsz,vsz,stime,user,uid&#x27; | sort -nrk5 | grep www | grep -v grep|awk &#x27; $2!=&quot;nginx&quot; &#123;print $1&#125;&#x27;)</span><br><span class="line"><span class="meta prompt_">#</span><span class="language-bash"><span class="built_in">echo</span> <span class="variable">$pids</span></span></span><br><span class="line">if [ &quot;$pids&quot; != &quot;&quot; ];then</span><br><span class="line">for  pid  in   $pids;</span><br><span class="line">do</span><br><span class="line">echo $pid</span><br><span class="line">kill -9 $pid</span><br><span class="line">done</span><br><span class="line">fi</span><br></pre></td></tr></table></figure></li>
 <li>调高进程数<br>使用 netstat -napo |grep “php-fpm” | wc -l 查看一下当前 fastcgi 进程个数，如果个数接近 conf 里配置的上限，就需要调高进程数。<br>但也不能无休止调高，可以根据服务器内存情况，可以把 php-fpm 子进程数调到 100 或以上，在 4G 内存的服务器上 200 就可以。</li>
@@ -417,16 +395,8 @@ server &#123;
       </categories>
   </entry>
   <entry>
-    <title>二维数组分组</title>
-    <url>/2023/06/099fac4e65c1.html</url>
-    <content><![CDATA[<h4 id="二维数组分组"><a href="#二维数组分组" class="headerlink" title="二维数组分组"></a>二维数组分组</h4><figure class="highlight php"><table><tr><td class="code"><pre><span class="line"><span class="variable">$defaultrules</span> = <span class="keyword">array</span>(</span><br><span class="line"><span class="string">&#x27;id&#x27;</span>=&gt;<span class="number">1</span>,<span class="string">&#x27;studioid&#x27;</span>=&gt;<span class="number">5</span>,</span><br><span class="line"><span class="string">&#x27;id&#x27;</span>=&gt;<span class="number">2</span>,<span class="string">&#x27;studioid&#x27;</span>=&gt;<span class="number">5</span>,</span><br><span class="line"><span class="string">&#x27;id&#x27;</span>=&gt;<span class="number">3</span>,<span class="string">&#x27;studioid&#x27;</span>=&gt;<span class="number">2</span>,</span><br><span class="line"><span class="string">&#x27;id&#x27;</span>=&gt;<span class="number">4</span>,<span class="string">&#x27;studioid&#x27;</span>=&gt;<span class="number">3</span></span><br><span class="line">);</span><br><span class="line"></span><br><span class="line"><span class="variable">$rule</span> = [];<span class="comment">//rule 拆分数组</span></span><br><span class="line"><span class="keyword">foreach</span>(<span class="variable">$defaultrules</span> <span class="keyword">as</span> <span class="variable">$de</span>)&#123;</span><br><span class="line">    <span class="keyword">if</span>(<span class="keyword">isset</span>(<span class="variable">$rule</span>[<span class="variable">$de</span>[<span class="string">&#x27;studioid&#x27;</span>]]))&#123;</span><br><span class="line">        <span class="title function_ invoke__">array_push</span>(<span class="variable">$rule</span>[<span class="variable">$de</span>[<span class="string">&#x27;studioid&#x27;</span>]],<span class="variable">$de</span>[<span class="string">&#x27;id&#x27;</span>]);</span><br><span class="line">    &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">        <span class="variable">$rule</span>[<span class="variable">$de</span>[<span class="string">&#x27;studioid&#x27;</span>]] = <span class="keyword">array</span>(<span class="variable">$de</span>[<span class="string">&#x27;id&#x27;</span>]);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="variable">$rule</span> = <span class="keyword">array</span>(</span><br><span class="line"><span class="number">5</span>=&gt;<span class="keyword">array</span>(<span class="number">1</span>,<span class="number">2</span>),</span><br><span class="line"><span class="number">2</span>=&gt;<span class="keyword">array</span>(<span class="number">3</span>),</span><br><span class="line"><span class="number">3</span>=&gt;<span class="keyword">array</span>(<span class="number">4</span>)</span><br><span class="line">);</span><br></pre></td></tr></table></figure>]]></content>
-      <categories>
-        <category>PHP</category>
-      </categories>
-  </entry>
-  <entry>
     <title>解析ini文件</title>
-    <url>/2023/06/846d2c7d9fff.html</url>
+    <url>/2020/10/2c84773e20b0.html</url>
     <content><![CDATA[<h3 id="a-x3D-none-后面为none解析不出来"><a href="#a-x3D-none-后面为none解析不出来" class="headerlink" title="a&#x3D;none 后面为none解析不出来"></a>a&#x3D;none 后面为none解析不出来</h3><p>sample.ini</p>
 <figure class="highlight ini"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line"><span class="comment">##</span></span><br><span class="line"></span><br><span class="line"><span class="section">[s1]</span></span><br><span class="line"></span><br><span class="line"><span class="attr">a</span>=<span class="number">1</span></span><br><span class="line"></span><br><span class="line"><span class="attr">b</span>=<span class="number">1</span></span><br><span class="line"></span><br><span class="line"><span class="attr">c</span>=<span class="number">1</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#d=1</span></span><br><span class="line"></span><br><span class="line"><span class="attr">e</span>=fa<span class="comment">#1</span></span><br><span class="line"></span><br><span class="line"><span class="attr">h</span> = kda dawda</span><br><span class="line"></span><br><span class="line"><span class="attr">ddaw</span>=</span><br><span class="line"></span><br><span class="line">dwada</span><br><span class="line"></span><br><span class="line"><span class="attr">dwaihduihawu</span>=dwadwa <span class="comment">#dwa</span></span><br><span class="line"></span><br><span class="line"><span class="section">[s2]</span></span><br><span class="line"></span><br><span class="line"><span class="attr">f</span>=<span class="number">1</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
 
@@ -438,8 +408,18 @@ server &#123;
       </categories>
   </entry>
   <entry>
+    <title>消息快速告警</title>
+    <url>/2021/04/855ed3f490d9.html</url>
+    <content><![CDATA[<h3 id="利用server酱"><a href="#利用server酱" class="headerlink" title="利用server酱"></a>利用server酱</h3><p>地址：<a href="http://sc.ftqq.com/3.version">http://sc.ftqq.com/3.version</a>  </p>
+<p>1.查看上方网址，github授权登录，并且微信绑定即可获取key值<br>2.利用方糖微信公众号来返回模板消息，可以是告警信息，这里我处理成打卡时间</p>
+<h5 id="用php处理的方法"><a href="#用php处理的方法" class="headerlink" title="用php处理的方法"></a>用php处理的方法</h5><figure class="highlight php"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">sc_send</span>(<span class="params">  <span class="variable">$text</span> , <span class="variable">$desp</span> = <span class="string">&#x27;&#x27;</span> , <span class="variable">$key</span> = <span class="string">&#x27;2121212adwadwadwa&#x27;</span>  </span>)</span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="variable">$postdata</span> = <span class="title function_ invoke__">http_build_query</span>(</span><br><span class="line">        <span class="keyword">array</span>(</span><br><span class="line">            <span class="string">&#x27;text&#x27;</span> =&gt; <span class="variable">$text</span>,</span><br><span class="line">            <span class="string">&#x27;desp&#x27;</span> =&gt; <span class="variable">$desp</span></span><br><span class="line">        )</span><br><span class="line">    );</span><br><span class="line"></span><br><span class="line">    <span class="variable">$opts</span> = <span class="keyword">array</span>(<span class="string">&#x27;http&#x27;</span> =&gt;</span><br><span class="line">        <span class="keyword">array</span>(</span><br><span class="line">            <span class="string">&#x27;method&#x27;</span>  =&gt; <span class="string">&#x27;POST&#x27;</span>,</span><br><span class="line">            <span class="string">&#x27;header&#x27;</span>  =&gt; <span class="string">&#x27;Content-type: application/x-www-form-urlencoded&#x27;</span>,</span><br><span class="line">            <span class="string">&#x27;content&#x27;</span> =&gt; <span class="variable">$postdata</span></span><br><span class="line">        )</span><br><span class="line">    );</span><br><span class="line">    <span class="variable">$context</span>  = <span class="title function_ invoke__">stream_context_create</span>(<span class="variable">$opts</span>);</span><br><span class="line">    <span class="keyword">return</span> <span class="variable">$result</span> = <span class="title function_ invoke__">file_get_contents</span>(<span class="string">&#x27;https://sc.ftqq.com/&#x27;</span>.<span class="variable">$key</span>.<span class="string">&#x27;.send&#x27;</span>, <span class="literal">false</span>, <span class="variable">$context</span>);</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>PUSH</category>
+      </categories>
+  </entry>
+  <entry>
     <title>逆波兰式计算工资</title>
-    <url>/2023/06/651b2ac75d18.html</url>
+    <url>/2020/11/b2501c6187f8.html</url>
     <content><![CDATA[<ul>
 <li>这段时间一直在修自己写的bug，php部分分享之前对工资模块的理解，这里涉及到会有很多变量组成工资表达式，修改了一部分表达式的结构，变成公用的。</li>
 </ul>
@@ -450,18 +430,23 @@ server &#123;
       </categories>
   </entry>
   <entry>
-    <title>消息快速告警</title>
-    <url>/2023/06/b0ed4abd3df7.html</url>
-    <content><![CDATA[<h3 id="利用server酱"><a href="#利用server酱" class="headerlink" title="利用server酱"></a>利用server酱</h3><p>地址：<a href="http://sc.ftqq.com/3.version">http://sc.ftqq.com/3.version</a>  </p>
-<p>1.查看上方网址，github授权登录，并且微信绑定即可获取key值<br>2.利用方糖微信公众号来返回模板消息，可以是告警信息，这里我处理成打卡时间</p>
-<h5 id="用php处理的方法"><a href="#用php处理的方法" class="headerlink" title="用php处理的方法"></a>用php处理的方法</h5><figure class="highlight php"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">sc_send</span>(<span class="params">  <span class="variable">$text</span> , <span class="variable">$desp</span> = <span class="string">&#x27;&#x27;</span> , <span class="variable">$key</span> = <span class="string">&#x27;2121212adwadwadwa&#x27;</span>  </span>)</span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="variable">$postdata</span> = <span class="title function_ invoke__">http_build_query</span>(</span><br><span class="line">        <span class="keyword">array</span>(</span><br><span class="line">            <span class="string">&#x27;text&#x27;</span> =&gt; <span class="variable">$text</span>,</span><br><span class="line">            <span class="string">&#x27;desp&#x27;</span> =&gt; <span class="variable">$desp</span></span><br><span class="line">        )</span><br><span class="line">    );</span><br><span class="line"></span><br><span class="line">    <span class="variable">$opts</span> = <span class="keyword">array</span>(<span class="string">&#x27;http&#x27;</span> =&gt;</span><br><span class="line">        <span class="keyword">array</span>(</span><br><span class="line">            <span class="string">&#x27;method&#x27;</span>  =&gt; <span class="string">&#x27;POST&#x27;</span>,</span><br><span class="line">            <span class="string">&#x27;header&#x27;</span>  =&gt; <span class="string">&#x27;Content-type: application/x-www-form-urlencoded&#x27;</span>,</span><br><span class="line">            <span class="string">&#x27;content&#x27;</span> =&gt; <span class="variable">$postdata</span></span><br><span class="line">        )</span><br><span class="line">    );</span><br><span class="line">    <span class="variable">$context</span>  = <span class="title function_ invoke__">stream_context_create</span>(<span class="variable">$opts</span>);</span><br><span class="line">    <span class="keyword">return</span> <span class="variable">$result</span> = <span class="title function_ invoke__">file_get_contents</span>(<span class="string">&#x27;https://sc.ftqq.com/&#x27;</span>.<span class="variable">$key</span>.<span class="string">&#x27;.send&#x27;</span>, <span class="literal">false</span>, <span class="variable">$context</span>);</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
+    <title>SSH访问局域网网站</title>
+    <url>/2021/09/152d66545271.html</url>
+    <content><![CDATA[<h4 id="访问内网局域网网站"><a href="#访问内网局域网网站" class="headerlink" title="访问内网局域网网站"></a>访问内网局域网网站</h4><p>目的是想用在家的mac访问到公司的电话机所在的网址，首先自行搭建vpn，这个网上教程还蛮多。<br>本人用的是mac，公司的电脑大多数是win10<br>win10 连接vpn方法如下图：<br><img src="https://blog.hexiefamily.xin/assets/ssh3.png" alt="avatar">  </p>
+<h4 id="ssh-连接win10："><a href="#ssh-连接win10：" class="headerlink" title="ssh 连接win10："></a>ssh 连接win10：</h4><ol>
+<li>win10 开启openssh 服务端：<a href="http://jingyan.baidu.com/article/455a995057a191a1662778a3.html">http://jingyan.baidu.com/article/455a995057a191a1662778a3.html</a> 百度教程你值得拥有  </li>
+<li>ssh -D 4567 -N <a href="mailto:&#114;&#111;&#111;&#x74;&#64;&#49;&#x39;&#50;&#46;&#x31;&#54;&#x38;&#x2e;&#49;&#x32;&#x2e;&#x31;">&#114;&#111;&#111;&#x74;&#64;&#49;&#x39;&#50;&#46;&#x31;&#54;&#x38;&#x2e;&#49;&#x32;&#x2e;&#x31;</a> 输入密码，即可停留   </li>
+<li>打开chrome神奇插件SwitchyOmega,配置一个这样的代理<br><img src="https://blog.hexiefamily.xin/assets/ssh1.png" alt="avatar"></li>
+<li>即可打开win10 所在的局域网的网站，如下图所示<br><img src="https://blog.hexiefamily.xin/assets/ssh2.png" alt="avatar"></li>
+</ol>
+]]></content>
       <categories>
-        <category>PUSH</category>
+        <category>SSH</category>
       </categories>
   </entry>
   <entry>
     <title>REDIS安装及应用</title>
-    <url>/2023/06/b1ab4f5e09e5.html</url>
+    <url>/2021/05/38b5a082de43.html</url>
     <content><![CDATA[<h3 id="Redis安装"><a href="#Redis安装" class="headerlink" title="Redis安装"></a>Redis安装</h3><ul>
 <li>pecl install redis</li>
 <li>nano &#x2F;etc&#x2F;php&#x2F;7.0&#x2F;mods-available&#x2F;redis.ini<br>extension&#x3D;redis.so<br>Fpm 软连接</li>
@@ -479,7 +464,7 @@ server &#123;
   </entry>
   <entry>
     <title>REDIS延迟任务队列应用</title>
-    <url>/2023/06/21d62d62dd8b.html</url>
+    <url>/2021/06/0ae233b386b4.html</url>
     <content><![CDATA[<h3 id="一、背景"><a href="#一、背景" class="headerlink" title="一、背景"></a>一、背景</h3><p>先看看一下业务场景：</p>
 <ul>
 <li>1.会员过期前3天发送召回通知</li>
@@ -633,52 +618,13 @@ server &#123;
       </categories>
   </entry>
   <entry>
-    <title>SSH添加阿里云秘钥</title>
-    <url>/2023/06/3247a9f9d1c1.html</url>
-    <content><![CDATA[<h3 id="阿里云服务器添加秘钥"><a href="#阿里云服务器添加秘钥" class="headerlink" title="阿里云服务器添加秘钥"></a>阿里云服务器添加秘钥</h3><p>1.登录控制台，创建秘钥对，并下载为a.pem<br>2.ssh-keygen -y -f a.pem会返回ssh-rsa<br>如果该命令失败，请运行chmod 400 my-key-pair.pem命令更改权限<br>3.登录到服务器a.com中，echo &gt;&gt; ~&#x2F;.ssh&#x2F;authorized_keys<br>4.nano &#x2F;etc&#x2F;ssh&#x2F;sshd_config<br>PermitRootLogin yes<br>当你完成全部设置，并以密钥方式登录成功后，再禁用密码登录：<br>PasswordAuthentication no<br>5.service sshd restart</p>
-<h4 id="访问："><a href="#访问：" class="headerlink" title="访问："></a>访问：</h4><p>ssh -i a.pem <a href="mailto:&#x72;&#111;&#111;&#x74;&#64;&#97;&#x2e;&#99;&#111;&#x6d;">&#x72;&#111;&#111;&#x74;&#64;&#97;&#x2e;&#99;&#111;&#x6d;</a> 访问<br>如果想省事的话，ssh-add -k a.pem，重启之后需要重新添加<br>直接ssh <a href="mailto:&#x72;&#x6f;&#x6f;&#x74;&#64;&#97;&#46;&#x63;&#111;&#x6d;">&#x72;&#x6f;&#x6f;&#x74;&#64;&#97;&#46;&#x63;&#111;&#x6d;</a> 即可访问</p>
-<h4 id="出现-Could-not-open-a-connection-to-your-authentication-agent解决办法或者Permission-denied-publickey-："><a href="#出现-Could-not-open-a-connection-to-your-authentication-agent解决办法或者Permission-denied-publickey-：" class="headerlink" title="出现 Could not open a connection to your authentication agent解决办法或者Permission denied (publickey).："></a>出现 Could not open a connection to your authentication agent解决办法或者Permission denied (publickey).：</h4><blockquote>
-<p>eval <code>ssh-agent -s</code>  </p>
-</blockquote>
-]]></content>
-      <categories>
-        <category>SSH</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>SSH访问局域网网站</title>
-    <url>/2023/06/9f3e7eb33263.html</url>
-    <content><![CDATA[<h4 id="访问内网局域网网站"><a href="#访问内网局域网网站" class="headerlink" title="访问内网局域网网站"></a>访问内网局域网网站</h4><p>目的是想用在家的mac访问到公司的电话机所在的网址，首先自行搭建vpn，这个网上教程还蛮多。<br>本人用的是mac，公司的电脑大多数是win10<br>win10 连接vpn方法如下图：<br><img src="https://blog.hexiefamily.xin/assets/ssh3.png" alt="avatar">  </p>
-<h4 id="ssh-连接win10："><a href="#ssh-连接win10：" class="headerlink" title="ssh 连接win10："></a>ssh 连接win10：</h4><ol>
-<li>win10 开启openssh 服务端：<a href="http://jingyan.baidu.com/article/455a995057a191a1662778a3.html">http://jingyan.baidu.com/article/455a995057a191a1662778a3.html</a> 百度教程你值得拥有  </li>
-<li>ssh -D 4567 -N <a href="mailto:&#114;&#111;&#x6f;&#116;&#64;&#x31;&#57;&#x32;&#x2e;&#49;&#x36;&#x38;&#x2e;&#49;&#x32;&#46;&#49;">&#114;&#111;&#x6f;&#116;&#64;&#x31;&#57;&#x32;&#x2e;&#49;&#x36;&#x38;&#x2e;&#49;&#x32;&#46;&#49;</a> 输入密码，即可停留   </li>
-<li>打开chrome神奇插件SwitchyOmega,配置一个这样的代理<br><img src="https://blog.hexiefamily.xin/assets/ssh1.png" alt="avatar"></li>
-<li>即可打开win10 所在的局域网的网站，如下图所示<br><img src="https://blog.hexiefamily.xin/assets/ssh2.png" alt="avatar"></li>
-</ol>
-]]></content>
-      <categories>
-        <category>SSH</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>acme生成https协议操作方法</title>
-    <url>/2023/06/95fb3d4261e3.html</url>
-    <content><![CDATA[<h3 id="利用acme-生成https协议"><a href="#利用acme-生成https协议" class="headerlink" title="利用acme 生成https协议"></a>利用acme 生成https协议</h3><h5 id="手动https"><a href="#手动https" class="headerlink" title="手动https"></a>手动https</h5><p>1.curl  <a href="https://get.acme.sh/">https://get.acme.sh</a> | sh<br>2.cd <del>&#x2F;.acme.sh&#x2F;<br>3.alias acme.sh&#x3D;</del>&#x2F;.acme.sh&#x2F;acme.sh<br>4.acme.sh –issue –force  -d a.test.com –webroot &#x2F;var&#x2F;www&#x2F;html&#x2F;a&#x2F;<br>5.mkdir -p &#x2F;etc&#x2F;nginx&#x2F;ssl_cert&#x2F;a.test.com<br>6.acme.sh –install-cert -d a.test.com –key-file &#x2F;etc&#x2F;nginx&#x2F;ssl_cert&#x2F;a.test.com&#x2F;key.pem –fullchain-file &#x2F;etc&#x2F;nginx&#x2F;ssl_cert&#x2F;a.test.com&#x2F;cert.pem –reloadcmd     “service nginx force-reload”</p>
-<h5 id="手动dns"><a href="#手动dns" class="headerlink" title="手动dns"></a>手动dns</h5><p>1.acme.sh –issue -d a.test.com –dns –yes-I-know-dns-manual-mode-enough-go-ahead-please<br>2.nslookup -q&#x3D;TXT _acme-challenge.a.test.com<br>3.acme.sh –renew -d a.test.com –yes-I-know-dns-manual-mode-enough-go-ahead-please<br>4.mkdir -p &#x2F;etc&#x2F;nginx&#x2F;ssl_cert&#x2F;a.test.com<br>5.acme.sh –install-cert -d a.test.com –key-file &#x2F;etc&#x2F;nginx&#x2F;ssl_cert&#x2F;a.test.com&#x2F;key.pem –fullchain-file &#x2F;etc&#x2F;nginx&#x2F;ssl_cert&#x2F;a.test.com&#x2F;cert.pem –reloadcmd     “service nginx force-reload”  </p>
-<h6 id="Nginx-配置："><a href="#Nginx-配置：" class="headerlink" title="Nginx 配置："></a>Nginx 配置：</h6><p>6.listen 443;<br>  ssl_certificate &#x2F;etc&#x2F;nginx&#x2F;ssl_cert&#x2F;a.test.com&#x2F;cert.pem;<br>  ssl_certificate_key &#x2F;etc&#x2F;nginx&#x2F;ssl_cert&#x2F;a.test.com&#x2F;key.pem;<br>  ssl_protocols TLSv1 TLSv1.1 TLSv1.2;<br>  ssl_prefer_server_ciphers on;  </p>
-]]></content>
-      <categories>
-        <category>SSH</category>
-      </categories>
-  </entry>
-  <entry>
     <title>gitee同步github</title>
-    <url>/2023/06/e045eee6a701.html</url>
+    <url>/2021/08/e152f0b083e6.html</url>
     <content><![CDATA[<h2 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h2><p>最近因为在做公众号自动同步的开发，每次一push代码，服务器的webhook就会不生效，同时会停止运行，导致博客网站停止，必须得手动取开启。</p>
 <h3 id="原因"><a href="#原因" class="headerlink" title="原因"></a>原因</h3><p>初步判断是阿里云在git pull github的代码时，一直不执行，可能是外网的问题。</p>
 <h3 id="解决思路"><a href="#解决思路" class="headerlink" title="解决思路"></a>解决思路</h3><p>想到之前国内的gitee也存在代码，考虑同步github,再通过webhook 更新</p>
 <p><img src="https://gitee.com/cjyzwg/img/raw/master/202203131218367.png"></p>
-<h3 id="步骤"><a href="#步骤" class="headerlink" title="步骤"></a>步骤</h3><h4 id="实时同步github到gitee"><a href="#实时同步github到gitee" class="headerlink" title="实时同步github到gitee"></a><strong>实时同步github到gitee</strong></h4><p>1.ssh-keygen -t rsa -C “<a href="mailto:&#121;&#111;&#117;&#114;&#101;&#x6d;&#97;&#105;&#x6c;&#64;&#101;&#x78;&#x61;&#x6d;&#x70;&#x6c;&#x65;&#46;&#99;&#111;&#x6d;">&#121;&#111;&#117;&#114;&#101;&#x6d;&#97;&#105;&#x6c;&#64;&#101;&#x78;&#x61;&#x6d;&#x70;&#x6c;&#x65;&#46;&#99;&#111;&#x6d;</a>“<br>生成的 id_rsa 是私钥，id_rsa.pub 是公钥。(注意此处不要设置密码，生成的公私钥用于下面 GitHub &#x2F; Gitee 的配置，以保证公私钥成对，否则从 GitHub -%3E Gitee 的同步将会失败。)</p>
+<h3 id="步骤"><a href="#步骤" class="headerlink" title="步骤"></a>步骤</h3><h4 id="实时同步github到gitee"><a href="#实时同步github到gitee" class="headerlink" title="实时同步github到gitee"></a><strong>实时同步github到gitee</strong></h4><p>1.ssh-keygen -t rsa -C “<a href="mailto:&#x79;&#111;&#117;&#114;&#101;&#109;&#97;&#x69;&#x6c;&#64;&#x65;&#120;&#97;&#x6d;&#x70;&#108;&#x65;&#x2e;&#99;&#x6f;&#x6d;">&#x79;&#111;&#117;&#114;&#101;&#109;&#97;&#x69;&#x6c;&#64;&#x65;&#120;&#97;&#x6d;&#x70;&#108;&#x65;&#x2e;&#99;&#x6f;&#x6d;</a>“<br>生成的 id_rsa 是私钥，id_rsa.pub 是公钥。(注意此处不要设置密码，生成的公私钥用于下面 GitHub &#x2F; Gitee 的配置，以保证公私钥成对，否则从 GitHub -%3E Gitee 的同步将会失败。)</p>
 <p><img src="https://gitee.com/cjyzwg/img/raw/master/202203131223319.png"></p>
 <p>2.在 GitHub 项目的「<strong>Settings</strong>  -&gt;  <strong>Secrets</strong>  →  <strong>New repository secret</strong>」路径下配置好命名为 <strong>GITEE_RSA_PRIVATE_KEY</strong>，value值填写 <strong>id_rsa 私钥</strong>的内容。</p>
 <p>3.在 GitHub 的个人设置页面「<strong>Settings</strong> -&gt;  <strong>SSH and GPG keys</strong>」配置 SSH Keys 公钥（即：<strong>id_rsa.pub</strong>），命名随意。</p>
@@ -703,8 +649,21 @@ server &#123;
       </categories>
   </entry>
   <entry>
+    <title>SSH添加阿里云秘钥</title>
+    <url>/2021/10/6509e660e28c.html</url>
+    <content><![CDATA[<h3 id="阿里云服务器添加秘钥"><a href="#阿里云服务器添加秘钥" class="headerlink" title="阿里云服务器添加秘钥"></a>阿里云服务器添加秘钥</h3><p>1.登录控制台，创建秘钥对，并下载为a.pem<br>2.ssh-keygen -y -f a.pem会返回ssh-rsa<br>如果该命令失败，请运行chmod 400 my-key-pair.pem命令更改权限<br>3.登录到服务器a.com中，echo &gt;&gt; ~&#x2F;.ssh&#x2F;authorized_keys<br>4.nano &#x2F;etc&#x2F;ssh&#x2F;sshd_config<br>PermitRootLogin yes<br>当你完成全部设置，并以密钥方式登录成功后，再禁用密码登录：<br>PasswordAuthentication no<br>5.service sshd restart</p>
+<h4 id="访问："><a href="#访问：" class="headerlink" title="访问："></a>访问：</h4><p>ssh -i a.pem <a href="mailto:&#114;&#111;&#x6f;&#x74;&#x40;&#97;&#x2e;&#99;&#x6f;&#x6d;">&#114;&#111;&#x6f;&#x74;&#x40;&#97;&#x2e;&#99;&#x6f;&#x6d;</a> 访问<br>如果想省事的话，ssh-add -k a.pem，重启之后需要重新添加<br>直接ssh <a href="mailto:&#114;&#111;&#x6f;&#x74;&#x40;&#97;&#46;&#99;&#111;&#x6d;">&#114;&#111;&#x6f;&#x74;&#x40;&#97;&#46;&#99;&#111;&#x6d;</a> 即可访问</p>
+<h4 id="出现-Could-not-open-a-connection-to-your-authentication-agent解决办法或者Permission-denied-publickey-："><a href="#出现-Could-not-open-a-connection-to-your-authentication-agent解决办法或者Permission-denied-publickey-：" class="headerlink" title="出现 Could not open a connection to your authentication agent解决办法或者Permission denied (publickey).："></a>出现 Could not open a connection to your authentication agent解决办法或者Permission denied (publickey).：</h4><blockquote>
+<p>eval <code>ssh-agent -s</code>  </p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>SSH</category>
+      </categories>
+  </entry>
+  <entry>
     <title>Openvpn</title>
-    <url>/2023/06/3a072f79a61e.html</url>
+    <url>/2021/11/56cbc2b6434c.html</url>
     <content><![CDATA[<h3 id="搭建OpenVPN-（目的是用本地的mac连上公司的windows电脑）"><a href="#搭建OpenVPN-（目的是用本地的mac连上公司的windows电脑）" class="headerlink" title="搭建OpenVPN （目的是用本地的mac连上公司的windows电脑）"></a>搭建OpenVPN （目的是用本地的mac连上公司的windows电脑）</h3><p>1.wget <a href="https://git.io/vpn">https://git.io/vpn</a> -O openvpn-install.sh &amp;&amp; bash openvpn-install.sh</p>
 <h4 id="出现的问题"><a href="#出现的问题" class="headerlink" title="出现的问题"></a>出现的问题</h4><ul>
 <li><p>客户端连上 但是上不了外网<br>nano &#x2F;etc&#x2F;openvpn&#x2F;server.conf  </p>
@@ -731,38 +690,8 @@ server &#123;
       </categories>
   </entry>
   <entry>
-    <title>炎亚纶新剧出意外</title>
-    <url>/2023/06/c6b21dafe6cb.html</url>
-    <content><![CDATA[<h3 id="本篇拷贝其他文章，还是用于测试上传是否生效，如有问题，立马删除"><a href="#本篇拷贝其他文章，还是用于测试上传是否生效，如有问题，立马删除" class="headerlink" title="本篇拷贝其他文章，还是用于测试上传是否生效，如有问题，立马删除"></a>本篇拷贝其他文章，还是用于测试上传是否生效，如有问题，立马删除</h3><p>3月11日晚，台湾娱乐圈传来噩耗，正在拍摄的台湾电视剧《初拥》被曝突然发生意外，有两名工作人员意外坠谷身亡，令人痛心。</p>
-<p><img src="https://gitee.com/cjyzwg/img/raw/master/202203122234773.png"></p>
-<p>该剧的男主角炎亚纶在得知噩耗后，震惊又气愤，在凌晨时分连夜发长文炮轰制作方，要求对方“给出合理交代和正确态度”，在此之前，他将携该剧所有主演一同罢工，十分强势。</p>
-<p><img src="https://gitee.com/cjyzwg/img/raw/master/202203122242111.png"></p>
-<p>炎亚纶在长文中说，他为了台剧的每个细节苦恼、担心甚至愤怒，因而得罪了不少制作公司甚至电视台。  </p>
-<p>但当他被通知这次发生的憾事时，他还是正义心爆棚，不断问自己，他该坚持的底线到底在哪里？</p>
-<p><img src="https://gitee.com/cjyzwg/img/raw/master/202203122253210.png"></p>
-<p>在炎亚纶的心中，虽然他只是一个演员，可他每一次参与戏剧都是以制作方自居，期盼能照顾到更多的人。</p>
-<p>在他眼里，这世界确实存在着许多的不公，大小眼、辈分、番位，都是真实存在的，可工作人员却常常被大家忽略，从而造成人才出走，憾事不断发生。</p>
-<p><img src="https://gitee.com/cjyzwg/img/raw/master/202203122237869.png"></p>
-<p>所以在这次的坠亡事件发生后，他更加笃定，找到了心里的答案。炎亚纶称，“我的坚持从来不是为我一人，我不是自私的，我就是为了防止今日的憾事发生而发声，一有不合理立即发声，一有不安全立即停止，这是我不应该放过的坚持。”</p>
-<p>在制作方多曼尼没给出合理交代与正确态度前，炎亚纶将和该剧所有主演一同停止与该制作单位的合作，并且坚持以正确的安全措施合理工时与符合剧种成本付出为前提来继续下一次的合作，态度强硬。</p>
-<p><img src="https://gitee.com/cjyzwg/img/raw/master/202203122237440.png"></p>
-<p>炎亚纶在文末呼吁：“人命平等，一样宝贵，不分贵贱，没有高低，你我都有责任，不要心存侥幸。”</p>
-<p>“我恳求演员们、工作人员们、以及相关单位，正视问题解决问题，一同提升台剧环境，如果您们也认同我，请也别让有坚持的演员孤身奋斗。”</p>
-<p><img src="https://gitee.com/cjyzwg/img/raw/master/202203122238581.png"></p>
-<p>炎亚纶的发声情理交融，非常有感染力，让人看了感同身受。在评论下方，成千上万的网友都纷纷赶来，支持他的言论，其中就包括台湾女星吴映洁。</p>
-<p><img src="https://gitee.com/cjyzwg/img/raw/master/202203122239038.png"></p>
-<p>紧接着，《初拥》的女主角姚爱寗也公开表态：“发生这样的事情没有人能置身事外，希望借由这次的事件，让大家更正视拍片安全的问题，改善所有拍片人员的工作环境。”</p>
-<p><img src="https://gitee.com/cjyzwg/img/raw/master/202203122244210.png"></p>
-<p>多年来，影视工作者付出自己的青春与汗水，才成就了许多精彩又优质的作品，却仍不时传出令人伤心的消息。这些遗憾一遍又一遍地提醒着我们在制作影视剧时，千万不能忽略安全问题。</p>
-<p>希望逝者安息，后续事宜得到妥善处置，日后不要再有这样的憾事发生。</p>
-]]></content>
-      <categories>
-        <category>吃瓜</category>
-      </categories>
-  </entry>
-  <entry>
     <title>华为近期祭出的仓颉是个啥？</title>
-    <url>/2023/06/8a9f733e5551.html</url>
+    <url>/2023/02/96b521cbcc84.html</url>
     <content><![CDATA[<p>近期，华为开放了仓颉语言的部分试用报名。</p>
 <h5 id="「仓颉」是华为推出的一款编程语言，适配于鸿蒙系统和欧拉系统。"><a href="#「仓颉」是华为推出的一款编程语言，适配于鸿蒙系统和欧拉系统。" class="headerlink" title="「仓颉」是华为推出的一款编程语言，适配于鸿蒙系统和欧拉系统。"></a>「仓颉」是华为推出的一款编程语言，适配于鸿蒙系统和欧拉系统。</h5><h4 id="「仓颉」是中文编程么？"><a href="#「仓颉」是中文编程么？" class="headerlink" title="「仓颉」是中文编程么？"></a><strong>「仓颉」是中文编程么？</strong></h4><p>「仓颉」不是中文编程，大家看到的网图都是2000年易语言的编程。</p>
 <p><img src="https://gitee.com/cjyzwg/img/raw/master/202203251653722.png"></p>
@@ -793,8 +722,19 @@ server &#123;
       </categories>
   </entry>
   <entry>
+    <title>acme生成https协议操作方法</title>
+    <url>/2021/07/8b0b23c0aae0.html</url>
+    <content><![CDATA[<h3 id="利用acme-生成https协议"><a href="#利用acme-生成https协议" class="headerlink" title="利用acme 生成https协议"></a>利用acme 生成https协议</h3><h5 id="手动https"><a href="#手动https" class="headerlink" title="手动https"></a>手动https</h5><p>1.curl  <a href="https://get.acme.sh/">https://get.acme.sh</a> | sh<br>2.cd <del>&#x2F;.acme.sh&#x2F;<br>3.alias acme.sh&#x3D;</del>&#x2F;.acme.sh&#x2F;acme.sh<br>4.acme.sh –issue –force  -d a.test.com –webroot &#x2F;var&#x2F;www&#x2F;html&#x2F;a&#x2F;<br>5.mkdir -p &#x2F;etc&#x2F;nginx&#x2F;ssl_cert&#x2F;a.test.com<br>6.acme.sh –install-cert -d a.test.com –key-file &#x2F;etc&#x2F;nginx&#x2F;ssl_cert&#x2F;a.test.com&#x2F;key.pem –fullchain-file &#x2F;etc&#x2F;nginx&#x2F;ssl_cert&#x2F;a.test.com&#x2F;cert.pem –reloadcmd     “service nginx force-reload”</p>
+<h5 id="手动dns"><a href="#手动dns" class="headerlink" title="手动dns"></a>手动dns</h5><p>1.acme.sh –issue -d a.test.com –dns –yes-I-know-dns-manual-mode-enough-go-ahead-please<br>2.nslookup -q&#x3D;TXT _acme-challenge.a.test.com<br>3.acme.sh –renew -d a.test.com –yes-I-know-dns-manual-mode-enough-go-ahead-please<br>4.mkdir -p &#x2F;etc&#x2F;nginx&#x2F;ssl_cert&#x2F;a.test.com<br>5.acme.sh –install-cert -d a.test.com –key-file &#x2F;etc&#x2F;nginx&#x2F;ssl_cert&#x2F;a.test.com&#x2F;key.pem –fullchain-file &#x2F;etc&#x2F;nginx&#x2F;ssl_cert&#x2F;a.test.com&#x2F;cert.pem –reloadcmd     “service nginx force-reload”  </p>
+<h6 id="Nginx-配置："><a href="#Nginx-配置：" class="headerlink" title="Nginx 配置："></a>Nginx 配置：</h6><p>6.listen 443;<br>  ssl_certificate &#x2F;etc&#x2F;nginx&#x2F;ssl_cert&#x2F;a.test.com&#x2F;cert.pem;<br>  ssl_certificate_key &#x2F;etc&#x2F;nginx&#x2F;ssl_cert&#x2F;a.test.com&#x2F;key.pem;<br>  ssl_protocols TLSv1 TLSv1.1 TLSv1.2;<br>  ssl_prefer_server_ciphers on;  </p>
+]]></content>
+      <categories>
+        <category>SSH</category>
+      </categories>
+  </entry>
+  <entry>
     <title>如何从0-1开始写作</title>
-    <url>/2023/06/0e1e47d24320.html</url>
+    <url>/2023/04/02b57113de94.html</url>
     <content><![CDATA[<p>自己的写作能力有限，为了提升自己，没办法，只能硬写了。</p>
 <p>粥左罗在他的《学习习作》中提到<strong>一开始不知道写什么，就硬写，其实我们也都是从“硬写”过来的。</strong></p>
 <h3 id="对这个世界保留意见"><a href="#对这个世界保留意见" class="headerlink" title="对这个世界保留意见"></a>对这个世界保留意见</h3><p>比如，我觉得整个社会对买房这件事看得太重了，我就特别想写文章来表达我的看法；</p>
@@ -809,8 +749,33 @@ server &#123;
       </categories>
   </entry>
   <entry>
+    <title>无痛苦更新公众号（完整）</title>
+    <url>/2023/05/128f262880a4.html</url>
+    <content><![CDATA[<h3 id="无痛苦更新公众号（完整）"><a href="#无痛苦更新公众号（完整）" class="headerlink" title="无痛苦更新公众号（完整）"></a>无痛苦更新公众号（完整）</h3><p>很早以前注册了这个公众号，一直没用，一在于公众号的排版，即使是用其他排版工具，如秀米，也会耗费大量时间，还得上传图片，二在于自己的写作能力实在太差😂。</p>
+<p><strong>工欲善其事必先利其器</strong></p>
+<p>在接触公众号【程序员的喵】上有一篇无痛苦更新公众号的<a href="https://github.com/chenyukang/markdown-to-wechat">python插件</a>，我的内心也蠢蠢欲动，开始了自己的<a href="https://github.com/cjyzwg/markdown-wechat">go插件</a>。</p>
+<h4 id="流程"><a href="#流程" class="headerlink" title="流程"></a><strong>流程</strong></h4><p>我整体想要写作的流程：</p>
+<p><strong>80%的时间用于写作，而不是用在排版</strong></p>
+<blockquote>
+<p>obsidian写作 -&gt; go插件 -&gt; 更新公众号&#x2F;博客网站，小程序</p>
+</blockquote>
+<p><img src="https://gitee.com/cjyzwg/img/raw/master/202203171021868.png"></p>
+<blockquote>
+<p>本篇只讲obsidian 写完推送到公众号中:</p>
+</blockquote>
+<p><img src="https://gitee.com/cjyzwg/img/raw/master/202203171050806.png"></p>
+<h4 id="步骤"><a href="#步骤" class="headerlink" title="步骤"></a><strong>步骤</strong></h4><p>1、obsidian开始写，安装一些必要的插件，比如excalidraw，还有最重要的<a href="https://www.cnblogs.com/zd2021/p/15483878.html">obsidian+picgo+gitee搭建图床</a>，这样只用图片复制进来即可上传到gitee上了。</p>
+<p>2、使用go插件，go run main.go即能上传到微信公众号的草稿箱，这里没有做一键发布，手机上下载了订阅助手app，在草稿箱里预览下样式是否正确，然后发布。</p>
+<h4 id="优化-x2F-感悟"><a href="#优化-x2F-感悟" class="headerlink" title="优化&#x2F;感悟"></a><strong>优化&#x2F;感悟</strong></h4><p>插件有些地方还不够完善，我后面会优化，覆盖面为小白，不用明白go就可以使用，会发布在github的release中。</p>
+<p>不过现在对于我本人已足够可以使用了，至少我可以在半小时内写出一篇文章，而不是再额外1个小时做排版工作。</p>
+]]></content>
+      <categories>
+        <category>微信公众号</category>
+      </categories>
+  </entry>
+  <entry>
     <title>无痛苦更新公众号</title>
-    <url>/2023/06/f2a7f8371fcd.html</url>
+    <url>/2023/05/a399d4080b31.html</url>
     <content><![CDATA[<h4 id="背景"><a href="#背景" class="headerlink" title="背景"></a><strong>背景</strong></h4><ul>
 <li>本身有自己的博客网站，以及博客小程序</li>
 <li>想更新公众号，一直没有动力去写，一个是自己的文笔实在是太弱，二个是觉得公众号的更新很麻烦，每次都需要去更新，尤其图片要重新上传，这就很麻烦，然后有些样式也不符合要求</li>
@@ -856,33 +821,8 @@ server &#123;
       </categories>
   </entry>
   <entry>
-    <title>无痛苦更新公众号（完整）</title>
-    <url>/2023/06/906fa42b8a26.html</url>
-    <content><![CDATA[<h3 id="无痛苦更新公众号（完整）"><a href="#无痛苦更新公众号（完整）" class="headerlink" title="无痛苦更新公众号（完整）"></a>无痛苦更新公众号（完整）</h3><p>很早以前注册了这个公众号，一直没用，一在于公众号的排版，即使是用其他排版工具，如秀米，也会耗费大量时间，还得上传图片，二在于自己的写作能力实在太差😂。</p>
-<p><strong>工欲善其事必先利其器</strong></p>
-<p>在接触公众号【程序员的喵】上有一篇无痛苦更新公众号的<a href="https://github.com/chenyukang/markdown-to-wechat">python插件</a>，我的内心也蠢蠢欲动，开始了自己的<a href="https://github.com/cjyzwg/markdown-wechat">go插件</a>。</p>
-<h4 id="流程"><a href="#流程" class="headerlink" title="流程"></a><strong>流程</strong></h4><p>我整体想要写作的流程：</p>
-<p><strong>80%的时间用于写作，而不是用在排版</strong></p>
-<blockquote>
-<p>obsidian写作 -&gt; go插件 -&gt; 更新公众号&#x2F;博客网站，小程序</p>
-</blockquote>
-<p><img src="https://gitee.com/cjyzwg/img/raw/master/202203171021868.png"></p>
-<blockquote>
-<p>本篇只讲obsidian 写完推送到公众号中:</p>
-</blockquote>
-<p><img src="https://gitee.com/cjyzwg/img/raw/master/202203171050806.png"></p>
-<h4 id="步骤"><a href="#步骤" class="headerlink" title="步骤"></a><strong>步骤</strong></h4><p>1、obsidian开始写，安装一些必要的插件，比如excalidraw，还有最重要的<a href="https://www.cnblogs.com/zd2021/p/15483878.html">obsidian+picgo+gitee搭建图床</a>，这样只用图片复制进来即可上传到gitee上了。</p>
-<p>2、使用go插件，go run main.go即能上传到微信公众号的草稿箱，这里没有做一键发布，手机上下载了订阅助手app，在草稿箱里预览下样式是否正确，然后发布。</p>
-<h4 id="优化-x2F-感悟"><a href="#优化-x2F-感悟" class="headerlink" title="优化&#x2F;感悟"></a><strong>优化&#x2F;感悟</strong></h4><p>插件有些地方还不够完善，我后面会优化，覆盖面为小白，不用明白go就可以使用，会发布在github的release中。</p>
-<p>不过现在对于我本人已足够可以使用了，至少我可以在半小时内写出一篇文章，而不是再额外1个小时做排版工作。</p>
-]]></content>
-      <categories>
-        <category>微信公众号</category>
-      </categories>
-  </entry>
-  <entry>
     <title>破防了</title>
-    <url>/2023/06/e76cc4012a1b.html</url>
+    <url>/2023/03/e7889065c5f9.html</url>
     <content><![CDATA[<h4 id="01"><a href="#01" class="headerlink" title="01"></a><strong>01</strong></h4><p><em><strong>转自：桌子生活观，测试s</strong></em></p>
 <p>被人无故殴打，你的第一反应是什么？</p>
 <p>我想，大部分人在反应过来后，会奋起反抗。</p>
@@ -985,7 +925,7 @@ server &#123;
   </entry>
   <entry>
     <title>阿三与喵姑娘</title>
-    <url>/2023/06/79c945657733.html</url>
+    <url>/2023/01/909cf079bde5.html</url>
     <content><![CDATA[<h4 id="MU5735号航班"><a href="#MU5735号航班" class="headerlink" title="MU5735号航班"></a><strong>MU5735号航班</strong></h4><p>3.21的MU5735空难，那几天罕见的失眠了，几乎每隔一个小时都在刷着抖音、微博，获取132名乘客是否还活着的消息，搜寻黑匣子的消息，疯狂的刷着历史上的空难，来对比这次空难，甚至还有想去梧州的想法，直到官方宣布遇难我才相信。</p>
 <p>昨天刷到叫「<strong>红豆和树</strong>」的公众号，每篇文章看完都会莫名的戳中泪点。</p>
 <p><img src="https://gitee.com/cjyzwg/img/raw/master/202203281442530.png"></p>
@@ -1023,9 +963,9 @@ server &#123;
   </entry>
   <entry>
     <title>搭建git服务器超简单命令</title>
-    <url>/2023/06/923835b63def.html</url>
+    <url>/2021/12/907676a85b51.html</url>
     <content><![CDATA[<h3 id="搭建git私有服务器命令"><a href="#搭建git私有服务器命令" class="headerlink" title="搭建git私有服务器命令"></a>搭建git私有服务器命令</h3><h4 id="服务器："><a href="#服务器：" class="headerlink" title="服务器："></a>服务器：</h4><p>1.sudo apt-get install git-core<br>2.git –bare init &#x2F;home&#x2F;git&#x2F;rep.git (rep为仓库的名字)</p>
-<h4 id="本地："><a href="#本地：" class="headerlink" title="本地："></a>本地：</h4><p>1.git clone <a href="mailto:&#x67;&#x69;&#x74;&#x40;&#49;&#48;&#x2e;&#56;&#46;&#48;&#46;&#56;">&#x67;&#x69;&#x74;&#x40;&#49;&#48;&#x2e;&#56;&#46;&#48;&#46;&#56;</a>:&#x2F;home&#x2F;git&#x2F;rep.git</p>
+<h4 id="本地："><a href="#本地：" class="headerlink" title="本地："></a>本地：</h4><p>1.git clone <a href="mailto:&#x67;&#x69;&#116;&#64;&#x31;&#48;&#46;&#x38;&#46;&#48;&#x2e;&#56;">&#x67;&#x69;&#116;&#64;&#x31;&#48;&#46;&#x38;&#46;&#48;&#x2e;&#56;</a>:&#x2F;home&#x2F;git&#x2F;rep.git</p>
 ]]></content>
       <categories>
         <category>树莓派</category>
@@ -1033,7 +973,7 @@ server &#123;
   </entry>
   <entry>
     <title>树莓派烧录</title>
-    <url>/2023/06/9aaeed3398b2.html</url>
+    <url>/2021/12/253bd885770c.html</url>
     <content><![CDATA[<p>参考链接：<a href="http://wangwei.info/mac-raspberrypi3-ubuntu-mate-vncserver-installation/">http://wangwei.info/mac-raspberrypi3-ubuntu-mate-vncserver-installation/</a></p>
 <ol>
 <li>从官网下载镜像：ubuntu-mate-16.04.2-desktop-armhf-raspberry-pi.img.xz</li>
@@ -1056,230 +996,8 @@ server &#123;
       </categories>
   </entry>
   <entry>
-    <title>Documentation</title>
-    <url>/2018/02/67b9e89ccc4d.html</url>
-    <content><![CDATA[<h3 id="Elegant-and-Powerful-Theme-for-Hexo"><a href="#Elegant-and-Powerful-Theme-for-Hexo" class="headerlink" title="Elegant and Powerful Theme for Hexo"></a>Elegant and Powerful Theme for Hexo</h3><p>Theme NexT has the following features:</p>
-<ul>
-<li>Vanilla JavaScript.</li>
-<li>Support <a href="https://caniuse.com/prefers-color-scheme">native dark mode</a>.</li>
-<li>Support <a href="https://github.com/MoOx/pjax">Pjax</a> to deliver a fast browsing experience.</li>
-<li>Integrated <a href="https://www.mathjax.org/">MathJax</a> and <a href="https://katex.org/">KaTeX</a> mathematical formula rendering.</li>
-<li>Integrated <a href="https://mozilla.github.io/pdf.js/">PDF.js</a> and <a href="https://mermaid-js.github.io/mermaid/">mermaid diagram</a>.</li>
-<li>Support <a href="https://disqus.com/">Disqus</a>, <a href="https://changyan.kuaizhan.com/">Changyan</a>, <a href="https://livere.com/">LiveRe</a>, <a href="https://gitalk.github.io/">Gitalk</a>, <a href="https://utteranc.es/">Utterances</a> and <a href="https://isso-comments.de/">Isso</a> comment systems.</li>
-<li>Support a large number of third-party statistics services.</li>
-<li>Easy to switch CDN provider.</li>
-<li>Easy to customize content or modify style.</li>
-</ul>
-<h3 id="Four-Schemes-in-One"><a href="#Four-Schemes-in-One" class="headerlink" title="Four Schemes in One"></a>Four Schemes in One</h3><p>By using different Schemes in NexT, you can simply change the style of your blog, and nearly all options can be used in all schemes.</p>
-<h3 id="Multilingual-Support"><a href="#Multilingual-Support" class="headerlink" title="Multilingual Support"></a>Multilingual Support</h3><p>Thanks to the contribution of our users and developers, <a href="/docs/theme-settings/internationalization.html#Choosing-Language">NexT now supports over 20 languages</a>.</p>
-<div class="group-picture"><div class="group-picture-row"><div class="group-picture-column"><img src="/images/en.png" alt="English translation"></div></div><div class="group-picture-row"><div class="group-picture-column"><img src="/images/cn.png" alt="Chinese translation"></div><div class="group-picture-column"><img src="/images/ru.png" alt="Russian translation"></div></div></div>
-
-<h3 id="Code-Highlighting-Themes"><a href="#Code-Highlighting-Themes" class="headerlink" title="Code Highlighting Themes"></a>Code Highlighting Themes</h3><p>NexT uses code highlighting themes from the <a href="https://highlightjs.org/">Highlight.js</a> and <a href="https://prismjs.com/">Prism</a> package, and makes <a href="/docs/theme-settings/miscellaneous.html#Codeblock-Style">more than 300 themes</a> available to you.</p>
-<!-- Inspired by https://github.com/sindresorhus/css-in-readme-like-wat -->
-<table>
-<thead>
-<tr>
-<th align="center">Tomorrow</th>
-<th align="center">Tomorrow Night</th>
-<th align="center">Tomorrow Night Eighties</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center"><img src="/images/tomorrow.svg" alt="Tomorrow"></td>
-<td align="center"><img src="/images/tomorrow-night.svg" alt="Tomorrow Night"></td>
-<td align="center"><img src="/images/tomorrow-night-eighties.svg" alt="Tomorrow Night Eighties"></td>
-</tr>
-</tbody></table>
-<table>
-<thead>
-<tr>
-<th align="center">Tomorrow Night Blue</th>
-<th align="center">Tomorrow Night Bright</th>
-<th align="center">Default</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center"><img src="/images/tomorrow-night-blue.svg" alt="Tomorrow Night Blue"></td>
-<td align="center"><img src="/images/tomorrow-night-bright.svg" alt="Tomorrow Night Bright"></td>
-<td align="center"><img src="/images/default.svg" alt="Default"></td>
-</tr>
-</tbody></table>
-<h3 id="Supported-Browsers"><a href="#Supported-Browsers" class="headerlink" title="Supported Browsers"></a>Supported Browsers</h3><p>We design NexT to support the latest web browsers. We support the current versions of Chrome, Firefox, Safari, and Microsoft Edge. Many CSS3 and ES6 features are used in theme NexT, including CSS Variables, Destructuring assignment, Arrow functions and Spread operator.</p>
-<table>
-<thead>
-<tr>
-<th>Browser</th>
-<th>Supported versions</th>
-<th>Release date</th>
-</tr>
-</thead>
-<tbody><tr>
-<td><i class="fab fa-internet-explorer fa-2x"></i> IE</td>
-<td>N&#x2F;A</td>
-<td>Oct 17, 2013</td>
-</tr>
-<tr>
-<td><i class="fab fa-chrome fa-2x"></i> Chrome</td>
-<td>60+</td>
-<td>Jul 25, 2017</td>
-</tr>
-<tr>
-<td><i class="fab fa-firefox-browser fa-2x"></i> Firefox</td>
-<td>55+</td>
-<td>Aug 8, 2017</td>
-</tr>
-<tr>
-<td><i class="fab fa-opera fa-2x"></i> Opera</td>
-<td>47+</td>
-<td>Aug 9, 2017</td>
-</tr>
-<tr>
-<td><i class="fab fa-safari fa-2x"></i> Safari</td>
-<td>11+</td>
-<td>Sep 19, 2017</td>
-</tr>
-<tr>
-<td><i class="fab fa-edge fa-2x"></i> Edge</td>
-<td>80+</td>
-<td>Feb 7, 2020</td>
-</tr>
-</tbody></table>
-<p>Some other new Web APIs, such as <a href="https://caniuse.com/intersectionobserver">IntersectionObserver</a> and <a href="https://caniuse.com/fetch">Fetch API</a>, are used by NexT plugins. They are not core functions of NexT, so we have no plans to make them compatible with legacy browsers.</p>
-<p>In addition, <a href="https://caniuse.com/css-sticky">CSS position: sticky</a> is used for sidebar positioning. On browsers that do not support this property, its fallback style <code>position: static</code> will be used.</p>
-<h3 id="Customize-Your-NexT"><a href="#Customize-Your-NexT" class="headerlink" title="Customize Your NexT"></a>Customize Your NexT</h3><p>NexT have flexible but simple options, and you can make your own blog with built-in third-party support. Now let’s <a href="/docs/getting-started/">get started</a>.</p>
-]]></content>
-      <categories>
-        <category>测试</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>Hello World</title>
-    <url>/2023/06/66c5ec627403.html</url>
-    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-]]></content>
-      <categories>
-        <category>测试</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>Hello World1</title>
-    <url>/2023/06/8d48886a6f4e.html</url>
-    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-]]></content>
-      <categories>
-        <category>测试</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>测试</title>
-    <url>/2023/06/c2324b653e8f.html</url>
-    <content><![CDATA[<h2 id="开始"><a href="#开始" class="headerlink" title="开始"></a>开始</h2><h2 id="结束"><a href="#结束" class="headerlink" title="结束"></a>结束</h2>]]></content>
-      <categories>
-        <category>测试</category>
-      </categories>
-      <tags>
-        <tag>测试</tag>
-        <tag>待完成</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>get startted</title>
-    <url>/2023/06/60edd9302881.html</url>
-    <content><![CDATA[<h3 id="Hexo-Installation"><a href="#Hexo-Installation" class="headerlink" title="Hexo Installation"></a>Hexo Installation</h3><p>If this is your first time using Hexo, you can take some time to review the Hexo Docs to see <a href="https://hexo.io/docs/">how to install Hexo</a> and <a href="https://hexo.io/docs/setup">initialize a site</a>. After the installation is successful, you should be able to execute <code>hexo</code> (or <code>npx hexo</code>) on the command line, and there must be <code>package.json</code>, <code>source</code>, <code>themes</code> and other directories in your <mark class="label info">site root directory</mark>:</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> hexo-site</span><br><span class="line">$ <span class="built_in">ls</span></span><br><span class="line">_config.yml  node_modules  package-lock.json  package.json  scaffolds  <span class="built_in">source</span>  themes</span><br></pre></td></tr></table></figure>
-
-<div class="note info"><p>If you are new to Node.js or Hexo, you can also modify the source code of an existing Hexo website instead of creating a new one, to help you understand how Hexo works. In fact, the document you are reading is generated by Hexo with NexT, and you can install it with the following command:</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git <span class="built_in">clone</span> https://github.com/next-theme/theme-next-docs</span><br><span class="line">$ <span class="built_in">cd</span> theme-next-docs</span><br><span class="line">$ npm install</span><br></pre></td></tr></table></figure>
-</div>
-
-<p>Make sure that you have installed Hexo and created a site with it successfully, because the following documents require you to operate in the <mark class="label info">site root directory</mark>.</p>
-<h3 id="NexT-Installation"><a href="#NexT-Installation" class="headerlink" title="NexT Installation"></a>NexT Installation</h3><p>The detailed steps to install or upgrade the theme are as follows.</p>
-<h4 id="Downloading-NexT"><a href="#Downloading-NexT" class="headerlink" title="Downloading NexT"></a>Downloading NexT</h4><p>It’s easy to install Hexo theme: you can choose to install the theme through npm, or download the source code of the theme in the <code>themes</code> directory under <mark class="label info">site root directory</mark>.</p>
-<div class="tabs" id="downloading-next"><ul class="nav-tabs"><li class="tab active"><a href="#downloading-next-1">Using <code>npm</code></a></li><li class="tab"><a href="#downloading-next-2">Using <code>git</code></a></li></ul><div class="tab-content"><div class="tab-pane active" id="downloading-next-1"><p>If you’re using Hexo 5.0 or later, the simplest way to install is through npm.</p>
-<p>Open your Terminal, change to Hexo <mark class="label info">site root directory</mark> and install NexT theme:</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> hexo-site</span><br><span class="line">$ npm install hexo-theme-next</span><br></pre></td></tr></table></figure></div><div class="tab-pane" id="downloading-next-2"><p>If you know about <a href="https://git-scm.com/">Git</a>, you can clone the whole repository and update it in any time with <code>git pull</code> command instead of downloading archive manually.</p>
-<p>Open your terminal, change to Hexo <mark class="label info">site root directory</mark> and clone the latest master branch of NexT theme:</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> hexo-site</span><br><span class="line">$ git <span class="built_in">clone</span> https://github.com/next-theme/hexo-theme-next themes/next</span><br></pre></td></tr></table></figure></div></div></div>
-
-<div class="note primary"><p>You can also read <a href="/docs/getting-started/installation.html">detailed installation instructions</a> if you want any other installation variant.</p>
-</div>
-
-<h4 id="Upgrading-NexT"><a href="#Upgrading-NexT" class="headerlink" title="Upgrading NexT"></a>Upgrading NexT</h4><p>A new version of NexT will be released every month. Please read the <a href="https://github.com/next-theme/hexo-theme-next/releases">release notes</a> before updating the theme. You can update NexT by the following command.</p>
-<div class="tabs" id="upgrading-next"><ul class="nav-tabs"><li class="tab active"><a href="#upgrading-next-1">Using <code>npm</code></a></li><li class="tab"><a href="#upgrading-next-2">Using <code>git</code></a></li></ul><div class="tab-content"><div class="tab-pane active" id="upgrading-next-1"><p>Install the latest version through npm:</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> hexo-site</span><br><span class="line">$ npm install hexo-theme-next@latest</span><br></pre></td></tr></table></figure></div><div class="tab-pane" id="upgrading-next-2"><p>Or update to the latest master branch:</p>
-<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> hexo-site</span><br><span class="line">$ <span class="built_in">cd</span> themes/next</span><br><span class="line">$ git pull origin master</span><br></pre></td></tr></table></figure>
-
-<p>When running <code>git pull</code>, you can bypass merge conflicts (error message like <strong>«Commit your changes or stash them before you can merge»</strong>) by using the <code>Commit</code>, <code>Stash</code> or <code>Reset</code> commands for local changes. See <a href="https://stackoverflow.com/a/15745424/5861495">here</a> how to do it.</p></div></div></div>
-
-<div class="note warning"><p>If you are still using NexT version 5 or 7, you can read <a href="/docs/getting-started/upgrade.html">instructions for upgrading from legacy version</a>.</p>
-</div>
-
-<h3 id="Configuration-Files"><a href="#Configuration-Files" class="headerlink" title="Configuration Files"></a>Configuration Files</h3><p>After the installation of Hexo and NexT, you may found that there are two configuration files using by Hexo and both called <code>_config.yml</code>:</p>
-<ol>
-<li>The first one is under <mark class="label info">site root directory</mark>, which contains Hexo’s config.</li>
-<li>The second one is under <mark class="label primary">theme root directory</mark> (e.g. <code>themes/next/_config.yml</code> or <code>node_modules/hexo-theme-next/_config.yml</code>), which is provided by NexT and contains theme’s config.</li>
-</ol>
-<p>Let’s call the first one – <mark class="label info">Hexo config file</mark>, and the second one – <mark class="label primary">NexT config file</mark>.</p>
-<div class="note warning"><p>However, we do not recommend directly modifying the <mark class="label primary">NexT config file</mark>. It is quite often running into conflict status when updating NexT theme via <code>git pull</code>, or need to merge configurations manually when upgrading to new releases. For the theme installed through npm, it is also difficult to modify the <mark class="label primary">NexT config file</mark> in <code>node_modules</code>.</p>
-<p>In order to resolve this issue, we recommend using the <a href="/docs/getting-started/configuration.html">Alternate Theme Config</a> feature to configure theme NexT.</p>
-</div>
-
-<h3 id="Hexo-Configuration"><a href="#Hexo-Configuration" class="headerlink" title="Hexo Configuration"></a>Hexo Configuration</h3><p>The following settings in <mark class="label info">Hexo config file</mark> are very helpful for optimizing your website.</p>
-<h4 id="Configuring-Author"><a href="#Configuring-Author" class="headerlink" title="Configuring Author"></a>Configuring Author</h4><p>Edit <mark class="label info">Hexo config file</mark> and set the value of <code>author</code> to your nickname.</p>
-<figure class="highlight yml"><figcaption><span>Hexo config file</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="comment"># Site</span></span><br><span class="line"><span class="attr">author:</span></span><br></pre></td></tr></table></figure>
-
-<h4 id="Configuring-Description"><a href="#Configuring-Description" class="headerlink" title="Configuring Description"></a>Configuring Description</h4><p>Edit <mark class="label info">Hexo config file</mark> and set the value of <code>description</code> to your description, which can be a sentence you like.</p>
-<figure class="highlight yml"><figcaption><span>Hexo config file</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="comment"># Site</span></span><br><span class="line"><span class="attr">description:</span></span><br></pre></td></tr></table></figure>
-
-<h4 id="Enabling-NexT"><a href="#Enabling-NexT" class="headerlink" title="Enabling NexT"></a>Enabling NexT</h4><p>Like all Hexo themes, after you download it, open <mark class="label info">Hexo config file</mark>, find <code>theme</code> option, and change its value to <code>next</code> (or another theme directory name).</p>
-<figure class="highlight yml"><figcaption><span>Hexo config file</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="attr">theme:</span> <span class="string">next</span></span><br></pre></td></tr></table></figure>
-
-<p>Now you have installed NexT theme and enabled it. The following steps will help you verify whether NexT is enabled correctly.</p>
-<h3 id="Checking-NexT"><a href="#Checking-NexT" class="headerlink" title="Checking NexT"></a>Checking NexT</h3><p>It’s recommended to use <code>hexo clean</code> to clean Hexo’s cache first.<br>Then start Hexo local server with debug parameter (by adding <code>--debug</code>), the whole command is <code>hexo s --debug</code>. You can see the output while running, and if you find problem, you can use the output to help others locate error better. When it prints:</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">INFO  Hexo is running at http://localhost:4000/. Press Ctrl+C to stop.</span><br></pre></td></tr></table></figure>
-
-<p>Now you can open <code>http://localhost:4000</code> in your browser, and check whether the site works correctly.</p>
-<div class="note success"><p>If you find your site looks like this picture, you have installed it correctly. That’s default NexT scheme – Muse.<br><img src="/images/next-default-scheme.png" alt="Default Scheme – Muse"></p>
-</div>
-
-<p>After that we can <a href="/docs/getting-started/deployment.html">configure deployment</a>.</p>
-<p>If everything is OK, in next steps we will change some settings including <a href="/docs/theme-settings/">personalization</a> and <a href="/docs/third-party-services/">third-party services integration</a>.</p>
-]]></content>
-      <categories>
-        <category>测试</category>
-      </categories>
-      <tags>
-        <tag>hexo</tag>
-        <tag>博客</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>我如何写出一万元的文章</title>
-    <url>/2023/06/1c369132c8ac.html</url>
+    <url>/2020/04/f336e570b37f.html</url>
     <content><![CDATA[<h3 id="摘自程序员的喵公众号文章"><a href="#摘自程序员的喵公众号文章" class="headerlink" title="摘自程序员的喵公众号文章"></a>摘自程序员的喵公众号文章</h3><p>当我开始练习写作时，他人的故事、技巧分享激励了我。希望我的经历也会帮助到其他人，这篇案例分享的文章是我 2020 写的，原文是 How I Wrote a $500 Article in My First 3 Months on Medium ，我改过来加上一些后续。</p>
 <p>一万元并不是一笔巨款，但是算是我赚的时薪很高的一笔收入，因为我写当时那篇文章只花了 30 分钟。</p>
 <h4 id="如何写出来的"><a href="#如何写出来的" class="headerlink" title="如何写出来的"></a><strong>如何写出来的</strong></h4><p>我作为一名软件工程师已经工作了近十年。我喜欢阅读，但没有写过太多文章。2019 年我开始练习英语写作，我在网上看到东西都会想想这篇文章怎么样，哪些地方值得学习。</p>
@@ -1313,6 +1031,66 @@ server &#123;
 ]]></content>
       <categories>
         <category>认知与成长</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>炎亚纶新剧出意外</title>
+    <url>/2019/06/c7617efef45a.html</url>
+    <content><![CDATA[<h3 id="本篇拷贝其他文章，还是用于测试上传是否生效，如有问题，立马删除"><a href="#本篇拷贝其他文章，还是用于测试上传是否生效，如有问题，立马删除" class="headerlink" title="本篇拷贝其他文章，还是用于测试上传是否生效，如有问题，立马删除"></a>本篇拷贝其他文章，还是用于测试上传是否生效，如有问题，立马删除</h3><p>3月11日晚，台湾娱乐圈传来噩耗，正在拍摄的台湾电视剧《初拥》被曝突然发生意外，有两名工作人员意外坠谷身亡，令人痛心。</p>
+<p><img src="https://gitee.com/cjyzwg/img/raw/master/202203122234773.png"></p>
+<p>该剧的男主角炎亚纶在得知噩耗后，震惊又气愤，在凌晨时分连夜发长文炮轰制作方，要求对方“给出合理交代和正确态度”，在此之前，他将携该剧所有主演一同罢工，十分强势。</p>
+<p><img src="https://gitee.com/cjyzwg/img/raw/master/202203122242111.png"></p>
+<p>炎亚纶在长文中说，他为了台剧的每个细节苦恼、担心甚至愤怒，因而得罪了不少制作公司甚至电视台。  </p>
+<p>但当他被通知这次发生的憾事时，他还是正义心爆棚，不断问自己，他该坚持的底线到底在哪里？</p>
+<p><img src="https://gitee.com/cjyzwg/img/raw/master/202203122253210.png"></p>
+<p>在炎亚纶的心中，虽然他只是一个演员，可他每一次参与戏剧都是以制作方自居，期盼能照顾到更多的人。</p>
+<p>在他眼里，这世界确实存在着许多的不公，大小眼、辈分、番位，都是真实存在的，可工作人员却常常被大家忽略，从而造成人才出走，憾事不断发生。</p>
+<p><img src="https://gitee.com/cjyzwg/img/raw/master/202203122237869.png"></p>
+<p>所以在这次的坠亡事件发生后，他更加笃定，找到了心里的答案。炎亚纶称，“我的坚持从来不是为我一人，我不是自私的，我就是为了防止今日的憾事发生而发声，一有不合理立即发声，一有不安全立即停止，这是我不应该放过的坚持。”</p>
+<p>在制作方多曼尼没给出合理交代与正确态度前，炎亚纶将和该剧所有主演一同停止与该制作单位的合作，并且坚持以正确的安全措施合理工时与符合剧种成本付出为前提来继续下一次的合作，态度强硬。</p>
+<p><img src="https://gitee.com/cjyzwg/img/raw/master/202203122237440.png"></p>
+<p>炎亚纶在文末呼吁：“人命平等，一样宝贵，不分贵贱，没有高低，你我都有责任，不要心存侥幸。”</p>
+<p>“我恳求演员们、工作人员们、以及相关单位，正视问题解决问题，一同提升台剧环境，如果您们也认同我，请也别让有坚持的演员孤身奋斗。”</p>
+<p><img src="https://gitee.com/cjyzwg/img/raw/master/202203122238581.png"></p>
+<p>炎亚纶的发声情理交融，非常有感染力，让人看了感同身受。在评论下方，成千上万的网友都纷纷赶来，支持他的言论，其中就包括台湾女星吴映洁。</p>
+<p><img src="https://gitee.com/cjyzwg/img/raw/master/202203122239038.png"></p>
+<p>紧接着，《初拥》的女主角姚爱寗也公开表态：“发生这样的事情没有人能置身事外，希望借由这次的事件，让大家更正视拍片安全的问题，改善所有拍片人员的工作环境。”</p>
+<p><img src="https://gitee.com/cjyzwg/img/raw/master/202203122244210.png"></p>
+<p>多年来，影视工作者付出自己的青春与汗水，才成就了许多精彩又优质的作品，却仍不时传出令人伤心的消息。这些遗憾一遍又一遍地提醒着我们在制作影视剧时，千万不能忽略安全问题。</p>
+<p>希望逝者安息，后续事宜得到妥善处置，日后不要再有这样的憾事发生。</p>
+]]></content>
+      <categories>
+        <category>吃瓜</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>页面传递参数</title>
+    <url>/2022/10/af94654c7b8e.html</url>
+    <content><![CDATA[<h3 id="第一个页面："><a href="#第一个页面：" class="headerlink" title="第一个页面："></a>第一个页面：</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">class Page extends StatelessWidget &#123;</span><br><span class="line">  final String title;</span><br><span class="line"></span><br><span class="line">  Page(&#123;this.title&#125;);</span><br><span class="line"></span><br><span class="line">  @override</span><br><span class="line">  Widget build(BuildContext context) &#123;</span><br><span class="line">    return Scaffold(</span><br><span class="line">      appBar: AppBar(</span><br><span class="line">        title: Text(title),</span><br><span class="line">        elevation: 0.0,</span><br><span class="line">      ),</span><br><span class="line">      body: BlogSheet(title: title),</span><br><span class="line">    );</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="第二个页面"><a href="#第二个页面" class="headerlink" title="第二个页面"></a>第二个页面</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">class BlogSheet extends StatefulWidget &#123;</span><br><span class="line">  BlogSheet(&#123;Key key, this.title&#125;) : super(key: key);</span><br><span class="line">  final String title;</span><br><span class="line"></span><br><span class="line">  @override</span><br><span class="line">  _BlogSheetState createState() =&gt; _BlogSheetState();</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">class _BlogSheetState extends State&lt;BlogSheet&gt; &#123;</span><br><span class="line">  List bloglists;</span><br><span class="line"></span><br><span class="line">  @override</span><br><span class="line">  void initState() &#123;</span><br><span class="line">    super.initState();</span><br><span class="line"></span><br><span class="line">    getData(type: &#x27;api&#x27;, category: widget.title);</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  Future getData(&#123;String type = &#x27;api&#x27;, String category = &#x27;PHP&#x27;&#125;) async &#123;</span><br><span class="line">    final String url = &quot;http://localhost:8081/$type?category=$category&quot;;</span><br><span class="line">    final response = await http.get(url);</span><br><span class="line"></span><br><span class="line">    if (response.statusCode == 200) &#123;</span><br><span class="line">      List top = json.decode(response.body);</span><br><span class="line">      setState(() &#123;</span><br><span class="line">        bloglists = top.map((json) =&gt; Blog.fromJson(json)).toList();</span><br><span class="line">      &#125;);</span><br><span class="line">    &#125; else &#123;</span><br><span class="line">      print(&quot;err code $response.statusCode&quot;);</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  @override</span><br><span class="line">  Widget build(BuildContext context) &#123;</span><br><span class="line">    return Container(</span><br><span class="line">      child: bloglists == null</span><br><span class="line">          ? Center(child: CircularProgressIndicator())</span><br><span class="line">          : Padding(</span><br><span class="line">              padding: EdgeInsets.symmetric(horizontal: 6.0, vertical: 10.0),</span><br><span class="line">              child: ListView.builder(</span><br><span class="line">                itemCount: bloglists.length,</span><br><span class="line">                itemBuilder: (BuildContext context, int index) &#123;</span><br><span class="line">                  return BlogCard(bloglists[index]);</span><br><span class="line">                &#125;,</span><br><span class="line">              ),</span><br><span class="line">            ),</span><br><span class="line">    );</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>FLUTTER</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>flutter mac下安装</title>
+    <url>/2022/12/308876824086.html</url>
+    <content><![CDATA[<h4 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h4><p><strong><a href="https://ninghao.net/video/6364">https://ninghao.net/video/6364</a></strong><br><strong><a href="https://flutterchina.club/setup-macos/">https://flutterchina.club/setup-macos/</a></strong></p>
+<h5 id="启动命令："><a href="#启动命令：" class="headerlink" title="启动命令："></a>启动命令：</h5><blockquote>
+<p>$ flutter create cjios<br>$ flutter emulator –launch apple_ios_simulator<br>如果出现no device 首先要装android studio  </p>
+</blockquote>
+<h5 id="如果出现UIApplication-LaunchOptionsKey问题"><a href="#如果出现UIApplication-LaunchOptionsKey问题" class="headerlink" title="如果出现UIApplication.LaunchOptionsKey问题"></a>如果出现UIApplication.LaunchOptionsKey问题</h5><p>解决办法：</p>
+<p>nano  cjios&#x2F;ios&#x2F;Runner&#x2F;AppDelegate.swift<br>[UIApplication.LaunchOptionsKey: Any]<br>改成<br>[UIApplicationLaunchOptionsKey: Any]</p>
+<h5 id="运行命令"><a href="#运行命令" class="headerlink" title="运行命令"></a>运行命令</h5><blockquote>
+<p>$ flutter run   </p>
+</blockquote>
+<h5 id="安装命令"><a href="#安装命令" class="headerlink" title="安装命令"></a>安装命令</h5><blockquote>
+<p>$ flutter devices<br>iPhone • xxxxxx • ios • iOS 13.2<br>$ flutter run -d   xxxxxx<br>即可安装到手机上了</p>
+</blockquote>
+<h4 id="工具栏："><a href="#工具栏：" class="headerlink" title="工具栏："></a>工具栏：</h4><p>1、<a href="https://pub.dev/packages/zefyr">https://pub.dev/packages/zefyr</a><br>2、<a href="https://javiercbk.github.io/json_to_dart/">https://javiercbk.github.io/json_to_dart/</a><br>3、获取列表数据：<a href="https://blog.csdn.net/weixin_30867015/article/details/98277080">https://blog.csdn.net/weixin_30867015/article/details/98277080</a><br>4、展示markdown文件：<a href="https://github.com/flutter/flutter_markdown/blob/master/example/lib/main.dart">https://github.com/flutter/flutter_markdown/blob/master/example/lib/main.dart</a></p>
+]]></content>
+      <categories>
+        <category>FLUTTER</category>
       </categories>
   </entry>
 </search>
