@@ -21,14 +21,14 @@
 
     <meta name="description" content="目的学习go协程池 网上go协程池大同小异，理解原理就可以了，我是根据bilibili上一个视频操作的，讲的还挺好的，自行搜索下，不过因为这个视频中任务队列是没有长度限制的，所以在那个基础上进行改编。  看下协程池的原理   协程池结构体,并且建立有缓存的channel123456789101112type Workpool struct &amp;#123;	Jobchannel chan *Task">
 <meta property="og:type" content="article">
-<meta property="og:title" content="NockyGo">
+<meta property="og:title" content="go协程池">
 <meta property="og:url" content="https://cjyzwg.github.io/2023/06/dbc075b99008.html">
 <meta property="og:site_name" content="NockyGo">
 <meta property="og:description" content="目的学习go协程池 网上go协程池大同小异，理解原理就可以了，我是根据bilibili上一个视频操作的，讲的还挺好的，自行搜索下，不过因为这个视频中任务队列是没有长度限制的，所以在那个基础上进行改编。  看下协程池的原理   协程池结构体,并且建立有缓存的channel123456789101112type Workpool struct &amp;#123;	Jobchannel chan *Task">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://blog.hexiefamily.xin/assets/workerpool.jpg">
 <meta property="article:published_time" content="2023-06-08T23:03:56.088Z">
-<meta property="article:modified_time" content="2023-06-08T23:12:13.672Z">
+<meta property="article:modified_time" content="2023-06-09T03:17:25.256Z">
 <meta property="article:author" content="Nocky">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://blog.hexiefamily.xin/assets/workerpool.jpg">
@@ -38,10 +38,10 @@
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://cjyzwg.github.io/2023/06/dbc075b99008.html","path":"2023/06/dbc075b99008.html","title":""}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://cjyzwg.github.io/2023/06/dbc075b99008.html","path":"2023/06/dbc075b99008.html","title":"go协程池"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title> | NockyGo</title>
+<title>go协程池 | NockyGo</title>
   
 
 
@@ -215,12 +215,12 @@
     </span>
 
     <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content=" | NockyGo">
+      <meta itemprop="name" content="go协程池 | NockyGo">
       <meta itemprop="description" content="">
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          
+          go协程池
         </h1>
 
         <div class="post-meta-container">
@@ -232,7 +232,7 @@
       <span class="post-meta-item-text">发表于</span>
       
 
-      <time title="创建时间：2023-06-09 07:03:56 / 修改时间：07:12:13" itemprop="dateCreated datePublished" datetime="2023-06-09T07:03:56+08:00">2023-06-09</time>
+      <time title="创建时间：2023-06-09 07:03:56 / 修改时间：11:17:25" itemprop="dateCreated datePublished" datetime="2023-06-09T07:03:56+08:00">2023-06-09</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -294,13 +294,13 @@
 
           <div class="post-nav">
             <div class="post-nav-item">
-                <a href="/2023/06/505220760d2c.html" rel="prev" title="">
-                  <i class="fa fa-chevron-left"></i> 
+                <a href="/2023/06/505220760d2c.html" rel="prev" title="LXC容器搭建NSQ集群一">
+                  <i class="fa fa-chevron-left"></i> LXC容器搭建NSQ集群一
                 </a>
             </div>
             <div class="post-nav-item">
-                <a href="/2023/06/f53a45840398.html" rel="next" title="">
-                   <i class="fa fa-chevron-right"></i>
+                <a href="/2023/06/f53a45840398.html" rel="next" title="beego自动化部署">
+                  beego自动化部署 <i class="fa fa-chevron-right"></i>
                 </a>
             </div>
           </div>

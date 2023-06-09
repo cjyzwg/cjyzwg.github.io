@@ -212,7 +212,7 @@
     </span>
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
-          <a href="/2023/06/c6b21dafe6cb.html" class="post-title-link" itemprop="url">未命名</a>
+          <a href="/2023/06/c6b21dafe6cb.html" class="post-title-link" itemprop="url">炎亚纶新剧出意外</a>
         </h2>
 
         <div class="post-meta-container">
@@ -224,7 +224,7 @@
       <span class="post-meta-item-text">发表于</span>
       
 
-      <time title="创建时间：2023-06-09 07:03:56 / 修改时间：07:12:13" itemprop="dateCreated datePublished" datetime="2023-06-09T07:03:56+08:00">2023-06-09</time>
+      <time title="创建时间：2023-06-09 07:03:56 / 修改时间：10:28:54" itemprop="dateCreated datePublished" datetime="2023-06-09T07:03:56+08:00">2023-06-09</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -327,7 +327,7 @@
     </span>
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
-          <a href="/2023/06/3a072f79a61e.html" class="post-title-link" itemprop="url">未命名</a>
+          <a href="/2023/06/3a072f79a61e.html" class="post-title-link" itemprop="url">Openvpn</a>
         </h2>
 
         <div class="post-meta-container">
@@ -339,7 +339,7 @@
       <span class="post-meta-item-text">发表于</span>
       
 
-      <time title="创建时间：2023-06-09 07:03:56 / 修改时间：07:12:13" itemprop="dateCreated datePublished" datetime="2023-06-09T07:03:56+08:00">2023-06-09</time>
+      <time title="创建时间：2023-06-09 07:03:56 / 修改时间：11:19:14" itemprop="dateCreated datePublished" datetime="2023-06-09T07:03:56+08:00">2023-06-09</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -422,6 +422,104 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://cjyzwg.github.io/2023/06/3247a9f9d1c1.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="name" content="Nocky">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="NockyGo">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="undefined | NockyGo">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2023/06/3247a9f9d1c1.html" class="post-title-link" itemprop="url">SSH添加阿里云秘钥</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+      
+
+      <time title="创建时间：2023-06-09 07:03:56 / 修改时间：11:19:11" itemprop="dateCreated datePublished" datetime="2023-06-09T07:03:56+08:00">2023-06-09</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/SSH/" itemprop="url" rel="index"><span itemprop="name">SSH</span></a>
+        </span>
+    </span>
+
+  
+    <span class="post-meta-break"></span>
+    <span class="post-meta-item" title="本文字数">
+      <span class="post-meta-item-icon">
+        <i class="far fa-file-word"></i>
+      </span>
+      <span class="post-meta-item-text">本文字数：</span>
+      <span>567</span>
+    </span>
+    <span class="post-meta-item" title="阅读时长">
+      <span class="post-meta-item-icon">
+        <i class="far fa-clock"></i>
+      </span>
+      <span class="post-meta-item-text">阅读时长 &asymp;</span>
+      <span>1 分钟</span>
+    </span>
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h3 id="阿里云服务器添加秘钥"><a href="#阿里云服务器添加秘钥" class="headerlink" title="阿里云服务器添加秘钥"></a>阿里云服务器添加秘钥</h3><p>1.登录控制台，创建秘钥对，并下载为a.pem<br>2.ssh-keygen -y -f a.pem会返回ssh-rsa<br>如果该命令失败，请运行chmod 400 my-key-pair.pem命令更改权限<br>3.登录到服务器a.com中，echo &gt;&gt; ~&#x2F;.ssh&#x2F;authorized_keys<br>4.nano &#x2F;etc&#x2F;ssh&#x2F;sshd_config<br>PermitRootLogin yes<br>当你完成全部设置，并以密钥方式登录成功后，再禁用密码登录：<br>PasswordAuthentication no<br>5.service sshd restart</p>
+<h4 id="访问："><a href="#访问：" class="headerlink" title="访问："></a>访问：</h4><p>ssh -i a.pem <a href="mailto:&#x72;&#x6f;&#x6f;&#x74;&#64;&#x61;&#46;&#x63;&#x6f;&#109;">&#x72;&#x6f;&#x6f;&#x74;&#64;&#x61;&#46;&#x63;&#x6f;&#109;</a> 访问<br>如果想省事的话，ssh-add -k a.pem，重启之后需要重新添加<br>直接ssh <a href="mailto:&#x72;&#x6f;&#111;&#116;&#64;&#x61;&#46;&#99;&#111;&#x6d;">&#x72;&#x6f;&#111;&#116;&#64;&#x61;&#46;&#99;&#111;&#x6d;</a> 即可访问</p>
+<h4 id="出现-Could-not-open-a-connection-to-your-authentication-agent解决办法或者Permission-denied-publickey-："><a href="#出现-Could-not-open-a-connection-to-your-authentication-agent解决办法或者Permission-denied-publickey-：" class="headerlink" title="出现 Could not open a connection to your authentication agent解决办法或者Permission denied (publickey).："></a>出现 Could not open a connection to your authentication agent解决办法或者Permission denied (publickey).：</h4><blockquote>
+<p>eval <code>ssh-agent -s</code>  </p>
+</blockquote>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
     <link itemprop="mainEntityOfPage" href="https://cjyzwg.github.io/2023/06/95fb3d4261e3.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -440,7 +538,7 @@
     </span>
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
-          <a href="/2023/06/95fb3d4261e3.html" class="post-title-link" itemprop="url">未命名</a>
+          <a href="/2023/06/95fb3d4261e3.html" class="post-title-link" itemprop="url">acme生成https协议操作方法</a>
         </h2>
 
         <div class="post-meta-container">
@@ -452,7 +550,7 @@
       <span class="post-meta-item-text">发表于</span>
       
 
-      <time title="创建时间：2023-06-09 07:03:56 / 修改时间：07:12:13" itemprop="dateCreated datePublished" datetime="2023-06-09T07:03:56+08:00">2023-06-09</time>
+      <time title="创建时间：2023-06-09 07:03:56 / 修改时间：11:19:03" itemprop="dateCreated datePublished" datetime="2023-06-09T07:03:56+08:00">2023-06-09</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -518,104 +616,6 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://cjyzwg.github.io/2023/06/3247a9f9d1c1.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.jpg">
-      <meta itemprop="name" content="Nocky">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="NockyGo">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | NockyGo">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2023/06/3247a9f9d1c1.html" class="post-title-link" itemprop="url">未命名</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">发表于</span>
-      
-
-      <time title="创建时间：2023-06-09 07:03:56 / 修改时间：07:12:13" itemprop="dateCreated datePublished" datetime="2023-06-09T07:03:56+08:00">2023-06-09</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">分类于</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/SSH/" itemprop="url" rel="index"><span itemprop="name">SSH</span></a>
-        </span>
-    </span>
-
-  
-    <span class="post-meta-break"></span>
-    <span class="post-meta-item" title="本文字数">
-      <span class="post-meta-item-icon">
-        <i class="far fa-file-word"></i>
-      </span>
-      <span class="post-meta-item-text">本文字数：</span>
-      <span>569</span>
-    </span>
-    <span class="post-meta-item" title="阅读时长">
-      <span class="post-meta-item-icon">
-        <i class="far fa-clock"></i>
-      </span>
-      <span class="post-meta-item-text">阅读时长 &asymp;</span>
-      <span>1 分钟</span>
-    </span>
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <h3 id="阿里云服务器添加秘钥"><a href="#阿里云服务器添加秘钥" class="headerlink" title="阿里云服务器添加秘钥"></a>阿里云服务器添加秘钥</h3><p>1.登录控制台，创建秘钥对，并下载为a.pem<br>2.ssh-keygen -y -f a.pem会返回ssh-rsa<br>如果该命令失败，请运行chmod 400 my-key-pair.pem命令更改权限<br>3.登录到服务器a.com中，echo &gt;&gt; ~&#x2F;.ssh&#x2F;authorized_keys<br>4.nano &#x2F;etc&#x2F;ssh&#x2F;sshd_config<br>PermitRootLogin yes<br>当你完成全部设置，并以密钥方式登录成功后，再禁用密码登录：<br>PasswordAuthentication no<br>5.service sshd restart</p>
-<h4 id="访问："><a href="#访问：" class="headerlink" title="访问："></a>访问：</h4><p>ssh -i a.pem <a href="mailto:&#114;&#111;&#111;&#x74;&#64;&#x61;&#x2e;&#x63;&#x6f;&#109;">&#114;&#111;&#111;&#x74;&#64;&#x61;&#x2e;&#x63;&#x6f;&#109;</a> 访问<br>如果想省事的话，ssh-add -k a.pem，重启之后需要重新添加<br>直接ssh <a href="mailto:&#114;&#x6f;&#x6f;&#x74;&#64;&#97;&#x2e;&#x63;&#x6f;&#109;">&#114;&#x6f;&#x6f;&#x74;&#64;&#97;&#x2e;&#x63;&#x6f;&#109;</a> 即可访问</p>
-<h4 id="出现-Could-not-open-a-connection-to-your-authentication-agent解决办法或者Permission-denied-publickey-："><a href="#出现-Could-not-open-a-connection-to-your-authentication-agent解决办法或者Permission-denied-publickey-：" class="headerlink" title="出现 Could not open a connection to your authentication agent解决办法或者Permission denied (publickey).："></a>出现 Could not open a connection to your authentication agent解决办法或者Permission denied (publickey).：</h4><blockquote>
-<p>eval <code>ssh-agent -s</code>  </p>
-</blockquote>
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
     <link itemprop="mainEntityOfPage" href="https://cjyzwg.github.io/2023/06/e045eee6a701.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -634,7 +634,7 @@
     </span>
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
-          <a href="/2023/06/e045eee6a701.html" class="post-title-link" itemprop="url">未命名</a>
+          <a href="/2023/06/e045eee6a701.html" class="post-title-link" itemprop="url">gitee同步github</a>
         </h2>
 
         <div class="post-meta-container">
@@ -646,7 +646,7 @@
       <span class="post-meta-item-text">发表于</span>
       
 
-      <time title="创建时间：2023-06-09 07:03:56 / 修改时间：07:12:13" itemprop="dateCreated datePublished" datetime="2023-06-09T07:03:56+08:00">2023-06-09</time>
+      <time title="创建时间：2023-06-09 07:03:56 / 修改时间：11:19:06" itemprop="dateCreated datePublished" datetime="2023-06-09T07:03:56+08:00">2023-06-09</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -687,7 +687,7 @@
 <h3 id="原因"><a href="#原因" class="headerlink" title="原因"></a>原因</h3><p>初步判断是阿里云在git pull github的代码时，一直不执行，可能是外网的问题。</p>
 <h3 id="解决思路"><a href="#解决思路" class="headerlink" title="解决思路"></a>解决思路</h3><p>想到之前国内的gitee也存在代码，考虑同步github,再通过webhook 更新</p>
 <p><img src="https://gitee.com/cjyzwg/img/raw/master/202203131218367.png"></p>
-<h3 id="步骤"><a href="#步骤" class="headerlink" title="步骤"></a>步骤</h3><h4 id="实时同步github到gitee"><a href="#实时同步github到gitee" class="headerlink" title="实时同步github到gitee"></a><strong>实时同步github到gitee</strong></h4><p>1.ssh-keygen -t rsa -C “<a href="mailto:&#x79;&#111;&#x75;&#114;&#x65;&#x6d;&#x61;&#105;&#108;&#x40;&#101;&#120;&#97;&#109;&#x70;&#x6c;&#101;&#46;&#x63;&#111;&#x6d;">&#x79;&#111;&#x75;&#114;&#x65;&#x6d;&#x61;&#105;&#108;&#x40;&#101;&#120;&#97;&#109;&#x70;&#x6c;&#101;&#46;&#x63;&#111;&#x6d;</a>“<br>生成的 id_rsa 是私钥，id_rsa.pub 是公钥。(注意此处不要设置密码，生成的公私钥用于下面 GitHub &#x2F; Gitee 的配置，以保证公私钥成对，否则从 GitHub -%3E Gitee 的同步将会失败。)</p>
+<h3 id="步骤"><a href="#步骤" class="headerlink" title="步骤"></a>步骤</h3><h4 id="实时同步github到gitee"><a href="#实时同步github到gitee" class="headerlink" title="实时同步github到gitee"></a><strong>实时同步github到gitee</strong></h4><p>1.ssh-keygen -t rsa -C “<a href="mailto:&#x79;&#111;&#x75;&#x72;&#x65;&#109;&#97;&#x69;&#108;&#64;&#x65;&#x78;&#97;&#x6d;&#112;&#108;&#x65;&#46;&#x63;&#x6f;&#109;">&#x79;&#111;&#x75;&#x72;&#x65;&#109;&#97;&#x69;&#108;&#64;&#x65;&#x78;&#97;&#x6d;&#112;&#108;&#x65;&#46;&#x63;&#x6f;&#109;</a>“<br>生成的 id_rsa 是私钥，id_rsa.pub 是公钥。(注意此处不要设置密码，生成的公私钥用于下面 GitHub &#x2F; Gitee 的配置，以保证公私钥成对，否则从 GitHub -%3E Gitee 的同步将会失败。)</p>
 <p><img src="https://gitee.com/cjyzwg/img/raw/master/202203131223319.png"></p>
 <p>2.在 GitHub 项目的「<strong>Settings</strong>  -&gt;  <strong>Secrets</strong>  →  <strong>New repository secret</strong>」路径下配置好命名为 <strong>GITEE_RSA_PRIVATE_KEY</strong>，value值填写 <strong>id_rsa 私钥</strong>的内容。</p>
 <p>3.在 GitHub 的个人设置页面「<strong>Settings</strong> -&gt;  <strong>SSH and GPG keys</strong>」配置 SSH Keys 公钥（即：<strong>id_rsa.pub</strong>），命名随意。</p>
@@ -750,7 +750,7 @@
     </span>
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
-          <a href="/2023/06/9f3e7eb33263.html" class="post-title-link" itemprop="url">未命名</a>
+          <a href="/2023/06/9f3e7eb33263.html" class="post-title-link" itemprop="url">SSH访问局域网网站</a>
         </h2>
 
         <div class="post-meta-container">
@@ -762,7 +762,7 @@
       <span class="post-meta-item-text">发表于</span>
       
 
-      <time title="创建时间：2023-06-09 07:03:56 / 修改时间：07:12:13" itemprop="dateCreated datePublished" datetime="2023-06-09T07:03:56+08:00">2023-06-09</time>
+      <time title="创建时间：2023-06-09 07:03:56 / 修改时间：11:19:08" itemprop="dateCreated datePublished" datetime="2023-06-09T07:03:56+08:00">2023-06-09</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -802,113 +802,10 @@
           <h4 id="访问内网局域网网站"><a href="#访问内网局域网网站" class="headerlink" title="访问内网局域网网站"></a>访问内网局域网网站</h4><p>目的是想用在家的mac访问到公司的电话机所在的网址，首先自行搭建vpn，这个网上教程还蛮多。<br>本人用的是mac，公司的电脑大多数是win10<br>win10 连接vpn方法如下图：<br><img src="https://blog.hexiefamily.xin/assets/ssh3.png" alt="avatar">  </p>
 <h4 id="ssh-连接win10："><a href="#ssh-连接win10：" class="headerlink" title="ssh 连接win10："></a>ssh 连接win10：</h4><ol>
 <li>win10 开启openssh 服务端：<a target="_blank" rel="noopener" href="http://jingyan.baidu.com/article/455a995057a191a1662778a3.html">http://jingyan.baidu.com/article/455a995057a191a1662778a3.html</a> 百度教程你值得拥有  </li>
-<li>ssh -D 4567 -N <a href="mailto:&#x72;&#111;&#111;&#x74;&#64;&#49;&#x39;&#x32;&#x2e;&#49;&#x36;&#x38;&#x2e;&#49;&#50;&#x2e;&#49;">&#x72;&#111;&#111;&#x74;&#64;&#49;&#x39;&#x32;&#x2e;&#49;&#x36;&#x38;&#x2e;&#49;&#50;&#x2e;&#49;</a> 输入密码，即可停留   </li>
+<li>ssh -D 4567 -N <a href="mailto:&#114;&#111;&#111;&#x74;&#x40;&#x31;&#x39;&#x32;&#46;&#x31;&#54;&#56;&#46;&#x31;&#50;&#x2e;&#49;">&#114;&#111;&#111;&#x74;&#x40;&#x31;&#x39;&#x32;&#46;&#x31;&#54;&#56;&#46;&#x31;&#50;&#x2e;&#49;</a> 输入密码，即可停留   </li>
 <li>打开chrome神奇插件SwitchyOmega,配置一个这样的代理<br><img src="https://blog.hexiefamily.xin/assets/ssh1.png" alt="avatar"></li>
 <li>即可打开win10 所在的局域网的网站，如下图所示<br><img src="https://blog.hexiefamily.xin/assets/ssh2.png" alt="avatar"></li>
 </ol>
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://cjyzwg.github.io/2023/06/b1ab4f5e09e5.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.jpg">
-      <meta itemprop="name" content="Nocky">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="NockyGo">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | NockyGo">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2023/06/b1ab4f5e09e5.html" class="post-title-link" itemprop="url">未命名</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">发表于</span>
-      
-
-      <time title="创建时间：2023-06-09 07:03:56 / 修改时间：07:12:13" itemprop="dateCreated datePublished" datetime="2023-06-09T07:03:56+08:00">2023-06-09</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">分类于</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/REDIS/" itemprop="url" rel="index"><span itemprop="name">REDIS</span></a>
-        </span>
-    </span>
-
-  
-    <span class="post-meta-break"></span>
-    <span class="post-meta-item" title="本文字数">
-      <span class="post-meta-item-icon">
-        <i class="far fa-file-word"></i>
-      </span>
-      <span class="post-meta-item-text">本文字数：</span>
-      <span>5.8k</span>
-    </span>
-    <span class="post-meta-item" title="阅读时长">
-      <span class="post-meta-item-icon">
-        <i class="far fa-clock"></i>
-      </span>
-      <span class="post-meta-item-text">阅读时长 &asymp;</span>
-      <span>10 分钟</span>
-    </span>
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <h3 id="Redis安装"><a href="#Redis安装" class="headerlink" title="Redis安装"></a>Redis安装</h3><ul>
-<li>pecl install redis</li>
-<li>nano &#x2F;etc&#x2F;php&#x2F;7.0&#x2F;mods-available&#x2F;redis.ini<br>extension&#x3D;redis.so<br>Fpm 软连接</li>
-<li>ln -s &#x2F;etc&#x2F;php&#x2F;7.0&#x2F;mods-available&#x2F;redis.ini<br> &#x2F;etc&#x2F;php&#x2F;7.0&#x2F;fpm&#x2F;conf.d&#x2F;20-redis.ini<br>Cli同样也需要</li>
-<li>ln -s &#x2F;etc&#x2F;php&#x2F;7.0&#x2F;mods-available&#x2F;redis.ini<br> &#x2F;etc&#x2F;php&#x2F;7.0&#x2F;cli&#x2F;conf.d&#x2F;20-redis.ini</li>
-<li>php -m 即有</li>
-</ul>
-<h3 id="Redis应用"><a href="#Redis应用" class="headerlink" title="Redis应用"></a>Redis应用</h3><p><a target="_blank" rel="noopener" href="https://www.liaotaoo.cn/358.html"><font color=#0099ff>转发链接地址</font></a>  </p>
-<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br><span class="line">150</span><br><span class="line">151</span><br><span class="line">152</span><br><span class="line">153</span><br><span class="line">154</span><br><span class="line">155</span><br><span class="line">156</span><br><span class="line">157</span><br><span class="line">158</span><br><span class="line">159</span><br><span class="line">160</span><br><span class="line">161</span><br><span class="line">162</span><br><span class="line">163</span><br><span class="line">164</span><br><span class="line">165</span><br><span class="line">166</span><br><span class="line">167</span><br><span class="line">168</span><br><span class="line">169</span><br><span class="line">170</span><br><span class="line">171</span><br><span class="line">172</span><br><span class="line">173</span><br><span class="line">174</span><br><span class="line">175</span><br><span class="line">176</span><br><span class="line">177</span><br><span class="line">178</span><br><span class="line">179</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="meta">&lt;?php</span> </span><br><span class="line"><span class="keyword">namespace</span> <span class="title class_">app</span>\<span class="title class_">controller</span>;</span><br><span class="line"> </span><br><span class="line"> </span><br><span class="line"><span class="keyword">use</span> <span class="title">think</span>\<span class="title">facade</span>\<span class="title">Cache</span>;</span><br><span class="line"><span class="keyword">use</span> <span class="title">think</span>\<span class="title">facade</span>\<span class="title">Db</span>;</span><br><span class="line"> </span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Zan</span></span></span><br><span class="line"><span class="class"></span>&#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="variable">$redis</span> = <span class="literal">null</span>;</span><br><span class="line"> </span><br><span class="line">    <span class="comment">//60*60*24/20=4320,每个点赞得到的分数。</span></span><br><span class="line">    <span class="keyword">public</span> <span class="variable">$score</span> = <span class="number">0</span>;</span><br><span class="line"> </span><br><span class="line">    <span class="comment">//点赞增加数，或者</span></span><br><span class="line">    <span class="keyword">public</span> <span class="variable">$num</span> = <span class="number">1</span>;</span><br><span class="line"> </span><br><span class="line"> </span><br><span class="line">    <span class="comment">//init redis</span></span><br><span class="line">    <span class="keyword">const</span> <span class="variable constant_">COMMENT_RECORD</span> = <span class="string">&#x27;comment:record&#x27;</span>;</span><br><span class="line"> </span><br><span class="line">    <span class="keyword">public</span> <span class="function"><span class="keyword">function</span> <span class="title">__construct</span>(<span class="params"></span>)</span></span><br><span class="line"><span class="function">    </span>&#123;</span><br><span class="line">        <span class="variable language_">$this</span>-&gt;redis = <span class="title class_">Cache</span>::<span class="title function_ invoke__">store</span>(<span class="string">&#x27;redis&#x27;</span>);</span><br><span class="line"><span class="comment">//        $this-&gt;redis-&gt;connect($this-&gt;redis_host,$this-&gt;redis_port);</span></span><br><span class="line"><span class="comment">//        $this-&gt;redis-&gt;auth($this-&gt;redis_pass);</span></span><br><span class="line">    &#125;</span><br><span class="line"> </span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> int $user_id 用户id</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> int $type 点击的类型 1.点like，2.点hate</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> int $comment_id 文章id</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@return</span> string json;</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="keyword">public</span> <span class="function"><span class="keyword">function</span> <span class="title">click</span>(<span class="params"><span class="variable">$user_id</span>,<span class="variable">$type</span>,<span class="variable">$comment_id</span></span>)</span></span><br><span class="line"><span class="function">    </span>&#123;</span><br><span class="line">        <span class="comment">//判断是否需要更新数据</span></span><br><span class="line">        <span class="keyword">if</span> (!<span class="variable language_">$this</span>-&gt;<span class="title function_ invoke__">ifUploadList</span>(<span class="variable">$comment_id</span>)) &#123;</span><br><span class="line">            <span class="keyword">return</span> [<span class="string">&#x27;code&#x27;</span>=&gt;<span class="number">400</span>,<span class="string">&#x27;msg&#x27;</span>=&gt;<span class="string">&#x27;文章不存在&#x27;</span>];</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="variable">$type</span> == <span class="number">1</span> ? <span class="variable">$key</span> = <span class="string">&quot;like&quot;</span> : <span class="variable">$key</span> = <span class="string">&quot;hate&quot;</span>;</span><br><span class="line">        <span class="comment">//判断redis是否已经缓存了该文章数据</span></span><br><span class="line">        <span class="comment">//使用：分隔符对redis管理是友好的</span></span><br><span class="line">        <span class="comment">//这里使用redis zset-&gt; zscore()方法</span></span><br><span class="line">        <span class="variable">$data</span> = [];</span><br><span class="line">        <span class="keyword">if</span> (<span class="variable language_">$this</span>-&gt;redis-&gt;<span class="title function_ invoke__">zscore</span>(<span class="string">&quot;comment:like&quot;</span>, <span class="variable">$comment_id</span>) || </span><br><span class="line">            <span class="variable language_">$this</span>-&gt;redis-&gt;<span class="title function_ invoke__">zscore</span>(<span class="string">&quot;comment:hate&quot;</span>, <span class="variable">$comment_id</span>)) &#123;</span><br><span class="line">            <span class="comment">//已经存在</span></span><br><span class="line">            <span class="comment">//判断点的是什么</span></span><br><span class="line">            <span class="variable">$rel</span> = <span class="variable language_">$this</span>-&gt;redis-&gt;<span class="title function_ invoke__">hget</span>(<span class="built_in">self</span>::<span class="variable constant_">COMMENT_RECORD</span>, <span class="variable">$user_id</span> . <span class="string">&quot;:&quot;</span> . <span class="variable">$comment_id</span>);</span><br><span class="line">            <span class="comment">//redis hash-&gt; hget()</span></span><br><span class="line">            <span class="comment">//判断以前是否点过，点的是什么？</span></span><br><span class="line">            <span class="keyword">switch</span> (<span class="variable">$rel</span>) &#123;</span><br><span class="line">                <span class="keyword">case</span> <span class="string">&#x27;&#x27;</span>:</span><br><span class="line">                    <span class="comment">//什么都没点过</span></span><br><span class="line">                    <span class="comment">//点赞加1</span></span><br><span class="line">                    <span class="variable language_">$this</span>-&gt;redis-&gt;<span class="title function_ invoke__">zincrby</span>(<span class="string">&quot;comment:&quot;</span>.<span class="variable">$key</span>, <span class="variable">$this</span>-&gt;num, <span class="variable">$comment_id</span>);</span><br><span class="line">                    <span class="comment">//记录上次操作</span></span><br><span class="line">                    <span class="variable language_">$this</span>-&gt;redis-&gt;<span class="title function_ invoke__">hset</span>(<span class="built_in">self</span>::<span class="variable constant_">COMMENT_RECORD</span>, <span class="variable">$user_id</span> . <span class="string">&quot;:&quot;</span> . <span class="variable">$comment_id</span>, <span class="variable">$type</span>);</span><br><span class="line"> </span><br><span class="line">                    <span class="variable">$data</span> = [<span class="string">&quot;code&quot;</span> =&gt; <span class="number">1</span>,<span class="string">&quot;msg&quot;</span> =&gt; <span class="variable">$key</span>.<span class="string">&quot;+1&quot;</span>];</span><br><span class="line">                    <span class="keyword">break</span>;</span><br><span class="line">                <span class="keyword">case</span> <span class="variable">$type</span>:</span><br><span class="line">                    <span class="comment">//点过赞了</span></span><br><span class="line">                    <span class="comment">//点赞减1</span></span><br><span class="line">                    <span class="variable language_">$this</span>-&gt;redis-&gt;<span class="title function_ invoke__">zincrby</span>(<span class="string">&quot;comment:&quot;</span>.<span class="variable">$key</span>, -(<span class="variable">$this</span>-&gt;num), <span class="variable">$comment_id</span>);</span><br><span class="line">                    <span class="comment">//删除记录</span></span><br><span class="line">                    <span class="variable language_">$this</span>-&gt;redis-&gt;<span class="title function_ invoke__">hDel</span>(<span class="built_in">self</span>::<span class="variable constant_">COMMENT_RECORD</span>, <span class="variable">$user_id</span> . <span class="string">&quot;:&quot;</span> . <span class="variable">$comment_id</span>, <span class="variable">$type</span>);</span><br><span class="line">                    <span class="comment">//删除缓存 数据库再-1</span></span><br><span class="line">                    <span class="variable">$data</span> = [<span class="string">&quot;code&quot;</span> =&gt; <span class="number">2</span>,<span class="string">&quot;msg&quot;</span> =&gt; <span class="variable">$key</span>.<span class="string">&quot;-1&quot;</span>];</span><br><span class="line">                    <span class="keyword">break</span>;</span><br><span class="line">                <span class="keyword">case</span> <span class="variable">$type</span> == <span class="number">1</span> ? <span class="number">2</span> : <span class="number">1</span>:</span><br><span class="line">                    <span class="comment">//点赞加1</span></span><br><span class="line">                    <span class="variable language_">$this</span>-&gt;redis-&gt;<span class="title function_ invoke__">zincrby</span>(<span class="string">&quot;comment:&quot;</span>.<span class="variable">$key</span>, <span class="variable">$this</span>-&gt;num, <span class="variable">$comment_id</span>);</span><br><span class="line">                    <span class="comment">//记录上次操作</span></span><br><span class="line">                    <span class="variable language_">$this</span>-&gt;redis-&gt;<span class="title function_ invoke__">hset</span>(<span class="built_in">self</span>::<span class="variable constant_">COMMENT_RECORD</span>, <span class="variable">$user_id</span> . <span class="string">&quot;:&quot;</span> . <span class="variable">$comment_id</span>, <span class="variable">$type</span>);</span><br><span class="line">                    <span class="variable">$data</span> = [<span class="string">&quot;code&quot;</span> =&gt; <span class="number">1</span>,<span class="string">&quot;msg&quot;</span> =&gt; <span class="variable">$key</span>.<span class="string">&quot;+1&quot;</span>];</span><br><span class="line">                    <span class="keyword">break</span>;</span><br><span class="line"> </span><br><span class="line">            &#125;</span><br><span class="line">        &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">            <span class="comment">//未存在</span></span><br><span class="line">            <span class="comment">//点赞加一</span></span><br><span class="line">            <span class="variable language_">$this</span>-&gt;redis-&gt;<span class="title function_ invoke__">zincrby</span>(<span class="string">&quot;comment:&quot;</span>.<span class="variable">$key</span>, <span class="variable">$this</span>-&gt;num, <span class="variable">$comment_id</span>);</span><br><span class="line">            <span class="variable">$data</span> = [<span class="string">&quot;code&quot;</span> =&gt; <span class="number">1</span>,<span class="string">&quot;msg&quot;</span> =&gt; <span class="variable">$key</span>.<span class="string">&quot;+1&quot;</span>];</span><br><span class="line">            <span class="comment">//记录</span></span><br><span class="line">            <span class="variable language_">$this</span>-&gt;redis-&gt;<span class="title function_ invoke__">hset</span>(<span class="built_in">self</span>::<span class="variable constant_">COMMENT_RECORD</span>, <span class="variable">$user_id</span> . <span class="string">&quot;:&quot;</span> . <span class="variable">$comment_id</span>, <span class="variable">$type</span>);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="variable">$list</span> = <span class="variable language_">$this</span>-&gt;redis-&gt;<span class="title function_ invoke__">zRange</span>(<span class="string">&quot;comment:like&quot;</span>,<span class="number">0</span>,-<span class="number">1</span>,<span class="number">1</span>);</span><br><span class="line">        <span class="keyword">foreach</span> (<span class="variable">$list</span> <span class="keyword">as</span> <span class="variable">$k</span> =&gt;<span class="variable">$v</span>)&#123;<span class="keyword">if</span> (<span class="variable">$k</span>==<span class="variable">$comment_id</span>)&#123;<span class="variable">$data</span>[<span class="string">&#x27;like&#x27;</span>]=<span class="variable">$v</span>;&#125;&#125;</span><br><span class="line">        <span class="keyword">return</span> <span class="variable">$data</span>;</span><br><span class="line">    &#125;</span><br><span class="line"> </span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 获取文章点赞数</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> $cid</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@return</span> mixed</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="keyword">public</span> <span class="function"><span class="keyword">function</span> <span class="title">getVodZanNum</span>(<span class="params"><span class="variable">$cid</span></span>)</span></span><br><span class="line"><span class="function">    </span>&#123;</span><br><span class="line">        <span class="variable">$data</span> = <span class="variable language_">$this</span>-&gt;redis-&gt;<span class="title function_ invoke__">zRange</span>(<span class="string">&quot;comment:like&quot;</span>,<span class="number">0</span>,-<span class="number">1</span>,<span class="string">&#x27;WITHSCORES&#x27;</span>);</span><br><span class="line">        <span class="keyword">if</span>(<span class="keyword">empty</span>(<span class="variable">$data</span>))&#123;</span><br><span class="line">            <span class="variable language_">$this</span>-&gt;redis-&gt;<span class="title function_ invoke__">zincrby</span>(<span class="string">&quot;comment:like&quot;</span>, <span class="variable">$this</span>-&gt;num, <span class="variable">$cid</span>);</span><br><span class="line">            <span class="variable">$data</span> = <span class="title class_">Db</span>::<span class="title function_ invoke__">name</span>(<span class="string">&#x27;user_info_0&#x27;</span>)-&gt;<span class="title function_ invoke__">where</span>(<span class="string">&#x27;id&#x27;</span>,<span class="variable">$cid</span>)-&gt;<span class="title function_ invoke__">value</span>(<span class="string">&#x27;comic_id&#x27;</span>);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> <span class="variable">$data</span>;</span><br><span class="line">    &#125;</span><br><span class="line"> </span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 点赞</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> $uid</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> $cid</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> int $type</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@return</span> bool</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="keyword">public</span> <span class="function"><span class="keyword">function</span> <span class="title">uidZan</span>(<span class="params"><span class="variable">$uid</span>,<span class="variable">$cid</span></span>)</span></span><br><span class="line"><span class="function">    </span>&#123;</span><br><span class="line">        <span class="variable">$bool</span> = <span class="variable language_">$this</span>-&gt;redis-&gt;<span class="title function_ invoke__">sismember</span>(<span class="string">&#x27;zan&#x27;</span>.<span class="variable">$uid</span>,<span class="variable">$cid</span>);</span><br><span class="line">        <span class="keyword">if</span>(!<span class="variable">$bool</span>)&#123;</span><br><span class="line">            <span class="variable language_">$this</span>-&gt;redis-&gt;<span class="title function_ invoke__">sadd</span>(<span class="string">&#x27;zan&#x27;</span>.<span class="variable">$uid</span>,<span class="variable">$cid</span>);</span><br><span class="line">            <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">        &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">            <span class="variable language_">$this</span>-&gt;redis-&gt;<span class="title function_ invoke__">spop</span>(<span class="string">&#x27;zan&#x27;</span>.<span class="variable">$uid</span>);</span><br><span class="line">            <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"> </span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 判断是否点过赞</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> $uid</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> $cid</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@return</span> bool</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="keyword">public</span> <span class="function"><span class="keyword">function</span> <span class="title">checkZan</span>(<span class="params"><span class="variable">$uid</span>,<span class="variable">$cid</span></span>)</span></span><br><span class="line"><span class="function">    </span>&#123;</span><br><span class="line">        <span class="variable">$bool</span> = <span class="variable language_">$this</span>-&gt;redis-&gt;<span class="title function_ invoke__">sismember</span>(<span class="string">&#x27;zan&#x27;</span>.<span class="variable">$uid</span>,<span class="variable">$cid</span>);</span><br><span class="line">        <span class="keyword">if</span>(<span class="variable">$bool</span>) <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">    &#125;</span><br><span class="line"> </span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 取消点赞</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> $uid</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@return</span> bool</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="keyword">public</span> <span class="function"><span class="keyword">function</span> <span class="title">delZan</span>(<span class="params"><span class="variable">$uid</span></span>)</span></span><br><span class="line"><span class="function">    </span>&#123;</span><br><span class="line">        <span class="variable language_">$this</span>-&gt;redis-&gt;<span class="title function_ invoke__">spop</span>(<span class="string">&#x27;zan&#x27;</span>.<span class="variable">$uid</span>);</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">    &#125;</span><br><span class="line"> </span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 判断文章是否存在</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> $comment_id</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@return</span> string</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="keyword">public</span> <span class="function"><span class="keyword">function</span> <span class="title">ifUploadList</span>(<span class="params"><span class="variable">$comment_id</span></span>)</span></span><br><span class="line"><span class="function">    </span>&#123;</span><br><span class="line">        <span class="title function_ invoke__">date_default_timezone_set</span>(<span class="string">&quot;Asia/Shanghai&quot;</span>);</span><br><span class="line">        <span class="variable">$time</span> = <span class="title function_ invoke__">strtotime</span>(<span class="title function_ invoke__">date</span>(<span class="string">&#x27;Y-m-d H:i:s&#x27;</span>));</span><br><span class="line">        <span class="keyword">if</span>(!<span class="variable language_">$this</span>-&gt;redis-&gt;<span class="title function_ invoke__">sismember</span>(<span class="string">&quot;comment:uploadset&quot;</span>,<span class="variable">$comment_id</span>))</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="comment">//文章不存在集合里，需要更新</span></span><br><span class="line">            <span class="variable language_">$this</span>-&gt;redis-&gt;<span class="title function_ invoke__">sadd</span>(<span class="string">&quot;comment:uploadset&quot;</span>,<span class="variable">$comment_id</span>);</span><br><span class="line">            <span class="comment">//更新到队列</span></span><br><span class="line">            <span class="variable">$data</span> = [<span class="string">&quot;id&quot;</span> =&gt; <span class="variable">$comment_id</span>,<span class="string">&quot;time&quot;</span> =&gt; <span class="variable">$time</span>];</span><br><span class="line">            <span class="variable">$json</span> = <span class="title function_ invoke__">json_encode</span>(<span class="variable">$data</span>);</span><br><span class="line">            <span class="variable language_">$this</span>-&gt;redis-&gt;<span class="title function_ invoke__">lpush</span>(<span class="string">&quot;comment:uploadlist&quot;</span>,<span class="variable">$json</span>);</span><br><span class="line">            <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">    &#125;</span><br><span class="line"> </span><br><span class="line">    <span class="keyword">public</span> <span class="function"><span class="keyword">function</span> <span class="title">dell</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">        <span class="variable language_">$this</span>-&gt;redis-&gt;<span class="title function_ invoke__">flushAll</span>();</span><br><span class="line">    &#125;</span><br><span class="line"> </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h4 id="调用"><a href="#调用" class="headerlink" title="调用"></a>调用</h4><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$user_id</span> = <span class="variable">$_GET</span>[<span class="string">&#x27;uid&#x27;</span>] ??<span class="number">25</span>;</span><br><span class="line"><span class="variable">$comment_id</span>= <span class="variable">$_GET</span>[<span class="string">&#x27;cid&#x27;</span>] ?? <span class="number">1</span>;</span><br><span class="line"><span class="variable">$like</span> = <span class="string">&#x27;like&#x27;</span>;</span><br><span class="line"><span class="keyword">if</span> (<span class="keyword">isset</span>(<span class="variable">$like</span>))</span><br><span class="line">    <span class="variable">$type</span> = <span class="number">1</span>;</span><br><span class="line"><span class="keyword">if</span> (<span class="variable">$user_id</span> &amp;&amp; <span class="variable">$comment_id</span>)&#123;</span><br><span class="line">    <span class="variable">$good</span> = <span class="keyword">new</span> <span class="title class_">Zan</span>();</span><br><span class="line">    <span class="variable">$rel</span> = <span class="variable">$good</span>-&gt;<span class="title function_ invoke__">click</span>(<span class="variable">$user_id</span>,<span class="variable">$type</span>,<span class="variable">$comment_id</span>);</span><br><span class="line">    <span class="keyword">if</span>(<span class="variable">$rel</span>[<span class="string">&#x27;code&#x27;</span>] == <span class="number">1</span> || <span class="variable">$rel</span>[<span class="string">&#x27;code&#x27;</span>] == <span class="number">7</span>)&#123;</span><br><span class="line"> </span><br><span class="line">        <span class="title class_">Db</span>::<span class="title function_ invoke__">name</span>(<span class="string">&#x27;user_info_0&#x27;</span>)-&gt;<span class="title function_ invoke__">where</span>(<span class="string">&#x27;id&#x27;</span>,<span class="variable">$comment_id</span>)-&gt;<span class="title function_ invoke__">inc</span>(<span class="string">&#x27;comic_id&#x27;</span>)-&gt;<span class="title function_ invoke__">update</span>();</span><br><span class="line">        <span class="keyword">echo</span> <span class="string">&#x27;点赞成功&#x27;</span>;<span class="keyword">exit</span>;</span><br><span class="line">    &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">        <span class="variable">$where</span>[] = [<span class="string">&#x27;id&#x27;</span>,<span class="string">&#x27;=&#x27;</span>,<span class="variable">$comment_id</span>];</span><br><span class="line">        <span class="variable">$where</span>[] = [<span class="string">&#x27;comic_id&#x27;</span>,<span class="string">&#x27;&gt;&#x27;</span>,<span class="number">0</span>];</span><br><span class="line">        <span class="title class_">Db</span>::<span class="title function_ invoke__">name</span>(<span class="string">&#x27;user_info_0&#x27;</span>)-&gt;<span class="title function_ invoke__">where</span>(<span class="variable">$where</span>)-&gt;<span class="title function_ invoke__">dec</span>(<span class="string">&#x27;comic_id&#x27;</span>)-&gt;<span class="title function_ invoke__">update</span>();</span><br><span class="line">        <span class="variable">$good</span>-&gt;<span class="title function_ invoke__">delZan</span>(<span class="variable">$user_id</span>);</span><br><span class="line">        <span class="keyword">echo</span> <span class="string">&#x27;取消点赞成功&#x27;</span>;</span><br><span class="line">    &#125;</span><br><span class="line"> </span><br><span class="line">&#125;<span class="keyword">else</span>&#123;</span><br><span class="line">    <span class="keyword">echo</span> <span class="string">&#x27;用户ID和文章id不能为空&#x27;</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
       
     </div>
@@ -953,7 +850,7 @@
     </span>
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
-          <a href="/2023/06/21d62d62dd8b.html" class="post-title-link" itemprop="url">未命名</a>
+          <a href="/2023/06/21d62d62dd8b.html" class="post-title-link" itemprop="url">REDIS延迟任务队列应用</a>
         </h2>
 
         <div class="post-meta-container">
@@ -965,7 +862,7 @@
       <span class="post-meta-item-text">发表于</span>
       
 
-      <time title="创建时间：2023-06-09 07:03:56 / 修改时间：07:12:13" itemprop="dateCreated datePublished" datetime="2023-06-09T07:03:56+08:00">2023-06-09</time>
+      <time title="创建时间：2023-06-09 07:03:56 / 修改时间：11:19:00" itemprop="dateCreated datePublished" datetime="2023-06-09T07:03:56+08:00">2023-06-09</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -1175,6 +1072,109 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://cjyzwg.github.io/2023/06/b1ab4f5e09e5.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="name" content="Nocky">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="NockyGo">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="undefined | NockyGo">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2023/06/b1ab4f5e09e5.html" class="post-title-link" itemprop="url">REDIS安装及应用</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+      
+
+      <time title="创建时间：2023-06-09 07:03:56 / 修改时间：11:18:57" itemprop="dateCreated datePublished" datetime="2023-06-09T07:03:56+08:00">2023-06-09</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/REDIS/" itemprop="url" rel="index"><span itemprop="name">REDIS</span></a>
+        </span>
+    </span>
+
+  
+    <span class="post-meta-break"></span>
+    <span class="post-meta-item" title="本文字数">
+      <span class="post-meta-item-icon">
+        <i class="far fa-file-word"></i>
+      </span>
+      <span class="post-meta-item-text">本文字数：</span>
+      <span>5.8k</span>
+    </span>
+    <span class="post-meta-item" title="阅读时长">
+      <span class="post-meta-item-icon">
+        <i class="far fa-clock"></i>
+      </span>
+      <span class="post-meta-item-text">阅读时长 &asymp;</span>
+      <span>10 分钟</span>
+    </span>
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h3 id="Redis安装"><a href="#Redis安装" class="headerlink" title="Redis安装"></a>Redis安装</h3><ul>
+<li>pecl install redis</li>
+<li>nano &#x2F;etc&#x2F;php&#x2F;7.0&#x2F;mods-available&#x2F;redis.ini<br>extension&#x3D;redis.so<br>Fpm 软连接</li>
+<li>ln -s &#x2F;etc&#x2F;php&#x2F;7.0&#x2F;mods-available&#x2F;redis.ini<br> &#x2F;etc&#x2F;php&#x2F;7.0&#x2F;fpm&#x2F;conf.d&#x2F;20-redis.ini<br>Cli同样也需要</li>
+<li>ln -s &#x2F;etc&#x2F;php&#x2F;7.0&#x2F;mods-available&#x2F;redis.ini<br> &#x2F;etc&#x2F;php&#x2F;7.0&#x2F;cli&#x2F;conf.d&#x2F;20-redis.ini</li>
+<li>php -m 即有</li>
+</ul>
+<h3 id="Redis应用"><a href="#Redis应用" class="headerlink" title="Redis应用"></a>Redis应用</h3><p><a target="_blank" rel="noopener" href="https://www.liaotaoo.cn/358.html"><font color=#0099ff>转发链接地址</font></a>  </p>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br><span class="line">150</span><br><span class="line">151</span><br><span class="line">152</span><br><span class="line">153</span><br><span class="line">154</span><br><span class="line">155</span><br><span class="line">156</span><br><span class="line">157</span><br><span class="line">158</span><br><span class="line">159</span><br><span class="line">160</span><br><span class="line">161</span><br><span class="line">162</span><br><span class="line">163</span><br><span class="line">164</span><br><span class="line">165</span><br><span class="line">166</span><br><span class="line">167</span><br><span class="line">168</span><br><span class="line">169</span><br><span class="line">170</span><br><span class="line">171</span><br><span class="line">172</span><br><span class="line">173</span><br><span class="line">174</span><br><span class="line">175</span><br><span class="line">176</span><br><span class="line">177</span><br><span class="line">178</span><br><span class="line">179</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="meta">&lt;?php</span> </span><br><span class="line"><span class="keyword">namespace</span> <span class="title class_">app</span>\<span class="title class_">controller</span>;</span><br><span class="line"> </span><br><span class="line"> </span><br><span class="line"><span class="keyword">use</span> <span class="title">think</span>\<span class="title">facade</span>\<span class="title">Cache</span>;</span><br><span class="line"><span class="keyword">use</span> <span class="title">think</span>\<span class="title">facade</span>\<span class="title">Db</span>;</span><br><span class="line"> </span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Zan</span></span></span><br><span class="line"><span class="class"></span>&#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="variable">$redis</span> = <span class="literal">null</span>;</span><br><span class="line"> </span><br><span class="line">    <span class="comment">//60*60*24/20=4320,每个点赞得到的分数。</span></span><br><span class="line">    <span class="keyword">public</span> <span class="variable">$score</span> = <span class="number">0</span>;</span><br><span class="line"> </span><br><span class="line">    <span class="comment">//点赞增加数，或者</span></span><br><span class="line">    <span class="keyword">public</span> <span class="variable">$num</span> = <span class="number">1</span>;</span><br><span class="line"> </span><br><span class="line"> </span><br><span class="line">    <span class="comment">//init redis</span></span><br><span class="line">    <span class="keyword">const</span> <span class="variable constant_">COMMENT_RECORD</span> = <span class="string">&#x27;comment:record&#x27;</span>;</span><br><span class="line"> </span><br><span class="line">    <span class="keyword">public</span> <span class="function"><span class="keyword">function</span> <span class="title">__construct</span>(<span class="params"></span>)</span></span><br><span class="line"><span class="function">    </span>&#123;</span><br><span class="line">        <span class="variable language_">$this</span>-&gt;redis = <span class="title class_">Cache</span>::<span class="title function_ invoke__">store</span>(<span class="string">&#x27;redis&#x27;</span>);</span><br><span class="line"><span class="comment">//        $this-&gt;redis-&gt;connect($this-&gt;redis_host,$this-&gt;redis_port);</span></span><br><span class="line"><span class="comment">//        $this-&gt;redis-&gt;auth($this-&gt;redis_pass);</span></span><br><span class="line">    &#125;</span><br><span class="line"> </span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> int $user_id 用户id</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> int $type 点击的类型 1.点like，2.点hate</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> int $comment_id 文章id</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@return</span> string json;</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="keyword">public</span> <span class="function"><span class="keyword">function</span> <span class="title">click</span>(<span class="params"><span class="variable">$user_id</span>,<span class="variable">$type</span>,<span class="variable">$comment_id</span></span>)</span></span><br><span class="line"><span class="function">    </span>&#123;</span><br><span class="line">        <span class="comment">//判断是否需要更新数据</span></span><br><span class="line">        <span class="keyword">if</span> (!<span class="variable language_">$this</span>-&gt;<span class="title function_ invoke__">ifUploadList</span>(<span class="variable">$comment_id</span>)) &#123;</span><br><span class="line">            <span class="keyword">return</span> [<span class="string">&#x27;code&#x27;</span>=&gt;<span class="number">400</span>,<span class="string">&#x27;msg&#x27;</span>=&gt;<span class="string">&#x27;文章不存在&#x27;</span>];</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="variable">$type</span> == <span class="number">1</span> ? <span class="variable">$key</span> = <span class="string">&quot;like&quot;</span> : <span class="variable">$key</span> = <span class="string">&quot;hate&quot;</span>;</span><br><span class="line">        <span class="comment">//判断redis是否已经缓存了该文章数据</span></span><br><span class="line">        <span class="comment">//使用：分隔符对redis管理是友好的</span></span><br><span class="line">        <span class="comment">//这里使用redis zset-&gt; zscore()方法</span></span><br><span class="line">        <span class="variable">$data</span> = [];</span><br><span class="line">        <span class="keyword">if</span> (<span class="variable language_">$this</span>-&gt;redis-&gt;<span class="title function_ invoke__">zscore</span>(<span class="string">&quot;comment:like&quot;</span>, <span class="variable">$comment_id</span>) || </span><br><span class="line">            <span class="variable language_">$this</span>-&gt;redis-&gt;<span class="title function_ invoke__">zscore</span>(<span class="string">&quot;comment:hate&quot;</span>, <span class="variable">$comment_id</span>)) &#123;</span><br><span class="line">            <span class="comment">//已经存在</span></span><br><span class="line">            <span class="comment">//判断点的是什么</span></span><br><span class="line">            <span class="variable">$rel</span> = <span class="variable language_">$this</span>-&gt;redis-&gt;<span class="title function_ invoke__">hget</span>(<span class="built_in">self</span>::<span class="variable constant_">COMMENT_RECORD</span>, <span class="variable">$user_id</span> . <span class="string">&quot;:&quot;</span> . <span class="variable">$comment_id</span>);</span><br><span class="line">            <span class="comment">//redis hash-&gt; hget()</span></span><br><span class="line">            <span class="comment">//判断以前是否点过，点的是什么？</span></span><br><span class="line">            <span class="keyword">switch</span> (<span class="variable">$rel</span>) &#123;</span><br><span class="line">                <span class="keyword">case</span> <span class="string">&#x27;&#x27;</span>:</span><br><span class="line">                    <span class="comment">//什么都没点过</span></span><br><span class="line">                    <span class="comment">//点赞加1</span></span><br><span class="line">                    <span class="variable language_">$this</span>-&gt;redis-&gt;<span class="title function_ invoke__">zincrby</span>(<span class="string">&quot;comment:&quot;</span>.<span class="variable">$key</span>, <span class="variable">$this</span>-&gt;num, <span class="variable">$comment_id</span>);</span><br><span class="line">                    <span class="comment">//记录上次操作</span></span><br><span class="line">                    <span class="variable language_">$this</span>-&gt;redis-&gt;<span class="title function_ invoke__">hset</span>(<span class="built_in">self</span>::<span class="variable constant_">COMMENT_RECORD</span>, <span class="variable">$user_id</span> . <span class="string">&quot;:&quot;</span> . <span class="variable">$comment_id</span>, <span class="variable">$type</span>);</span><br><span class="line"> </span><br><span class="line">                    <span class="variable">$data</span> = [<span class="string">&quot;code&quot;</span> =&gt; <span class="number">1</span>,<span class="string">&quot;msg&quot;</span> =&gt; <span class="variable">$key</span>.<span class="string">&quot;+1&quot;</span>];</span><br><span class="line">                    <span class="keyword">break</span>;</span><br><span class="line">                <span class="keyword">case</span> <span class="variable">$type</span>:</span><br><span class="line">                    <span class="comment">//点过赞了</span></span><br><span class="line">                    <span class="comment">//点赞减1</span></span><br><span class="line">                    <span class="variable language_">$this</span>-&gt;redis-&gt;<span class="title function_ invoke__">zincrby</span>(<span class="string">&quot;comment:&quot;</span>.<span class="variable">$key</span>, -(<span class="variable">$this</span>-&gt;num), <span class="variable">$comment_id</span>);</span><br><span class="line">                    <span class="comment">//删除记录</span></span><br><span class="line">                    <span class="variable language_">$this</span>-&gt;redis-&gt;<span class="title function_ invoke__">hDel</span>(<span class="built_in">self</span>::<span class="variable constant_">COMMENT_RECORD</span>, <span class="variable">$user_id</span> . <span class="string">&quot;:&quot;</span> . <span class="variable">$comment_id</span>, <span class="variable">$type</span>);</span><br><span class="line">                    <span class="comment">//删除缓存 数据库再-1</span></span><br><span class="line">                    <span class="variable">$data</span> = [<span class="string">&quot;code&quot;</span> =&gt; <span class="number">2</span>,<span class="string">&quot;msg&quot;</span> =&gt; <span class="variable">$key</span>.<span class="string">&quot;-1&quot;</span>];</span><br><span class="line">                    <span class="keyword">break</span>;</span><br><span class="line">                <span class="keyword">case</span> <span class="variable">$type</span> == <span class="number">1</span> ? <span class="number">2</span> : <span class="number">1</span>:</span><br><span class="line">                    <span class="comment">//点赞加1</span></span><br><span class="line">                    <span class="variable language_">$this</span>-&gt;redis-&gt;<span class="title function_ invoke__">zincrby</span>(<span class="string">&quot;comment:&quot;</span>.<span class="variable">$key</span>, <span class="variable">$this</span>-&gt;num, <span class="variable">$comment_id</span>);</span><br><span class="line">                    <span class="comment">//记录上次操作</span></span><br><span class="line">                    <span class="variable language_">$this</span>-&gt;redis-&gt;<span class="title function_ invoke__">hset</span>(<span class="built_in">self</span>::<span class="variable constant_">COMMENT_RECORD</span>, <span class="variable">$user_id</span> . <span class="string">&quot;:&quot;</span> . <span class="variable">$comment_id</span>, <span class="variable">$type</span>);</span><br><span class="line">                    <span class="variable">$data</span> = [<span class="string">&quot;code&quot;</span> =&gt; <span class="number">1</span>,<span class="string">&quot;msg&quot;</span> =&gt; <span class="variable">$key</span>.<span class="string">&quot;+1&quot;</span>];</span><br><span class="line">                    <span class="keyword">break</span>;</span><br><span class="line"> </span><br><span class="line">            &#125;</span><br><span class="line">        &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">            <span class="comment">//未存在</span></span><br><span class="line">            <span class="comment">//点赞加一</span></span><br><span class="line">            <span class="variable language_">$this</span>-&gt;redis-&gt;<span class="title function_ invoke__">zincrby</span>(<span class="string">&quot;comment:&quot;</span>.<span class="variable">$key</span>, <span class="variable">$this</span>-&gt;num, <span class="variable">$comment_id</span>);</span><br><span class="line">            <span class="variable">$data</span> = [<span class="string">&quot;code&quot;</span> =&gt; <span class="number">1</span>,<span class="string">&quot;msg&quot;</span> =&gt; <span class="variable">$key</span>.<span class="string">&quot;+1&quot;</span>];</span><br><span class="line">            <span class="comment">//记录</span></span><br><span class="line">            <span class="variable language_">$this</span>-&gt;redis-&gt;<span class="title function_ invoke__">hset</span>(<span class="built_in">self</span>::<span class="variable constant_">COMMENT_RECORD</span>, <span class="variable">$user_id</span> . <span class="string">&quot;:&quot;</span> . <span class="variable">$comment_id</span>, <span class="variable">$type</span>);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="variable">$list</span> = <span class="variable language_">$this</span>-&gt;redis-&gt;<span class="title function_ invoke__">zRange</span>(<span class="string">&quot;comment:like&quot;</span>,<span class="number">0</span>,-<span class="number">1</span>,<span class="number">1</span>);</span><br><span class="line">        <span class="keyword">foreach</span> (<span class="variable">$list</span> <span class="keyword">as</span> <span class="variable">$k</span> =&gt;<span class="variable">$v</span>)&#123;<span class="keyword">if</span> (<span class="variable">$k</span>==<span class="variable">$comment_id</span>)&#123;<span class="variable">$data</span>[<span class="string">&#x27;like&#x27;</span>]=<span class="variable">$v</span>;&#125;&#125;</span><br><span class="line">        <span class="keyword">return</span> <span class="variable">$data</span>;</span><br><span class="line">    &#125;</span><br><span class="line"> </span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 获取文章点赞数</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> $cid</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@return</span> mixed</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="keyword">public</span> <span class="function"><span class="keyword">function</span> <span class="title">getVodZanNum</span>(<span class="params"><span class="variable">$cid</span></span>)</span></span><br><span class="line"><span class="function">    </span>&#123;</span><br><span class="line">        <span class="variable">$data</span> = <span class="variable language_">$this</span>-&gt;redis-&gt;<span class="title function_ invoke__">zRange</span>(<span class="string">&quot;comment:like&quot;</span>,<span class="number">0</span>,-<span class="number">1</span>,<span class="string">&#x27;WITHSCORES&#x27;</span>);</span><br><span class="line">        <span class="keyword">if</span>(<span class="keyword">empty</span>(<span class="variable">$data</span>))&#123;</span><br><span class="line">            <span class="variable language_">$this</span>-&gt;redis-&gt;<span class="title function_ invoke__">zincrby</span>(<span class="string">&quot;comment:like&quot;</span>, <span class="variable">$this</span>-&gt;num, <span class="variable">$cid</span>);</span><br><span class="line">            <span class="variable">$data</span> = <span class="title class_">Db</span>::<span class="title function_ invoke__">name</span>(<span class="string">&#x27;user_info_0&#x27;</span>)-&gt;<span class="title function_ invoke__">where</span>(<span class="string">&#x27;id&#x27;</span>,<span class="variable">$cid</span>)-&gt;<span class="title function_ invoke__">value</span>(<span class="string">&#x27;comic_id&#x27;</span>);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> <span class="variable">$data</span>;</span><br><span class="line">    &#125;</span><br><span class="line"> </span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 点赞</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> $uid</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> $cid</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> int $type</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@return</span> bool</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="keyword">public</span> <span class="function"><span class="keyword">function</span> <span class="title">uidZan</span>(<span class="params"><span class="variable">$uid</span>,<span class="variable">$cid</span></span>)</span></span><br><span class="line"><span class="function">    </span>&#123;</span><br><span class="line">        <span class="variable">$bool</span> = <span class="variable language_">$this</span>-&gt;redis-&gt;<span class="title function_ invoke__">sismember</span>(<span class="string">&#x27;zan&#x27;</span>.<span class="variable">$uid</span>,<span class="variable">$cid</span>);</span><br><span class="line">        <span class="keyword">if</span>(!<span class="variable">$bool</span>)&#123;</span><br><span class="line">            <span class="variable language_">$this</span>-&gt;redis-&gt;<span class="title function_ invoke__">sadd</span>(<span class="string">&#x27;zan&#x27;</span>.<span class="variable">$uid</span>,<span class="variable">$cid</span>);</span><br><span class="line">            <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">        &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">            <span class="variable language_">$this</span>-&gt;redis-&gt;<span class="title function_ invoke__">spop</span>(<span class="string">&#x27;zan&#x27;</span>.<span class="variable">$uid</span>);</span><br><span class="line">            <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"> </span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 判断是否点过赞</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> $uid</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> $cid</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@return</span> bool</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="keyword">public</span> <span class="function"><span class="keyword">function</span> <span class="title">checkZan</span>(<span class="params"><span class="variable">$uid</span>,<span class="variable">$cid</span></span>)</span></span><br><span class="line"><span class="function">    </span>&#123;</span><br><span class="line">        <span class="variable">$bool</span> = <span class="variable language_">$this</span>-&gt;redis-&gt;<span class="title function_ invoke__">sismember</span>(<span class="string">&#x27;zan&#x27;</span>.<span class="variable">$uid</span>,<span class="variable">$cid</span>);</span><br><span class="line">        <span class="keyword">if</span>(<span class="variable">$bool</span>) <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">    &#125;</span><br><span class="line"> </span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 取消点赞</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> $uid</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@return</span> bool</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="keyword">public</span> <span class="function"><span class="keyword">function</span> <span class="title">delZan</span>(<span class="params"><span class="variable">$uid</span></span>)</span></span><br><span class="line"><span class="function">    </span>&#123;</span><br><span class="line">        <span class="variable language_">$this</span>-&gt;redis-&gt;<span class="title function_ invoke__">spop</span>(<span class="string">&#x27;zan&#x27;</span>.<span class="variable">$uid</span>);</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">    &#125;</span><br><span class="line"> </span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 判断文章是否存在</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> $comment_id</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@return</span> string</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="keyword">public</span> <span class="function"><span class="keyword">function</span> <span class="title">ifUploadList</span>(<span class="params"><span class="variable">$comment_id</span></span>)</span></span><br><span class="line"><span class="function">    </span>&#123;</span><br><span class="line">        <span class="title function_ invoke__">date_default_timezone_set</span>(<span class="string">&quot;Asia/Shanghai&quot;</span>);</span><br><span class="line">        <span class="variable">$time</span> = <span class="title function_ invoke__">strtotime</span>(<span class="title function_ invoke__">date</span>(<span class="string">&#x27;Y-m-d H:i:s&#x27;</span>));</span><br><span class="line">        <span class="keyword">if</span>(!<span class="variable language_">$this</span>-&gt;redis-&gt;<span class="title function_ invoke__">sismember</span>(<span class="string">&quot;comment:uploadset&quot;</span>,<span class="variable">$comment_id</span>))</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="comment">//文章不存在集合里，需要更新</span></span><br><span class="line">            <span class="variable language_">$this</span>-&gt;redis-&gt;<span class="title function_ invoke__">sadd</span>(<span class="string">&quot;comment:uploadset&quot;</span>,<span class="variable">$comment_id</span>);</span><br><span class="line">            <span class="comment">//更新到队列</span></span><br><span class="line">            <span class="variable">$data</span> = [<span class="string">&quot;id&quot;</span> =&gt; <span class="variable">$comment_id</span>,<span class="string">&quot;time&quot;</span> =&gt; <span class="variable">$time</span>];</span><br><span class="line">            <span class="variable">$json</span> = <span class="title function_ invoke__">json_encode</span>(<span class="variable">$data</span>);</span><br><span class="line">            <span class="variable language_">$this</span>-&gt;redis-&gt;<span class="title function_ invoke__">lpush</span>(<span class="string">&quot;comment:uploadlist&quot;</span>,<span class="variable">$json</span>);</span><br><span class="line">            <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">    &#125;</span><br><span class="line"> </span><br><span class="line">    <span class="keyword">public</span> <span class="function"><span class="keyword">function</span> <span class="title">dell</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">        <span class="variable language_">$this</span>-&gt;redis-&gt;<span class="title function_ invoke__">flushAll</span>();</span><br><span class="line">    &#125;</span><br><span class="line"> </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h4 id="调用"><a href="#调用" class="headerlink" title="调用"></a>调用</h4><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$user_id</span> = <span class="variable">$_GET</span>[<span class="string">&#x27;uid&#x27;</span>] ??<span class="number">25</span>;</span><br><span class="line"><span class="variable">$comment_id</span>= <span class="variable">$_GET</span>[<span class="string">&#x27;cid&#x27;</span>] ?? <span class="number">1</span>;</span><br><span class="line"><span class="variable">$like</span> = <span class="string">&#x27;like&#x27;</span>;</span><br><span class="line"><span class="keyword">if</span> (<span class="keyword">isset</span>(<span class="variable">$like</span>))</span><br><span class="line">    <span class="variable">$type</span> = <span class="number">1</span>;</span><br><span class="line"><span class="keyword">if</span> (<span class="variable">$user_id</span> &amp;&amp; <span class="variable">$comment_id</span>)&#123;</span><br><span class="line">    <span class="variable">$good</span> = <span class="keyword">new</span> <span class="title class_">Zan</span>();</span><br><span class="line">    <span class="variable">$rel</span> = <span class="variable">$good</span>-&gt;<span class="title function_ invoke__">click</span>(<span class="variable">$user_id</span>,<span class="variable">$type</span>,<span class="variable">$comment_id</span>);</span><br><span class="line">    <span class="keyword">if</span>(<span class="variable">$rel</span>[<span class="string">&#x27;code&#x27;</span>] == <span class="number">1</span> || <span class="variable">$rel</span>[<span class="string">&#x27;code&#x27;</span>] == <span class="number">7</span>)&#123;</span><br><span class="line"> </span><br><span class="line">        <span class="title class_">Db</span>::<span class="title function_ invoke__">name</span>(<span class="string">&#x27;user_info_0&#x27;</span>)-&gt;<span class="title function_ invoke__">where</span>(<span class="string">&#x27;id&#x27;</span>,<span class="variable">$comment_id</span>)-&gt;<span class="title function_ invoke__">inc</span>(<span class="string">&#x27;comic_id&#x27;</span>)-&gt;<span class="title function_ invoke__">update</span>();</span><br><span class="line">        <span class="keyword">echo</span> <span class="string">&#x27;点赞成功&#x27;</span>;<span class="keyword">exit</span>;</span><br><span class="line">    &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">        <span class="variable">$where</span>[] = [<span class="string">&#x27;id&#x27;</span>,<span class="string">&#x27;=&#x27;</span>,<span class="variable">$comment_id</span>];</span><br><span class="line">        <span class="variable">$where</span>[] = [<span class="string">&#x27;comic_id&#x27;</span>,<span class="string">&#x27;&gt;&#x27;</span>,<span class="number">0</span>];</span><br><span class="line">        <span class="title class_">Db</span>::<span class="title function_ invoke__">name</span>(<span class="string">&#x27;user_info_0&#x27;</span>)-&gt;<span class="title function_ invoke__">where</span>(<span class="variable">$where</span>)-&gt;<span class="title function_ invoke__">dec</span>(<span class="string">&#x27;comic_id&#x27;</span>)-&gt;<span class="title function_ invoke__">update</span>();</span><br><span class="line">        <span class="variable">$good</span>-&gt;<span class="title function_ invoke__">delZan</span>(<span class="variable">$user_id</span>);</span><br><span class="line">        <span class="keyword">echo</span> <span class="string">&#x27;取消点赞成功&#x27;</span>;</span><br><span class="line">    &#125;</span><br><span class="line"> </span><br><span class="line">&#125;<span class="keyword">else</span>&#123;</span><br><span class="line">    <span class="keyword">echo</span> <span class="string">&#x27;用户ID和文章id不能为空&#x27;</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
     <link itemprop="mainEntityOfPage" href="https://cjyzwg.github.io/2023/06/b0ed4abd3df7.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1193,7 +1193,7 @@
     </span>
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
-          <a href="/2023/06/b0ed4abd3df7.html" class="post-title-link" itemprop="url">未命名</a>
+          <a href="/2023/06/b0ed4abd3df7.html" class="post-title-link" itemprop="url">消息快速告警</a>
         </h2>
 
         <div class="post-meta-container">
@@ -1205,7 +1205,7 @@
       <span class="post-meta-item-text">发表于</span>
       
 
-      <time title="创建时间：2023-06-09 07:03:56 / 修改时间：07:12:13" itemprop="dateCreated datePublished" datetime="2023-06-09T07:03:56+08:00">2023-06-09</time>
+      <time title="创建时间：2023-06-09 07:03:56 / 修改时间：11:18:54" itemprop="dateCreated datePublished" datetime="2023-06-09T07:03:56+08:00">2023-06-09</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -1288,7 +1288,7 @@
     </span>
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
-          <a href="/2023/06/3d4d4474576c.html" class="post-title-link" itemprop="url">未命名</a>
+          <a href="/2023/06/3d4d4474576c.html" class="post-title-link" itemprop="url">php-fpm理解以及处理502问题</a>
         </h2>
 
         <div class="post-meta-container">
@@ -1300,7 +1300,7 @@
       <span class="post-meta-item-text">发表于</span>
       
 
-      <time title="创建时间：2023-06-09 07:03:56 / 修改时间：07:12:13" itemprop="dateCreated datePublished" datetime="2023-06-09T07:03:56+08:00">2023-06-09</time>
+      <time title="创建时间：2023-06-09 07:03:56 / 修改时间：11:18:52" itemprop="dateCreated datePublished" datetime="2023-06-09T07:03:56+08:00">2023-06-09</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">

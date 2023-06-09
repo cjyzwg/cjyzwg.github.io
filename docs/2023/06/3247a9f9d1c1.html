@@ -21,13 +21,13 @@
 
     <meta name="description" content="阿里云服务器添加秘钥1.登录控制台，创建秘钥对，并下载为a.pem2.ssh-keygen -y -f a.pem会返回ssh-rsa如果该命令失败，请运行chmod 400 my-key-pair.pem命令更改权限3.登录到服务器a.com中，echo &gt;&gt; ~&#x2F;.ssh&#x2F;authorized_keys4.nano &#x2F;etc&#x2F;ssh&amp;#x2F">
 <meta property="og:type" content="article">
-<meta property="og:title" content="NockyGo">
+<meta property="og:title" content="SSH添加阿里云秘钥">
 <meta property="og:url" content="https://cjyzwg.github.io/2023/06/3247a9f9d1c1.html">
 <meta property="og:site_name" content="NockyGo">
 <meta property="og:description" content="阿里云服务器添加秘钥1.登录控制台，创建秘钥对，并下载为a.pem2.ssh-keygen -y -f a.pem会返回ssh-rsa如果该命令失败，请运行chmod 400 my-key-pair.pem命令更改权限3.登录到服务器a.com中，echo &gt;&gt; ~&#x2F;.ssh&#x2F;authorized_keys4.nano &#x2F;etc&#x2F;ssh&amp;#x2F">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2023-06-08T23:03:56.106Z">
-<meta property="article:modified_time" content="2023-06-08T23:12:13.739Z">
+<meta property="article:modified_time" content="2023-06-09T03:19:11.935Z">
 <meta property="article:author" content="Nocky">
 <meta name="twitter:card" content="summary">
 
@@ -36,10 +36,10 @@
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://cjyzwg.github.io/2023/06/3247a9f9d1c1.html","path":"2023/06/3247a9f9d1c1.html","title":""}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://cjyzwg.github.io/2023/06/3247a9f9d1c1.html","path":"2023/06/3247a9f9d1c1.html","title":"SSH添加阿里云秘钥"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title> | NockyGo</title>
+<title>SSH添加阿里云秘钥 | NockyGo</title>
   
 
 
@@ -213,12 +213,12 @@
     </span>
 
     <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content=" | NockyGo">
+      <meta itemprop="name" content="SSH添加阿里云秘钥 | NockyGo">
       <meta itemprop="description" content="">
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          
+          SSH添加阿里云秘钥
         </h1>
 
         <div class="post-meta-container">
@@ -230,7 +230,7 @@
       <span class="post-meta-item-text">发表于</span>
       
 
-      <time title="创建时间：2023-06-09 07:03:56 / 修改时间：07:12:13" itemprop="dateCreated datePublished" datetime="2023-06-09T07:03:56+08:00">2023-06-09</time>
+      <time title="创建时间：2023-06-09 07:03:56 / 修改时间：11:19:11" itemprop="dateCreated datePublished" datetime="2023-06-09T07:03:56+08:00">2023-06-09</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -249,7 +249,7 @@
         <i class="far fa-file-word"></i>
       </span>
       <span class="post-meta-item-text">本文字数：</span>
-      <span>569</span>
+      <span>567</span>
     </span>
     <span class="post-meta-item" title="阅读时长">
       <span class="post-meta-item-icon">
@@ -267,7 +267,7 @@
     
     
     <div class="post-body" itemprop="articleBody"><h3 id="阿里云服务器添加秘钥"><a href="#阿里云服务器添加秘钥" class="headerlink" title="阿里云服务器添加秘钥"></a>阿里云服务器添加秘钥</h3><p>1.登录控制台，创建秘钥对，并下载为a.pem<br>2.ssh-keygen -y -f a.pem会返回ssh-rsa<br>如果该命令失败，请运行chmod 400 my-key-pair.pem命令更改权限<br>3.登录到服务器a.com中，echo &gt;&gt; ~&#x2F;.ssh&#x2F;authorized_keys<br>4.nano &#x2F;etc&#x2F;ssh&#x2F;sshd_config<br>PermitRootLogin yes<br>当你完成全部设置，并以密钥方式登录成功后，再禁用密码登录：<br>PasswordAuthentication no<br>5.service sshd restart</p>
-<h4 id="访问："><a href="#访问：" class="headerlink" title="访问："></a>访问：</h4><p>ssh -i a.pem <a href="mailto:&#114;&#111;&#111;&#x74;&#64;&#x61;&#x2e;&#x63;&#x6f;&#109;">&#114;&#111;&#111;&#x74;&#64;&#x61;&#x2e;&#x63;&#x6f;&#109;</a> 访问<br>如果想省事的话，ssh-add -k a.pem，重启之后需要重新添加<br>直接ssh <a href="mailto:&#114;&#x6f;&#x6f;&#x74;&#64;&#97;&#x2e;&#x63;&#x6f;&#109;">&#114;&#x6f;&#x6f;&#x74;&#64;&#97;&#x2e;&#x63;&#x6f;&#109;</a> 即可访问</p>
+<h4 id="访问："><a href="#访问：" class="headerlink" title="访问："></a>访问：</h4><p>ssh -i a.pem <a href="mailto:&#x72;&#x6f;&#x6f;&#x74;&#64;&#x61;&#46;&#x63;&#x6f;&#109;">&#x72;&#x6f;&#x6f;&#x74;&#64;&#x61;&#46;&#x63;&#x6f;&#109;</a> 访问<br>如果想省事的话，ssh-add -k a.pem，重启之后需要重新添加<br>直接ssh <a href="mailto:&#x72;&#x6f;&#111;&#116;&#64;&#x61;&#46;&#99;&#111;&#x6d;">&#x72;&#x6f;&#111;&#116;&#64;&#x61;&#46;&#99;&#111;&#x6d;</a> 即可访问</p>
 <h4 id="出现-Could-not-open-a-connection-to-your-authentication-agent解决办法或者Permission-denied-publickey-："><a href="#出现-Could-not-open-a-connection-to-your-authentication-agent解决办法或者Permission-denied-publickey-：" class="headerlink" title="出现 Could not open a connection to your authentication agent解决办法或者Permission denied (publickey).："></a>出现 Could not open a connection to your authentication agent解决办法或者Permission denied (publickey).：</h4><blockquote>
 <p>eval <code>ssh-agent -s</code>  </p>
 </blockquote>
@@ -284,13 +284,13 @@
 
           <div class="post-nav">
             <div class="post-nav-item">
-                <a href="/2023/06/e045eee6a701.html" rel="prev" title="">
-                  <i class="fa fa-chevron-left"></i> 
+                <a href="/2023/06/95fb3d4261e3.html" rel="prev" title="acme生成https协议操作方法">
+                  <i class="fa fa-chevron-left"></i> acme生成https协议操作方法
                 </a>
             </div>
             <div class="post-nav-item">
-                <a href="/2023/06/95fb3d4261e3.html" rel="next" title="">
-                   <i class="fa fa-chevron-right"></i>
+                <a href="/2023/06/3a072f79a61e.html" rel="next" title="Openvpn">
+                  Openvpn <i class="fa fa-chevron-right"></i>
                 </a>
             </div>
           </div>
