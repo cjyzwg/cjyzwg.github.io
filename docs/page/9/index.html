@@ -21,18 +21,18 @@
 
     <meta property="og:type" content="website">
 <meta property="og:title" content="NockyGo">
-<meta property="og:url" content="https://cjyzwg.github.io/index.html">
+<meta property="og:url" content="https://cjyzwg.github.io/page/9/index.html">
 <meta property="og:site_name" content="NockyGo">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:author" content="Nocky">
 <meta name="twitter:card" content="summary">
 
 
-<link rel="canonical" href="https://cjyzwg.github.io/">
+<link rel="canonical" href="https://cjyzwg.github.io/page/9/">
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":true,"isPost":false,"lang":"zh-CN","comments":"","permalink":"","path":"index.html","title":""}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":true,"isPost":false,"lang":"zh-CN","comments":"","permalink":"","path":"page/9/index.html","title":""}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
 <title>NockyGo</title>
@@ -194,7 +194,7 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://cjyzwg.github.io/2023/06/c2324b653e8f.html">
+    <link itemprop="mainEntityOfPage" href="https://cjyzwg.github.io/2023/06/b2cea806b64c.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.jpg">
@@ -212,7 +212,7 @@
     </span>
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
-          <a href="/2023/06/c2324b653e8f.html" class="post-title-link" itemprop="url">测试</a>
+          <a href="/2023/06/b2cea806b64c.html" class="post-title-link" itemprop="url">dnsmasq配置局域网域名</a>
         </h2>
 
         <div class="post-meta-container">
@@ -224,7 +224,203 @@
       <span class="post-meta-item-text">发表于</span>
       
 
-      <time title="创建时间：2023-06-09 08:33:17 / 修改时间：10:19:11" itemprop="dateCreated datePublished" datetime="2023-06-09T08:33:17+08:00">2023-06-09</time>
+      <time title="创建时间：2023-06-09 07:03:56 / 修改时间：11:16:55" itemprop="dateCreated datePublished" datetime="2023-06-09T07:03:56+08:00">2023-06-09</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/DNSMASQ/" itemprop="url" rel="index"><span itemprop="name">DNSMASQ</span></a>
+        </span>
+    </span>
+
+  
+    <span class="post-meta-break"></span>
+    <span class="post-meta-item" title="本文字数">
+      <span class="post-meta-item-icon">
+        <i class="far fa-file-word"></i>
+      </span>
+      <span class="post-meta-item-text">本文字数：</span>
+      <span>350</span>
+    </span>
+    <span class="post-meta-item" title="阅读时长">
+      <span class="post-meta-item-icon">
+        <i class="far fa-clock"></i>
+      </span>
+      <span class="post-meta-item-text">阅读时长 &asymp;</span>
+      <span>1 分钟</span>
+    </span>
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h3 id="安装dnsmasq"><a href="#安装dnsmasq" class="headerlink" title="安装dnsmasq"></a>安装dnsmasq</h3><ul>
+<li>apt-get install -y dnsmasq</li>
+</ul>
+<h4 id="x2F-etc-x2F-dnsmasq-conf"><a href="#x2F-etc-x2F-dnsmasq-conf" class="headerlink" title="&#x2F;etc&#x2F;dnsmasq.conf"></a>&#x2F;etc&#x2F;dnsmasq.conf</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">bogus-priv</span><br><span class="line">no-resolv</span><br><span class="line">server=100.100.2.138</span><br><span class="line">server=100.100.2.136</span><br><span class="line">interface=tun0</span><br><span class="line">listen-address=127.0.0.1</span><br><span class="line">bind-interfaces</span><br><span class="line">addn-hosts=/etc/internal_ips</span><br></pre></td></tr></table></figure>
+<h4 id="x2F-etc-x2F-internal-ips"><a href="#x2F-etc-x2F-internal-ips" class="headerlink" title="&#x2F;etc&#x2F;internal_ips"></a>&#x2F;etc&#x2F;internal_ips</h4><p>10.8.0.1 main.int<br>10.8.0.2 cj.int<br>10.8.0.3 cjwindows.int<br>10.8.0.4 s1.int<br>10.8.0.5 s2.int<br>10.8.0.6 s3.int<br>10.8.0.7 s4.int    </p>
+<h4 id="dnsmasq-配置"><a href="#dnsmasq-配置" class="headerlink" title="dnsmasq 配置"></a>dnsmasq 配置</h4><p><img src="https://blog.hexiefamily.xin/assets/dnsmasq.jpg" alt="avatar"></p>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://cjyzwg.github.io/2023/06/4c4cf47da89d.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="name" content="Nocky">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="NockyGo">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="undefined | NockyGo">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2023/06/4c4cf47da89d.html" class="post-title-link" itemprop="url">adb devices 为空</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+      
+
+      <time title="创建时间：2023-06-09 07:03:56 / 修改时间：11:16:52" itemprop="dateCreated datePublished" datetime="2023-06-09T07:03:56+08:00">2023-06-09</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/Android/" itemprop="url" rel="index"><span itemprop="name">Android</span></a>
+        </span>
+    </span>
+
+  
+    <span class="post-meta-break"></span>
+    <span class="post-meta-item" title="本文字数">
+      <span class="post-meta-item-icon">
+        <i class="far fa-file-word"></i>
+      </span>
+      <span class="post-meta-item-text">本文字数：</span>
+      <span>109</span>
+    </span>
+    <span class="post-meta-item" title="阅读时长">
+      <span class="post-meta-item-icon">
+        <i class="far fa-clock"></i>
+      </span>
+      <span class="post-meta-item-text">阅读时长 &asymp;</span>
+      <span>1 分钟</span>
+    </span>
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h3 id="Adb-devices-显示为空？"><a href="#Adb-devices-显示为空？" class="headerlink" title="Adb devices 显示为空？"></a>Adb devices 显示为空？</h3><h4 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h4><p><strong><a target="_blank" rel="noopener" href="https://www.cnblogs.com/wx170119/p/13092595.html">https://www.cnblogs.com/wx170119/p/13092595.html</a></strong><br><strong><a target="_blank" rel="noopener" href="https://androiddevtools.cn/">https://androiddevtools.cn/</a></strong></p>
+<h5 id="启动命令："><a href="#启动命令：" class="headerlink" title="启动命令："></a>启动命令：</h5><blockquote>
+<p>按照上面步骤即可完成</p>
+</blockquote>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://cjyzwg.github.io/2023/06/8d48886a6f4e.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="name" content="Nocky">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="NockyGo">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="undefined | NockyGo">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2023/06/8d48886a6f4e.html" class="post-title-link" itemprop="url">Hello World1</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+      
+
+      <time title="创建时间：2023-06-09 06:25:35 / 修改时间：08:35:09" itemprop="dateCreated datePublished" datetime="2023-06-09T06:25:35+08:00">2023-06-09</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -243,7 +439,7 @@
         <i class="far fa-file-word"></i>
       </span>
       <span class="post-meta-item-text">本文字数：</span>
-      <span>4</span>
+      <span>367</span>
     </span>
     <span class="post-meta-item" title="阅读时长">
       <span class="post-meta-item-icon">
@@ -261,7 +457,20 @@
     
     
     <div class="post-body" itemprop="articleBody">
-          <h2 id="开始"><a href="#开始" class="headerlink" title="开始"></a>开始</h2><h2 id="结束"><a href="#结束" class="headerlink" title="结束"></a>结束</h2>
+          <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+
       
     </div>
 
@@ -287,7 +496,7 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://cjyzwg.github.io/2023/06/1c369132c8ac.html">
+    <link itemprop="mainEntityOfPage" href="https://cjyzwg.github.io/2023/06/60edd9302881.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.jpg">
@@ -305,7 +514,7 @@
     </span>
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
-          <a href="/2023/06/1c369132c8ac.html" class="post-title-link" itemprop="url">我如何写出一万元的文章</a>
+          <a href="/2023/06/60edd9302881.html" class="post-title-link" itemprop="url">get startted</a>
         </h2>
 
         <div class="post-meta-container">
@@ -317,7 +526,7 @@
       <span class="post-meta-item-text">发表于</span>
       
 
-      <time title="创建时间：2023-06-09 07:03:56 / 修改时间：10:29:25" itemprop="dateCreated datePublished" datetime="2023-06-09T07:03:56+08:00">2023-06-09</time>
+      <time title="创建时间：2023-06-09 03:01:28 / 修改时间：08:35:09" itemprop="dateCreated datePublished" datetime="2023-06-09T03:01:28+08:00">2023-06-09</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -325,7 +534,7 @@
       </span>
       <span class="post-meta-item-text">分类于</span>
         <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/%E8%AE%A4%E7%9F%A5%E4%B8%8E%E6%88%90%E9%95%BF/" itemprop="url" rel="index"><span itemprop="name">认知与成长</span></a>
+          <a href="/categories/%E6%B5%8B%E8%AF%95/" itemprop="url" rel="index"><span itemprop="name">测试</span></a>
         </span>
     </span>
 
@@ -336,14 +545,14 @@
         <i class="far fa-file-word"></i>
       </span>
       <span class="post-meta-item-text">本文字数：</span>
-      <span>2k</span>
+      <span>4.3k</span>
     </span>
     <span class="post-meta-item" title="阅读时长">
       <span class="post-meta-item-icon">
         <i class="far fa-clock"></i>
       </span>
       <span class="post-meta-item-text">阅读时长 &asymp;</span>
-      <span>4 分钟</span>
+      <span>8 分钟</span>
     </span>
 </div>
 
@@ -354,37 +563,15 @@
     
     
     <div class="post-body" itemprop="articleBody">
-          <h3 id="摘自程序员的喵公众号文章"><a href="#摘自程序员的喵公众号文章" class="headerlink" title="摘自程序员的喵公众号文章"></a>摘自程序员的喵公众号文章</h3><p>当我开始练习写作时，他人的故事、技巧分享激励了我。希望我的经历也会帮助到其他人，这篇案例分享的文章是我 2020 写的，原文是 How I Wrote a $500 Article in My First 3 Months on Medium ，我改过来加上一些后续。</p>
-<p>一万元并不是一笔巨款，但是算是我赚的时薪很高的一笔收入，因为我写当时那篇文章只花了 30 分钟。</p>
-<h4 id="如何写出来的"><a href="#如何写出来的" class="headerlink" title="如何写出来的"></a><strong>如何写出来的</strong></h4><p>我作为一名软件工程师已经工作了近十年。我喜欢阅读，但没有写过太多文章。2019 年我开始练习英语写作，我在网上看到东西都会想想这篇文章怎么样，哪些地方值得学习。</p>
-<p>某天，我看到了一篇关于 Linux 好玩的命令的中文文章，觉得这有点意思，我们在日常工作中并不使用这些命令，但它们是程序员和 Linux 系统里的一种小幽默。我想可以写一篇 Medium 风格的文章，我在学习这种风格，反正也需要练习。</p>
-<p>我之前看过一些营销类的资料，诡异的心理学说标题中的奇数会吸引更多注意力，所以我得凑够 7 个命令，这感觉是在配制神秘药水。我读的那篇文章是针对极客的，我想把受众扩大到新手或非技术领域的读者，所以加入了一些如何安装这些命令的详细说明。</p>
-<p>我在 Mac 上尝试了每个命令，如果在 Mac 上没有我就在 Linux 虚拟机上试试，然后给每个命令都配了一张截图。</p>
-<p>我大概用了 30 分钟完成了，然后就提交到专栏 <a target="_blank" rel="noopener" href="https://medium.com/better-programming">Better Programming</a> 。这是一个面向 IT 专业人士的专栏，我之前在这里已经投递成功过一些技术文，但这篇不是硬核技术文，所以有可能不会被接收。我当时想，如果没有被接受我就发布在个人页面好了，反正也没没付出太多时间，随手一试吧。</p>
-<p>幸好 Better Programming 的编辑 <a target="_blank" rel="noopener" href="https://zackshapiro.medium.com/">Zack Shapiro</a>很快接收并发表了这篇文章：7 <a target="_blank" rel="noopener" href="https://betterprogramming.pub/7-terminal-commands-that-will-just-make-you-smile-3f5bc8778080">Terminal Commands That Will Just Make You Smile</a> 。</p>
-<p>他们还配了一张可爱的图片和带点幽默感的副标题：</p>
-<blockquote>
-<p>These tutorials don’t always have to be practical</p>
-</blockquote>
-<p><img src="https://gitee.com/cjyzwg/img/raw/master/202203162034682.png"></p>
-<p>我估计是 Medium 在一些相关主题中推荐了这篇文章，阅读和点赞数开始滚雪球地增加，这算是我学习写作 3 个月里写出的表现最好的文章了。</p>
-<h4 id="如何继续完善"><a href="#如何继续完善" class="headerlink" title="如何继续完善"></a><strong>如何继续完善</strong></h4><p>大约两天后，我看到数据不错就开始思考如何改进这篇文章。</p>
-<p>文章本身不长，只有 300 字。Medium 是看吸引了多少付费用户的阅读时间来计算稿费的，那如何提高平均阅读时间？</p>
-<p>我的想法是让它更有吸引力😏</p>
-<p>首先想到的是光有截图不够，应该为这些命令制作 GIF，因为 GIF 能更好地展示这些命令的有趣性。我以前没有在 Mac 上制作过 GIF，我在 Google 上搜索发现一个叫 LICEcap 的小工具，用这个工具很快就完成了 GIF。我甚至在页面上内嵌了一个 Youtube 视频，我要做的就是使这篇文章活泼生动，让读者很快得到乐趣并盯着文章看。</p>
-<p>最终这篇文章虽然很短，平均阅读时间为 2 分半钟，阅读量是 10 w，挣了 1300 多美金：</p>
-<p><img src="https://gitee.com/cjyzwg/img/raw/master/202203162035494.png"></p>
-<p>疫情的那段时间，我每天看着这篇文章赚上几百元的被动收入，感觉很好。</p>
-<h4 id="我学到了什么"><a href="#我学到了什么" class="headerlink" title="我学到了什么"></a><strong>我学到了什么</strong></h4><p>这篇文章的想法并非原创，也很简单。我所做的是分享点趣味，并且扩大受众面，为目标受众做出一篇完美的文章。</p>
-<p>我在很短的时间内完成了初稿，发布之后如果数据好就继续雕琢到完美，这是一个可行的节省时间的策略。</p>
-<p>那如何重现这一切呢？说实话，我不知道，谁也不能保证根据这个策略就能再写出一篇。我还写了一些其他文章，所花费的时间比这篇更多却没得到这么多阅读量。写作中就会出现这样一些惊喜，那些不经意间写出来的反而火了。我想这篇能很快传播开来，一个原因是<strong>优秀的配图和幽默感容易引起病毒式传播</strong>。</p>
-<p>这篇文章确实是一个好的开始，因为我感觉这个经历有点靠边 Marketing，所以我又能写下这篇案例分享的文章。初稿我写得并不好，Better Marketing 的编辑 Niklas Göke 回复说噪音太多，能不能专注于写出来的过程，你当时的想法和思考等，写得越详细越好。我按照他的思路重写了这篇文章，最后也获得不错的结果：</p>
-<p><img src="https://gitee.com/cjyzwg/img/raw/master/202203162036730.png"></p>
-<p>给靠谱的 Meidum 专栏投稿的好处在于，作者提交后他们的编辑还会继续修改，我估计是因为编辑看我是非英语母语写作，所以会帮忙润色。我则可以看他们的修改来学习英语和写作。</p>
-<p>对于写作赚钱这件事来说，<strong>没有一个必定成功的公式，我们需要做的就是写得更多、更好，写完给行家看，根据反馈修改，这就是最好的提高途径</strong>。对于新手来说，投稿是个不错的办法，这样即能赚钱又能锻炼自己。</p>
-<p>最后提一下，我知道一些人也想参与 Medium 的合作伙伴项目 (因为只有参加了这个才能通收稿费)，一个门槛是 Medium 现在还不支持中国的银行卡，所以就比较麻烦。我的解决办法就是找了个朋友，用他的卡帮我收😂。</p>
-<p>我还是很推荐想学习英语或者写作的朋友多去 Medium 写写，不止有靠谱的编辑，也有很认真阅读的读者，即使不是为了赚钱也值得一试。</p>
-
+          <p>NexT User Docs – Starting to Use</p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2023/06/60edd9302881.html">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
@@ -410,7 +597,7 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://cjyzwg.github.io/2023/06/8a9f733e5551.html">
+    <link itemprop="mainEntityOfPage" href="https://cjyzwg.github.io/2023/06/66c5ec627403.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.jpg">
@@ -428,7 +615,7 @@
     </span>
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
-          <a href="/2023/06/8a9f733e5551.html" class="post-title-link" itemprop="url">华为近期祭出的仓颉是个啥？</a>
+          <a href="/2023/06/66c5ec627403.html" class="post-title-link" itemprop="url">Hello World</a>
         </h2>
 
         <div class="post-meta-container">
@@ -440,7 +627,7 @@
       <span class="post-meta-item-text">发表于</span>
       
 
-      <time title="创建时间：2023-06-09 07:03:56 / 修改时间：11:16:35" itemprop="dateCreated datePublished" datetime="2023-06-09T07:03:56+08:00">2023-06-09</time>
+      <time title="创建时间：2023-06-09 02:40:22 / 修改时间：08:35:09" itemprop="dateCreated datePublished" datetime="2023-06-09T02:40:22+08:00">2023-06-09</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -448,7 +635,7 @@
       </span>
       <span class="post-meta-item-text">分类于</span>
         <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/%E5%BE%AE%E4%BF%A1%E5%85%AC%E4%BC%97%E5%8F%B7/" itemprop="url" rel="index"><span itemprop="name">微信公众号</span></a>
+          <a href="/categories/%E6%B5%8B%E8%AF%95/" itemprop="url" rel="index"><span itemprop="name">测试</span></a>
         </span>
     </span>
 
@@ -459,7 +646,7 @@
         <i class="far fa-file-word"></i>
       </span>
       <span class="post-meta-item-text">本文字数：</span>
-      <span>457</span>
+      <span>367</span>
     </span>
     <span class="post-meta-item" title="阅读时长">
       <span class="post-meta-item-icon">
@@ -477,263 +664,19 @@
     
     
     <div class="post-body" itemprop="articleBody">
-          <p>近期，华为开放了仓颉语言的部分试用报名。</p>
-<h5 id="「仓颉」是华为推出的一款编程语言，适配于鸿蒙系统和欧拉系统。"><a href="#「仓颉」是华为推出的一款编程语言，适配于鸿蒙系统和欧拉系统。" class="headerlink" title="「仓颉」是华为推出的一款编程语言，适配于鸿蒙系统和欧拉系统。"></a>「仓颉」是华为推出的一款编程语言，适配于鸿蒙系统和欧拉系统。</h5><h4 id="「仓颉」是中文编程么？"><a href="#「仓颉」是中文编程么？" class="headerlink" title="「仓颉」是中文编程么？"></a><strong>「仓颉」是中文编程么？</strong></h4><p>「仓颉」不是中文编程，大家看到的网图都是2000年易语言的编程。</p>
-<p><img src="https://gitee.com/cjyzwg/img/raw/master/202203251653722.png"></p>
-<p>其实「仓颉」的亮点在于我们输入一段文字，这段文字可以是中文，英文，法文等，然后仓颉的 AI 编辑器就会帮我们生成一段“计算机”可执行的代码！  </p>
-<p>中文编程只是看起来美好的噱头，也会降低编译效率，而且写代码的核心是“逻辑”，而不是语言。  </p>
-<h4 id="「仓颉」适配鸿蒙与欧拉系统"><a href="#「仓颉」适配鸿蒙与欧拉系统" class="headerlink" title="「仓颉」适配鸿蒙与欧拉系统"></a><strong>「仓颉」适配鸿蒙与欧拉系统</strong></h4><h5 id="鸿蒙系统"><a href="#鸿蒙系统" class="headerlink" title="鸿蒙系统"></a>鸿蒙系统</h5><p><strong>使用场景</strong></p>
-<ul>
-<li>运行于手机、平板、以及物联网设备面向普通消费者操作系统</li>
-</ul>
-<h5 id="欧拉系统"><a href="#欧拉系统" class="headerlink" title="欧拉系统"></a>欧拉系统</h5><p><strong>欧拉系统和欧拉车什么关系？</strong></p>
-<ul>
-<li>重名，举个例子，你叫张三，他也叫张三</li>
-</ul>
-<p><strong>使用场景</strong></p>
-<ul>
-<li>面向企业级服务器的操作系统，直白来说，比如运行像淘宝，拼多多，饿了么外卖订单等系统服务的服务器操作系统。</li>
-</ul>
-<h4 id="「仓颉」的意义"><a href="#「仓颉」的意义" class="headerlink" title="「仓颉」的意义"></a><strong>「仓颉」的意义</strong></h4><p>作为一名程序员，站在理性的角度来看</p>
-<ul>
-<li><p>当出现一种新的语言，正常情况会解决某一类问题，但具体解决什么问题，得等开源就清楚了，再耐心等等看吧。</p>
-</li>
-<li><p>应该能够助力那些稍有编程思想的人，快速上手写程序，和微信小程序的初衷有点类似。</p>
-</li>
-</ul>
+          <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
 
-      
-    </div>
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
 
-    
-    
-    
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
 
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
 
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://cjyzwg.github.io/2023/06/79c945657733.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.jpg">
-      <meta itemprop="name" content="Nocky">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="NockyGo">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | NockyGo">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2023/06/79c945657733.html" class="post-title-link" itemprop="url">阿三与喵姑娘</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">发表于</span>
-      
-
-      <time title="创建时间：2023-06-09 07:03:56 / 修改时间：11:16:32" itemprop="dateCreated datePublished" datetime="2023-06-09T07:03:56+08:00">2023-06-09</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">分类于</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/%E5%BE%AE%E4%BF%A1%E5%85%AC%E4%BC%97%E5%8F%B7/" itemprop="url" rel="index"><span itemprop="name">微信公众号</span></a>
-        </span>
-    </span>
-
-  
-    <span class="post-meta-break"></span>
-    <span class="post-meta-item" title="本文字数">
-      <span class="post-meta-item-icon">
-        <i class="far fa-file-word"></i>
-      </span>
-      <span class="post-meta-item-text">本文字数：</span>
-      <span>1.3k</span>
-    </span>
-    <span class="post-meta-item" title="阅读时长">
-      <span class="post-meta-item-icon">
-        <i class="far fa-clock"></i>
-      </span>
-      <span class="post-meta-item-text">阅读时长 &asymp;</span>
-      <span>2 分钟</span>
-    </span>
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <h4 id="MU5735号航班"><a href="#MU5735号航班" class="headerlink" title="MU5735号航班"></a><strong>MU5735号航班</strong></h4><p>3.21的MU5735空难，那几天罕见的失眠了，几乎每隔一个小时都在刷着抖音、微博，获取132名乘客是否还活着的消息，搜寻黑匣子的消息，疯狂的刷着历史上的空难，来对比这次空难，甚至还有想去梧州的想法，直到官方宣布遇难我才相信。</p>
-<p>昨天刷到叫「<strong>红豆和树</strong>」的公众号，每篇文章看完都会莫名的戳中泪点。</p>
-<p><img src="https://gitee.com/cjyzwg/img/raw/master/202203281442530.png"></p>
-<p>红豆先生是空难的一名乘客，他在公众号里记录了和树子小姐从相识到布置新房，准备结婚的感悟，最后一篇永远的定格在2021的12月份。红豆先生本来工作在北京，为了树子小姐到广州工作，工作来返昆明与广州，文字都透着真诚，无数次描绘他们未来生活的模样。</p>
-<p><img src="https://gitee.com/cjyzwg/img/raw/master/202203281442214.png"></p>
-<h4 id="公众号更名"><a href="#公众号更名" class="headerlink" title="公众号更名"></a><strong>公众号更名</strong></h4><p>我把其中的一篇文章分享给了喵姑娘，然后我说要不你也起个名吧，我也想写一个关于你的公众号，喵姑娘说那你觉得我像什么，我一时之间不知道怎么形容她，直到今天早上起来，才觉得她像一只猫，时而琢磨不透，时而懒散，时而傲娇，时而粘人，常常会因为抖音的一条短视频感动的流泪，就直直的让眼泪流到嘴角，也不知道擦掉。</p>
-<p>至此，我的公众号名称也将改名叫「<strong>阿三与喵姑娘</strong>」，不过这个公众号我什么都会写，编程，吃瓜，感悟，与喵姑娘的点点滴滴，分享我的价值观等等。</p>
-<h4 id="写作太难了？"><a href="#写作太难了？" class="headerlink" title="写作太难了？"></a><strong>写作太难了？</strong></h4><p>当然写作不是一件容易的事情，对于我这个理科生来说，写作文简直是要了我的命，粥左罗在《学习写作》中提到怎么写：</p>
-<p><strong>一开始都是从硬写过来的</strong></p>
-<p>只不过后来慢慢总结成框架了，框架对于新手其实不太合适，对于已经入门的写者适合，能提高效率，对于我这个菜鸟来说还是老老实实的硬写吧。</p>
-<p>突然想到我自己的两个经历，分享下：</p>
-<ul>
-<li><em><strong>代码维护</strong></em></li>
-</ul>
-<p>之前我写代码都是面向过程的写法，写起来很快，但是对代码后期的维护很友好，我领导耐心地告诉我做法：</p>
-<p><img src="https://gitee.com/cjyzwg/img/raw/master/202203281214057.png"><br><img src="https://gitee.com/cjyzwg/img/raw/master/202203281214187.png"></p>
-<p>这也就是我说的类似写作的框架，如果再把领域范围扩大，扩大到销售，自媒体推广，电商等等方面，都是一样的。</p>
-<ul>
-<li><em><strong>与人沟通</strong></em></li>
-</ul>
-<p>我的前任老板，一名深耕于健身行业二十年有余的商业女性，对于她的教诲我至今还没学到皮毛，她说过程序员的思想和销售说话很类似，比如顾客问你一句话，你需要去思考A&#x2F;B&#x2F;C三种说法，就像我们写代码的逻辑一样。</p>
-<p>所以她之前一直想培养我成销售，可能是我的能力不足，也有可能是她填鸭式的方法不太适合我，我现在在通过写作去学习与人沟通。</p>
-<h4 id="多读好书"><a href="#多读好书" class="headerlink" title="多读好书"></a><strong>多读好书</strong></h4><p>前一阵子，看了王牌对王牌的一期节目，节目嘉宾是作者麦家，不同于以前的嘉宾，他很温文尔雅，说话波澜不惊，最后给每个人的寄语也都戳中他们内心，他是真正有大智慧的人，他做了一个读书计划，「用20年时间，陪读者读完1000本名著」。</p>
-<p><img src="https://gitee.com/cjyzwg/img/raw/master/202203281410148.png"></p>
-<p>他在最新的一篇文章写道：</p>
-<p><strong>因为疫情，读书，写作，健身，现在已经不大会激动，愤怒的火山也少见喷薄，仿佛喜怒都相似，都在重复，喜的不值喜，怒的不值得怒，一切归于平坦。</strong></p>
-<p>读万卷书，行外里路，在写作中思考人生，思考人性，这也就是为什么麦家老师在回答沈腾贾玲问题的时候没有太多的喜怒无常，而且直戳重点。</p>
-<p>查理芒格在穷查理宝典中写道：</p>
-<p><strong>通过广泛的阅读把自己培养成一个终生自学者。</strong></p>
-<p>多读书，读好书，读广泛的书，通过写作总结框架，整理思维模型，形成自己新的世界观。</p>
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://cjyzwg.github.io/2023/06/906fa42b8a26.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.jpg">
-      <meta itemprop="name" content="Nocky">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="NockyGo">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | NockyGo">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2023/06/906fa42b8a26.html" class="post-title-link" itemprop="url">无痛苦更新公众号（完整）</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">发表于</span>
-      
-
-      <time title="创建时间：2023-06-09 07:03:56 / 修改时间：11:16:48" itemprop="dateCreated datePublished" datetime="2023-06-09T07:03:56+08:00">2023-06-09</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">分类于</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/%E5%BE%AE%E4%BF%A1%E5%85%AC%E4%BC%97%E5%8F%B7/" itemprop="url" rel="index"><span itemprop="name">微信公众号</span></a>
-        </span>
-    </span>
-
-  
-    <span class="post-meta-break"></span>
-    <span class="post-meta-item" title="本文字数">
-      <span class="post-meta-item-icon">
-        <i class="far fa-file-word"></i>
-      </span>
-      <span class="post-meta-item-text">本文字数：</span>
-      <span>542</span>
-    </span>
-    <span class="post-meta-item" title="阅读时长">
-      <span class="post-meta-item-icon">
-        <i class="far fa-clock"></i>
-      </span>
-      <span class="post-meta-item-text">阅读时长 &asymp;</span>
-      <span>1 分钟</span>
-    </span>
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <h3 id="无痛苦更新公众号（完整）"><a href="#无痛苦更新公众号（完整）" class="headerlink" title="无痛苦更新公众号（完整）"></a>无痛苦更新公众号（完整）</h3><p>很早以前注册了这个公众号，一直没用，一在于公众号的排版，即使是用其他排版工具，如秀米，也会耗费大量时间，还得上传图片，二在于自己的写作能力实在太差😂。</p>
-<p><strong>工欲善其事必先利其器</strong></p>
-<p>在接触公众号【程序员的喵】上有一篇无痛苦更新公众号的<a target="_blank" rel="noopener" href="https://github.com/chenyukang/markdown-to-wechat">python插件</a>，我的内心也蠢蠢欲动，开始了自己的<a target="_blank" rel="noopener" href="https://github.com/cjyzwg/markdown-wechat">go插件</a>。</p>
-<h4 id="流程"><a href="#流程" class="headerlink" title="流程"></a><strong>流程</strong></h4><p>我整体想要写作的流程：</p>
-<p><strong>80%的时间用于写作，而不是用在排版</strong></p>
-<blockquote>
-<p>obsidian写作 -&gt; go插件 -&gt; 更新公众号&#x2F;博客网站，小程序</p>
-</blockquote>
-<p><img src="https://gitee.com/cjyzwg/img/raw/master/202203171021868.png"></p>
-<blockquote>
-<p>本篇只讲obsidian 写完推送到公众号中:</p>
-</blockquote>
-<p><img src="https://gitee.com/cjyzwg/img/raw/master/202203171050806.png"></p>
-<h4 id="步骤"><a href="#步骤" class="headerlink" title="步骤"></a><strong>步骤</strong></h4><p>1、obsidian开始写，安装一些必要的插件，比如excalidraw，还有最重要的<a target="_blank" rel="noopener" href="https://www.cnblogs.com/zd2021/p/15483878.html">obsidian+picgo+gitee搭建图床</a>，这样只用图片复制进来即可上传到gitee上了。</p>
-<p>2、使用go插件，go run main.go即能上传到微信公众号的草稿箱，这里没有做一键发布，手机上下载了订阅助手app，在草稿箱里预览下样式是否正确，然后发布。</p>
-<h4 id="优化-x2F-感悟"><a href="#优化-x2F-感悟" class="headerlink" title="优化&#x2F;感悟"></a><strong>优化&#x2F;感悟</strong></h4><p>插件有些地方还不够完善，我后面会优化，覆盖面为小白，不用明白go就可以使用，会发布在github的release中。</p>
-<p>不过现在对于我本人已足够可以使用了，至少我可以在半小时内写出一篇文章，而不是再额外1个小时做排版工作。</p>
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
 
       
     </div>
@@ -753,7 +696,7 @@
 
 
   <nav class="pagination">
-    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><span class="space">&hellip;</span><a class="page-number" href="/page/10/">10</a><a class="extend next" rel="next" title="下一页" aria-label="下一页" href="/page/2/"><i class="fa fa-angle-right"></i></a>
+    <a class="extend prev" rel="prev" title="上一页" aria-label="上一页" href="/page/8/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/8/">8</a><span class="page-number current">9</span><a class="page-number" href="/page/10/">10</a><a class="extend next" rel="next" title="下一页" aria-label="下一页" href="/page/10/"><i class="fa fa-angle-right"></i></a>
   </nav>
 
 </div>
