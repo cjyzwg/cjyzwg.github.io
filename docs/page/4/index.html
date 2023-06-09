@@ -149,13 +149,13 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">45</span>
+          <span class="site-state-item-count">46</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
           <a href="/categories/">
-        <span class="site-state-item-count">16</span>
+        <span class="site-state-item-count">15</span>
         <span class="site-state-item-name">分类</span></a>
       </div>
       <div class="site-state-item site-state-tags">
@@ -185,6 +185,131 @@
     </div>
 
     <div class="main-inner index posts-expand">
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://cjyzwg.github.io/2023/06/fd4be80236ff.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="name" content="Nocky">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="NockyGo">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="undefined | NockyGo">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2023/06/fd4be80236ff.html" class="post-title-link" itemprop="url">未命名</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+      
+
+      <time title="创建时间：2023-06-09 07:03:56 / 修改时间：07:12:13" itemprop="dateCreated datePublished" datetime="2023-06-09T07:03:56+08:00">2023-06-09</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/GOLANG/" itemprop="url" rel="index"><span itemprop="name">GOLANG</span></a>
+        </span>
+    </span>
+
+  
+    <span class="post-meta-break"></span>
+    <span class="post-meta-item" title="本文字数">
+      <span class="post-meta-item-icon">
+        <i class="far fa-file-word"></i>
+      </span>
+      <span class="post-meta-item-text">本文字数：</span>
+      <span>1.6k</span>
+    </span>
+    <span class="post-meta-item" title="阅读时长">
+      <span class="post-meta-item-icon">
+        <i class="far fa-clock"></i>
+      </span>
+      <span class="post-meta-item-text">阅读时长 &asymp;</span>
+      <span>3 分钟</span>
+    </span>
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h3 id="linux-搭建直播服务器"><a href="#linux-搭建直播服务器" class="headerlink" title="linux 搭建直播服务器"></a>linux 搭建直播服务器</h3><h4 id="同时也在学习livego中"><a href="#同时也在学习livego中" class="headerlink" title="同时也在学习livego中"></a>同时也在学习livego中</h4><ol>
+<li><blockquote>
+<p>$ apt-get install ffmpeg</p>
+</blockquote>
+</li>
+</ol>
+<blockquote>
+<p>$ git clone <a target="_blank" rel="noopener" href="https://github.com/gwuhaolin/livego.git">https://github.com/gwuhaolin/livego.git</a> </p>
+</blockquote>
+<p>2.记得需要加<br>export GOPROXY&#x3D;<a target="_blank" rel="noopener" href="https://goproxy.io/">https://goproxy.io</a> 或者国内 <a target="_blank" rel="noopener" href="https://goproxy.cn/">https://goproxy.cn</a><br>export GO111MODULE&#x3D;on </p>
+<p>3.同时在阿里云安全组规则把livego.yaml 里面的端口全部开启</p>
+<p>4.使用tmux  go run main.go</p>
+<h4 id="添加ngix-配置oss-反向代理模块-x2F-etc-x2F-nginx-x2F-conf-d-x2F-oss-conf"><a href="#添加ngix-配置oss-反向代理模块-x2F-etc-x2F-nginx-x2F-conf-d-x2F-oss-conf" class="headerlink" title="添加ngix 配置oss 反向代理模块 &#x2F;etc&#x2F;nginx&#x2F;conf.d&#x2F;oss.conf"></a>添加ngix 配置oss 反向代理模块 &#x2F;etc&#x2F;nginx&#x2F;conf.d&#x2F;oss.conf</h4><pre><code class="conf">
+server &#123;
+    server_name  localhost; # oss域名，替换成你自己的域名
+    server_name_in_redirect off; # 多域名防干扰，详细说明可自行查阅
+
+    location / &#123;
+      # 反向代理oss地址，需替换成你的oss内网或外网地址
+      proxy_pass http://bb.oss-cn-shanghai-internal.aliyuncs.com/;
+      # 设置反向代理时请求header, 也是本方案核心内容
+      # $ossDate， $ossAuth 变量名需和nginx.conf文件内变量名一致
+      #proxy_set_header Date $ossDate;
+      #proxy_set_header Authorization $ossAuth;
+    &#125;
+
+&#125;
+</code></pre>
+<h4 id="客户端我使用的是dplayer-因为兼容微信-safari-浏览器"><a href="#客户端我使用的是dplayer-因为兼容微信-safari-浏览器" class="headerlink" title="客户端我使用的是dplayer 因为兼容微信 safari 浏览器"></a>客户端我使用的是dplayer 因为兼容微信 safari 浏览器</h4><p>具体的代码<br>参考 <a target="_blank" rel="noopener" href="https://github.com/MoePlayer/DPlayer">https://github.com/MoePlayer/DPlayer</a><br>仅需更改其中的url即可<br>比如可使用刚才 <a target="_blank" rel="noopener" href="http://localhost/a.mp4">http://localhost/a.mp4</a><br>如果出现cors跨域问题，需要在oss端更改权限设置 将请求get post添加上，header上添加* 即可访问.</p>
+<h4 id="直播推流"><a href="#直播推流" class="headerlink" title="直播推流"></a>直播推流</h4><p>1.打开 <a target="_blank" rel="noopener" href="http://localhost:8090/control/get?room=movie">http://localhost:8090/control/get?room=movie</a> movie 可以变成任意的，但是下面要保持一致<br>2.在dplayer 的url中设置 为：<a target="_blank" rel="noopener" href="http://localhost:7002/live/movie.m3u8">http://localhost:7002/live/movie.m3u8</a><br>3.<br>(1) 摄像头推流<br>ffmpeg -f avfoundation -framerate 30 -video_size 1280x720 -i  “0”  -vcodec libx264 -acodec libfaac -f flv   rtmp:&#x2F;&#x2F;localhost:1935&#x2F;live&#x2F;rfBd56ti2SMtYvSgD5xAV0YU99zampta7Z7S575KLkIZ9PYk<br>(2) 视频推流<br>ffmpeg -re -i 123.mp4 -c copy -f flv rtmp:&#x2F;&#x2F;localhost:1935&#x2F;live&#x2F;rfBd56ti2SMtYvSgD5xAV0YU99zampta7Z7S575KLkIZ9PYk<br>(3) 电脑端的推流可以使用obs<br>(4) 手机端推流使用腾讯的视频云工具包<br>摄像头推流-》rtmp:&#x2F;&#x2F;localhost:1935&#x2F;live&#x2F;rfBd56ti2SMtYvSgD5xAV0YU99zampta7Z7S575KLkIZ9PYk </p>
+<h4 id="直播拉流"><a href="#直播拉流" class="headerlink" title="直播拉流"></a>直播拉流</h4><p>拉流的地址就是： <a target="_blank" rel="noopener" href="http://localhost:7002/live/movie.m3u8">http://localhost:7002/live/movie.m3u8</a> </p>
+<h4 id="上传视频文件到oss"><a href="#上传视频文件到oss" class="headerlink" title="上传视频文件到oss"></a>上传视频文件到oss</h4><p>此处用<a target="_blank" rel="noopener" href="https://github.com/dcq2016/plupload">https://github.com/dcq2016/plupload</a> 上传到oss 更改其中的<br>src&#x2F;components&#x2F;Plupload.vue中<br>accessid<br>accesskey<br>host<br>换成自己阿里云对应的值</p>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
 
     
 
@@ -1116,105 +1241,6 @@
     <div class="post-body" itemprop="articleBody">
           <h3 id="第一个页面："><a href="#第一个页面：" class="headerlink" title="第一个页面："></a>第一个页面：</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">class Page extends StatelessWidget &#123;</span><br><span class="line">  final String title;</span><br><span class="line"></span><br><span class="line">  Page(&#123;this.title&#125;);</span><br><span class="line"></span><br><span class="line">  @override</span><br><span class="line">  Widget build(BuildContext context) &#123;</span><br><span class="line">    return Scaffold(</span><br><span class="line">      appBar: AppBar(</span><br><span class="line">        title: Text(title),</span><br><span class="line">        elevation: 0.0,</span><br><span class="line">      ),</span><br><span class="line">      body: BlogSheet(title: title),</span><br><span class="line">    );</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <h3 id="第二个页面"><a href="#第二个页面" class="headerlink" title="第二个页面"></a>第二个页面</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br></pre></td><td class="code"><pre><span class="line">class BlogSheet extends StatefulWidget &#123;</span><br><span class="line">  BlogSheet(&#123;Key key, this.title&#125;) : super(key: key);</span><br><span class="line">  final String title;</span><br><span class="line"></span><br><span class="line">  @override</span><br><span class="line">  _BlogSheetState createState() =&gt; _BlogSheetState();</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">class _BlogSheetState extends State&lt;BlogSheet&gt; &#123;</span><br><span class="line">  List bloglists;</span><br><span class="line"></span><br><span class="line">  @override</span><br><span class="line">  void initState() &#123;</span><br><span class="line">    super.initState();</span><br><span class="line"></span><br><span class="line">    getData(type: &#x27;api&#x27;, category: widget.title);</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  Future getData(&#123;String type = &#x27;api&#x27;, String category = &#x27;PHP&#x27;&#125;) async &#123;</span><br><span class="line">    final String url = &quot;http://localhost:8081/$type?category=$category&quot;;</span><br><span class="line">    final response = await http.get(url);</span><br><span class="line"></span><br><span class="line">    if (response.statusCode == 200) &#123;</span><br><span class="line">      List top = json.decode(response.body);</span><br><span class="line">      setState(() &#123;</span><br><span class="line">        bloglists = top.map((json) =&gt; Blog.fromJson(json)).toList();</span><br><span class="line">      &#125;);</span><br><span class="line">    &#125; else &#123;</span><br><span class="line">      print(&quot;err code $response.statusCode&quot;);</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  @override</span><br><span class="line">  Widget build(BuildContext context) &#123;</span><br><span class="line">    return Container(</span><br><span class="line">      child: bloglists == null</span><br><span class="line">          ? Center(child: CircularProgressIndicator())</span><br><span class="line">          : Padding(</span><br><span class="line">              padding: EdgeInsets.symmetric(horizontal: 6.0, vertical: 10.0),</span><br><span class="line">              child: ListView.builder(</span><br><span class="line">                itemCount: bloglists.length,</span><br><span class="line">                itemBuilder: (BuildContext context, int index) &#123;</span><br><span class="line">                  return BlogCard(bloglists[index]);</span><br><span class="line">                &#125;,</span><br><span class="line">              ),</span><br><span class="line">            ),</span><br><span class="line">    );</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://cjyzwg.github.io/2023/06/b2cea806b64c.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.jpg">
-      <meta itemprop="name" content="Nocky">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="NockyGo">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | NockyGo">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2023/06/b2cea806b64c.html" class="post-title-link" itemprop="url">未命名</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">发表于</span>
-      
-
-      <time title="创建时间：2023-06-09 07:03:56 / 修改时间：07:12:13" itemprop="dateCreated datePublished" datetime="2023-06-09T07:03:56+08:00">2023-06-09</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">分类于</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/DNSMASQ/" itemprop="url" rel="index"><span itemprop="name">DNSMASQ</span></a>
-        </span>
-    </span>
-
-  
-    <span class="post-meta-break"></span>
-    <span class="post-meta-item" title="本文字数">
-      <span class="post-meta-item-icon">
-        <i class="far fa-file-word"></i>
-      </span>
-      <span class="post-meta-item-text">本文字数：</span>
-      <span>350</span>
-    </span>
-    <span class="post-meta-item" title="阅读时长">
-      <span class="post-meta-item-icon">
-        <i class="far fa-clock"></i>
-      </span>
-      <span class="post-meta-item-text">阅读时长 &asymp;</span>
-      <span>1 分钟</span>
-    </span>
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <h3 id="安装dnsmasq"><a href="#安装dnsmasq" class="headerlink" title="安装dnsmasq"></a>安装dnsmasq</h3><ul>
-<li>apt-get install -y dnsmasq</li>
-</ul>
-<h4 id="x2F-etc-x2F-dnsmasq-conf"><a href="#x2F-etc-x2F-dnsmasq-conf" class="headerlink" title="&#x2F;etc&#x2F;dnsmasq.conf"></a>&#x2F;etc&#x2F;dnsmasq.conf</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">bogus-priv</span><br><span class="line">no-resolv</span><br><span class="line">server=100.100.2.138</span><br><span class="line">server=100.100.2.136</span><br><span class="line">interface=tun0</span><br><span class="line">listen-address=127.0.0.1</span><br><span class="line">bind-interfaces</span><br><span class="line">addn-hosts=/etc/internal_ips</span><br></pre></td></tr></table></figure>
-<h4 id="x2F-etc-x2F-internal-ips"><a href="#x2F-etc-x2F-internal-ips" class="headerlink" title="&#x2F;etc&#x2F;internal_ips"></a>&#x2F;etc&#x2F;internal_ips</h4><p>10.8.0.1 main.int<br>10.8.0.2 cj.int<br>10.8.0.3 cjwindows.int<br>10.8.0.4 s1.int<br>10.8.0.5 s2.int<br>10.8.0.6 s3.int<br>10.8.0.7 s4.int    </p>
-<h4 id="dnsmasq-配置"><a href="#dnsmasq-配置" class="headerlink" title="dnsmasq 配置"></a>dnsmasq 配置</h4><p><img src="https://blog.hexiefamily.xin/assets/dnsmasq.jpg" alt="avatar"></p>
-
       
     </div>
 

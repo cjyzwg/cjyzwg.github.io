@@ -1,228 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>Documentation</title>
-    <url>/2018/02/67b9e89ccc4d.html</url>
-    <content><![CDATA[<h3 id="Elegant-and-Powerful-Theme-for-Hexo"><a href="#Elegant-and-Powerful-Theme-for-Hexo" class="headerlink" title="Elegant and Powerful Theme for Hexo"></a>Elegant and Powerful Theme for Hexo</h3><p>Theme NexT has the following features:</p>
-<ul>
-<li>Vanilla JavaScript.</li>
-<li>Support <a href="https://caniuse.com/prefers-color-scheme">native dark mode</a>.</li>
-<li>Support <a href="https://github.com/MoOx/pjax">Pjax</a> to deliver a fast browsing experience.</li>
-<li>Integrated <a href="https://www.mathjax.org/">MathJax</a> and <a href="https://katex.org/">KaTeX</a> mathematical formula rendering.</li>
-<li>Integrated <a href="https://mozilla.github.io/pdf.js/">PDF.js</a> and <a href="https://mermaid-js.github.io/mermaid/">mermaid diagram</a>.</li>
-<li>Support <a href="https://disqus.com/">Disqus</a>, <a href="https://changyan.kuaizhan.com/">Changyan</a>, <a href="https://livere.com/">LiveRe</a>, <a href="https://gitalk.github.io/">Gitalk</a>, <a href="https://utteranc.es/">Utterances</a> and <a href="https://isso-comments.de/">Isso</a> comment systems.</li>
-<li>Support a large number of third-party statistics services.</li>
-<li>Easy to switch CDN provider.</li>
-<li>Easy to customize content or modify style.</li>
-</ul>
-<h3 id="Four-Schemes-in-One"><a href="#Four-Schemes-in-One" class="headerlink" title="Four Schemes in One"></a>Four Schemes in One</h3><p>By using different Schemes in NexT, you can simply change the style of your blog, and nearly all options can be used in all schemes.</p>
-<h3 id="Multilingual-Support"><a href="#Multilingual-Support" class="headerlink" title="Multilingual Support"></a>Multilingual Support</h3><p>Thanks to the contribution of our users and developers, <a href="/docs/theme-settings/internationalization.html#Choosing-Language">NexT now supports over 20 languages</a>.</p>
-<div class="group-picture"><div class="group-picture-row"><div class="group-picture-column"><img src="/images/en.png" alt="English translation"></div></div><div class="group-picture-row"><div class="group-picture-column"><img src="/images/cn.png" alt="Chinese translation"></div><div class="group-picture-column"><img src="/images/ru.png" alt="Russian translation"></div></div></div>
-
-<h3 id="Code-Highlighting-Themes"><a href="#Code-Highlighting-Themes" class="headerlink" title="Code Highlighting Themes"></a>Code Highlighting Themes</h3><p>NexT uses code highlighting themes from the <a href="https://highlightjs.org/">Highlight.js</a> and <a href="https://prismjs.com/">Prism</a> package, and makes <a href="/docs/theme-settings/miscellaneous.html#Codeblock-Style">more than 300 themes</a> available to you.</p>
-<!-- Inspired by https://github.com/sindresorhus/css-in-readme-like-wat -->
-<table>
-<thead>
-<tr>
-<th align="center">Tomorrow</th>
-<th align="center">Tomorrow Night</th>
-<th align="center">Tomorrow Night Eighties</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center"><img src="/images/tomorrow.svg" alt="Tomorrow"></td>
-<td align="center"><img src="/images/tomorrow-night.svg" alt="Tomorrow Night"></td>
-<td align="center"><img src="/images/tomorrow-night-eighties.svg" alt="Tomorrow Night Eighties"></td>
-</tr>
-</tbody></table>
-<table>
-<thead>
-<tr>
-<th align="center">Tomorrow Night Blue</th>
-<th align="center">Tomorrow Night Bright</th>
-<th align="center">Default</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center"><img src="/images/tomorrow-night-blue.svg" alt="Tomorrow Night Blue"></td>
-<td align="center"><img src="/images/tomorrow-night-bright.svg" alt="Tomorrow Night Bright"></td>
-<td align="center"><img src="/images/default.svg" alt="Default"></td>
-</tr>
-</tbody></table>
-<h3 id="Supported-Browsers"><a href="#Supported-Browsers" class="headerlink" title="Supported Browsers"></a>Supported Browsers</h3><p>We design NexT to support the latest web browsers. We support the current versions of Chrome, Firefox, Safari, and Microsoft Edge. Many CSS3 and ES6 features are used in theme NexT, including CSS Variables, Destructuring assignment, Arrow functions and Spread operator.</p>
-<table>
-<thead>
-<tr>
-<th>Browser</th>
-<th>Supported versions</th>
-<th>Release date</th>
-</tr>
-</thead>
-<tbody><tr>
-<td><i class="fab fa-internet-explorer fa-2x"></i> IE</td>
-<td>N&#x2F;A</td>
-<td>Oct 17, 2013</td>
-</tr>
-<tr>
-<td><i class="fab fa-chrome fa-2x"></i> Chrome</td>
-<td>60+</td>
-<td>Jul 25, 2017</td>
-</tr>
-<tr>
-<td><i class="fab fa-firefox-browser fa-2x"></i> Firefox</td>
-<td>55+</td>
-<td>Aug 8, 2017</td>
-</tr>
-<tr>
-<td><i class="fab fa-opera fa-2x"></i> Opera</td>
-<td>47+</td>
-<td>Aug 9, 2017</td>
-</tr>
-<tr>
-<td><i class="fab fa-safari fa-2x"></i> Safari</td>
-<td>11+</td>
-<td>Sep 19, 2017</td>
-</tr>
-<tr>
-<td><i class="fab fa-edge fa-2x"></i> Edge</td>
-<td>80+</td>
-<td>Feb 7, 2020</td>
-</tr>
-</tbody></table>
-<p>Some other new Web APIs, such as <a href="https://caniuse.com/intersectionobserver">IntersectionObserver</a> and <a href="https://caniuse.com/fetch">Fetch API</a>, are used by NexT plugins. They are not core functions of NexT, so we have no plans to make them compatible with legacy browsers.</p>
-<p>In addition, <a href="https://caniuse.com/css-sticky">CSS position: sticky</a> is used for sidebar positioning. On browsers that do not support this property, its fallback style <code>position: static</code> will be used.</p>
-<h3 id="Customize-Your-NexT"><a href="#Customize-Your-NexT" class="headerlink" title="Customize Your NexT"></a>Customize Your NexT</h3><p>NexT have flexible but simple options, and you can make your own blog with built-in third-party support. Now let’s <a href="/docs/getting-started/">get started</a>.</p>
-]]></content>
-      <categories>
-        <category>Python</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>Hello World1</title>
-    <url>/2023/06/8d48886a6f4e.html</url>
-    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-]]></content>
-      <categories>
-        <category>Hexo</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>Hello World</title>
-    <url>/2023/06/66c5ec627403.html</url>
-    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-]]></content>
-      <categories>
-        <category>Hexo</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>get startted</title>
-    <url>/2023/06/60edd9302881.html</url>
-    <content><![CDATA[<h3 id="Hexo-Installation"><a href="#Hexo-Installation" class="headerlink" title="Hexo Installation"></a>Hexo Installation</h3><p>If this is your first time using Hexo, you can take some time to review the Hexo Docs to see <a href="https://hexo.io/docs/">how to install Hexo</a> and <a href="https://hexo.io/docs/setup">initialize a site</a>. After the installation is successful, you should be able to execute <code>hexo</code> (or <code>npx hexo</code>) on the command line, and there must be <code>package.json</code>, <code>source</code>, <code>themes</code> and other directories in your <mark class="label info">site root directory</mark>:</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> hexo-site</span><br><span class="line">$ <span class="built_in">ls</span></span><br><span class="line">_config.yml  node_modules  package-lock.json  package.json  scaffolds  <span class="built_in">source</span>  themes</span><br></pre></td></tr></table></figure>
-
-<div class="note info"><p>If you are new to Node.js or Hexo, you can also modify the source code of an existing Hexo website instead of creating a new one, to help you understand how Hexo works. In fact, the document you are reading is generated by Hexo with NexT, and you can install it with the following command:</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git <span class="built_in">clone</span> https://github.com/next-theme/theme-next-docs</span><br><span class="line">$ <span class="built_in">cd</span> theme-next-docs</span><br><span class="line">$ npm install</span><br></pre></td></tr></table></figure>
-</div>
-
-<p>Make sure that you have installed Hexo and created a site with it successfully, because the following documents require you to operate in the <mark class="label info">site root directory</mark>.</p>
-<h3 id="NexT-Installation"><a href="#NexT-Installation" class="headerlink" title="NexT Installation"></a>NexT Installation</h3><p>The detailed steps to install or upgrade the theme are as follows.</p>
-<h4 id="Downloading-NexT"><a href="#Downloading-NexT" class="headerlink" title="Downloading NexT"></a>Downloading NexT</h4><p>It’s easy to install Hexo theme: you can choose to install the theme through npm, or download the source code of the theme in the <code>themes</code> directory under <mark class="label info">site root directory</mark>.</p>
-<div class="tabs" id="downloading-next"><ul class="nav-tabs"><li class="tab active"><a href="#downloading-next-1">Using <code>npm</code></a></li><li class="tab"><a href="#downloading-next-2">Using <code>git</code></a></li></ul><div class="tab-content"><div class="tab-pane active" id="downloading-next-1"><p>If you’re using Hexo 5.0 or later, the simplest way to install is through npm.</p>
-<p>Open your Terminal, change to Hexo <mark class="label info">site root directory</mark> and install NexT theme:</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> hexo-site</span><br><span class="line">$ npm install hexo-theme-next</span><br></pre></td></tr></table></figure></div><div class="tab-pane" id="downloading-next-2"><p>If you know about <a href="https://git-scm.com/">Git</a>, you can clone the whole repository and update it in any time with <code>git pull</code> command instead of downloading archive manually.</p>
-<p>Open your terminal, change to Hexo <mark class="label info">site root directory</mark> and clone the latest master branch of NexT theme:</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> hexo-site</span><br><span class="line">$ git <span class="built_in">clone</span> https://github.com/next-theme/hexo-theme-next themes/next</span><br></pre></td></tr></table></figure></div></div></div>
-
-<div class="note primary"><p>You can also read <a href="/docs/getting-started/installation.html">detailed installation instructions</a> if you want any other installation variant.</p>
-</div>
-
-<h4 id="Upgrading-NexT"><a href="#Upgrading-NexT" class="headerlink" title="Upgrading NexT"></a>Upgrading NexT</h4><p>A new version of NexT will be released every month. Please read the <a href="https://github.com/next-theme/hexo-theme-next/releases">release notes</a> before updating the theme. You can update NexT by the following command.</p>
-<div class="tabs" id="upgrading-next"><ul class="nav-tabs"><li class="tab active"><a href="#upgrading-next-1">Using <code>npm</code></a></li><li class="tab"><a href="#upgrading-next-2">Using <code>git</code></a></li></ul><div class="tab-content"><div class="tab-pane active" id="upgrading-next-1"><p>Install the latest version through npm:</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> hexo-site</span><br><span class="line">$ npm install hexo-theme-next@latest</span><br></pre></td></tr></table></figure></div><div class="tab-pane" id="upgrading-next-2"><p>Or update to the latest master branch:</p>
-<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> hexo-site</span><br><span class="line">$ <span class="built_in">cd</span> themes/next</span><br><span class="line">$ git pull origin master</span><br></pre></td></tr></table></figure>
-
-<p>When running <code>git pull</code>, you can bypass merge conflicts (error message like <strong>«Commit your changes or stash them before you can merge»</strong>) by using the <code>Commit</code>, <code>Stash</code> or <code>Reset</code> commands for local changes. See <a href="https://stackoverflow.com/a/15745424/5861495">here</a> how to do it.</p></div></div></div>
-
-<div class="note warning"><p>If you are still using NexT version 5 or 7, you can read <a href="/docs/getting-started/upgrade.html">instructions for upgrading from legacy version</a>.</p>
-</div>
-
-<h3 id="Configuration-Files"><a href="#Configuration-Files" class="headerlink" title="Configuration Files"></a>Configuration Files</h3><p>After the installation of Hexo and NexT, you may found that there are two configuration files using by Hexo and both called <code>_config.yml</code>:</p>
-<ol>
-<li>The first one is under <mark class="label info">site root directory</mark>, which contains Hexo’s config.</li>
-<li>The second one is under <mark class="label primary">theme root directory</mark> (e.g. <code>themes/next/_config.yml</code> or <code>node_modules/hexo-theme-next/_config.yml</code>), which is provided by NexT and contains theme’s config.</li>
-</ol>
-<p>Let’s call the first one – <mark class="label info">Hexo config file</mark>, and the second one – <mark class="label primary">NexT config file</mark>.</p>
-<div class="note warning"><p>However, we do not recommend directly modifying the <mark class="label primary">NexT config file</mark>. It is quite often running into conflict status when updating NexT theme via <code>git pull</code>, or need to merge configurations manually when upgrading to new releases. For the theme installed through npm, it is also difficult to modify the <mark class="label primary">NexT config file</mark> in <code>node_modules</code>.</p>
-<p>In order to resolve this issue, we recommend using the <a href="/docs/getting-started/configuration.html">Alternate Theme Config</a> feature to configure theme NexT.</p>
-</div>
-
-<h3 id="Hexo-Configuration"><a href="#Hexo-Configuration" class="headerlink" title="Hexo Configuration"></a>Hexo Configuration</h3><p>The following settings in <mark class="label info">Hexo config file</mark> are very helpful for optimizing your website.</p>
-<h4 id="Configuring-Author"><a href="#Configuring-Author" class="headerlink" title="Configuring Author"></a>Configuring Author</h4><p>Edit <mark class="label info">Hexo config file</mark> and set the value of <code>author</code> to your nickname.</p>
-<figure class="highlight yml"><figcaption><span>Hexo config file</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="comment"># Site</span></span><br><span class="line"><span class="attr">author:</span></span><br></pre></td></tr></table></figure>
-
-<h4 id="Configuring-Description"><a href="#Configuring-Description" class="headerlink" title="Configuring Description"></a>Configuring Description</h4><p>Edit <mark class="label info">Hexo config file</mark> and set the value of <code>description</code> to your description, which can be a sentence you like.</p>
-<figure class="highlight yml"><figcaption><span>Hexo config file</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="comment"># Site</span></span><br><span class="line"><span class="attr">description:</span></span><br></pre></td></tr></table></figure>
-
-<h4 id="Enabling-NexT"><a href="#Enabling-NexT" class="headerlink" title="Enabling NexT"></a>Enabling NexT</h4><p>Like all Hexo themes, after you download it, open <mark class="label info">Hexo config file</mark>, find <code>theme</code> option, and change its value to <code>next</code> (or another theme directory name).</p>
-<figure class="highlight yml"><figcaption><span>Hexo config file</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="attr">theme:</span> <span class="string">next</span></span><br></pre></td></tr></table></figure>
-
-<p>Now you have installed NexT theme and enabled it. The following steps will help you verify whether NexT is enabled correctly.</p>
-<h3 id="Checking-NexT"><a href="#Checking-NexT" class="headerlink" title="Checking NexT"></a>Checking NexT</h3><p>It’s recommended to use <code>hexo clean</code> to clean Hexo’s cache first.<br>Then start Hexo local server with debug parameter (by adding <code>--debug</code>), the whole command is <code>hexo s --debug</code>. You can see the output while running, and if you find problem, you can use the output to help others locate error better. When it prints:</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">INFO  Hexo is running at http://localhost:4000/. Press Ctrl+C to stop.</span><br></pre></td></tr></table></figure>
-
-<p>Now you can open <code>http://localhost:4000</code> in your browser, and check whether the site works correctly.</p>
-<div class="note success"><p>If you find your site looks like this picture, you have installed it correctly. That’s default NexT scheme – Muse.<br><img src="/images/next-default-scheme.png" alt="Default Scheme – Muse"></p>
-</div>
-
-<p>After that we can <a href="/docs/getting-started/deployment.html">configure deployment</a>.</p>
-<p>If everything is OK, in next steps we will change some settings including <a href="/docs/theme-settings/">personalization</a> and <a href="/docs/third-party-services/">third-party services integration</a>.</p>
-]]></content>
-      <categories>
-        <category>Hexo</category>
-      </categories>
-      <tags>
-        <tag>hexo</tag>
-        <tag>博客</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title></title>
-    <url>/2023/06/4c4cf47da89d.html</url>
-    <content><![CDATA[<h3 id="Adb-devices-显示为空？"><a href="#Adb-devices-显示为空？" class="headerlink" title="Adb devices 显示为空？"></a>Adb devices 显示为空？</h3><h4 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h4><p><strong><a href="https://www.cnblogs.com/wx170119/p/13092595.html">https://www.cnblogs.com/wx170119/p/13092595.html</a></strong><br><strong><a href="https://androiddevtools.cn/">https://androiddevtools.cn/</a></strong></p>
-<h5 id="启动命令："><a href="#启动命令：" class="headerlink" title="启动命令："></a>启动命令：</h5><blockquote>
-<p>按照上面步骤即可完成</p>
-</blockquote>
-]]></content>
-      <categories>
-        <category>Android</category>
-      </categories>
-  </entry>
-  <entry>
     <title></title>
     <url>/2023/06/b2cea806b64c.html</url>
     <content><![CDATA[<h3 id="安装dnsmasq"><a href="#安装dnsmasq" class="headerlink" title="安装dnsmasq"></a>安装dnsmasq</h3><ul>
@@ -234,6 +12,18 @@
 ]]></content>
       <categories>
         <category>DNSMASQ</category>
+      </categories>
+  </entry>
+  <entry>
+    <title></title>
+    <url>/2023/06/4c4cf47da89d.html</url>
+    <content><![CDATA[<h3 id="Adb-devices-显示为空？"><a href="#Adb-devices-显示为空？" class="headerlink" title="Adb devices 显示为空？"></a>Adb devices 显示为空？</h3><h4 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h4><p><strong><a href="https://www.cnblogs.com/wx170119/p/13092595.html">https://www.cnblogs.com/wx170119/p/13092595.html</a></strong><br><strong><a href="https://androiddevtools.cn/">https://androiddevtools.cn/</a></strong></p>
+<h5 id="启动命令："><a href="#启动命令：" class="headerlink" title="启动命令："></a>启动命令：</h5><blockquote>
+<p>按照上面步骤即可完成</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>Android</category>
       </categories>
   </entry>
   <entry>
@@ -595,6 +385,16 @@ server &#123;
   </entry>
   <entry>
     <title></title>
+    <url>/2023/06/b0ed4abd3df7.html</url>
+    <content><![CDATA[<h3 id="利用server酱"><a href="#利用server酱" class="headerlink" title="利用server酱"></a>利用server酱</h3><p>地址：<a href="http://sc.ftqq.com/3.version">http://sc.ftqq.com/3.version</a>  </p>
+<p>1.查看上方网址，github授权登录，并且微信绑定即可获取key值<br>2.利用方糖微信公众号来返回模板消息，可以是告警信息，这里我处理成打卡时间</p>
+<h5 id="用php处理的方法"><a href="#用php处理的方法" class="headerlink" title="用php处理的方法"></a>用php处理的方法</h5><figure class="highlight php"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">sc_send</span>(<span class="params">  <span class="variable">$text</span> , <span class="variable">$desp</span> = <span class="string">&#x27;&#x27;</span> , <span class="variable">$key</span> = <span class="string">&#x27;2121212adwadwadwa&#x27;</span>  </span>)</span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="variable">$postdata</span> = <span class="title function_ invoke__">http_build_query</span>(</span><br><span class="line">        <span class="keyword">array</span>(</span><br><span class="line">            <span class="string">&#x27;text&#x27;</span> =&gt; <span class="variable">$text</span>,</span><br><span class="line">            <span class="string">&#x27;desp&#x27;</span> =&gt; <span class="variable">$desp</span></span><br><span class="line">        )</span><br><span class="line">    );</span><br><span class="line"></span><br><span class="line">    <span class="variable">$opts</span> = <span class="keyword">array</span>(<span class="string">&#x27;http&#x27;</span> =&gt;</span><br><span class="line">        <span class="keyword">array</span>(</span><br><span class="line">            <span class="string">&#x27;method&#x27;</span>  =&gt; <span class="string">&#x27;POST&#x27;</span>,</span><br><span class="line">            <span class="string">&#x27;header&#x27;</span>  =&gt; <span class="string">&#x27;Content-type: application/x-www-form-urlencoded&#x27;</span>,</span><br><span class="line">            <span class="string">&#x27;content&#x27;</span> =&gt; <span class="variable">$postdata</span></span><br><span class="line">        )</span><br><span class="line">    );</span><br><span class="line">    <span class="variable">$context</span>  = <span class="title function_ invoke__">stream_context_create</span>(<span class="variable">$opts</span>);</span><br><span class="line">    <span class="keyword">return</span> <span class="variable">$result</span> = <span class="title function_ invoke__">file_get_contents</span>(<span class="string">&#x27;https://sc.ftqq.com/&#x27;</span>.<span class="variable">$key</span>.<span class="string">&#x27;.send&#x27;</span>, <span class="literal">false</span>, <span class="variable">$context</span>);</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>PUSH</category>
+      </categories>
+  </entry>
+  <entry>
+    <title></title>
     <url>/2023/06/3d4d4474576c.html</url>
     <content><![CDATA[<h3 id="网站出现502"><a href="#网站出现502" class="headerlink" title="网站出现502"></a>网站出现502</h3><ul>
 <li>杀死进程<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta prompt_">#</span><span class="language-bash">!/bin/sh</span></span><br><span class="line">pids=$(ps -e -o &#x27;pid,comm,args,pcpu,rsz,vsz,stime,user,uid&#x27; | sort -nrk5 | grep www | grep -v grep|awk &#x27; $2!=&quot;nginx&quot; &#123;print $1&#125;&#x27;)</span><br><span class="line"><span class="meta prompt_">#</span><span class="language-bash"><span class="built_in">echo</span> <span class="variable">$pids</span></span></span><br><span class="line">if [ &quot;$pids&quot; != &quot;&quot; ];then</span><br><span class="line">for  pid  in   $pids;</span><br><span class="line">do</span><br><span class="line">echo $pid</span><br><span class="line">kill -9 $pid</span><br><span class="line">done</span><br><span class="line">fi</span><br></pre></td></tr></table></figure></li>
@@ -661,16 +461,6 @@ server &#123;
   </entry>
   <entry>
     <title></title>
-    <url>/2023/06/b0ed4abd3df7.html</url>
-    <content><![CDATA[<h3 id="利用server酱"><a href="#利用server酱" class="headerlink" title="利用server酱"></a>利用server酱</h3><p>地址：<a href="http://sc.ftqq.com/3.version">http://sc.ftqq.com/3.version</a>  </p>
-<p>1.查看上方网址，github授权登录，并且微信绑定即可获取key值<br>2.利用方糖微信公众号来返回模板消息，可以是告警信息，这里我处理成打卡时间</p>
-<h5 id="用php处理的方法"><a href="#用php处理的方法" class="headerlink" title="用php处理的方法"></a>用php处理的方法</h5><figure class="highlight php"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">sc_send</span>(<span class="params">  <span class="variable">$text</span> , <span class="variable">$desp</span> = <span class="string">&#x27;&#x27;</span> , <span class="variable">$key</span> = <span class="string">&#x27;2121212adwadwadwa&#x27;</span>  </span>)</span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="variable">$postdata</span> = <span class="title function_ invoke__">http_build_query</span>(</span><br><span class="line">        <span class="keyword">array</span>(</span><br><span class="line">            <span class="string">&#x27;text&#x27;</span> =&gt; <span class="variable">$text</span>,</span><br><span class="line">            <span class="string">&#x27;desp&#x27;</span> =&gt; <span class="variable">$desp</span></span><br><span class="line">        )</span><br><span class="line">    );</span><br><span class="line"></span><br><span class="line">    <span class="variable">$opts</span> = <span class="keyword">array</span>(<span class="string">&#x27;http&#x27;</span> =&gt;</span><br><span class="line">        <span class="keyword">array</span>(</span><br><span class="line">            <span class="string">&#x27;method&#x27;</span>  =&gt; <span class="string">&#x27;POST&#x27;</span>,</span><br><span class="line">            <span class="string">&#x27;header&#x27;</span>  =&gt; <span class="string">&#x27;Content-type: application/x-www-form-urlencoded&#x27;</span>,</span><br><span class="line">            <span class="string">&#x27;content&#x27;</span> =&gt; <span class="variable">$postdata</span></span><br><span class="line">        )</span><br><span class="line">    );</span><br><span class="line">    <span class="variable">$context</span>  = <span class="title function_ invoke__">stream_context_create</span>(<span class="variable">$opts</span>);</span><br><span class="line">    <span class="keyword">return</span> <span class="variable">$result</span> = <span class="title function_ invoke__">file_get_contents</span>(<span class="string">&#x27;https://sc.ftqq.com/&#x27;</span>.<span class="variable">$key</span>.<span class="string">&#x27;.send&#x27;</span>, <span class="literal">false</span>, <span class="variable">$context</span>);</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
-      <categories>
-        <category>PUSH</category>
-      </categories>
-  </entry>
-  <entry>
-    <title></title>
     <url>/2023/06/b1ab4f5e09e5.html</url>
     <content><![CDATA[<h3 id="Redis安装"><a href="#Redis安装" class="headerlink" title="Redis安装"></a>Redis安装</h3><ul>
 <li>pecl install redis</li>
@@ -685,19 +475,6 @@ server &#123;
 ]]></content>
       <categories>
         <category>REDIS</category>
-      </categories>
-  </entry>
-  <entry>
-    <title></title>
-    <url>/2023/06/3247a9f9d1c1.html</url>
-    <content><![CDATA[<h3 id="阿里云服务器添加秘钥"><a href="#阿里云服务器添加秘钥" class="headerlink" title="阿里云服务器添加秘钥"></a>阿里云服务器添加秘钥</h3><p>1.登录控制台，创建秘钥对，并下载为a.pem<br>2.ssh-keygen -y -f a.pem会返回ssh-rsa<br>如果该命令失败，请运行chmod 400 my-key-pair.pem命令更改权限<br>3.登录到服务器a.com中，echo &gt;&gt; ~&#x2F;.ssh&#x2F;authorized_keys<br>4.nano &#x2F;etc&#x2F;ssh&#x2F;sshd_config<br>PermitRootLogin yes<br>当你完成全部设置，并以密钥方式登录成功后，再禁用密码登录：<br>PasswordAuthentication no<br>5.service sshd restart</p>
-<h4 id="访问："><a href="#访问：" class="headerlink" title="访问："></a>访问：</h4><p>ssh -i a.pem <a href="mailto:&#x72;&#111;&#111;&#x74;&#64;&#x61;&#46;&#99;&#111;&#x6d;">&#x72;&#111;&#111;&#x74;&#64;&#x61;&#46;&#99;&#111;&#x6d;</a> 访问<br>如果想省事的话，ssh-add -k a.pem，重启之后需要重新添加<br>直接ssh <a href="mailto:&#114;&#x6f;&#x6f;&#x74;&#x40;&#97;&#46;&#99;&#x6f;&#109;">&#114;&#x6f;&#x6f;&#x74;&#x40;&#97;&#46;&#99;&#x6f;&#109;</a> 即可访问</p>
-<h4 id="出现-Could-not-open-a-connection-to-your-authentication-agent解决办法或者Permission-denied-publickey-："><a href="#出现-Could-not-open-a-connection-to-your-authentication-agent解决办法或者Permission-denied-publickey-：" class="headerlink" title="出现 Could not open a connection to your authentication agent解决办法或者Permission denied (publickey).："></a>出现 Could not open a connection to your authentication agent解决办法或者Permission denied (publickey).：</h4><blockquote>
-<p>eval <code>ssh-agent -s</code>  </p>
-</blockquote>
-]]></content>
-      <categories>
-        <category>SSH</category>
       </categories>
   </entry>
   <entry>
@@ -857,11 +634,24 @@ server &#123;
   </entry>
   <entry>
     <title></title>
+    <url>/2023/06/3247a9f9d1c1.html</url>
+    <content><![CDATA[<h3 id="阿里云服务器添加秘钥"><a href="#阿里云服务器添加秘钥" class="headerlink" title="阿里云服务器添加秘钥"></a>阿里云服务器添加秘钥</h3><p>1.登录控制台，创建秘钥对，并下载为a.pem<br>2.ssh-keygen -y -f a.pem会返回ssh-rsa<br>如果该命令失败，请运行chmod 400 my-key-pair.pem命令更改权限<br>3.登录到服务器a.com中，echo &gt;&gt; ~&#x2F;.ssh&#x2F;authorized_keys<br>4.nano &#x2F;etc&#x2F;ssh&#x2F;sshd_config<br>PermitRootLogin yes<br>当你完成全部设置，并以密钥方式登录成功后，再禁用密码登录：<br>PasswordAuthentication no<br>5.service sshd restart</p>
+<h4 id="访问："><a href="#访问：" class="headerlink" title="访问："></a>访问：</h4><p>ssh -i a.pem <a href="mailto:&#114;&#111;&#111;&#116;&#64;&#97;&#46;&#x63;&#111;&#x6d;">&#114;&#111;&#111;&#116;&#64;&#97;&#46;&#x63;&#111;&#x6d;</a> 访问<br>如果想省事的话，ssh-add -k a.pem，重启之后需要重新添加<br>直接ssh <a href="mailto:&#114;&#x6f;&#x6f;&#116;&#x40;&#97;&#x2e;&#99;&#x6f;&#109;">&#114;&#x6f;&#x6f;&#116;&#x40;&#97;&#x2e;&#99;&#x6f;&#109;</a> 即可访问</p>
+<h4 id="出现-Could-not-open-a-connection-to-your-authentication-agent解决办法或者Permission-denied-publickey-："><a href="#出现-Could-not-open-a-connection-to-your-authentication-agent解决办法或者Permission-denied-publickey-：" class="headerlink" title="出现 Could not open a connection to your authentication agent解决办法或者Permission denied (publickey).："></a>出现 Could not open a connection to your authentication agent解决办法或者Permission denied (publickey).：</h4><blockquote>
+<p>eval <code>ssh-agent -s</code>  </p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>SSH</category>
+      </categories>
+  </entry>
+  <entry>
+    <title></title>
     <url>/2023/06/9f3e7eb33263.html</url>
     <content><![CDATA[<h4 id="访问内网局域网网站"><a href="#访问内网局域网网站" class="headerlink" title="访问内网局域网网站"></a>访问内网局域网网站</h4><p>目的是想用在家的mac访问到公司的电话机所在的网址，首先自行搭建vpn，这个网上教程还蛮多。<br>本人用的是mac，公司的电脑大多数是win10<br>win10 连接vpn方法如下图：<br><img src="https://blog.hexiefamily.xin/assets/ssh3.png" alt="avatar">  </p>
 <h4 id="ssh-连接win10："><a href="#ssh-连接win10：" class="headerlink" title="ssh 连接win10："></a>ssh 连接win10：</h4><ol>
 <li>win10 开启openssh 服务端：<a href="http://jingyan.baidu.com/article/455a995057a191a1662778a3.html">http://jingyan.baidu.com/article/455a995057a191a1662778a3.html</a> 百度教程你值得拥有  </li>
-<li>ssh -D 4567 -N <a href="mailto:&#x72;&#111;&#x6f;&#x74;&#64;&#49;&#57;&#x32;&#46;&#49;&#54;&#x38;&#x2e;&#x31;&#50;&#46;&#49;">&#x72;&#111;&#x6f;&#x74;&#64;&#49;&#57;&#x32;&#46;&#49;&#54;&#x38;&#x2e;&#x31;&#50;&#46;&#49;</a> 输入密码，即可停留   </li>
+<li>ssh -D 4567 -N <a href="mailto:&#x72;&#x6f;&#x6f;&#x74;&#x40;&#x31;&#57;&#50;&#x2e;&#49;&#54;&#56;&#x2e;&#x31;&#x32;&#x2e;&#49;">&#x72;&#x6f;&#x6f;&#x74;&#x40;&#x31;&#57;&#50;&#x2e;&#49;&#54;&#56;&#x2e;&#x31;&#x32;&#x2e;&#49;</a> 输入密码，即可停留   </li>
 <li>打开chrome神奇插件SwitchyOmega,配置一个这样的代理<br><img src="https://blog.hexiefamily.xin/assets/ssh1.png" alt="avatar"></li>
 <li>即可打开win10 所在的局域网的网站，如下图所示<br><img src="https://blog.hexiefamily.xin/assets/ssh2.png" alt="avatar"></li>
 </ol>
@@ -888,7 +678,7 @@ server &#123;
 <h3 id="原因"><a href="#原因" class="headerlink" title="原因"></a>原因</h3><p>初步判断是阿里云在git pull github的代码时，一直不执行，可能是外网的问题。</p>
 <h3 id="解决思路"><a href="#解决思路" class="headerlink" title="解决思路"></a>解决思路</h3><p>想到之前国内的gitee也存在代码，考虑同步github,再通过webhook 更新</p>
 <p><img src="https://gitee.com/cjyzwg/img/raw/master/202203131218367.png"></p>
-<h3 id="步骤"><a href="#步骤" class="headerlink" title="步骤"></a>步骤</h3><h4 id="实时同步github到gitee"><a href="#实时同步github到gitee" class="headerlink" title="实时同步github到gitee"></a><strong>实时同步github到gitee</strong></h4><p>1.ssh-keygen -t rsa -C “<a href="mailto:&#x79;&#111;&#117;&#x72;&#x65;&#x6d;&#97;&#105;&#108;&#64;&#101;&#120;&#x61;&#109;&#112;&#108;&#101;&#x2e;&#x63;&#111;&#x6d;">&#x79;&#111;&#117;&#x72;&#x65;&#x6d;&#97;&#105;&#108;&#64;&#101;&#120;&#x61;&#109;&#112;&#108;&#101;&#x2e;&#x63;&#111;&#x6d;</a>“<br>生成的 id_rsa 是私钥，id_rsa.pub 是公钥。(注意此处不要设置密码，生成的公私钥用于下面 GitHub &#x2F; Gitee 的配置，以保证公私钥成对，否则从 GitHub -%3E Gitee 的同步将会失败。)</p>
+<h3 id="步骤"><a href="#步骤" class="headerlink" title="步骤"></a>步骤</h3><h4 id="实时同步github到gitee"><a href="#实时同步github到gitee" class="headerlink" title="实时同步github到gitee"></a><strong>实时同步github到gitee</strong></h4><p>1.ssh-keygen -t rsa -C “<a href="mailto:&#x79;&#111;&#x75;&#114;&#101;&#109;&#x61;&#105;&#108;&#x40;&#101;&#x78;&#97;&#x6d;&#112;&#108;&#x65;&#x2e;&#x63;&#111;&#x6d;">&#x79;&#111;&#x75;&#114;&#101;&#109;&#x61;&#105;&#108;&#x40;&#101;&#x78;&#97;&#x6d;&#112;&#108;&#x65;&#x2e;&#x63;&#111;&#x6d;</a>“<br>生成的 id_rsa 是私钥，id_rsa.pub 是公钥。(注意此处不要设置密码，生成的公私钥用于下面 GitHub &#x2F; Gitee 的配置，以保证公私钥成对，否则从 GitHub -%3E Gitee 的同步将会失败。)</p>
 <p><img src="https://gitee.com/cjyzwg/img/raw/master/202203131223319.png"></p>
 <p>2.在 GitHub 项目的「<strong>Settings</strong>  -&gt;  <strong>Secrets</strong>  →  <strong>New repository secret</strong>」路径下配置好命名为 <strong>GITEE_RSA_PRIVATE_KEY</strong>，value值填写 <strong>id_rsa 私钥</strong>的内容。</p>
 <p>3.在 GitHub 的个人设置页面「<strong>Settings</strong> -&gt;  <strong>SSH and GPG keys</strong>」配置 SSH Keys 公钥（即：<strong>id_rsa.pub</strong>），命名随意。</p>
@@ -972,6 +762,56 @@ server &#123;
   </entry>
   <entry>
     <title></title>
+    <url>/2023/06/923835b63def.html</url>
+    <content><![CDATA[<h3 id="搭建git私有服务器命令"><a href="#搭建git私有服务器命令" class="headerlink" title="搭建git私有服务器命令"></a>搭建git私有服务器命令</h3><h4 id="服务器："><a href="#服务器：" class="headerlink" title="服务器："></a>服务器：</h4><p>1.sudo apt-get install git-core<br>2.git –bare init &#x2F;home&#x2F;git&#x2F;rep.git (rep为仓库的名字)</p>
+<h4 id="本地："><a href="#本地：" class="headerlink" title="本地："></a>本地：</h4><p>1.git clone <a href="mailto:&#x67;&#x69;&#x74;&#x40;&#49;&#x30;&#46;&#56;&#x2e;&#48;&#x2e;&#x38;">&#x67;&#x69;&#x74;&#x40;&#49;&#x30;&#46;&#56;&#x2e;&#48;&#x2e;&#x38;</a>:&#x2F;home&#x2F;git&#x2F;rep.git</p>
+]]></content>
+      <categories>
+        <category>树莓派</category>
+      </categories>
+  </entry>
+  <entry>
+    <title></title>
+    <url>/2023/06/9aaeed3398b2.html</url>
+    <content><![CDATA[<p>参考链接：<a href="http://wangwei.info/mac-raspberrypi3-ubuntu-mate-vncserver-installation/">http://wangwei.info/mac-raspberrypi3-ubuntu-mate-vncserver-installation/</a></p>
+<ol>
+<li>从官网下载镜像：ubuntu-mate-16.04.2-desktop-armhf-raspberry-pi.img.xz</li>
+<li>安装解压工具：brew install xz</li>
+<li>解压镜像：<br>xz -help<br>xz -d ubuntu-mate-16.04.2-desktop-armhf-raspberry-pi.img.xz<br>4.格式化sd卡并安装系统<br>diskutil list # 查看磁盘列表<br>diskutil partitionDisk &#x2F;dev&#x2F;disk2 1 MBRFormat “MS-DOS FAT32” SDSys 120GB # 格式化SD卡，SDSys为磁盘名<br>sudo dd bs&#x3D;4m if&#x3D;ubuntu-mate-16.04.2-desktop-armhf-raspberry-pi.img of&#x3D;&#x2F;dev&#x2F;rdisk2 # 写入，若提示“dd: &#x2F;dev&#x2F;rdisk2: Permission denied”，则加入sudo命令。<br>diskutil unmountDisk &#x2F;dev&#x2F;disk2 # 弹出，若提示“dd: &#x2F;dev&#x2F;rdisk2: Resource busy”也需此命令<br>5.将sd卡插入树莓派，上电启动即可完成安装。<br>注意：diskN中的数字N对应磁盘列表中sd卡的数字，小心格式化掉自己的系统。</li>
+</ol>
+<h3 id="在树莓派上安装VNC服务"><a href="#在树莓派上安装VNC服务" class="headerlink" title="在树莓派上安装VNC服务"></a>在树莓派上安装VNC服务</h3><ul>
+<li>sudo apt install vnc4server<br>安装完成后，启动VNC服务：</li>
+<li>vncserver :1<br>首次启动会要求输入VNC服务的访问密码。如后期需要更改VNC访问密码，只需要输入 vncpassword 即可。<br>结束一个VNCServer可以用以下的方法：</li>
+<li>vncserver -kill :1</li>
+<li>修改配置文件<br>nano ~&#x2F;.vnc&#x2F;xstartup<br>在 x-window-manager &amp; 的后面新增下面这 1 行：<br>mate-session &amp;</li>
+</ul>
+<p>完整配置文件如下：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta prompt_">#</span><span class="language-bash">!/bin/sh</span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">Uncomment the following two lines <span class="keyword">for</span> normal desktop:</span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash"><span class="built_in">unset</span> SESSION_MANAGER</span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash"><span class="built_in">exec</span> /etc/X11/xinit/xinitrc</span></span><br><span class="line">[ -x /etc/vnc/xstartup ] &amp;&amp; exec /etc/vnc/xstartup</span><br><span class="line">[ -r $HOME/.Xresources ] &amp;&amp; xrdb $HOME/.Xresources</span><br><span class="line">xsetroot -solid grey </span><br><span class="line">vncconfig -iconic &amp;</span><br><span class="line">x-terminal-emulator -geometry 80x24+10+10 -ls -title &quot;$VNCDESKTOP Desktop&quot; &amp;</span><br><span class="line">x-window-manager &amp;</span><br><span class="line">mate-session &amp;</span><br></pre></td></tr></table></figure>
+
+<p>配置文件修改后，需要重启VNC服务。<br>Mac下的VNC客户端<br>Mac本身自带一个VNC客户端，叫做屏幕共享，但此程序隐藏的比较深，可以在搜索中搜索屏幕共享找到此程序。<br>打开屏幕共享后，输入你刚才配置的VNC服务的地址，例如：192.168.1.101:5901<br>5901是VNC服务的默认端口号，如果你启动了多个VNC服务（一个VNC服务对应一个用户身份），则回应多个端口号，一般来说端口号会顺延，例如: 5901 5902<br>此时你就可以在Mac上直接访问你的树莓派的桌面了 :-)</p>
+]]></content>
+      <categories>
+        <category>树莓派</category>
+      </categories>
+  </entry>
+  <entry>
+    <title></title>
+    <url>/2023/06/0e1e47d24320.html</url>
+    <content><![CDATA[<p>自己的写作能力有限，为了提升自己，没办法，只能硬写了。</p>
+<p>粥左罗在他的《学习习作》中提到<strong>一开始不知道写什么，就硬写，其实我们也都是从“硬写”过来的。</strong></p>
+<h3 id="对这个世界保留意见"><a href="#对这个世界保留意见" class="headerlink" title="对这个世界保留意见"></a>对这个世界保留意见</h3><p>比如，我觉得整个社会对买房这件事看得太重了，我就特别想写文章来表达我的看法；</p>
+<p>比如，疫情在家办公，工资打半折，我就想写文章吐吐牢骚；</p>
+<p>比如，之前刷到的一条抖音，女孩彩礼35w，但整个视频里都没有放男生的照片，满屏的评论都是我觉得男的是个冤种这种事情的不理解的意见；</p>
+<p>我觉得现在大家的生活都太紧张、太无趣了，我就会写一些有趣的文章，让这个世界更有趣；</p>
+<p><strong>对某件事保留自己的看法，学会发现平淡日子里的刺，</strong>刺就是那些搅动你情绪的，那些让你触动的，让你感动的，让你惊讶的，让你欣喜的，让你反思的，让你困惑的，这些都是<strong>“刺”</strong>，都是写作的源泉。</p>
+<h3 id="东航飞机坠落"><a href="#东航飞机坠落" class="headerlink" title="东航飞机坠落"></a>东航飞机坠落</h3><p><strong>尽管很渺茫，但还是希望这132个人都可以平安无事的归来。</strong>         </p>
+]]></content>
+      <categories>
+        <category>微信公众号</category>
+      </categories>
+  </entry>
+  <entry>
+    <title></title>
     <url>/2023/06/8a9f733e5551.html</url>
     <content><![CDATA[<p>近期，华为开放了仓颉语言的部分试用报名。</p>
 <h5 id="「仓颉」是华为推出的一款编程语言，适配于鸿蒙系统和欧拉系统。"><a href="#「仓颉」是华为推出的一款编程语言，适配于鸿蒙系统和欧拉系统。" class="headerlink" title="「仓颉」是华为推出的一款编程语言，适配于鸿蒙系统和欧拉系统。"></a>「仓颉」是华为推出的一款编程语言，适配于鸿蒙系统和欧拉系统。</h5><h4 id="「仓颉」是中文编程么？"><a href="#「仓颉」是中文编程么？" class="headerlink" title="「仓颉」是中文编程么？"></a><strong>「仓颉」是中文编程么？</strong></h4><p>「仓颉」不是中文编程，大家看到的网图都是2000年易语言的编程。</p>
@@ -997,22 +837,6 @@ server &#123;
 <li><p>应该能够助力那些稍有编程思想的人，快速上手写程序，和微信小程序的初衷有点类似。</p>
 </li>
 </ul>
-]]></content>
-      <categories>
-        <category>微信公众号</category>
-      </categories>
-  </entry>
-  <entry>
-    <title></title>
-    <url>/2023/06/0e1e47d24320.html</url>
-    <content><![CDATA[<p>自己的写作能力有限，为了提升自己，没办法，只能硬写了。</p>
-<p>粥左罗在他的《学习习作》中提到<strong>一开始不知道写什么，就硬写，其实我们也都是从“硬写”过来的。</strong></p>
-<h3 id="对这个世界保留意见"><a href="#对这个世界保留意见" class="headerlink" title="对这个世界保留意见"></a>对这个世界保留意见</h3><p>比如，我觉得整个社会对买房这件事看得太重了，我就特别想写文章来表达我的看法；</p>
-<p>比如，疫情在家办公，工资打半折，我就想写文章吐吐牢骚；</p>
-<p>比如，之前刷到的一条抖音，女孩彩礼35w，但整个视频里都没有放男生的照片，满屏的评论都是我觉得男的是个冤种这种事情的不理解的意见；</p>
-<p>我觉得现在大家的生活都太紧张、太无趣了，我就会写一些有趣的文章，让这个世界更有趣；</p>
-<p><strong>对某件事保留自己的看法，学会发现平淡日子里的刺，</strong>刺就是那些搅动你情绪的，那些让你触动的，让你感动的，让你惊讶的，让你欣喜的，让你反思的，让你困惑的，这些都是<strong>“刺”</strong>，都是写作的源泉。</p>
-<h3 id="东航飞机坠落"><a href="#东航飞机坠落" class="headerlink" title="东航飞机坠落"></a>东航飞机坠落</h3><p><strong>尽管很渺茫，但还是希望这132个人都可以平安无事的归来。</strong>         </p>
 ]]></content>
       <categories>
         <category>微信公众号</category>
@@ -1232,37 +1056,221 @@ server &#123;
       </categories>
   </entry>
   <entry>
-    <title></title>
-    <url>/2023/06/923835b63def.html</url>
-    <content><![CDATA[<h3 id="搭建git私有服务器命令"><a href="#搭建git私有服务器命令" class="headerlink" title="搭建git私有服务器命令"></a>搭建git私有服务器命令</h3><h4 id="服务器："><a href="#服务器：" class="headerlink" title="服务器："></a>服务器：</h4><p>1.sudo apt-get install git-core<br>2.git –bare init &#x2F;home&#x2F;git&#x2F;rep.git (rep为仓库的名字)</p>
-<h4 id="本地："><a href="#本地：" class="headerlink" title="本地："></a>本地：</h4><p>1.git clone <a href="mailto:&#103;&#105;&#116;&#x40;&#x31;&#x30;&#x2e;&#56;&#x2e;&#48;&#46;&#x38;">&#103;&#105;&#116;&#x40;&#x31;&#x30;&#x2e;&#56;&#x2e;&#48;&#46;&#x38;</a>:&#x2F;home&#x2F;git&#x2F;rep.git</p>
+    <title>Hello World</title>
+    <url>/2023/06/66c5ec627403.html</url>
+    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
 ]]></content>
       <categories>
-        <category>树莓派</category>
+        <category>测试</category>
       </categories>
   </entry>
   <entry>
-    <title></title>
-    <url>/2023/06/9aaeed3398b2.html</url>
-    <content><![CDATA[<p>参考链接：<a href="http://wangwei.info/mac-raspberrypi3-ubuntu-mate-vncserver-installation/">http://wangwei.info/mac-raspberrypi3-ubuntu-mate-vncserver-installation/</a></p>
-<ol>
-<li>从官网下载镜像：ubuntu-mate-16.04.2-desktop-armhf-raspberry-pi.img.xz</li>
-<li>安装解压工具：brew install xz</li>
-<li>解压镜像：<br>xz -help<br>xz -d ubuntu-mate-16.04.2-desktop-armhf-raspberry-pi.img.xz<br>4.格式化sd卡并安装系统<br>diskutil list # 查看磁盘列表<br>diskutil partitionDisk &#x2F;dev&#x2F;disk2 1 MBRFormat “MS-DOS FAT32” SDSys 120GB # 格式化SD卡，SDSys为磁盘名<br>sudo dd bs&#x3D;4m if&#x3D;ubuntu-mate-16.04.2-desktop-armhf-raspberry-pi.img of&#x3D;&#x2F;dev&#x2F;rdisk2 # 写入，若提示“dd: &#x2F;dev&#x2F;rdisk2: Permission denied”，则加入sudo命令。<br>diskutil unmountDisk &#x2F;dev&#x2F;disk2 # 弹出，若提示“dd: &#x2F;dev&#x2F;rdisk2: Resource busy”也需此命令<br>5.将sd卡插入树莓派，上电启动即可完成安装。<br>注意：diskN中的数字N对应磁盘列表中sd卡的数字，小心格式化掉自己的系统。</li>
-</ol>
-<h3 id="在树莓派上安装VNC服务"><a href="#在树莓派上安装VNC服务" class="headerlink" title="在树莓派上安装VNC服务"></a>在树莓派上安装VNC服务</h3><ul>
-<li>sudo apt install vnc4server<br>安装完成后，启动VNC服务：</li>
-<li>vncserver :1<br>首次启动会要求输入VNC服务的访问密码。如后期需要更改VNC访问密码，只需要输入 vncpassword 即可。<br>结束一个VNCServer可以用以下的方法：</li>
-<li>vncserver -kill :1</li>
-<li>修改配置文件<br>nano ~&#x2F;.vnc&#x2F;xstartup<br>在 x-window-manager &amp; 的后面新增下面这 1 行：<br>mate-session &amp;</li>
+    <title>Documentation</title>
+    <url>/2018/02/67b9e89ccc4d.html</url>
+    <content><![CDATA[<h3 id="Elegant-and-Powerful-Theme-for-Hexo"><a href="#Elegant-and-Powerful-Theme-for-Hexo" class="headerlink" title="Elegant and Powerful Theme for Hexo"></a>Elegant and Powerful Theme for Hexo</h3><p>Theme NexT has the following features:</p>
+<ul>
+<li>Vanilla JavaScript.</li>
+<li>Support <a href="https://caniuse.com/prefers-color-scheme">native dark mode</a>.</li>
+<li>Support <a href="https://github.com/MoOx/pjax">Pjax</a> to deliver a fast browsing experience.</li>
+<li>Integrated <a href="https://www.mathjax.org/">MathJax</a> and <a href="https://katex.org/">KaTeX</a> mathematical formula rendering.</li>
+<li>Integrated <a href="https://mozilla.github.io/pdf.js/">PDF.js</a> and <a href="https://mermaid-js.github.io/mermaid/">mermaid diagram</a>.</li>
+<li>Support <a href="https://disqus.com/">Disqus</a>, <a href="https://changyan.kuaizhan.com/">Changyan</a>, <a href="https://livere.com/">LiveRe</a>, <a href="https://gitalk.github.io/">Gitalk</a>, <a href="https://utteranc.es/">Utterances</a> and <a href="https://isso-comments.de/">Isso</a> comment systems.</li>
+<li>Support a large number of third-party statistics services.</li>
+<li>Easy to switch CDN provider.</li>
+<li>Easy to customize content or modify style.</li>
 </ul>
-<p>完整配置文件如下：</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta prompt_">#</span><span class="language-bash">!/bin/sh</span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">Uncomment the following two lines <span class="keyword">for</span> normal desktop:</span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash"><span class="built_in">unset</span> SESSION_MANAGER</span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash"><span class="built_in">exec</span> /etc/X11/xinit/xinitrc</span></span><br><span class="line">[ -x /etc/vnc/xstartup ] &amp;&amp; exec /etc/vnc/xstartup</span><br><span class="line">[ -r $HOME/.Xresources ] &amp;&amp; xrdb $HOME/.Xresources</span><br><span class="line">xsetroot -solid grey </span><br><span class="line">vncconfig -iconic &amp;</span><br><span class="line">x-terminal-emulator -geometry 80x24+10+10 -ls -title &quot;$VNCDESKTOP Desktop&quot; &amp;</span><br><span class="line">x-window-manager &amp;</span><br><span class="line">mate-session &amp;</span><br></pre></td></tr></table></figure>
+<h3 id="Four-Schemes-in-One"><a href="#Four-Schemes-in-One" class="headerlink" title="Four Schemes in One"></a>Four Schemes in One</h3><p>By using different Schemes in NexT, you can simply change the style of your blog, and nearly all options can be used in all schemes.</p>
+<h3 id="Multilingual-Support"><a href="#Multilingual-Support" class="headerlink" title="Multilingual Support"></a>Multilingual Support</h3><p>Thanks to the contribution of our users and developers, <a href="/docs/theme-settings/internationalization.html#Choosing-Language">NexT now supports over 20 languages</a>.</p>
+<div class="group-picture"><div class="group-picture-row"><div class="group-picture-column"><img src="/images/en.png" alt="English translation"></div></div><div class="group-picture-row"><div class="group-picture-column"><img src="/images/cn.png" alt="Chinese translation"></div><div class="group-picture-column"><img src="/images/ru.png" alt="Russian translation"></div></div></div>
 
-<p>配置文件修改后，需要重启VNC服务。<br>Mac下的VNC客户端<br>Mac本身自带一个VNC客户端，叫做屏幕共享，但此程序隐藏的比较深，可以在搜索中搜索屏幕共享找到此程序。<br>打开屏幕共享后，输入你刚才配置的VNC服务的地址，例如：192.168.1.101:5901<br>5901是VNC服务的默认端口号，如果你启动了多个VNC服务（一个VNC服务对应一个用户身份），则回应多个端口号，一般来说端口号会顺延，例如: 5901 5902<br>此时你就可以在Mac上直接访问你的树莓派的桌面了 :-)</p>
+<h3 id="Code-Highlighting-Themes"><a href="#Code-Highlighting-Themes" class="headerlink" title="Code Highlighting Themes"></a>Code Highlighting Themes</h3><p>NexT uses code highlighting themes from the <a href="https://highlightjs.org/">Highlight.js</a> and <a href="https://prismjs.com/">Prism</a> package, and makes <a href="/docs/theme-settings/miscellaneous.html#Codeblock-Style">more than 300 themes</a> available to you.</p>
+<!-- Inspired by https://github.com/sindresorhus/css-in-readme-like-wat -->
+<table>
+<thead>
+<tr>
+<th align="center">Tomorrow</th>
+<th align="center">Tomorrow Night</th>
+<th align="center">Tomorrow Night Eighties</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center"><img src="/images/tomorrow.svg" alt="Tomorrow"></td>
+<td align="center"><img src="/images/tomorrow-night.svg" alt="Tomorrow Night"></td>
+<td align="center"><img src="/images/tomorrow-night-eighties.svg" alt="Tomorrow Night Eighties"></td>
+</tr>
+</tbody></table>
+<table>
+<thead>
+<tr>
+<th align="center">Tomorrow Night Blue</th>
+<th align="center">Tomorrow Night Bright</th>
+<th align="center">Default</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center"><img src="/images/tomorrow-night-blue.svg" alt="Tomorrow Night Blue"></td>
+<td align="center"><img src="/images/tomorrow-night-bright.svg" alt="Tomorrow Night Bright"></td>
+<td align="center"><img src="/images/default.svg" alt="Default"></td>
+</tr>
+</tbody></table>
+<h3 id="Supported-Browsers"><a href="#Supported-Browsers" class="headerlink" title="Supported Browsers"></a>Supported Browsers</h3><p>We design NexT to support the latest web browsers. We support the current versions of Chrome, Firefox, Safari, and Microsoft Edge. Many CSS3 and ES6 features are used in theme NexT, including CSS Variables, Destructuring assignment, Arrow functions and Spread operator.</p>
+<table>
+<thead>
+<tr>
+<th>Browser</th>
+<th>Supported versions</th>
+<th>Release date</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><i class="fab fa-internet-explorer fa-2x"></i> IE</td>
+<td>N&#x2F;A</td>
+<td>Oct 17, 2013</td>
+</tr>
+<tr>
+<td><i class="fab fa-chrome fa-2x"></i> Chrome</td>
+<td>60+</td>
+<td>Jul 25, 2017</td>
+</tr>
+<tr>
+<td><i class="fab fa-firefox-browser fa-2x"></i> Firefox</td>
+<td>55+</td>
+<td>Aug 8, 2017</td>
+</tr>
+<tr>
+<td><i class="fab fa-opera fa-2x"></i> Opera</td>
+<td>47+</td>
+<td>Aug 9, 2017</td>
+</tr>
+<tr>
+<td><i class="fab fa-safari fa-2x"></i> Safari</td>
+<td>11+</td>
+<td>Sep 19, 2017</td>
+</tr>
+<tr>
+<td><i class="fab fa-edge fa-2x"></i> Edge</td>
+<td>80+</td>
+<td>Feb 7, 2020</td>
+</tr>
+</tbody></table>
+<p>Some other new Web APIs, such as <a href="https://caniuse.com/intersectionobserver">IntersectionObserver</a> and <a href="https://caniuse.com/fetch">Fetch API</a>, are used by NexT plugins. They are not core functions of NexT, so we have no plans to make them compatible with legacy browsers.</p>
+<p>In addition, <a href="https://caniuse.com/css-sticky">CSS position: sticky</a> is used for sidebar positioning. On browsers that do not support this property, its fallback style <code>position: static</code> will be used.</p>
+<h3 id="Customize-Your-NexT"><a href="#Customize-Your-NexT" class="headerlink" title="Customize Your NexT"></a>Customize Your NexT</h3><p>NexT have flexible but simple options, and you can make your own blog with built-in third-party support. Now let’s <a href="/docs/getting-started/">get started</a>.</p>
 ]]></content>
       <categories>
-        <category>树莓派</category>
+        <category>测试</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>get startted</title>
+    <url>/2023/06/60edd9302881.html</url>
+    <content><![CDATA[<h3 id="Hexo-Installation"><a href="#Hexo-Installation" class="headerlink" title="Hexo Installation"></a>Hexo Installation</h3><p>If this is your first time using Hexo, you can take some time to review the Hexo Docs to see <a href="https://hexo.io/docs/">how to install Hexo</a> and <a href="https://hexo.io/docs/setup">initialize a site</a>. After the installation is successful, you should be able to execute <code>hexo</code> (or <code>npx hexo</code>) on the command line, and there must be <code>package.json</code>, <code>source</code>, <code>themes</code> and other directories in your <mark class="label info">site root directory</mark>:</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> hexo-site</span><br><span class="line">$ <span class="built_in">ls</span></span><br><span class="line">_config.yml  node_modules  package-lock.json  package.json  scaffolds  <span class="built_in">source</span>  themes</span><br></pre></td></tr></table></figure>
+
+<div class="note info"><p>If you are new to Node.js or Hexo, you can also modify the source code of an existing Hexo website instead of creating a new one, to help you understand how Hexo works. In fact, the document you are reading is generated by Hexo with NexT, and you can install it with the following command:</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git <span class="built_in">clone</span> https://github.com/next-theme/theme-next-docs</span><br><span class="line">$ <span class="built_in">cd</span> theme-next-docs</span><br><span class="line">$ npm install</span><br></pre></td></tr></table></figure>
+</div>
+
+<p>Make sure that you have installed Hexo and created a site with it successfully, because the following documents require you to operate in the <mark class="label info">site root directory</mark>.</p>
+<h3 id="NexT-Installation"><a href="#NexT-Installation" class="headerlink" title="NexT Installation"></a>NexT Installation</h3><p>The detailed steps to install or upgrade the theme are as follows.</p>
+<h4 id="Downloading-NexT"><a href="#Downloading-NexT" class="headerlink" title="Downloading NexT"></a>Downloading NexT</h4><p>It’s easy to install Hexo theme: you can choose to install the theme through npm, or download the source code of the theme in the <code>themes</code> directory under <mark class="label info">site root directory</mark>.</p>
+<div class="tabs" id="downloading-next"><ul class="nav-tabs"><li class="tab active"><a href="#downloading-next-1">Using <code>npm</code></a></li><li class="tab"><a href="#downloading-next-2">Using <code>git</code></a></li></ul><div class="tab-content"><div class="tab-pane active" id="downloading-next-1"><p>If you’re using Hexo 5.0 or later, the simplest way to install is through npm.</p>
+<p>Open your Terminal, change to Hexo <mark class="label info">site root directory</mark> and install NexT theme:</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> hexo-site</span><br><span class="line">$ npm install hexo-theme-next</span><br></pre></td></tr></table></figure></div><div class="tab-pane" id="downloading-next-2"><p>If you know about <a href="https://git-scm.com/">Git</a>, you can clone the whole repository and update it in any time with <code>git pull</code> command instead of downloading archive manually.</p>
+<p>Open your terminal, change to Hexo <mark class="label info">site root directory</mark> and clone the latest master branch of NexT theme:</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> hexo-site</span><br><span class="line">$ git <span class="built_in">clone</span> https://github.com/next-theme/hexo-theme-next themes/next</span><br></pre></td></tr></table></figure></div></div></div>
+
+<div class="note primary"><p>You can also read <a href="/docs/getting-started/installation.html">detailed installation instructions</a> if you want any other installation variant.</p>
+</div>
+
+<h4 id="Upgrading-NexT"><a href="#Upgrading-NexT" class="headerlink" title="Upgrading NexT"></a>Upgrading NexT</h4><p>A new version of NexT will be released every month. Please read the <a href="https://github.com/next-theme/hexo-theme-next/releases">release notes</a> before updating the theme. You can update NexT by the following command.</p>
+<div class="tabs" id="upgrading-next"><ul class="nav-tabs"><li class="tab active"><a href="#upgrading-next-1">Using <code>npm</code></a></li><li class="tab"><a href="#upgrading-next-2">Using <code>git</code></a></li></ul><div class="tab-content"><div class="tab-pane active" id="upgrading-next-1"><p>Install the latest version through npm:</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> hexo-site</span><br><span class="line">$ npm install hexo-theme-next@latest</span><br></pre></td></tr></table></figure></div><div class="tab-pane" id="upgrading-next-2"><p>Or update to the latest master branch:</p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> hexo-site</span><br><span class="line">$ <span class="built_in">cd</span> themes/next</span><br><span class="line">$ git pull origin master</span><br></pre></td></tr></table></figure>
+
+<p>When running <code>git pull</code>, you can bypass merge conflicts (error message like <strong>«Commit your changes or stash them before you can merge»</strong>) by using the <code>Commit</code>, <code>Stash</code> or <code>Reset</code> commands for local changes. See <a href="https://stackoverflow.com/a/15745424/5861495">here</a> how to do it.</p></div></div></div>
+
+<div class="note warning"><p>If you are still using NexT version 5 or 7, you can read <a href="/docs/getting-started/upgrade.html">instructions for upgrading from legacy version</a>.</p>
+</div>
+
+<h3 id="Configuration-Files"><a href="#Configuration-Files" class="headerlink" title="Configuration Files"></a>Configuration Files</h3><p>After the installation of Hexo and NexT, you may found that there are two configuration files using by Hexo and both called <code>_config.yml</code>:</p>
+<ol>
+<li>The first one is under <mark class="label info">site root directory</mark>, which contains Hexo’s config.</li>
+<li>The second one is under <mark class="label primary">theme root directory</mark> (e.g. <code>themes/next/_config.yml</code> or <code>node_modules/hexo-theme-next/_config.yml</code>), which is provided by NexT and contains theme’s config.</li>
+</ol>
+<p>Let’s call the first one – <mark class="label info">Hexo config file</mark>, and the second one – <mark class="label primary">NexT config file</mark>.</p>
+<div class="note warning"><p>However, we do not recommend directly modifying the <mark class="label primary">NexT config file</mark>. It is quite often running into conflict status when updating NexT theme via <code>git pull</code>, or need to merge configurations manually when upgrading to new releases. For the theme installed through npm, it is also difficult to modify the <mark class="label primary">NexT config file</mark> in <code>node_modules</code>.</p>
+<p>In order to resolve this issue, we recommend using the <a href="/docs/getting-started/configuration.html">Alternate Theme Config</a> feature to configure theme NexT.</p>
+</div>
+
+<h3 id="Hexo-Configuration"><a href="#Hexo-Configuration" class="headerlink" title="Hexo Configuration"></a>Hexo Configuration</h3><p>The following settings in <mark class="label info">Hexo config file</mark> are very helpful for optimizing your website.</p>
+<h4 id="Configuring-Author"><a href="#Configuring-Author" class="headerlink" title="Configuring Author"></a>Configuring Author</h4><p>Edit <mark class="label info">Hexo config file</mark> and set the value of <code>author</code> to your nickname.</p>
+<figure class="highlight yml"><figcaption><span>Hexo config file</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="comment"># Site</span></span><br><span class="line"><span class="attr">author:</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="Configuring-Description"><a href="#Configuring-Description" class="headerlink" title="Configuring Description"></a>Configuring Description</h4><p>Edit <mark class="label info">Hexo config file</mark> and set the value of <code>description</code> to your description, which can be a sentence you like.</p>
+<figure class="highlight yml"><figcaption><span>Hexo config file</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="comment"># Site</span></span><br><span class="line"><span class="attr">description:</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="Enabling-NexT"><a href="#Enabling-NexT" class="headerlink" title="Enabling NexT"></a>Enabling NexT</h4><p>Like all Hexo themes, after you download it, open <mark class="label info">Hexo config file</mark>, find <code>theme</code> option, and change its value to <code>next</code> (or another theme directory name).</p>
+<figure class="highlight yml"><figcaption><span>Hexo config file</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="attr">theme:</span> <span class="string">next</span></span><br></pre></td></tr></table></figure>
+
+<p>Now you have installed NexT theme and enabled it. The following steps will help you verify whether NexT is enabled correctly.</p>
+<h3 id="Checking-NexT"><a href="#Checking-NexT" class="headerlink" title="Checking NexT"></a>Checking NexT</h3><p>It’s recommended to use <code>hexo clean</code> to clean Hexo’s cache first.<br>Then start Hexo local server with debug parameter (by adding <code>--debug</code>), the whole command is <code>hexo s --debug</code>. You can see the output while running, and if you find problem, you can use the output to help others locate error better. When it prints:</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">INFO  Hexo is running at http://localhost:4000/. Press Ctrl+C to stop.</span><br></pre></td></tr></table></figure>
+
+<p>Now you can open <code>http://localhost:4000</code> in your browser, and check whether the site works correctly.</p>
+<div class="note success"><p>If you find your site looks like this picture, you have installed it correctly. That’s default NexT scheme – Muse.<br><img src="/images/next-default-scheme.png" alt="Default Scheme – Muse"></p>
+</div>
+
+<p>After that we can <a href="/docs/getting-started/deployment.html">configure deployment</a>.</p>
+<p>If everything is OK, in next steps we will change some settings including <a href="/docs/theme-settings/">personalization</a> and <a href="/docs/third-party-services/">third-party services integration</a>.</p>
+]]></content>
+      <categories>
+        <category>测试</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+        <tag>博客</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Hello World1</title>
+    <url>/2023/06/8d48886a6f4e.html</url>
+    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+]]></content>
+      <categories>
+        <category>测试</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>测试</title>
+    <url>/2023/06/c2324b653e8f.html</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>测试</category>
       </categories>
   </entry>
   <entry>

@@ -1,12 +1,12 @@
 ---
 title: get startted
-date: 2023-06-09 03:01:28
 description: NexT User Docs – Starting to Use
-categories: 
-- Hexo
+categories:
+  - 测试
 tags:
-- hexo
-- 博客
+  - hexo
+  - 博客
+date: 2023-06-09 03:01:28
 ---
 
 
