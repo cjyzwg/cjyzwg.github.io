@@ -5,7 +5,7 @@ date: 2023-06-09 06:31:51
 
 ### 自我介绍
 
-- 90后|天蝎座
+- 90后｜天蝎座｜爱打球
 
 - 后端程序🐶一枚,前端也会点
 
@@ -35,21 +35,18 @@ date: 2023-06-09 06:31:51
 
 ##### [<font color=#0099ff>UniBlog博客</font>](https://github.com/cjyzwg/uniblog)
 
+
+
 | 微信小程序 | qq小程序 | 头条小程序 |
-
-| :------------: | :------------: | :------------: |
-
+| --- | --- | --- |
 | <img src="https://vkceyugu.cdn.bspapp.com/VKCEYUGU-aliyun-6rawjgd8tdtl4007ee/0a347020-54b3-11eb-b680-7980c8a877b8.jpg" width="150"/> | <img src="https://vkceyugu.cdn.bspapp.com/VKCEYUGU-aliyun-6rawjgd8tdtl4007ee/f30699a0-54b2-11eb-97b7-0dc4655d6e68.png" width="150" /> |<img src="https://vkceyugu.cdn.bspapp.com/VKCEYUGU-aliyun-6rawjgd8tdtl4007ee/215037b0-54d3-11eb-8ff1-d5dcf8779628.jpg" width="150" /> |
-
   
   
 
 ##### [<font color=#0099ff>情侣创意大头贴</font>](https://github.com/cjyzwg/uniblog)
 
 | 微信小程序 |
-
-| :------------: |
-
+| --- | 
 | <img src="https://vkceyugu.cdn.bspapp.com/VKCEYUGU-aliyun-6rawjgd8tdtl4007ee/b5ec3360-5645-11eb-b680-7980c8a877b8.png" width="150"/> |
 
   
@@ -58,9 +55,6 @@ date: 2023-06-09 06:31:51
 ##### [<font color=#0099ff>外卖优惠券</font>](https://github.com/cjyzwg/uniblog)
 
 | 微信小程序 |
-
-| :------------: |
-
+| --- |
 | <img src="https://vkceyugu.cdn.bspapp.com/VKCEYUGU-aliyun-6rawjgd8tdtl4007ee/116bf7c0-5646-11eb-a16f-5b3e54966275.jpg" width="150"/> |
-
 
